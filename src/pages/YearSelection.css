@@ -146,3 +146,30 @@
     grid-template-columns: repeat(1, 1fr);
   }
 }
+
+/* YEAR CARDS GRID */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);  /* Desktop: 4 cards */
+  gap: 25px;
+  max-width: 1200px;
+  margin: 20px auto;
+}
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .card-grid {
+    grid-template-columns: repeat(2, 1fr);  /* 2 cards per row */
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .card-grid {
+    grid-template-columns: repeat(1, 1fr);  /* full width card */
+  }
+}
+
+.card-grid {
+  padding: 0 20px;
+}

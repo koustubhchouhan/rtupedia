@@ -1,280 +1,222 @@
-// src/pages/BranchContent.js
+// BranchContent.js
+import React, { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
+import {
+  fetchBranches,
+  autoDetectSemesters,
+  loadNotes,
+  fetchPYQFromBackend
+} from "../utils/dataFetcher";
 
-import React, { useState, useEffect } from 'react';
-import { useParams, Link } from 'react-router-dom';
-import Breadcrumbs from '../components/Navigation/Breadcrumbs';
-import LoadingSpinner from '../components/UI/LoadingSpinner';
-import Button from '../components/UI/Button';
-import { fetchBranchContent, fetchData } from '../utils/dataFetcher';
-import { FaRegFilePdf } from "react-icons/fa6";
-import { SiYoutubemusic } from "react-icons/si";
+const BACKEND_BASE = "http://localhost:5000";
 
 const BranchContent = () => {
   const { yearSlug } = useParams();
-  
-  const [yearInfo, setYearInfo] = useState(null);
+
   const [branches, setBranches] = useState([]);
-  const [subjects, setSubjects] = useState([]);
-  const [loading, setLoading] = useState(true);
+  const [semesters, setSemesters] = useState([]);
+  const [selectedBranch, setSelectedBranch] = useState("");
+  const [selectedSemester, setSelectedSemester] = useState("");
 
-  const [selectedBranchSlug, setSelectedBranchSlug] = useState('');
-  const [contentType, setContentType] = useState('notes'); 
+  const [tab, setTab] = useState("notes");
+  const [notes, setNotes] = useState([]);
+  const [pyqGrouped, setPyqGrouped] = useState([]);
+  const [loadingPYQ, setLoadingPYQ] = useState(false);
 
-  // --- Fetch Year Data and Set Default Branch ---
+  const [openAccordions, setOpenAccordions] = useState({});
+
+  /* LOAD BRANCHES */
   useEffect(() => {
-    setLoading(true);
-    fetchData('yearData').then(data => {
-      const info = data.find(y => y.slug === yearSlug);
-      setYearInfo(info);
-      setBranches(info?.branches || []);
-      
-      if (info?.branches.length > 0) {
-        setSelectedBranchSlug(info.branches[0].slug);
-      } else {
-        setLoading(false);
-      }
-    });
+    const list = fetchBranches(yearSlug) || [];
+    setBranches(list);
+    setSelectedBranch(list[0] || "");
   }, [yearSlug]);
 
-  // --- Fetch Branch Content ---
+  /* LOAD SEMESTERS */
   useEffect(() => {
-    if (yearSlug && selectedBranchSlug) {
-      setLoading(true);
-      fetchBranchContent(yearSlug, selectedBranchSlug).then(content => {
-        setSubjects(content || []);
-        setLoading(false);
-      });
+    if (!selectedBranch) return;
+    const semList = autoDetectSemesters(yearSlug, selectedBranch) || [];
+    setSemesters(semList);
+    setSelectedSemester(semList[0] || "");
+  }, [selectedBranch, yearSlug]);
+
+  /* LOAD NOTES FROM JSON */
+  useEffect(() => {
+    if (!selectedBranch || !selectedSemester) {
+      setNotes([]);
+      return;
     }
-  }, [yearSlug, selectedBranchSlug]);
 
-  if (yearInfo === null && !loading) {
+    const list = loadNotes(yearSlug, selectedBranch, selectedSemester);
+    setNotes(Array.isArray(list) ? list : []);
+
+    const acc = {};
+    (Array.isArray(list) ? list : []).forEach((s) => {
+      const key = s.subjectCode || s.subjectName;
+      acc[key] = false;
+    });
+    setOpenAccordions(acc);
+  }, [yearSlug, selectedBranch, selectedSemester]);
+
+  /* BUILD PYQs FROM BACKEND ONLY */
+  const buildPyqView = async () => {
+    setLoadingPYQ(true);
+    try {
+      const backendData = await fetchPYQFromBackend(
+        yearSlug,
+        selectedBranch,
+        selectedSemester,
+        notes
+      );
+
+      if (!backendData || typeof backendData !== "object") {
+        setPyqGrouped([]);
+        return;
+      }
+
+      // Normalize backend format → UI format
+      const normalized = Object.entries(backendData).map(([subjectName, info]) => ({
+        subject: `${info.subjectName} (${info.subjectCode})`,
+        pyqs: info.pyqs.map((p) => ({
+          title: `${p.year} Paper (PDF Download)`,
+          pdf: p.pdfLink
+        }))
+      }));
+
+      setPyqGrouped(normalized);
+    } catch (e) {
+      console.error("PYQ loading failed:", e);
+      setPyqGrouped([]);
+    } finally {
+      setLoadingPYQ(false);
+    }
+  };
+
+  /* WATCH TAB CHANGE */
+  useEffect(() => {
+    if (tab === "pyq") buildPyqView();
+  }, [tab, notes, selectedBranch, selectedSemester]);
+
+  const toggleAccordion = (key) => {
+    setOpenAccordions((prev) => ({
+      ...prev,
+      [key]: !prev[key]
+    }));
+  };
+
+  /* RENDER NOTES */
+  const renderNotesAccordion = () => {
+    if (!notes.length) return <p>No subjects available.</p>;
+
     return (
-      <div className="container">
-        <h2>Error: Year Not Found</h2>
-        <p>Please return to the <Link to="/">Home Page</Link>.</p>
+      <div>
+        <h3>Unit-wise Notes and Videos</h3>
+
+        {notes.map((sub, idx) => {
+          const key = sub.subjectCode || `${sub.subjectName}-${idx}`;
+          const open = openAccordions[key];
+
+          return (
+            <div className="accordion" key={key}>
+              <div
+                className="accordion-header"
+                onClick={() => toggleAccordion(key)}
+              >
+                <div style={{ display: "flex", gap: 12, alignItems: "center" }}>
+                  <span>{open ? "▾" : "▸"}</span>
+                  <div style={{ fontWeight: 700 }}>
+                    {sub.subjectName} <span style={{ color: "#666" }}>({sub.subjectCode})</span>
+                  </div>
+                </div>
+              </div>
+
+              {open && (
+                <div className="accordion-body">
+                  {(sub.units || []).map((u, ui) => (
+                    <div key={ui} style={{ marginBottom: 12 }}>
+                      <div style={{ fontSize: 17, fontWeight: 700 }}>{u.unitName}</div>
+
+                      <div style={{ display: "flex", gap: 18 }}>
+                        <a className="resource-link" href={u.notesPDF} target="_blank">
+                          📑 PDF Notes
+                        </a>
+
+                        <a className="resource-link" href={u.lectureLink} target="_blank">
+                          ▶ YouTube Lecture
+                        </a>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              )}
+            </div>
+          );
+        })}
       </div>
     );
-  }
+  };
 
-  if (loading || !yearInfo) {
+  /* RENDER PYQ CARDS */
+  const renderPyqCards = () => {
+    if (loadingPYQ) return <p>Loading PYQs...</p>;
+    if (!pyqGrouped.length) return <p>No PYQs available.</p>;
+
     return (
-      <div className="container">
-        <LoadingSpinner />
+      <div>
+        <h3>Previous Year Question Papers (Main Exam)</h3>
+
+        {pyqGrouped.map((grp, i) => (
+          <div className="resource-card" key={i}>
+            <div className="resource-title">{grp.subject}</div>
+
+            {grp.pyqs.map((q, idx) => (
+              <a
+                key={idx}
+                className="resource-link"
+                href={q.pdf.startsWith("http") ? q.pdf : `${BACKEND_BASE}${q.pdf}`}
+                target="_blank"
+              >
+                📄 {q.title}
+              </a>
+            ))}
+          </div>
+        ))}
       </div>
     );
-  }
-
-  const currentBranch = yearInfo.branches.find(b => b.slug === selectedBranchSlug);
-  const crumbs = [
-    { label: 'Home', path: '/' },
-    { label: yearInfo.year, path: `/year/${yearSlug}` },
-    { label: currentBranch?.name || 'Content', path: `/year/${yearSlug}` }
-  ];
-
-  const pyqSubjects = subjects.filter(sub => sub.pyqs && sub.pyqs.length > 0);
+  };
 
   return (
-    <div className="container">
-      <Breadcrumbs crumbs={crumbs} />
-      
-      <h2 style={{ color: 'var(--color-text)' }}>
-        {yearInfo.year} - {currentBranch?.name} Resources
-      </h2>
-      
-      {/* Branch Selector */}
-      <div style={{ marginBottom: '20px' }}>
-        <label
-          htmlFor="branch-select"
-          style={{ marginRight: '10px', fontWeight: 'bold' }}
-        >
-          Select Branch:
-        </label>
-        <select
-          id="branch-select"
-          value={selectedBranchSlug}
-          onChange={(e) => {
-            setSelectedBranchSlug(e.target.value);
-            setContentType('notes');
-          }}
-          style={{
-            padding: '8px',
-            borderRadius: '5px',
-            border: '1px solid var(--color-border)',
-            backgroundColor: 'var(--color-card-bg)',
-            color: 'var(--color-text)',
-          }}
-        >
-          {branches.map(branch => (
-            <option key={branch.slug} value={branch.slug}>
-              {branch.name}
-            </option>
+    <div style={{ padding: 25 }}>
+      <div style={{ fontSize: 26, fontWeight: 800, marginBottom: 12 }}>
+        {yearSlug?.replace("-", " ").toUpperCase()} Resources
+      </div>
+
+      <div className="select-row">
+        <label>Select Branch:</label>
+        <select value={selectedBranch} onChange={(e) => setSelectedBranch(e.target.value)}>
+          {branches.map((b) => (
+            <option key={b}>{b}</option>
+          ))}
+        </select>
+
+        <label style={{ marginLeft: 20 }}>Semester:</label>
+        <select value={selectedSemester} onChange={(e) => setSelectedSemester(e.target.value)}>
+          {semesters.map((s) => (
+            <option key={s}>{s}</option>
           ))}
         </select>
       </div>
 
-      {/* ✅ Only Notes and Main Exam PYQ */}
-      <div
-        style={{
-          display: 'flex',
-          gap: '10px',
-          marginBottom: '25px',
-          overflowX: 'auto',
-        }}
-      >
-        {['Notes', 'PYQ of Main Exam'].map(type => {
-          const slug = type.toLowerCase().replace(/[\s-]/g, '');
-          const isActive = contentType === slug;
-          return (
-            <Button
-              key={slug}
-              onClick={() => setContentType(slug)}
-              className={isActive ? 'btn-primary' : 'btn'}
-              style={{ flexShrink: 0, opacity: isActive ? 1 : 0.8 }}
-            >
-              {type}
-            </Button>
-          );
-        })}
+      <div style={{ display: "flex", gap: 10, margin: "15px 0" }}>
+        <button className={`rt-tab-btn ${tab === "notes" ? "active" : ""}`} onClick={() => setTab("notes")}>
+          Notes
+        </button>
+        <button className={`rt-tab-btn ${tab === "pyq" ? "active" : ""}`} onClick={() => setTab("pyq")}>
+          PYQ of Main Exam
+        </button>
       </div>
 
-      {/* Content Display */}
-      {subjects.length === 0 ? (
-        <p
-          style={{
-            padding: '20px',
-            border: '1px solid var(--color-border)',
-            borderRadius: '5px',
-          }}
-        >
-          No resources currently available for {currentBranch?.name} in {yearInfo.year}.
-        </p>
-      ) : (
-        <>
-          {/* 📝 Notes Section */}
-          {contentType === 'notes' && (
-            <div className="notes-section">
-              <h3>Unit-wise Notes and Videos</h3>
-              {subjects.map(subject => (
-                <details
-                  key={subject.subjectCode}
-                  style={{
-                    border: '1px solid var(--color-border)',
-                    margin: '15px 0',
-                    borderRadius: '5px',
-                    backgroundColor: 'var(--color-card-bg)',
-                  }}
-                >
-                  <summary
-                    style={{
-                      padding: '15px',
-                      fontWeight: 'bold',
-                      cursor: 'pointer',
-                      color: 'var(--color-primary)',
-                    }}
-                  >
-                    {subject.subjectName} ({subject.subjectCode}) - {subject.units.length} Units
-                  </summary>
-                  <div style={{ padding: '15px 15px 15px 30px' }}>
-                    {subject.units.length > 0 ? (
-                      subject.units.map((unit, index) => (
-                        <div key={index} style={{ marginBottom: '10px' }}>
-                          <p style={{ fontWeight: '600' ,fontSize:'20px', color: 'var(--color-tertiary)'}}>
-                            Unit {index + 1}: {unit.unitName}
-                          </p>
-                          <div
-                            style={{
-                              display: 'flex',
-                              gap: '15px',
-                              marginTop: '5px',
-                              fontSize: '0.9rem',
-                            }}
-                          >
-                            <a
-                              href={unit.notesPDF}
-                              target="_blank"
-                              rel="noopener noreferrer"
-                              style={{
-                                color: 'var(--color-primary)',
-                                textDecoration: 'none',
-                                fontSize:'15px'
-                              }}
-                            >
-                              <FaRegFilePdf /> PDF Notes
-                            </a>
-                            <a
-                              href={unit.lectureLink}
-                              target="_blank"
-                              rel="noopener noreferrer"
-                              style={{
-                                color: 'var(--color-primary)',
-                                textDecoration: 'none',
-                                fontSize:'15px',
-                                marginLeft: '20px',
-                              }}
-                            >
-                              <SiYoutubemusic /> YouTube Lecture
-                            </a>
-                          </div>
-                        </div>
-                      ))
-                    ) : (
-                      <p>Notes are currently being uploaded for this subject.</p>
-                    )}
-                  </div>
-                </details>
-              ))}
-            </div>
-          )}
-
-          {/* 🧾 Main Exam PYQ Section */}
-          {contentType === 'pyqofmainexam' && (
-            <div className="pyq-section">
-              <h3>Previous Year Question Papers (Main Exam)</h3>
-
-              {pyqSubjects.length === 0 ? (
-                <p>No Previous Year Questions available yet for this branch.</p>
-              ) : (
-                pyqSubjects.map(subject => (
-                  <div
-                    key={subject.subjectCode}
-                    style={{
-                      marginBottom: '20px',
-                      padding: '15px',
-                      borderLeft: '3px solid var(--color-secondary)',
-                      backgroundColor: 'var(--color-card-bg)',
-                      borderRadius: '5px',
-                      fontSize:'19px'
-                    }}
-                  >
-                    <h4 style={{ marginBottom: '10px' }}>
-                      {subject.subjectName} ({subject.subjectCode})
-                    </h4>
-                    <ul style={{ listStyle: 'none', padding: 0 }}>
-                      {subject.pyqs
-                        .filter(pyq => pyq.examType === 'MainExam')
-                        .map((pyq, index) => (
-                          <li key={index} style={{ marginTop: '5px' }}>
-                            <a
-                              href={pyq.pdfLink}
-                              target="_blank"
-                              rel="noopener noreferrer"
-                              style={{
-                                color: 'var(--color-primary)',
-                                textDecoration: 'none',
-                              }}
-                            >
-                              {pyq.year} {pyq.sem} Paper (PDF Download)
-                            </a>
-                          </li>
-                        ))}
-                    </ul>
-                  </div>
-                ))
-              )}
-            </div>
-          )}
-        </>
-      )}
+      {tab === "notes" ? renderNotesAccordion() : renderPyqCards()}
     </div>
   );
 };

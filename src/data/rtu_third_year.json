@@ -1,0 +1,295 @@
+{
+  "CSE": {
+    "5": [
+      {
+        "subjectName": "Compiler Design",
+        "subjectCode": "5CS1-01",
+        "units": [
+          {
+            "unitName": "Introduction to Compilers: Phases, compiler structure, front-end and back-end concepts.",
+            "notesPDF": "/assets/notes/Compiler Design Unit 1.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=compiler-design-unit1"
+          },
+          {
+            "unitName": "Lexical Analysis: Tokens, lexemes, regular expressions, finite automata.",
+            "notesPDF": "/assets/notes/Compiler Design Unit 2.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=compiler-design-unit2"
+          },
+          {
+            "unitName": "Syntax Analysis: Parsing techniques, LL and LR parsers, error recovery.",
+            "notesPDF": "/assets/notes/Compiler Design Unit 3.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=compiler-design-unit3"
+          },
+          {
+            "unitName": "Semantic Analysis: Type checking, intermediate code generation.",
+            "notesPDF": "/assets/notes/Compiler Design Unit 4.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=compiler-design-unit4"
+          },
+          {
+            "unitName": "Code Optimization and Code Generation.",
+            "notesPDF": "/assets/notes/Compiler Design Unit 5.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=compiler-design-unit5"
+          }
+        ],
+        "pyqs": [
+          { "examType": "MainExam", "year": 2023, "sem": "Odd", "pdfLink": "/assets/main/PPS paper odd 2023.pdf" },
+          { "examType": "MainExam", "year": 2025, "sem": "Odd", "pdfLink": "/assets/main/PPS paper odd 2025.pdf" }
+        ]
+      },
+      {
+        "subjectName": "Operating Systems",
+        "subjectCode": "5CS2-02",
+        "units": [
+          {
+            "unitName": "Introduction to Operating Systems: Types, system calls, OS structure.",
+            "notesPDF": "/assets/notes/Operating Systems Unit 1.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=os-unit1"
+          },
+          {
+            "unitName": "Process Management: Scheduling, threads, IPC, synchronization.",
+            "notesPDF": "/assets/notes/Operating Systems Unit 2.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=os-unit2"
+          },
+          {
+            "unitName": "Memory Management: Paging, segmentation, virtual memory.",
+            "notesPDF": "/assets/notes/Operating Systems Unit 3.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=os-unit3"
+          },
+          {
+            "unitName": "File Systems: Directories, allocation, free space management.",
+            "notesPDF": "/assets/notes/Operating Systems Unit 4.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=os-unit4"
+          },
+          {
+            "unitName": "Deadlocks: Detection, prevention, avoidance.",
+            "notesPDF": "/assets/notes/Operating Systems Unit 5.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=os-unit5"
+          }
+        ],
+        "pyqs": [
+          { "examType": "MainExam", "year": 2023, "sem": "Odd", "pdfLink": "/assets/main/PPS paper odd 2023.pdf" },
+          { "examType": "MainExam", "year": 2025, "sem": "Odd", "pdfLink": "/assets/main/PPS paper odd 2025.pdf" }
+        ]
+      },
+      {
+        "subjectName": "Computer Architecture and Organization",
+        "subjectCode": "5CS3-03",
+        "units": [
+          {
+            "unitName": "Basic Computer Organization: CPU, registers, buses.",
+            "notesPDF": "/assets/notes/Computer Architecture Unit 1.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=cao-unit1"
+          },
+          {
+            "unitName": "Instruction Set Architecture and ALU Design.",
+            "notesPDF": "/assets/notes/Computer Architecture Unit 2.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=cao-unit2"
+          },
+          {
+            "unitName": "Memory Organization: Cache, primary and secondary memory.",
+            "notesPDF": "/assets/notes/Computer Architecture Unit 3.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=cao-unit3"
+          },
+          {
+            "unitName": "Control Unit: Hardwired and microprogrammed control.",
+            "notesPDF": "/assets/notes/Computer Architecture Unit 4.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=cao-unit4"
+          },
+          {
+            "unitName": "Pipelining and Parallel Processing.",
+            "notesPDF": "/assets/notes/Computer Architecture Unit 5.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=cao-unit5"
+          }
+        ],
+        "pyqs": [
+          { "examType": "MainExam", "year": 2023, "sem": "Odd", "pdfLink": "/assets/main/PPS paper odd 2023.pdf" },
+          { "examType": "MainExam", "year": 2025, "sem": "Odd", "pdfLink": "/assets/main/PPS paper odd 2025.pdf" }
+        ]
+      },
+      {
+        "subjectName": "Design and Analysis of Algorithms",
+        "subjectCode": "5CS4-04",
+        "units": [
+          {
+            "unitName": "Algorithm Analysis: Time/space complexity, asymptotic notation.",
+            "notesPDF": "/assets/notes/DAA Unit 1.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=daa-unit1"
+          },
+          {
+            "unitName": "Divide and Conquer Algorithms.",
+            "notesPDF": "/assets/notes/DAA Unit 2.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=daa-unit2"
+          },
+          {
+            "unitName": "Greedy Algorithms.",
+            "notesPDF": "/assets/notes/DAA Unit 3.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=daa-unit3"
+          },
+          {
+            "unitName": "Dynamic Programming.",
+            "notesPDF": "/assets/notes/DAA Unit 4.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=daa-unit4"
+          },
+          {
+            "unitName": "Backtracking and Branch & Bound.",
+            "notesPDF": "/assets/notes/DAA Unit 5.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=daa-unit5"
+          }
+        ],
+        "pyqs": [
+          { "examType": "MainExam", "year": 2023, "sem": "Odd", "pdfLink": "/assets/main/PPS paper odd 2023.pdf" },
+          { "examType": "MainExam", "year": 2025, "sem": "Odd", "pdfLink": "/assets/main/PPS paper odd 2025.pdf" }
+        ]
+      }
+    ],
+    "6": [
+      {
+        "subjectName": "Software Project Management",
+        "subjectCode": "6CS1-01",
+        "units": [
+          {
+            "unitName": "Introduction: Project life cycle, characteristics of software projects.",
+            "notesPDF": "/assets/notes/Software Project Management Unit 1.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=spm-unit1"
+          },
+          {
+            "unitName": "Project Planning: Scope management, project estimation techniques.",
+            "notesPDF": "/assets/notes/Software Project Management Unit 2.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=spm-unit2"
+          },
+          {
+            "unitName": "Scheduling and Risk Management.",
+            "notesPDF": "/assets/notes/Software Project Management Unit 3.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=spm-unit3"
+          },
+          {
+            "unitName": "Quality Assurance and Testing Strategies.",
+            "notesPDF": "/assets/notes/Software Project Management Unit 4.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=spm-unit4"
+          },
+          {
+            "unitName": "Project Monitoring, Control and Configuration Management.",
+            "notesPDF": "/assets/notes/Software Project Management Unit 5.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=spm-unit5"
+          }
+        ],
+        "pyqs": [
+          { "examType": "MainExam", "year": 2023, "sem": "Odd", "pdfLink": "/assets/main/PPS paper odd 2023.pdf" },
+          { "examType": "MainExam", "year": 2025, "sem": "Odd", "pdfLink": "/assets/main/PPS paper odd 2025.pdf" }
+        ]
+      },
+      {
+        "subjectName": "Computer Graphics",
+        "subjectCode": "6CS2-02",
+        "units": [
+          {
+            "unitName": "Introduction to Computer Graphics: Graphics pipeline, applications.",
+            "notesPDF": "/assets/notes/Computer Graphics Unit 1.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=cg-unit1"
+          },
+          {
+            "unitName": "2D Transformations: Scaling, rotation, translation, homogeneous coordinates.",
+            "notesPDF": "/assets/notes/Computer Graphics Unit 2.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=cg-unit2"
+          },
+          {
+            "unitName": "3D Transformations and Clipping.",
+            "notesPDF": "/assets/notes/Computer Graphics Unit 3.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=cg-unit3"
+          },
+          {
+            "unitName": "Curve and Surface Modeling: Bézier, B-spline curves.",
+            "notesPDF": "/assets/notes/Computer Graphics Unit 4.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=cg-unit4"
+          },
+          {
+            "unitName": "Rendering Techniques: Illumination models, shading, ray tracing.",
+            "notesPDF": "/assets/notes/Computer Graphics Unit 5.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=cg-unit5"
+          }
+        ],
+        "pyqs": [
+          { "examType": "MainExam", "year": 2023, "sem": "Odd", "pdfLink": "/assets/main/PPS paper odd 2023.pdf" },
+          { "examType": "MainExam", "year": 2025, "sem": "Odd", "pdfLink": "/assets/main/PPS paper odd 2025.pdf" }
+        ]
+      },
+      {
+        "subjectName": "Distributed Systems",
+        "subjectCode": "6CS3-03",
+        "units": [
+          {
+            "unitName": "Introduction to Distributed Systems: Goals, challenges, architecture.",
+            "notesPDF": "/assets/notes/Distributed Systems Unit 1.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=ds-unit1"
+          },
+          {
+            "unitName": "Processes, Communication and Naming.",
+            "notesPDF": "/assets/notes/Distributed Systems Unit 2.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=ds-unit2"
+          },
+          {
+            "unitName": "Synchronization and Coordination.",
+            "notesPDF": "/assets/notes/Distributed Systems Unit 3.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=ds-unit3"
+          },
+          {
+            "unitName": "Consistency and Replication Models.",
+            "notesPDF": "/assets/notes/Distributed Systems Unit 4.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=ds-unit4"
+          },
+          {
+            "unitName": "Fault Tolerance and Distributed File Systems.",
+            "notesPDF": "/assets/notes/Distributed Systems Unit 5.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=ds-unit5"
+          }
+        ],
+        "pyqs": [
+          { "examType": "MainExam", "year": 2023, "sem": "Odd", "pdfLink": "/assets/main/PPS paper odd 2023.pdf" },
+          { "examType": "MainExam", "year": 2025, "sem": "Odd", "pdfLink": "/assets/main/PPS paper odd 2025.pdf" }
+        ]
+      },
+      {
+        "subjectName": "Data Mining and Data Warehousing",
+        "subjectCode": "6CS4-04",
+        "units": [
+          {
+            "unitName": "Introduction to Data Mining: KDD process, types of data, data preprocessing.",
+            "notesPDF": "/assets/notes/Data Mining Unit 1.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=dm-unit1"
+          },
+          {
+            "unitName": "Association Rule Mining: Apriori, FP-tree.",
+            "notesPDF": "/assets/notes/Data Mining Unit 2.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=dm-unit2"
+          },
+          {
+            "unitName": "Classification Techniques: Decision trees, Bayesian classifiers.",
+            "notesPDF": "/assets/notes/Data Mining Unit 3.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=dm-unit3"
+          },
+          {
+            "unitName": "Clustering Techniques: K-means, hierarchical clustering.",
+            "notesPDF": "/assets/notes/Data Mining Unit 4.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=dm-unit4"
+          },
+          {
+            "unitName": "Data Warehousing Concepts.",
+            "notesPDF": "/assets/notes/Data Mining Unit 5.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=dm-unit5"
+          }
+        ],
+        "pyqs": [
+          { "examType": "MainExam", "year": 2023, "sem": "Odd", "pdfLink": "/assets/main/PPS paper odd 2023.pdf" },
+          { "examType": "MainExam", "year": 2025, "sem": "Odd", "pdfLink": "/assets/main/PPS paper odd 2025.pdf" }
+        ]
+      }
+    ]
+  },
+  "EE": { "5": [], "6": [] },
+  "ME": { "5": [], "6": [] },
+  "CE": { "5": [], "6": [] },
+  "AIDS": { "5": [], "6": [] },
+  "IOT": { "5": [], "6": [] },
+  "CY": { "5": [], "6": [] },
+  "CHEM": { "5": [], "6": [] }
+}

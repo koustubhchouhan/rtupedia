@@ -4,7 +4,7 @@ import courseData from "../data/rtu_courses_by_branch_sem.json";
 import "./SGPACalculator.css";
 
 const SGPACalculator = () => {
-  const branchOptions = ["CSE", "CE", "EE", "ME", "CHEM"];
+  const branchOptions = ["CSE", "CE", "EE", "ME", "CHEM", "IOT", "CY", "AIDS"];
   const semesterOptions = ["1","2","3","4","5","6","7","8"];
 
   // Default selection

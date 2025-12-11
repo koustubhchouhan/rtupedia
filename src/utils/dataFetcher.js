@@ -1,74 +1,160 @@
 // src/utils/dataFetcher.js
 
-import branchesData from '../data/branches.json';
-import yearData from '../data/year_data.json';
-import syllabusLinks from '../data/syllabus_links.json';
+import yearFirst from "../data/rtu_first_year.json";
+import yearSecond from "../data/rtu_second_year.json";
+import yearThird from "../data/rtu_third_year.json";
+import yearFourth from "../data/rtu_fourth_year.json";
 
-/**
- * Generic async fetch for JSON datasets
- */
-export const fetchData = (type, delay = 300) => {
-  return new Promise(resolve => {
-    setTimeout(() => {
-      switch (type) {
-        case 'yearData':
-          resolve(yearData);
-          break;
-        case 'branches':
-        case 'branchesData':
-          resolve(branchesData);
-          break;
-        case 'syllabusLinks':
-          resolve(syllabusLinks);
-          break;
-        default:
-          resolve(null);
-      }
-    }, delay);
-  });
+const BACKEND_BASE_URL = "http://localhost:5000";
+
+const memoryCache = {
+  notes: {},
+  pyq: {}
 };
 
+const getYearJSON = (yearSlug) => {
+  switch (yearSlug) {
+    case "first-year": return yearFirst;
+    case "second-year": return yearSecond;
+    case "third-year": return yearThird;
+    case "fourth-year": return yearFourth;
+    default: return null;
+  }
+};
 
-/**
- * Fetch branch-specific subject content
- * Handles both:
- *  - First-year (direct subjects)
- *  - Second/Third-year (semester → subjects array)
- */
-export const fetchBranchContent = async (yearSlug, branchSlug) => {
-  await new Promise(res => setTimeout(res, 400));
+const normalize = (str) =>
+  String(str || "")
+    .toLowerCase()
+    .replace(/[^a-z0-9]/g, "");
 
-  const yearBlock = branchesData[yearSlug];
-  if (!yearBlock) return [];
+/* --------------------------------------------------------
+   1) FETCH BRANCHES
+--------------------------------------------------------- */
+export const fetchBranches = (yearSlug) => {
+  const data = getYearJSON(yearSlug);
+  if (!data) return [];
 
-  const branchBlock = yearBlock[branchSlug];
-  if (!branchBlock) return [];
+  if (yearSlug === "first-year") return ["COMMON"];
 
-  // Case 1: First-year subjects (already flat)
-  if (
-    Array.isArray(branchBlock) &&
-    branchBlock.length > 0 &&
-    branchBlock[0].subjectName
-  ) {
-    return branchBlock.map(sub => ({
-      ...sub,
-      units: Array.isArray(sub.units) ? sub.units : [],
-      pyqs: Array.isArray(sub.pyqs) ? sub.pyqs : []
-    }));
+  return Object.keys(data).map((b) => b.toUpperCase());
+};
+
+/* --------------------------------------------------------
+   2) AUTO-DETECT SEMESTERS
+--------------------------------------------------------- */
+export const autoDetectSemesters = (yearSlug, branch) => {
+  const data = getYearJSON(yearSlug);
+  if (!data || !branch) return [];
+
+  if (yearSlug === "first-year") return ["1", "2"];
+
+  const branchData = data[branch.toUpperCase()];
+  if (!branchData) return [];
+
+  return Object.keys(branchData);
+};
+
+/* --------------------------------------------------------
+   3) LOAD NOTES (ALWAYS FROM JSON)
+--------------------------------------------------------- */
+export const loadNotes = (yearSlug, branch, semester) => {
+  const key = `${yearSlug}-${branch}-${semester}`;
+  if (memoryCache.notes[key]) return memoryCache.notes[key];
+
+  const data = getYearJSON(yearSlug);
+  if (!data) return [];
+
+  if (yearSlug === "first-year") {
+    memoryCache.notes[key] = data["COMMON"][semester] || [];
+    return memoryCache.notes[key];
   }
 
-  // Case 2: Semester-structured data (CSE 2nd/3rd year)
-  if (Array.isArray(branchBlock)) {
-    return branchBlock.flatMap(sem => {
-      if (!sem.subjects) return [];
+  const branchData = data[branch.toUpperCase()];
+  if (!branchData) return [];
 
-      return sem.subjects.map(sub => ({
-        ...sub,
-        units: Array.isArray(sub.units) ? sub.units : [],
-        pyqs: Array.isArray(sub.pyqs) ? sub.pyqs : []
-      }));
+  const subjects = branchData[semester] || [];
+  memoryCache.notes[key] = subjects;
+
+  return subjects;
+};
+
+/* --------------------------------------------------------
+   4) FETCH PYQ FROM BACKEND ONLY
+   → ALWAYS returns clean grouped structure:
+   {
+     "Subject Name": {
+        subjectName: "...",
+        subjectCode: "...",
+        pyqs: [
+          { year: "2025", pdfLink: "http://localhost:5000/main/...pdf" }
+        ]
+     }
+   }
+--------------------------------------------------------- */
+export const fetchPYQFromBackend = async (yearSlug, branch, semester, subjectsList = []) => {
+  const key = `${branch}-${semester}`;
+  if (memoryCache.pyq[key]) return memoryCache.pyq[key];
+
+  try {
+    const url = `${BACKEND_BASE_URL}/api/pyq/${branch}/${semester}`;
+    const res = await fetch(url);
+
+    if (!res.ok) {
+      console.error("Backend PYQ error:", res.statusText);
+      return {};
+    }
+
+    const pdfFiles = await res.json();
+    if (!Array.isArray(pdfFiles)) return {};
+
+    // Build subject buckets
+    const groups = {};
+
+    subjectsList.forEach((sub) => {
+      groups[sub.subjectName] = {
+        subjectName: sub.subjectName,
+        subjectCode: sub.subjectCode,
+        pyqs: []
+      };
     });
-  }
 
-  return [];
+    // Match PDFs to subjects
+    pdfFiles.forEach((file) => {
+      const cleanFile = normalize(file.title || file.pdf || file);
+
+      let matchedSubject = null;
+
+      for (const sub of subjectsList) {
+        const cleanSubName = normalize(sub.subjectName);
+        const cleanSubCode = normalize(sub.subjectCode);
+
+        if (cleanFile.includes(cleanSubName) || cleanFile.includes(cleanSubCode)) {
+          matchedSubject = sub.subjectName;
+          break;
+        }
+      }
+
+      if (!matchedSubject) return;
+
+      const year = file.title?.match(/\d{4}/)?.[0] || "Unknown";
+
+      groups[matchedSubject].pyqs.push({
+        year,
+        pdfLink: `${BACKEND_BASE_URL}${file.pdf}` 
+      });
+    });
+
+    memoryCache.pyq[key] = groups;
+    return groups;
+  } catch (error) {
+    console.error("PYQ backend fetch failed:", error);
+    return {};
+  }
+};
+
+export default {
+  fetchBranches,
+  autoDetectSemesters,
+  loadNotes,
+  fetchPYQFromBackend
 };
