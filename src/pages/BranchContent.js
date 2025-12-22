@@ -1,29 +1,34 @@
-// BranchContent.js
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import {
   fetchBranches,
-  autoDetectSemesters,
   loadNotes,
   fetchPYQFromBackend
 } from "../utils/dataFetcher";
+import "./SGPACalculator.css";
+import "../styles/global.css";
 
-const BACKEND_BASE = "http://localhost:5000";
+const yearSemesterMap = {
+  "first-year": ["1", "2"],
+  "second-year": ["3", "4"],
+  "third-year": ["5", "6"],
+  "fourth-year": ["7", "8"]
+};
 
 const BranchContent = () => {
   const { yearSlug } = useParams();
 
   const [branches, setBranches] = useState([]);
-  const [semesters, setSemesters] = useState([]);
   const [selectedBranch, setSelectedBranch] = useState("");
+
+  const [semesters, setSemesters] = useState([]);
   const [selectedSemester, setSelectedSemester] = useState("");
 
   const [tab, setTab] = useState("notes");
+
   const [notes, setNotes] = useState([]);
   const [pyqGrouped, setPyqGrouped] = useState([]);
   const [loadingPYQ, setLoadingPYQ] = useState(false);
-
-  const [openAccordions, setOpenAccordions] = useState({});
 
   /* LOAD BRANCHES */
   useEffect(() => {
@@ -32,191 +37,147 @@ const BranchContent = () => {
     setSelectedBranch(list[0] || "");
   }, [yearSlug]);
 
-  /* LOAD SEMESTERS */
+  /* SET SEMESTERS (ODD DEFAULT) */
   useEffect(() => {
-    if (!selectedBranch) return;
-    const semList = autoDetectSemesters(yearSlug, selectedBranch) || [];
+    const semList = yearSemesterMap[yearSlug] || [];
     setSemesters(semList);
     setSelectedSemester(semList[0] || "");
-  }, [selectedBranch, yearSlug]);
+  }, [yearSlug]);
 
-  /* LOAD NOTES FROM JSON */
+  /* LOAD NOTES */
   useEffect(() => {
-    if (!selectedBranch || !selectedSemester) {
-      setNotes([]);
-      return;
-    }
-
-    const list = loadNotes(yearSlug, selectedBranch, selectedSemester);
-    setNotes(Array.isArray(list) ? list : []);
-
-    const acc = {};
-    (Array.isArray(list) ? list : []).forEach((s) => {
-      const key = s.subjectCode || s.subjectName;
-      acc[key] = false;
-    });
-    setOpenAccordions(acc);
+    if (!selectedBranch || !selectedSemester) return;
+    const data = loadNotes(yearSlug, selectedBranch, selectedSemester);
+    setNotes(Array.isArray(data) ? data : []);
   }, [yearSlug, selectedBranch, selectedSemester]);
 
-  /* BUILD PYQs FROM BACKEND ONLY */
-  const buildPyqView = async () => {
-    setLoadingPYQ(true);
-    try {
-      const backendData = await fetchPYQFromBackend(
-        yearSlug,
-        selectedBranch,
-        selectedSemester,
-        notes
-      );
-
-      if (!backendData || typeof backendData !== "object") {
-        setPyqGrouped([]);
-        return;
-      }
-
-      // Normalize backend format → UI format
-      const normalized = Object.entries(backendData).map(([subjectName, info]) => ({
-        subject: `${info.subjectName} (${info.subjectCode})`,
-        pyqs: info.pyqs.map((p) => ({
-          title: `${p.year} Paper (PDF Download)`,
-          pdf: p.pdfLink
-        }))
-      }));
-
-      setPyqGrouped(normalized);
-    } catch (e) {
-      console.error("PYQ loading failed:", e);
-      setPyqGrouped([]);
-    } finally {
-      setLoadingPYQ(false);
-    }
-  };
-
-  /* WATCH TAB CHANGE */
+  /* LOAD PYQs FROM BACKEND */
   useEffect(() => {
-    if (tab === "pyq") buildPyqView();
-  }, [tab, notes, selectedBranch, selectedSemester]);
+    if (tab !== "pyq" || !selectedBranch || !selectedSemester) return;
 
-  const toggleAccordion = (key) => {
-    setOpenAccordions((prev) => ({
-      ...prev,
-      [key]: !prev[key]
-    }));
-  };
+    setLoadingPYQ(true);
 
-  /* RENDER NOTES */
-  const renderNotesAccordion = () => {
-    if (!notes.length) return <p>No subjects available.</p>;
+    fetchPYQFromBackend(selectedBranch, selectedSemester, notes)
+      .then((data) => {
+        setPyqGrouped(Array.isArray(data) ? data : []);
+      })
+      .catch(() => setPyqGrouped([]))
+      .finally(() => setLoadingPYQ(false));
 
-    return (
-      <div>
-        <h3>Unit-wise Notes and Videos</h3>
-
-        {notes.map((sub, idx) => {
-          const key = sub.subjectCode || `${sub.subjectName}-${idx}`;
-          const open = openAccordions[key];
-
-          return (
-            <div className="accordion" key={key}>
-              <div
-                className="accordion-header"
-                onClick={() => toggleAccordion(key)}
-              >
-                <div style={{ display: "flex", gap: 12, alignItems: "center" }}>
-                  <span>{open ? "▾" : "▸"}</span>
-                  <div style={{ fontWeight: 700 }}>
-                    {sub.subjectName} <span style={{ color: "#666" }}>({sub.subjectCode})</span>
-                  </div>
-                </div>
-              </div>
-
-              {open && (
-                <div className="accordion-body">
-                  {(sub.units || []).map((u, ui) => (
-                    <div key={ui} style={{ marginBottom: 12 }}>
-                      <div style={{ fontSize: 17, fontWeight: 700 }}>{u.unitName}</div>
-
-                      <div style={{ display: "flex", gap: 18 }}>
-                        <a className="resource-link" href={u.notesPDF} target="_blank">
-                          📑 PDF Notes
-                        </a>
-
-                        <a className="resource-link" href={u.lectureLink} target="_blank">
-                          ▶ YouTube Lecture
-                        </a>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              )}
-            </div>
-          );
-        })}
-      </div>
-    );
-  };
-
-  /* RENDER PYQ CARDS */
-  const renderPyqCards = () => {
-    if (loadingPYQ) return <p>Loading PYQs...</p>;
-    if (!pyqGrouped.length) return <p>No PYQs available.</p>;
-
-    return (
-      <div>
-        <h3>Previous Year Question Papers (Main Exam)</h3>
-
-        {pyqGrouped.map((grp, i) => (
-          <div className="resource-card" key={i}>
-            <div className="resource-title">{grp.subject}</div>
-
-            {grp.pyqs.map((q, idx) => (
-              <a
-                key={idx}
-                className="resource-link"
-                href={q.pdf.startsWith("http") ? q.pdf : `${BACKEND_BASE}${q.pdf}`}
-                target="_blank"
-              >
-                📄 {q.title}
-              </a>
-            ))}
-          </div>
-        ))}
-      </div>
-    );
-  };
+  }, [tab, selectedBranch, selectedSemester, notes]);
 
   return (
     <div style={{ padding: 25 }}>
-      <div style={{ fontSize: 26, fontWeight: 800, marginBottom: 12 }}>
-        {yearSlug?.replace("-", " ").toUpperCase()} Resources
+      <h2>{yearSlug.replace("-", " ").toUpperCase()} Resources</h2>
+
+      {/* Branch + Semester Selector */}
+      <div style={{ display: "flex", gap: 20, marginBottom: 20 }}>
+        <div>
+          <label>Branch:</label>
+          <select
+            value={selectedBranch}
+            onChange={(e) => setSelectedBranch(e.target.value)}
+          >
+            {branches.map((b) => (
+              <option key={b} value={b}>{b}</option>
+            ))}
+          </select>
+        </div>
+
+        <div>
+          <label>Semester:</label>
+          <select
+            value={selectedSemester}
+            onChange={(e) => setSelectedSemester(e.target.value)}
+          >
+            {semesters.map((s) => (
+              <option key={s} value={s}>
+                Semester {s}
+              </option>
+            ))}
+          </select>
+        </div>
       </div>
 
-      <div className="select-row">
-        <label>Select Branch:</label>
-        <select value={selectedBranch} onChange={(e) => setSelectedBranch(e.target.value)}>
-          {branches.map((b) => (
-            <option key={b}>{b}</option>
+      {/* Tabs */}
+      <div className="tab-row">
+  <button
+    className={`rt-tab-btn ${tab === "notes" ? "active" : ""}`}
+    onClick={() => setTab("notes")}
+  >
+    Notes
+  </button>
+
+  <button
+    className={`rt-tab-btn ${tab === "pyq" ? "active" : ""}`}
+    onClick={() => setTab("pyq")}
+  >
+    PYQ (Main Exam)
+  </button>
+</div>
+
+      {/* NOTES */}
+      {tab === "notes" && (
+        <div>
+          <h3>Unit-wise Notes & Videos</h3>
+
+          {notes.length === 0 && <p>No notes available.</p>}
+
+       {notes.map((sub, i) => (
+  <div className="resource-card" key={i}>
+    <details>
+      <summary style={{ fontWeight: "bold" }}>
+        {sub.subjectName} ({sub.subjectCode})
+      </summary>
+
+      {(sub.units || []).map((u, j) => (
+        <div key={j} style={{ marginLeft: 20, marginTop: 10 }}>
+          <div style={{ fontWeight: 700 }}>{u.unitName}</div>
+
+          <a href={u.notesPDF} target="_blank" rel="noreferrer" style={{color: "var(--color-tertiary)", fontWeight: "500"}}>
+            📑 PDF Notes
+          </a>{" "}
+          <span style={{ margin: "0 6px" }}>|</span>
+          <a href={u.lectureLink} target="_blank" rel="noreferrer"  style={{color: "var(--color-tertiary)", fontWeight: "500"}}>
+            ▶ Video Lecture
+          </a>
+        </div>
+      ))}
+    </details>
+  </div>
+))}
+
+        </div>
+      )}
+
+      {/* PYQs */}
+      {tab === "pyq" && (
+        <div>
+          <h3>Previous Year Question Papers (Main Exam)</h3>
+
+          {loadingPYQ && <p>Loading PYQs...</p>}
+
+          {!loadingPYQ && pyqGrouped.map((grp, i) => (
+            <div className="pyq-subject-box" key={i}>
+              <div className="pyq-subject-title">
+                {grp.subjectName} ({grp.subjectCode})
+              </div>
+
+              {grp.pyqs.map((q, idx) => (
+                <a
+                  key={idx}
+                  className="pyq-paper-link"
+                  href={q.pdf}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  📄 {q.title}
+                </a>
+              ))}
+            </div>
           ))}
-        </select>
-
-        <label style={{ marginLeft: 20 }}>Semester:</label>
-        <select value={selectedSemester} onChange={(e) => setSelectedSemester(e.target.value)}>
-          {semesters.map((s) => (
-            <option key={s}>{s}</option>
-          ))}
-        </select>
-      </div>
-
-      <div style={{ display: "flex", gap: 10, margin: "15px 0" }}>
-        <button className={`rt-tab-btn ${tab === "notes" ? "active" : ""}`} onClick={() => setTab("notes")}>
-          Notes
-        </button>
-        <button className={`rt-tab-btn ${tab === "pyq" ? "active" : ""}`} onClick={() => setTab("pyq")}>
-          PYQ of Main Exam
-        </button>
-      </div>
-
-      {tab === "notes" ? renderNotesAccordion() : renderPyqCards()}
+        </div>
+      )}
     </div>
   );
 };

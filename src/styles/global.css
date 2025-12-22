@@ -264,4 +264,39 @@ h1, h2, h3 {
 
 .accordion-body {
   padding: 15px 22px;
+   display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-right: 12px;
+  font-size: 14px;
+}
+
+/* Remove underline from ALL resource links */
+a {
+  text-decoration: none;
+}
+
+/* Notes + PYQ links styling */
+.resource-link,
+.pyq-paper-link,
+.accordion-body a {
+  text-decoration: none;
+  color: var(--color-primary);
+  font-weight: 500;
+}
+
+.resource-link:hover,
+.pyq-paper-link:hover,
+.accordion-body a:hover {
+  opacity: 0.75;
+}
+
+
+.resource-card {
+  background: var(--color-card-bg);
+  border-left: 4px solid var(--color-secondary);
+  border-radius: 10px;
+  padding: 18px 22px;
+  margin-bottom: 18px;
+  border: 1px solid var(--color-border);
 }
