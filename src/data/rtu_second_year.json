@@ -8,27 +8,27 @@
           {
             "unitName": "Random variables: Discrete and continuous random variables, Probability mass function and probability density function, Joint distributions, Marginal and conditional distributions and moments, Moment generating function.",
             "notesPDF": "/assets/notes/CSE/3/AEM Unit 1.pdf",
-            "lectureLink": "https://youtube.com/playlist?list=advanced-engineering-mathematics-unit1"
+            "lectureLink": "https://youtube.com/playlist?list=PLU6SqdYcYsfIaokdZTmptaf-PK7s-B0ju&si=C8JcGMbzED8a9Azr"
           },
           {
             "unitName": "Discrete Probability Distributions: Binomial, Poisson and Geometric distributions, Continuous distributions: Uniform, Normal, Exponential, Gamma distributions.",
             "notesPDF": "/assets/notes/CSE/3/AEM Unit 2.pdf",
-            "lectureLink": "https://youtube.com/playlist?list=advanced-engineering-mathematics-unit2"
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X1odw2Kd7NxcI8O0k0meQR2&si=79y812zJj80eVAp1"
           },
           {
-            "unitName": "Historical development of optimization techniques, Formulation of LPP, Graphical method, Convexity, Simplex method, Big M-method, Two-phase method.",
+            "unitName": "Historical development, Engineering Applications of Optimization, Formulation of Design Problems as a Mathematical Programming Problems, Classification of Optimization Problems",
             "notesPDF": "/assets/notes/CSE/3/AEM Unit 3.pdf",
-            "lectureLink": "https://youtube.com/playlist?list=advanced-engineering-mathematics-unit3"
+            "lectureLink": "https://youtu.be/N7WxiWCGIKA?si=GOmaCkm9kWv0M9LM"
           },
           {
-            "unitName": "Classical Optimization using Differential Calculus, Single variable optimization, Multivariable Optimization with/without constraints, Lagrange’s Method.",
+            "unitName": "Classical Optimization using Differential Calculus, Single variable optimization, Multivariable Optimization with/without constraints, Lagrange’s Method and Kuhn-Tucker conditions.",
             "notesPDF": "/assets/notes/CSE/3/AEM Unit 4.pdf",
-            "lectureLink": "https://youtube.com/playlist?list=advanced-engineering-mathematics-unit4"
+            "lectureLink": "https://youtube.com/playlist?list=PLBmBje17zG1PSbMUQB6RPCMxDbE6EZ_rl&si=-tCqwa76lFQHA1kz"
           },
           {
-            "unitName": "Linear Programming: Duality, Sensitivity analysis, Transportation problem, Assignment problem.",
+            "unitName": "Linear Programming:  Simplex method, Two Phase Method and Duality in Linear Programming. Application of Linear Programming: Transportation and Assignment Problems. ",
             "notesPDF": "/assets/notes/CSE/3/AEM Unit 5.pdf",
-            "lectureLink": "https://youtube.com/playlist?list=advanced-engineering-mathematics-unit5"
+            "lectureLink": "https://youtube.com/playlist?list=PLU6SqdYcYsfLewoQPYjgg7SMBLjSV704v&si=8QRHHXHEdX_1I0-i"
           }
         ],
         "pyqs": [
@@ -73,27 +73,27 @@
           {
             "unitName": "Basic Economic Concepts: Meaning, nature and scope of economics; basic economic problems; scarcity and choice; national income.",
             "notesPDF": "/assets/notes/CSE/3/MEFA Unit 1.pdf",
-            "lectureLink": "https://youtube.com/playlist?list=managerial-economics-unit1"
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X1JoM0y0w0pwGdsOsST_9qo&si=GZ3KMZ5FRhO_Tl2X"
           },
           {
             "unitName": "Demand and Supply Analysis: Demand forecasting, elasticity of demand, supply function, elasticity of supply.",
             "notesPDF": "/assets/notes/CSE/3/MEFA Unit 2.pdf",
-            "lectureLink": "https://youtube.com/playlist?list=managerial-economics-unit2"
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X2FIl9b1mpYFaqDxya9owyR&si=YjbhsQmwJfGDWWsu"
           },
           {
             "unitName": "Production and Cost Analysis: Production function, laws of returns to scale, least cost combination, isoquants, cost curves.",
             "notesPDF": "/assets/notes/CSE/3/MEFA Unit 3.pdf",
-            "lectureLink": "https://youtube.com/playlist?list=managerial-economics-unit3"
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X2FO9B_UVZUBdOAc6hlgu_A&si=HFD3TQUOHs-cc9oc"
           },
           {
             "unitName": "Market structure and pricing theory: Perfect competition, monopoly, monopolistic competition, oligopoly.",
             "notesPDF": "/assets/notes/CSE/3/MEFA Unit 4.pdf",
-            "lectureLink": "https://youtube.com/playlist?list=managerial-economics-unit4"
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X1bLoF-d8BhBQZ0IAtKXGpR&si=C1xkSxQoc89qnBEu"
           },
           {
             "unitName": "Financial Statement Analysis: Balance sheet, P&L statements, cash-flow analysis, fund-flow analysis, financial ratios.",
             "notesPDF": "/assets/notes/CSE/3/MEFA Unit 5.pdf",
-            "lectureLink": "https://youtube.com/playlist?list=managerial-economics-unit5"
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X0aW6870Uz_UNp8EvACFDw7&si=01MlYmSKKVrqh4Ox"
           }
         ],
         "pyqs": [
@@ -183,22 +183,22 @@
           {
             "unitName": "Dynamic Memory Allocation: Pointers, new/delete, dynamic constructors.",
             "notesPDF": "/assets/notes/CSE/3/OOPS Unit 2.pdf",
-            "lectureLink": "https://youtube.com/playlist?list=oop-unit2"
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X0kyBUypKgm1R1DLyocB-a8&si=yXdRj3yYqhVR8Qns"
           },
           {
             "unitName": "Inheritance: Types of inheritance, virtual base class, ambiguity resolution.",
             "notesPDF": "/assets/notes/CSE/3/OOPS Unit 3.pdf",
-            "lectureLink": "https://youtube.com/playlist?list=oop-unit3"
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X0uWVgaBKsn4kp8CsnVqDWf&si=-7DxSIp0j-8AWDEO"
           },
           {
             "unitName": "Operator Overloading: Unary and binary operator overloading.",
             "notesPDF": "/assets/notes/CSE/3/OOPS Unit 4.pdf",
-            "lectureLink": "https://youtube.com/playlist?list=oop-unit4"
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X0gSLKV3Ws0lGPqMMXNYWPw&si=NP6GNIYXof5IgPaB"
           },
           {
             "unitName": "File Handling: File streams, read/write operations.",
             "notesPDF": "/assets/notes/CSE/3/OOPS Unit 5.pdf",
-            "lectureLink": "https://youtube.com/playlist?list=oop-unit5"
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X1tysYiymZ1uXLNR2LCyYDo&si=ChgJLYScYGQ-gQmq"
           }
         ],
         "pyqs": [
@@ -213,27 +213,27 @@
           {
             "unitName": "Introduction: Software process models, software development life cycle.",
             "notesPDF": "/assets/notes/CSE/3/SE Unit 1.pdf",
-            "lectureLink": "https://youtube.com/playlist?list=software-engineering-unit1"
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X3QxnFicvsEPzAj54BbDt1Y&si=W9qPekdmvudTm0NX"
           },
           {
             "unitName": "Software Project Management: Project planning, cost estimation, scheduling.",
             "notesPDF": "/assets/notes/CSE/3/SE Unit 2.pdf",
-            "lectureLink": "https://youtube.com/playlist?list=software-engineering-unit2"
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X3GvO0_suANZz7jUXkYPxUQ&si=I317wNDtG3xdlHtJ"
           },
           {
-            "unitName": "Requirement Analysis: SRS, functional and non-functional requirements.",
+            "unitName": "Software Requirements Engineering , Finite state machines, Control and data flow diagrams. Prototyping and data dictionaries.",
             "notesPDF": "/assets/notes/CSE/3/SE Unit 3.pdf",
-            "lectureLink": "https://youtube.com/playlist?list=software-engineering-unit3"
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X2wbZocjO4b_Hx5PXg1912P&si=3EzB6sLEmgVn8At1"
           },
           {
             "unitName": "Software Design: Architectural design, modular design, user interface design.",
             "notesPDF": "/assets/notes/CSE/3/SE Unit 4.pdf",
-            "lectureLink": "https://youtube.com/playlist?list=software-engineering-unit4"
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X1w7rwmsRb_YJUZhUsdsGoH&si=OAklsYfSdKOic0si"
           },
           {
-            "unitName": "Object-Oriented Analysis: UML diagrams, class diagrams, sequence diagrams.",
+            "unitName": "Object-Oriented Analysis and Object-Oriented Design: UML diagrams, design patterns.",
             "notesPDF": "/assets/notes/CSE/3/SE Unit 5.pdf",
-            "lectureLink": "https://youtube.com/playlist?list=software-engineering-unit5"
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X2mpg2ZoaZjyxhn-uZfxTUV&si=bwp1tNyAuWvwtikP"
           }
         ],
         "pyqs": [
