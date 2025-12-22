@@ -6,27 +6,27 @@
         "subjectCode": "3CS2-01",
         "units": [
           {
-            "unitName": "Random variables: Discrete and continuous random variables, Probability mass function and probability density function, Joint distributions, Marginal and conditional distributions and moments, Moment generating function.",
+            "unitName": "Random variables and Probability Distributions",
             "notesPDF": "/assets/notes/CSE/3/AEM Unit 1.pdf",
             "lectureLink": "https://youtube.com/playlist?list=PLU6SqdYcYsfIaokdZTmptaf-PK7s-B0ju&si=C8JcGMbzED8a9Azr"
           },
           {
-            "unitName": "Discrete Probability Distributions: Binomial, Poisson and Geometric distributions, Continuous distributions: Uniform, Normal, Exponential, Gamma distributions.",
+            "unitName": "Discrete Probability Distributions",
             "notesPDF": "/assets/notes/CSE/3/AEM Unit 2.pdf",
             "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X1odw2Kd7NxcI8O0k0meQR2&si=79y812zJj80eVAp1"
           },
           {
-            "unitName": "Historical development, Engineering Applications of Optimization, Formulation of Design Problems as a Mathematical Programming Problems, Classification of Optimization Problems",
+            "unitName": "Optimization Problems : Formulation and Properties",
             "notesPDF": "/assets/notes/CSE/3/AEM Unit 3.pdf",
             "lectureLink": "https://youtu.be/N7WxiWCGIKA?si=GOmaCkm9kWv0M9LM"
           },
           {
-            "unitName": "Classical Optimization using Differential Calculus, Single variable optimization, Multivariable Optimization with/without constraints, Lagrange’s Method and Kuhn-Tucker conditions.",
+            "unitName": "Non-linear Programming Problems",
             "notesPDF": "/assets/notes/CSE/3/AEM Unit 4.pdf",
             "lectureLink": "https://youtube.com/playlist?list=PLBmBje17zG1PSbMUQB6RPCMxDbE6EZ_rl&si=-tCqwa76lFQHA1kz"
           },
           {
-            "unitName": "Linear Programming:  Simplex method, Two Phase Method and Duality in Linear Programming. Application of Linear Programming: Transportation and Assignment Problems. ",
+            "unitName": "Linear Programming Problems",
             "notesPDF": "/assets/notes/CSE/3/AEM Unit 5.pdf",
             "lectureLink": "https://youtube.com/playlist?list=PLU6SqdYcYsfLewoQPYjgg7SMBLjSV704v&si=8QRHHXHEdX_1I0-i"
           }
@@ -41,22 +41,22 @@
         "subjectCode": "3CS1-02",
         "units": [
           {
-            "unitName": "Introduction to Technical Communication: Process of Communication, Language as a tool of communication, Technical communication: meaning, importance and role.",
+            "unitName": "Introduction to Technical Communication",
             "notesPDF": "/assets/notes/CSE/3/TC Unit 1.pdf",
             "lectureLink": "https://youtube.com/playlist?list=technical-communication-unit1"
           },
           {
-            "unitName": "Comprehension of Technical Materials/Texts and Information Design & Development: Reading techniques, summarizing, abstracting, information collection, organization and presentation.",
+            "unitName": "Comprehension of Technical Materials/Texts and Information Design & Development",
             "notesPDF": "/assets/notes/CSE/3/TC Unit 2.pdf",
             "lectureLink": "https://youtube.com/playlist?list=technical-communication-unit2"
           },
           {
-            "unitName": "Technical Writing, Grammar and Editing: Technical style, technical definitions, technical descriptions, technical manuals, grammar usage and common errors.",
+            "unitName": "Technical Writing, Grammar and Editing",
             "notesPDF": "/assets/notes/CSE/3/TC Unit 3.pdf",
             "lectureLink": "https://youtube.com/playlist?list=technical-communication-unit3"
           },
           {
-            "unitName": "Advanced Technical Writing: Research papers, project reports, dissertations, proposals, technical emails.",
+            "unitName": "Advanced Technical Writing",
             "notesPDF": "/assets/notes/CSE/3/TC Unit 4.pdf",
             "lectureLink": "https://youtube.com/playlist?list=technical-communication-unit4"
           }
@@ -71,27 +71,27 @@
         "subjectCode": "3CS1-03",
         "units": [
           {
-            "unitName": "Basic Economic Concepts: Meaning, nature and scope of economics; basic economic problems; scarcity and choice; national income.",
+            "unitName": "Basic Economic Concepts",
             "notesPDF": "/assets/notes/CSE/3/MEFA Unit 1.pdf",
             "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X1JoM0y0w0pwGdsOsST_9qo&si=GZ3KMZ5FRhO_Tl2X"
           },
           {
-            "unitName": "Demand and Supply Analysis: Demand forecasting, elasticity of demand, supply function, elasticity of supply.",
+            "unitName": "Demand and Supply Analysis",
             "notesPDF": "/assets/notes/CSE/3/MEFA Unit 2.pdf",
             "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X2FIl9b1mpYFaqDxya9owyR&si=YjbhsQmwJfGDWWsu"
           },
           {
-            "unitName": "Production and Cost Analysis: Production function, laws of returns to scale, least cost combination, isoquants, cost curves.",
+            "unitName": "Production and Cost Analysis",
             "notesPDF": "/assets/notes/CSE/3/MEFA Unit 3.pdf",
             "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X2FO9B_UVZUBdOAc6hlgu_A&si=HFD3TQUOHs-cc9oc"
           },
           {
-            "unitName": "Market structure and pricing theory: Perfect competition, monopoly, monopolistic competition, oligopoly.",
+            "unitName": "Market structure and pricing theory",
             "notesPDF": "/assets/notes/CSE/3/MEFA Unit 4.pdf",
             "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X1bLoF-d8BhBQZ0IAtKXGpR&si=C1xkSxQoc89qnBEu"
           },
           {
-            "unitName": "Financial Statement Analysis: Balance sheet, P&L statements, cash-flow analysis, fund-flow analysis, financial ratios.",
+            "unitName": "Financial Statement Analysis",
             "notesPDF": "/assets/notes/CSE/3/MEFA Unit 5.pdf",
             "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X0aW6870Uz_UNp8EvACFDw7&si=01MlYmSKKVrqh4Ox"
           }
@@ -106,27 +106,27 @@
         "subjectCode": "3CS3-04",
         "units": [
           {
-            "unitName": "Fundamental Concepts: Number systems, binary codes, Boolean algebra, logic gate fundamentals.",
+            "unitName": "Fundamental Concepts",
             "notesPDF": "/assets/notes/CSE/3/DE Unit 1.pdf",
             "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X2s355nxqkhVi7nkubHTpzK&si=m7fB8T4R-2Q__Seu"
           },
           {
-            "unitName": "Minimization Techniques and Logic Gates: K-map, simplification methods, combinational logic.",
+            "unitName": "Minimization Techniques and Logic Gates",
             "notesPDF": "/assets/notes/CSE/3/DE Unit 2.pdf",
             "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X3Z30GtbFjIiU3oeuzaZfna&si=FbjpzJYamk4Zs-sd"
           },
           {
-            "unitName": "Digital Logic Gate Characteristics: Logic families, TTL, CMOS, interfacing.",
+            "unitName": "Digital Logic Gate Characteristics and Logic families",
             "notesPDF": "/assets/notes/CSE/3/DE Unit 3.pdf",
             "lectureLink": "https://youtube.com/playlist?list=PLgwJf8NK-2e645xqSqUBHJCgkrtkCa5AN&si=Dpy551C4SRrwOBGJ"
           },
           {
-            "unitName": "Combinational Circuits: Encoders, decoders, multiplexers, de-multiplexers, adders, subtractors.",
+            "unitName": "Combinational Circuits",
             "notesPDF": "/assets/notes/CSE/3/DE Unit 4.pdf",
             "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X2EW-t3OYFvQrFRhIyGmz3s&si=B7GJazWG6B9Sxw54"
           },
           {
-            "unitName": "Sequential Circuits: Flip-flops, counters, shift registers, synchronous/asynchronous circuits.",
+            "unitName": "Sequential Circuits",
             "notesPDF": "/assets/notes/CSE/3/DE Unit 5.pdf",
             "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X0xlbtBMp-1XC8hmA6QweUX&si=YbdP9Pcv1P7XL5-5"
           }
@@ -141,27 +141,27 @@
         "subjectCode": "3CS4-05",
         "units": [
           {
-            "unitName": "Stacks: Stack implementation, applications, recursion, expression conversion.",
+            "unitName": "Stacks",
             "notesPDF": "/assets/notes/CSE/3/DSA Unit 1.pdf",
             "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X3rZ48nJ_kt8wE_ceTgGu-w&si=MS0TQl6TvltxmVVX"
           },
           {
-            "unitName": "Linked Lists and Queues: Types of linked lists, queue implementation, circular queues, priority queues.",
+            "unitName": "Linked Lists and Queues",
             "notesPDF": "/assets/notes/CSE/3/DSA Unit 2.pdf",
             "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X1RpJWGKMiJLGYapxxlqZvw&si=ylG7BUJPqpUblGSh"
           },
           {
-            "unitName": "Searching Techniques and Sorting: Linear search, binary search, quicksort, mergesort, heapsort.",
+            "unitName": "Searching Techniques and Sorting",
             "notesPDF": "/assets/notes/CSE/3/DSA Unit 3.pdf",
             "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X3RzAXVjRt0InfjMECiSOFl&si=L3ymBQo7kVbHkwqY"
           },
           {
-            "unitName": "Trees: Binary trees, AVL trees, B-trees, tree traversal techniques.",
+            "unitName": "Trees",
             "notesPDF": "/assets/notes/CSE/3/DSA Unit 4.pdf",
             "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X1tf8moGlqSdYRhU4LRpAjs&si=mifDAQjdA14kDuEp"
           },
           {
-            "unitName": "Graphs and Hashing: Graph representation, BFS, DFS, shortest path algorithms, hashing techniques.",
+            "unitName": "Graphs and Hashing",
             "notesPDF": "/assets/notes/CSE/3/DSA Unit 5.pdf",
             "lectureLink": "https://youtu.be/lg48ZZe7YUA?si=m7rChfFY-Gc2IjLV"
           }
@@ -176,27 +176,27 @@
         "subjectCode": "3CS4-06",
         "units": [
           {
-            "unitName": "Introduction: OOP concepts, classes and objects, constructors and destructors.",
+            "unitName": "Introduction",
             "notesPDF": "/assets/notes/CSE/3/OOPS Unit 1.pdf",
             "lectureLink": "https://youtu.be/mlIUKyZIUUU?si=_2LVmms-smT5s3i9"
           },
           {
-            "unitName": "Dynamic Memory Allocation: Pointers, new/delete, dynamic constructors.",
+            "unitName": "Constructor and Destructor",
             "notesPDF": "/assets/notes/CSE/3/OOPS Unit 2.pdf",
             "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X0kyBUypKgm1R1DLyocB-a8&si=yXdRj3yYqhVR8Qns"
           },
           {
-            "unitName": "Inheritance: Types of inheritance, virtual base class, ambiguity resolution.",
+            "unitName": "Inheritance",
             "notesPDF": "/assets/notes/CSE/3/OOPS Unit 3.pdf",
             "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X0uWVgaBKsn4kp8CsnVqDWf&si=-7DxSIp0j-8AWDEO"
           },
           {
-            "unitName": "Operator Overloading: Unary and binary operator overloading.",
+            "unitName": "Polymorphism: Compile-time and Run-time polymorphism.",
             "notesPDF": "/assets/notes/CSE/3/OOPS Unit 4.pdf",
             "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X0gSLKV3Ws0lGPqMMXNYWPw&si=NP6GNIYXof5IgPaB"
           },
           {
-            "unitName": "File Handling: File streams, read/write operations.",
+            "unitName": "File and ExceptionHandling",
             "notesPDF": "/assets/notes/CSE/3/OOPS Unit 5.pdf",
             "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X1tysYiymZ1uXLNR2LCyYDo&si=ChgJLYScYGQ-gQmq"
           }
@@ -221,17 +221,17 @@
             "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X3GvO0_suANZz7jUXkYPxUQ&si=I317wNDtG3xdlHtJ"
           },
           {
-            "unitName": "Software Requirements Engineering , Finite state machines, Control and data flow diagrams. Prototyping and data dictionaries.",
+            "unitName": "Software Requirements Engineering",
             "notesPDF": "/assets/notes/CSE/3/SE Unit 3.pdf",
             "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X2wbZocjO4b_Hx5PXg1912P&si=3EzB6sLEmgVn8At1"
           },
           {
-            "unitName": "Software Design: Architectural design, modular design, user interface design.",
+            "unitName": "Software Design",
             "notesPDF": "/assets/notes/CSE/3/SE Unit 4.pdf",
             "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X1w7rwmsRb_YJUZhUsdsGoH&si=OAklsYfSdKOic0si"
           },
           {
-            "unitName": "Object-Oriented Analysis and Object-Oriented Design: UML diagrams, design patterns.",
+            "unitName": "Object-Oriented Analysis and Object-Oriented Design",
             "notesPDF": "/assets/notes/CSE/3/SE Unit 5.pdf",
             "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X2mpg2ZoaZjyxhn-uZfxTUV&si=bwp1tNyAuWvwtikP"
           }
