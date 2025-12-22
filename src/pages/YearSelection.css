@@ -147,29 +147,34 @@
   }
 }
 
-/* YEAR CARDS GRID */
-.card-grid {
+/* ================================
+   YEAR SELECTION GRID
+================================ */
+.year-card-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);  /* Desktop: 4 cards */
-  gap: 25px;
+  gap: 24px;
   max-width: 1200px;
-  margin: 20px auto;
-}
-
-/* Tablets */
-@media (max-width: 1024px) {
-  .card-grid {
-    grid-template-columns: repeat(2, 1fr);  /* 2 cards per row */
-  }
-}
-
-/* Mobile */
-@media (max-width: 600px) {
-  .card-grid {
-    grid-template-columns: repeat(1, 1fr);  /* full width card */
-  }
-}
-
-.card-grid {
+  margin: 30px auto;
   padding: 0 20px;
+}
+
+/* Desktop: 4 cards */
+@media (min-width: 1024px) {
+  .year-card-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* Tablet: 2 cards */
+@media (min-width: 600px) and (max-width: 1023px) {
+  .year-card-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile: 1 card */
+@media (max-width: 599px) {
+  .year-card-grid {
+    grid-template-columns: 1fr;
+  }
 }

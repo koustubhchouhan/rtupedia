@@ -47,20 +47,20 @@ const YearSelection = () => {
       <h2>Select Your Academic Year</h2>
       <p>Choose your current B.Tech year to access notes, PYQs, and resources.</p>
 
-      {/* YEAR CARDS SECTION */}
-      <div className="year-card-grid" style={{display:"flex", marginTop:"20px",gap:"20px"}}>
-        {yearData.map((year) => (
-          <Card
-            key={year.slug}
-            title={`${year.year} Notes`}
-            onClick={() => handleYearSelect(year.slug)}
-          >
-            <p style={{ marginTop: "10px", color: "var(--color-text)" }}>
-              Click to view branches and subjects.
-            </p>
-          </Card>
-        ))}
-      </div>
+  {/* YEAR CARDS SECTION */}
+<div className="year-card-grid">
+  {yearData.map((year) => (
+    <Card
+      key={year.slug}
+      title={`${year.year} Notes`}
+      onClick={() => handleYearSelect(year.slug)}
+    >
+      <p style={{ marginTop: "10px", color: "var(--color-text)" }}>
+        Click to view branches and subjects.
+      </p>
+    </Card>
+  ))}
+</div>
 
       <hr style={{ marginLeft:"30px",borderColor: "var(--color-border)",marginTop:"40px",marginBottom:"40px" }} />
 
