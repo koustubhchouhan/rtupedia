@@ -5,40 +5,98 @@
         "subjectName": "Engineering Mathematics1",
         "subjectCode": "1FY2-01",
         "units": [
-          { "unitName": "Calculus", "notesPDF": "/assets/notes/Maths I Unit 1.pdf", "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X2pfcp7PoTuLDlp0gV0GhLD&si=iDHFdhNLued7fQsv" },
-          { "unitName": "Sequence & Series", "notesPDF": "/assets/notes/Maths I Unit 2.pdf", "lectureLink": "https://www.youtube.com/watch?v=mm478gK-MlY&list=PLU6SqdYcYsfIAbLwyyWUiWJPV6qFbPC13" },
-          { "unitName": "Fourier Series", "notesPDF": "/assets/notes/Maths I Unit 3.pdf", "lectureLink": "https://www.youtube.com/watch?v=NdouX5-KD6Y&list=PLU6SqdYcYsfIXjT49bVTz4KjqHD5fGQY8" },
-          { "unitName": "Multivariable Calculus(Differentaition)", "notesPDF": "/assets/notes/Maths I Unit 4.pdf", "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X1Zg0rHgjZZZh724xFjrCUJ&si=4HhM_7JeMbHkI_E-" },
-          { "unitName": "Multivariable Calculus(Integration)", "notesPDF": "/assets/notes/Maths I Unit 5.pdf", "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X1stxPwSVYgQzYM0rnq-GUF&si=mbPVJ_Fai2GjtV2i" }
+          {
+            "unitName": "Calculus",
+            "notesPDF": "/assets/notes/Maths I Unit 1.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X2pfcp7PoTuLDlp0gV0GhLD&si=iDHFdhNLued7fQsv"
+          },
+          {
+            "unitName": "Sequence & Series",
+            "notesPDF": "/assets/notes/Maths I Unit 2.pdf",
+            "lectureLink": "https://www.youtube.com/watch?v=mm478gK-MlY&list=PLU6SqdYcYsfIAbLwyyWUiWJPV6qFbPC13"
+          },
+          {
+            "unitName": "Fourier Series",
+            "notesPDF": "/assets/notes/Maths I Unit 3.pdf",
+            "lectureLink": "https://www.youtube.com/watch?v=NdouX5-KD6Y&list=PLU6SqdYcYsfIXjT49bVTz4KjqHD5fGQY8"
+          },
+          {
+            "unitName": "Multivariable Calculus(Differentaition)",
+            "notesPDF": "/assets/notes/Maths I Unit 4.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X1Zg0rHgjZZZh724xFjrCUJ&si=4HhM_7JeMbHkI_E-"
+          },
+          {
+            "unitName": "Multivariable Calculus(Integration)",
+            "notesPDF": "/assets/notes/Maths I Unit 5.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X1stxPwSVYgQzYM0rnq-GUF&si=mbPVJ_Fai2GjtV2i"
+          }
         ],
-        "pyqs": [
-          { "examType": "MainExam", "year": 2025, "pdfLink": "/assets/main/mathematics -1 paper 2025.pdf" },
-          { "examType": "MainExam", "year": 2024, "pdfLink": "/assets/main/mathematics -1 paper 2024.pdf" },
-          { "examType": "MainExam", "year": 2023, "pdfLink": "/assets/main/mathematics -1 paper 2023.pdf" },
-          { "examType": "MainExam", "year": 2022, "pdfLink": "/assets/main/mathematics -1 paper 2022.pdf" }
+        "More": [
+          {
+            "examType": "Formula Sheet",
+            "pdfLink": "/assets/more//COMMON/Formula Sheet Engineering Mathematics 1.pdf"
+          },
+          {
+            "examType": "Guess Paper",
+            "pdfLink": "/assets/more/COMMON/Guess Paper Maths 1.pdf"
+          }
         ]
       },
       {
         "subjectName": "Engineering Physics",
         "subjectCode": "1FY2-02",
         "units": [
-          { "unitName": "Wave Optics", "notesPDF": "/assets/notes/Phy Unit 1.pdf", "lectureLink": "https://youtube.com/playlist?list=PLhX7RLRxqtuqxaLkpqedfrlnuJNMwJ3cl&si=pQaiACkOUsSsOs49" },
-          { "unitName": "Quantum Mechanics", "notesPDF": "/assets/notes/Phy Unit 2.pdf", "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X32yIxcPw2aHhKr0xTiCLNK&si=d7sqAD_TDiWWPoA9" },
-          { "unitName": "Optical Fiber", "notesPDF": "/assets/notes/Phy Unit 3.pdf", "lectureLink": "https://youtu.be/mn8_l6bU8OQ?si=MCBhD-pYwv9wgVx0" },
-          { "unitName": "Lasers", "notesPDF": "/assets/notes/Phy Unit 4.pdf", "lectureLink": "https://youtu.be/RnHJ9ZANp9I?si=Izb55uU55VgKmhq7" },
-          { "unitName": "Material Science & Semiconductor Physics", "notesPDF": "/assets/notes/Phy Unit 5.pdf", "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X36ix336R2SZjNlS8EQigSC&si=sCBBYvvT8Jl8YfBg" },
-          { "unitName": "Introduction of Electromagnetism", "notesPDF": "/assets/notes/Phy Unit 6.pdf", "lectureLink": "https://youtube.com/playlist?list=PLhX7RLRxqtuqN6MYtUIU345QiJPLuVJTd&si=an_isI009fA2l2dt" }
+          {
+            "unitName": "Wave Optics",
+            "notesPDF": "/assets/notes/Phy Unit 1.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLhX7RLRxqtuqxaLkpqedfrlnuJNMwJ3cl&si=pQaiACkOUsSsOs49"
+          },
+          {
+            "unitName": "Quantum Mechanics",
+            "notesPDF": "/assets/notes/Phy Unit 2.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X32yIxcPw2aHhKr0xTiCLNK&si=d7sqAD_TDiWWPoA9"
+          },
+          {
+            "unitName": "Optical Fiber",
+            "notesPDF": "/assets/notes/Phy Unit 3.pdf",
+            "lectureLink": "https://youtu.be/mn8_l6bU8OQ?si=MCBhD-pYwv9wgVx0"
+          },
+          {
+            "unitName": "Lasers",
+            "notesPDF": "/assets/notes/Phy Unit 4.pdf",
+            "lectureLink": "https://youtu.be/RnHJ9ZANp9I?si=Izb55uU55VgKmhq7"
+          },
+          {
+            "unitName": "Material Science & Semiconductor Physics",
+            "notesPDF": "/assets/notes/Phy Unit 5.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X36ix336R2SZjNlS8EQigSC&si=sCBBYvvT8Jl8YfBg"
+          },
+          {
+            "unitName": "Introduction of Electromagnetism",
+            "notesPDF": "/assets/notes/Phy Unit 6.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLhX7RLRxqtuqN6MYtUIU345QiJPLuVJTd&si=an_isI009fA2l2dt"
+          }
         ],
-        "pyqs": [
-          { "examType": "MainExam", "year": 2025, "sem": "Odd", "pdfLink": "/assets/main/physics paper odd 2025.pdf" },
-          { "examType": "MainExam", "year": 2024, "sem": "Odd", "pdfLink": "/assets/main/physics paper odd 2024.pdf" },
-          { "examType": "MainExam", "year": 2024, "sem": "Even", "pdfLink": "/assets/main/physics paper even 2024.pdf" },
-          { "examType": "MainExam", "year": 2023, "sem": "Odd", "pdfLink": "/assets/main/physics paper odd 2023.pdf" },
-          { "examType": "MainExam", "year": 2023, "sem": "Even", "pdfLink": "/assets/main/physics paper even 2023.pdf" },
-          { "examType": "MainExam", "year": 2022, "sem": "Odd", "pdfLink": "/assets/main/physics paper odd 2022.pdf" }
+        "More": [
+          {
+            "examType": "Formula Sheet",
+            "pdfLink": "/assets/more/COMMON/Physics Formula Sheet.pdf"
+          },
+          {
+            "examType": "Guess Paper",
+            "pdfLink": "/assets/more/COMMON/Physics Guess Paper.pdf"
+          },
+          {
+            "examType": "Imp Question",
+            "pdfLink": "/assets/more/COMMON/Physics Imp Questions.pdf"
+          },
+          {
+            "examType": "Numerical Solution",
+            "pdfLink": "/assets/more/COMMON/Physics Numerical and Questions Solutions.pdf"
+          }
         ]
       },
-        {
+      {
         "subjectName": "Basic Civil Engineering",
         "subjectCode": "1FY3-09",
         "units": [
@@ -68,30 +126,22 @@
             "lectureLink": "https://youtube.com/playlist?list=PLRLB5WCqU54UlfeMhsTBh9-1WVH7TYXtH&si=79bkqd4ncpcnjCCK"
           }
         ],
-        "pyqs": [
+        "More": [
           {
-            "examType": "MainExam",
-            "year": 2023,
-            "sem": "Odd",
-            "pdfLink": "/assets/main/civil paper odd 2023.pdf"
+            "examType": "Assignments 3",
+            "pdfLink": "/assets/more/COMMON/Basic Civil Engineering Assignment 3.pdf"
           },
           {
-            "examType": "MainExam",
-            "year": 2022,
-            "sem": "Even",
-            "pdfLink": "/assets/main/civil paper even 2022.pdf"
+            "examType": "Assignments 4",
+            "pdfLink": "/assets/more/COMMON/Basic Civil Engineering Assignment 4.pdf"
           },
           {
-            "examType": "MainExam",
-            "year": 2022,
-            "sem": "Odd",
-            "pdfLink": "/assets/main/civil paper odd 2022.pdf"
+            "examType": "Assignments 5",
+            "pdfLink": "/assets/more/COMMON/Basic Civil Engineering Assignment 5.pdf"
           },
           {
-            "examType": "MainExam",
-            "year": 2021,
-            "sem": "Odd",
-            "pdfLink": "/assets/main/civil paper odd 2021.pdf"
+            "examType": "Guess Paper",
+            "pdfLink": "/assets/more/COMMON/Basic Civil Engineering Guess Paper.pdf"
           }
         ]
       },
@@ -99,117 +149,258 @@
         "subjectName": "Engineering Chemistry",
         "subjectCode": "1FY2-03",
         "units": [
-          { "unitName": "Water", "notesPDF": "/assets/notes/Chem Unit 1.pdf", "lectureLink": "https://www.youtube.com/watch?v=OifRPyCVcag" },
-          { "unitName": "Organic Fuels", "notesPDF": "/assets/notes/Chem Unit 2.pdf", "lectureLink": "https://www.youtube.com/watch?v=qrC5jADuiME" },
-          { "unitName": "Corrosion and its control", "notesPDF": "/assets/notes/Chem Unit 3.pdf", "lectureLink": "https://www.youtube.com/playlist?list=PLLf6O8XdGj00lVydanLfC6bcT4aXGJN4V" },
-          { "unitName": "Engineering Materials", "notesPDF": "/assets/notes/Chem Unit 4.pdf", "lectureLink": "https://youtube.com/playlist?list=PLfq4fiRrJSn4k4jst_OLjwLtKmR1RyuvX" },
-          { "unitName": "Organic Reaction Mechanism", "notesPDF": "/assets/notes/Chem Unit 5.pdf", "lectureLink": "https://www.youtube.com/watch?v=2U1xKSEMNkY" }
+          {
+            "unitName": "Water",
+            "notesPDF": "/assets/notes/Chem Unit 1.pdf",
+            "lectureLink": "https://www.youtube.com/watch?v=OifRPyCVcag"
+          },
+          {
+            "unitName": "Organic Fuels",
+            "notesPDF": "/assets/notes/Chem Unit 2.pdf",
+            "lectureLink": "https://www.youtube.com/watch?v=qrC5jADuiME"
+          },
+          {
+            "unitName": "Corrosion and its control",
+            "notesPDF": "/assets/notes/Chem Unit 3.pdf",
+            "lectureLink": "https://www.youtube.com/playlist?list=PLLf6O8XdGj00lVydanLfC6bcT4aXGJN4V"
+          },
+          {
+            "unitName": "Engineering Materials",
+            "notesPDF": "/assets/notes/Chem Unit 4.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLfq4fiRrJSn4k4jst_OLjwLtKmR1RyuvX"
+          },
+          {
+            "unitName": "Organic Reaction Mechanism",
+            "notesPDF": "/assets/notes/Chem Unit 5.pdf",
+            "lectureLink": "https://www.youtube.com/watch?v=2U1xKSEMNkY"
+          }
         ],
-        "pyqs": [
-          { "examType": "MainExam", "year": 2025, "sem": "Odd", "pdfLink": "/assets/main/chemistry paper odd 2025.pdf" },
-          { "examType": "MainExam", "year": 2024, "sem": "Odd", "pdfLink": "/assets/main/chemistry paper odd 2024.pdf" },
-          { "examType": "MainExam", "year": 2024, "sem": "Even", "pdfLink": "/assets/main/chemistry paper even 2024.pdf" },
-          { "examType": "MainExam", "year": 2023, "sem": "Even", "pdfLink": "/assets/main/chemistry paper even 2023.pdf" },
-          { "examType": "MainExam", "year": 2023, "sem": "Odd", "pdfLink": "/assets/main/chemistry paper odd 2023.pdf" },
-          { "examType": "MainExam", "year": 2022, "sem": "Odd", "pdfLink": "/assets/main/chemistry paper odd 2022.pdf" }
+        "More": [
+          {
+            "examType": "Assignments 1",
+            "pdfLink": "/assets/more/COMMON/Engineering Chemistry Assignment 1.pdf"
+          },
+          {
+            "examType": "Assignments 2",
+            "pdfLink": "/assets/more/COMMON/Engineering Chemistry Assignment 2.pdf"
+          },
+          {
+            "examType": "Assignments 3",
+            "pdfLink": "/assets/more/COMMON/Engineering Chemistry Assignment 3.pdf"
+          },
+          {
+            "examType": "Assignments 4",
+            "pdfLink": "/assets/more/COMMON/Engineering Chemistry Assignment 4.pdf"
+          },
+          {
+            "examType": "Assignments 5",
+            "pdfLink": "/assets/more/COMMON/Engineering Chemistry Assignment 5.pdf"
+          },
+          {
+            "examType": "Guess Paper",
+            "pdfLink": "/assets/more/COMMON/Engineering Chemistry Guess Paper.pdf"
+          },
+          {
+            "examType": "Imp Question",
+            "pdfLink": "/assets/more/COMMON/Chemistry Imp Topics.md"
+          }
         ]
       },
       {
         "subjectName": "Communication Skills",
         "subjectCode": "1FY1-04",
         "units": [
-          { "unitName": "Communication", "notesPDF": "/assets/notes/CS Unit 1.pdf", "lectureLink": "https://youtu.be/GY3ADgnWLos?si=OXvPXTxRwSGQnKAq" },
-          { "unitName": "Grammar", "notesPDF": "/assets/notes/CS Unit 2.pdf", "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X3T6FfZy6juNdt7PXJiHDUq&si=jY1-yYPiu_BcL4Dm" },
-          { "unitName": "Composition", "notesPDF": "/assets/notes/CS Unit 3.pdf", "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X0ddkcQNAXpuz3UFfttuOF4&si=6VQuUtP7GM-o_VCf" },
-          { "unitName": "Short Stories", "notesPDF": "/assets/notes/CS Unit 4 Short Stories.pdf", "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X2IP26N9MqRNkeg6PGrYKO8&si=0Rl8rkyr-Faq34b9" },
-          { "unitName": "Poems", "notesPDF": "/assets/notes/CS Unit 5 Poems .pdf", "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X3VNj6hqn8zxpzZKU3OgAAl&si=Si_ucxeenv5Gh8oe" }
+          {
+            "unitName": "Communication",
+            "notesPDF": "/assets/notes/CS Unit 1.pdf",
+            "lectureLink": "https://youtu.be/GY3ADgnWLos?si=OXvPXTxRwSGQnKAq"
+          },
+          {
+            "unitName": "Grammar",
+            "notesPDF": "/assets/notes/CS Unit 2.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X3T6FfZy6juNdt7PXJiHDUq&si=jY1-yYPiu_BcL4Dm"
+          },
+          {
+            "unitName": "Composition",
+            "notesPDF": "/assets/notes/CS Unit 3.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X0ddkcQNAXpuz3UFfttuOF4&si=6VQuUtP7GM-o_VCf"
+          },
+          {
+            "unitName": "Short Stories",
+            "notesPDF": "/assets/notes/CS Unit 4 Short Stories.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X2IP26N9MqRNkeg6PGrYKO8&si=0Rl8rkyr-Faq34b9"
+          },
+          {
+            "unitName": "Poems",
+            "notesPDF": "/assets/notes/CS Unit 5 Poems .pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X3VNj6hqn8zxpzZKU3OgAAl&si=Si_ucxeenv5Gh8oe"
+          }
         ],
-        "pyqs": [
-          { "examType": "MainExam", "year": 2025, "sem": "Odd", "pdfLink": "/assets/main/communication skill paper odd 2025.pdf" },
-          { "examType": "MainExam", "year": 2024, "sem": "Even", "pdfLink": "/assets/main/communication skill paper even 2024.pdf" },
-          { "examType": "MainExam", "year": 2024, "sem": "Odd", "pdfLink": "/assets/main/communication skill paper odd 2024.pdf" },
-          { "examType": "MainExam", "year": 2023, "sem": "Even", "pdfLink": "/assets/main/communication skill paper even 2023.pdf" },
-          { "examType": "MainExam", "year": 2023, "sem": "Odd", "pdfLink": "/assets/main/communication skill paper odd 2023.pdf" },
-          { "examType": "MainExam", "year": 2022, "sem": "Odd", "pdfLink": "/assets/main/communication skill paper odd 2022.pdf" }
+        "More": [
+          {
+            "examType": "Imp Question",
+            "pdfLink": "/assets/more/COMMON/Communication Skills Short Question.pdf"
+          },
+          {
+            "examType": "Synonyms & Antonyms",
+            "pdfLink": "/assets/more/COMMON/Synonyms_and_Antonyms.pdf"
+          },
+          {
+            "examType": "One Words",
+            "pdfLink": "/assets/more/COMMON/One_Word_Substitutions.pdf"
+          }
         ]
       },
-        {
+      {
         "subjectName": "Basic Electrical Engineering",
         "subjectCode": "1FY3-08",
         "units": [
-          { "unitName": "DC Circuits", "notesPDF": "/assets/notes/BEE Unit 1.pdf", "lectureLink": "https://www.youtube.com/watch?v=XrHtU713vJA&list=PLh9YR2LLEi8og58M95X5jiRAnbf5khSFc&pp=gAQB" },
-          { "unitName": "AC Circuits", "notesPDF": "/assets/notes/BEE Unit 2.pdf", "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X27evF1Nu5rRPilw3cCmtIg&si=RV-srDwy9ssadAfR" },
-          { "unitName": "Transformers", "notesPDF": "/assets/notes/BEE Unit 3.pdf", "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X2QpcefeSjF0jHQqRExgWod&si=fmATGg_uyTvjxRsT" },
-          { "unitName": "Electrical Machines", "notesPDF": "/assets/notes/BEE Unit 4.pdf", "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X1uyo9RK3Me4onxKiDJ8p39&si=ZksCD80SmJq1A9ES" },
-          { "unitName": "Power Converters", "notesPDF": "/assets/notes/BEE Unit 5.pdf", "lectureLink": "https://youtube.com/playlist?list=PLtOfSb08SMFPBAgR-c1n5WJrhBOJo7VAQ&si=j2JT6ntR0z8wO-jn" },
-          { "unitName": "Electrical Installation", "notesPDF": "/assets/notes/BEE Unit 6.pdf", "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X0jDznecxf9QLDjkwZ7b_Nr&si=zQ-EdbFQ4FEgsjor" }
+          {
+            "unitName": "DC Circuits",
+            "notesPDF": "/assets/notes/BEE Unit 1.pdf",
+            "lectureLink": "https://www.youtube.com/watch?v=XrHtU713vJA&list=PLh9YR2LLEi8og58M95X5jiRAnbf5khSFc&pp=gAQB"
+          },
+          {
+            "unitName": "AC Circuits",
+            "notesPDF": "/assets/notes/BEE Unit 2.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X27evF1Nu5rRPilw3cCmtIg&si=RV-srDwy9ssadAfR"
+          },
+          {
+            "unitName": "Transformers",
+            "notesPDF": "/assets/notes/BEE Unit 3.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X2QpcefeSjF0jHQqRExgWod&si=fmATGg_uyTvjxRsT"
+          },
+          {
+            "unitName": "Electrical Machines",
+            "notesPDF": "/assets/notes/BEE Unit 4.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X1uyo9RK3Me4onxKiDJ8p39&si=ZksCD80SmJq1A9ES"
+          },
+          {
+            "unitName": "Power Converters",
+            "notesPDF": "/assets/notes/BEE Unit 5.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLtOfSb08SMFPBAgR-c1n5WJrhBOJo7VAQ&si=j2JT6ntR0z8wO-jn"
+          },
+          {
+            "unitName": "Electrical Installation",
+            "notesPDF": "/assets/notes/BEE Unit 6.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X0jDznecxf9QLDjkwZ7b_Nr&si=zQ-EdbFQ4FEgsjor"
+          }
         ],
-        "pyqs": [
-          { "examType": "MainExam", "year": 2025, "sem": "Odd", "pdfLink": "/assets/main/BEE paper odd 2025.pdf" },
-          { "examType": "MainExam", "year": 2024, "sem": "Even", "pdfLink": "/assets/main/BEE paper even 2024.pdf" },
-          { "examType": "MainExam", "year": 2023, "sem": "Odd", "pdfLink": "/assets/main/BEE paper odd 2023.pdf" },
-          { "examType": "MainExam", "year": 2022, "sem": "Odd", "pdfLink": "/assets/main/BEE paper odd 2022.pdf" }
+        "More": [
+          {
+            "examType": "NK",
+            "pdfLink": "/assets/more/COMMON/BEE NK.pdf"
+          },
+          {
+            "examType": "Guess Paper",
+            "pdfLink": "/assets/more/COMMON/Basic Electrical Engineering Guess Paper.pdf"
+          }
         ]
       },
       {
         "subjectName": "Basic Mechanical Engineering",
         "subjectCode": "1FY3-07",
         "units": [
-          { "unitName": "Fundamentals", "notesPDF": "/assets/notes/BME Unit 1.pdf", "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X2nw1rlJeyK4QDQVAkHrL_0&si=--CxAZjuAbjg81z8" },
-          { "unitName": "Pumps & IC Engines", "notesPDF": "/assets/notes/BME Unit 2.pdf", "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X2d3tev5912luZFr-SnDGFz&si=2gCeb2M4m_1Tc8Cn" },
-          { "unitName": "RAC", "notesPDF": "/assets/notes/BME Unit 3.pdf", "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X0eJByDg66HgkBHrDmBxfQZ&si=WmggIpXo4DyM6z-c" },
-          { "unitName": "Transmission of Power", "notesPDF": "/assets/notes/BME Unit 4.pdf", "lectureLink": "https://youtu.be/Gd6-v03HWeQ" },
-          { "unitName": "Primary Manufacturing Processes", "notesPDF": "/assets/notes/BME Unit 5.pdf", "lectureLink": "https://youtube.com/playlist?list=PL-JvKqQx2Atd59aCxARxsGtx62TtTy3iN&si=peksC3dqOm2XLju-" },
-          { "unitName": "Engineering Materials & Heat treatment", "notesPDF": "/assets/notes/BME Unit 6.pdf", "lectureLink": "https://youtu.be/LEkLGlOEsLw" }
+          {
+            "unitName": "Fundamentals",
+            "notesPDF": "/assets/notes/BME Unit 1.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X2nw1rlJeyK4QDQVAkHrL_0&si=--CxAZjuAbjg81z8"
+          },
+          {
+            "unitName": "Pumps & IC Engines",
+            "notesPDF": "/assets/notes/BME Unit 2.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X2d3tev5912luZFr-SnDGFz&si=2gCeb2M4m_1Tc8Cn"
+          },
+          {
+            "unitName": "RAC",
+            "notesPDF": "/assets/notes/BME Unit 3.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X0eJByDg66HgkBHrDmBxfQZ&si=WmggIpXo4DyM6z-c"
+          },
+          {
+            "unitName": "Transmission of Power",
+            "notesPDF": "/assets/notes/BME Unit 4.pdf",
+            "lectureLink": "https://youtu.be/Gd6-v03HWeQ"
+          },
+          {
+            "unitName": "Primary Manufacturing Processes",
+            "notesPDF": "/assets/notes/BME Unit 5.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PL-JvKqQx2Atd59aCxARxsGtx62TtTy3iN&si=peksC3dqOm2XLju-"
+          },
+          {
+            "unitName": "Engineering Materials & Heat treatment",
+            "notesPDF": "/assets/notes/BME Unit 6.pdf",
+            "lectureLink": "https://youtu.be/LEkLGlOEsLw"
+          }
         ],
-        "pyqs": [
-          { "examType": "MainExam", "year": 2023, "sem": "Odd", "pdfLink": "/assets/main/mechanical paper odd 2023.pdf" },
-          { "examType": "MainExam", "year": 2023, "sem": "Even", "pdfLink": "/assets/main/mechanical paper even 2023.pdf" },
-          { "examType": "MainExam", "year": 2022, "sem": "Odd", "pdfLink": "/assets/main/mechanical paper odd 2022.pdf" },
-          { "examType": "MainExam", "year": 2024, "sem": "Even", "pdfLink": "/assets/main/mechanical paper even 2024.pdf" },
-          { "examType": "MainExam", "year": 2024, "sem": "Odd", "pdfLink": "/assets/main/mechanical paper odd 2024.pdf" },
-          { "examType": "MainExam", "year": 2025, "sem": "Odd", "pdfLink": "/assets/main/mechanical paper odd 2025.pdf" }
+        "More": [
+          {
+            "examType": "Guess Paper",
+            "pdfLink": "/assets/more/COMMON/Guess Paper BME.pdf"
+          },
+          {
+            "examType": "Imp Topic",
+            "pdfLink": "/assets/more/COMMON/Mechanical Important Topic.pdf"
+          }
         ]
       },
       {
         "subjectName": "Human Values and Professional Ethics",
         "subjectCode": "1FY1-05",
         "units": [
-          { "unitName": "Course Introduction", "notesPDF": "/assets/notes/HV Unit 1.pdf", "lectureLink": "https://youtu.be/0jwdgW0fYMA?si=Kex3WEsGl-_HSI6h" },
-          { "unitName": "Harmony in the Human Being", "notesPDF": "/assets/notes/HV Unit 2.pdf", "lectureLink": "https://youtu.be/Z_x1lys8jM4?si=XXePXPJ1aKuhUnlO" },
-          { "unitName": "Harmony in the Family & Society", "notesPDF": "/assets/notes/HV Unit 3.pdf", "lectureLink": "https://youtu.be/K17NiRJBv3E?si=rg42M1M5RdaHFZkw" },
-          { "unitName": "Harmony in Nature & Existence", "notesPDF": "/assets/notes/HV Unit 4.pdf", "lectureLink": "https://youtu.be/XuHFT3JYKnc?si=-AawbUnNcnVrp53f" },
-          { "unitName": "Professional Ethics", "notesPDF": "/assets/notes/HV Unit 5.pdf", "lectureLink": "https://youtu.be/-rwWBaIreJA?si=G5rKUa9aP3lgD0M6" }
+          {
+            "unitName": "Course Introduction",
+            "notesPDF": "/assets/notes/HV Unit 1.pdf",
+            "lectureLink": "https://youtu.be/0jwdgW0fYMA?si=Kex3WEsGl-_HSI6h"
+          },
+          {
+            "unitName": "Harmony in the Human Being",
+            "notesPDF": "/assets/notes/HV Unit 2.pdf",
+            "lectureLink": "https://youtu.be/Z_x1lys8jM4?si=XXePXPJ1aKuhUnlO"
+          },
+          {
+            "unitName": "Harmony in the Family & Society",
+            "notesPDF": "/assets/notes/HV Unit 3.pdf",
+            "lectureLink": "https://youtu.be/K17NiRJBv3E?si=rg42M1M5RdaHFZkw"
+          },
+          {
+            "unitName": "Harmony in Nature & Existence",
+            "notesPDF": "/assets/notes/HV Unit 4.pdf",
+            "lectureLink": "https://youtu.be/XuHFT3JYKnc?si=-AawbUnNcnVrp53f"
+          },
+          {
+            "unitName": "Professional Ethics",
+            "notesPDF": "/assets/notes/HV Unit 5.pdf",
+            "lectureLink": "https://youtu.be/-rwWBaIreJA?si=G5rKUa9aP3lgD0M6"
+          }
         ],
-        "pyqs": [
-          { "examType": "MainExam", "year": 2024, "sem": "Odd", "pdfLink": "/assets/main/human values paper odd 2024.pdf" },
-          { "examType": "MainExam", "year": 2024, "sem": "Even", "pdfLink": "/assets/main/human values paper even 2024.pdf" },
-          { "examType": "MainExam", "year": 2023, "sem": "Odd", "pdfLink": "/assets/main/human values paper odd 2023.pdf" },
-          { "examType": "MainExam", "year": 2023, "sem": "Even", "pdfLink": "/assets/main/human values paper even 2023.pdf" },
-          { "examType": "MainExam", "year": 2022, "sem": "Odd", "pdfLink": "/assets/main/human values paper odd 2022.pdf" }
+        "More": [
+          {
+            "examType": "Assignments 2",
+            "pdfLink": "/assets/more/COMMON/HV Assignment 2.pdf"
+          },
+          {
+            "examType": "Assignments 3 and 4 ",
+            "pdfLink": "/assets/more/COMMON/HV Assignment 3 and 4.pdf"
+          },
+          {
+            "examType": "Assignments 5",
+            "pdfLink": "/assets/more/COMMON/HV Assignment 5.pdf"
+          },
+          {
+            "examType": "Guess Paper",
+            "pdfLink": "/assets/more/COMMON/HV Guess paper.pdf"
+          },
+          {
+            "examType": "HV Part B imp Question",
+            "pdfLink": "/assets/more/COMMON/HV part B solution.pdf"
+          },
+          {
+            "examType": "HV Part C imp Question",
+            "pdfLink": "/assets/more/COMMON/HV part C questions solution.pdf"
+          }
         ]
       },
-       {
-        "subjectName": "Basic Mechanical Engineering",
-        "subjectCode": "1FY3-07",
-        "units": [
-          { "unitName": "Fundamentals", "notesPDF": "/assets/notes/BME Unit 1.pdf", "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X2nw1rlJeyK4QDQVAkHrL_0&si=--CxAZjuAbjg81z8" },
-          { "unitName": "Pumps & IC Engines", "notesPDF": "/assets/notes/BME Unit 2.pdf", "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X2d3tev5912luZFr-SnDGFz&si=2gCeb2M4m_1Tc8Cn" },
-          { "unitName": "RAC", "notesPDF": "/assets/notes/BME Unit 3.pdf", "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X0eJByDg66HgkBHrDmBxfQZ&si=WmggIpXo4DyM6z-c" },
-          { "unitName": "Transmission of Power", "notesPDF": "/assets/notes/BME Unit 4.pdf", "lectureLink": "https://youtu.be/Gd6-v03HWeQ" },
-          { "unitName": "Primary Manufacturing Processes", "notesPDF": "/assets/notes/BME Unit 5.pdf", "lectureLink": "https://youtube.com/playlist?list=PL-JvKqQx2Atd59aCxARxsGtx62TtTy3iN&si=peksC3dqOm2XLju-" },
-          { "unitName": "Engineering Materials & Heat treatment", "notesPDF": "/assets/notes/BME Unit 6.pdf", "lectureLink": "https://youtu.be/LEkLGlOEsLw" }
-        ],
-        "pyqs": [
-          { "examType": "MainExam", "year": 2023, "sem": "Odd", "pdfLink": "/assets/main/mechanical paper odd 2023.pdf" },
-          { "examType": "MainExam", "year": 2023, "sem": "Even", "pdfLink": "/assets/main/mechanical paper even 2023.pdf" },
-          { "examType": "MainExam", "year": 2022, "sem": "Odd", "pdfLink": "/assets/main/mechanical paper odd 2022.pdf" },
-          { "examType": "MainExam", "year": 2024, "sem": "Even", "pdfLink": "/assets/main/mechanical paper even 2024.pdf" },
-          { "examType": "MainExam", "year": 2024, "sem": "Odd", "pdfLink": "/assets/main/mechanical paper odd 2024.pdf" },
-          { "examType": "MainExam", "year": 2025, "sem": "Odd", "pdfLink": "/assets/main/mechanical paper odd 2025.pdf" }
-        ]
-      },
-       {
+      {
         "subjectName": "Programming and Problem Solving",
         "subjectCode": "1FY3-06",
         "units": [
@@ -229,30 +420,22 @@
             "lectureLink": "https://youtu.be/irqbmMNs2Bo?si=ojgYUGRKAQq26z57"
           }
         ],
-        "pyqs": [
+        "More": [
           {
-            "examType": "MainExam",
-            "year": 2024,
-            "sem": "Odd",
-            "pdfLink": "/assets/main/PPS paper odd 2024.pdf"
+            "examType": "Guess Paper",
+            "pdfLink": "/assets/more/COMMON/PPS Guess Paper.pdf"
           },
           {
-            "examType": "MainExam",
-            "year": 2024,
-            "sem": "Even",
-            "pdfLink": "/assets/main/PPS paper even 2024.pdf"
+            "examType": "Exercise",
+            "pdfLink": "/assets/more/COMMON/PPS Exercises.pdf"
           },
           {
-            "examType": "MainExam",
-            "year": 2023,
-            "sem": "Odd",
-            "pdfLink": "/assets/main/PPS paper odd 2023.pdf"
+            "examType": "Assignments",
+            "pdfLink": "/assets/more/COMMON/PPS Assignments 1,2 and 3.pdf"
           },
           {
-            "examType": "MainExam",
-            "year": 2025,
-            "sem": "Odd",
-            "pdfLink": "/assets/main/PPS paper odd 2025.pdf"
+            "examType": "Imp Question",
+            "pdfLink": "/assets/more/COMMON/Imp Questions Programming for Problem Solving.pdf"
           }
         ]
       }
@@ -262,19 +445,60 @@
         "subjectName": "Engineering Mathematics2",
         "subjectCode": "2FY2-01",
         "units": [
-          { "unitName": "Matrices and Determinants", "notesPDF": "/assets/notes/Maths II Unit 1.pdf", "lectureLink": "https://www.youtube.com/watch?v=p5rBJj5CKCg&list=PLU6SqdYcYsfI34zVjDYDCZ6KLAifHmN1v" },
-          { "unitName": "First order ordinary differential equations", "notesPDF": "/assets/notes/Maths II Unit 2.pdf", "lectureLink": "https://www.youtube.com/watch?v=McOc6OUC7Pc&list=PLU6SqdYcYsfJ73RjAojkPl9FHIRPK6JrV" },
-          { "unitName": "Ordinary differential equations of higher orders", "notesPDF": "/assets/notes/Maths II Unit 3.pdf", "lectureLink": "https://www.youtube.com/watch?v=tHqx1qxA8q4&list=PLU6SqdYcYsfIgl58LabHfHW3mksEWimFs" },
-          { "unitName": "PDE – First order", "notesPDF": "/assets/notes/Maths II Unit 4.pdf", "lectureLink": "https://www.youtube.com/watch?v=vZEN4NXhmag&list=PLU6SqdYcYsfJljvy7Goi78EGwjPDQEnSw" },
-          { "unitName": "PDE – Higher order", "notesPDF": "/assets/notes/Maths II Unit 5.pdf", "lectureLink": "https://www.youtube.com/playlist?list=PLU6SqdYcYsfKej9J-4Jkv-LwrI3gDFZRz" }
+          {
+            "unitName": "Matrices and Determinants",
+            "notesPDF": "/assets/notes/Maths II Unit 1.pdf",
+            "lectureLink": "https://www.youtube.com/watch?v=p5rBJj5CKCg&list=PLU6SqdYcYsfI34zVjDYDCZ6KLAifHmN1v"
+          },
+          {
+            "unitName": "First order ordinary differential equations",
+            "notesPDF": "/assets/notes/Maths II Unit 2.pdf",
+            "lectureLink": "https://www.youtube.com/watch?v=McOc6OUC7Pc&list=PLU6SqdYcYsfJ73RjAojkPl9FHIRPK6JrV"
+          },
+          {
+            "unitName": "Ordinary differential equations of higher orders",
+            "notesPDF": "/assets/notes/Maths II Unit 3.pdf",
+            "lectureLink": "https://www.youtube.com/watch?v=tHqx1qxA8q4&list=PLU6SqdYcYsfIgl58LabHfHW3mksEWimFs"
+          },
+          {
+            "unitName": "PDE – First order",
+            "notesPDF": "/assets/notes/Maths II Unit 4.pdf",
+            "lectureLink": "https://www.youtube.com/watch?v=vZEN4NXhmag&list=PLU6SqdYcYsfJljvy7Goi78EGwjPDQEnSw"
+          },
+          {
+            "unitName": "PDE – Higher order",
+            "notesPDF": "/assets/notes/Maths II Unit 5.pdf",
+            "lectureLink": "https://www.youtube.com/playlist?list=PLU6SqdYcYsfKej9J-4Jkv-LwrI3gDFZRz"
+          }
         ],
-        "pyqs": [
-          { "examType": "MainExam", "year": 2023, "pdfLink": "/assets/main/mathematics -2 paper 2023.pdf" },
-          { "examType": "MainExam", "year": 2022, "pdfLink": "/assets/main/mathematics -2 paper 2022.pdf" },
-          { "examType": "MainExam", "year": 2022, "pdfLink": "/assets/main/mathematics -2 paper 2022 (new scheme).pdf" }
+        "More": [
+          {
+            "examType": "Short Questions unit 2-5",
+            "pdfLink": "/assets/more/COMMON/Short Questions Engineering Mathematics 2 (Unit 2-5).pdf"
+          },
+          {
+            "examType": "steps for unit 5",
+            "pdfLink": "/assets/more/COMMON/Steps for Unit 5 Engineering Mathematics 2.pdf"
+          },
+          {
+            "examType": "Maths 2 NK",
+            "pdfLink": "/assets/more/COMMON/Maths 2 NK.pdf"
+          },
+          {
+            "examType": "Formula Sheet unit 1",
+            "pdfLink": "/assets/more/COMMON/Formula Sheet Maths 2 (unit 1).pdf"
+          },
+          {
+            "examType": "Formula Sheet unit 2-5",
+            "pdfLink": "/assets/more/COMMON/Formula Sheet Maths 2 (unit 2-5).pdf"
+          },
+          {
+            "examType": "Guess Paper",
+            "pdfLink": "/assets/more/COMMON/Engineering Mathematics 2 Guess paper.pdf"
+          }
         ]
       },
-        {
+      {
         "subjectName": "Basic Civil Engineering",
         "subjectCode": "2FY3-09",
         "units": [
@@ -304,30 +528,22 @@
             "lectureLink": "https://youtube.com/playlist?list=PLRLB5WCqU54UlfeMhsTBh9-1WVH7TYXtH&si=79bkqd4ncpcnjCCK"
           }
         ],
-        "pyqs": [
+        "More": [
           {
-            "examType": "MainExam",
-            "year": 2023,
-            "sem": "Odd",
-            "pdfLink": "/assets/main/civil paper odd 2023.pdf"
+            "examType": "Assignments 3",
+            "pdfLink": "/assets/more/COMMON/Basic Civil Engineering Assignment 3.pdf"
           },
           {
-            "examType": "MainExam",
-            "year": 2022,
-            "sem": "Even",
-            "pdfLink": "/assets/main/civil paper even 2022.pdf"
+            "examType": "Assignments 4",
+            "pdfLink": "/assets/more/COMMON/Basic Civil Engineering Assignment 4.pdf"
           },
           {
-            "examType": "MainExam",
-            "year": 2022,
-            "sem": "Odd",
-            "pdfLink": "/assets/main/civil paper odd 2022.pdf"
+            "examType": "Assignments 5",
+            "pdfLink": "/assets/more/COMMON/Basic Civil Engineering Assignment 5.pdf"
           },
           {
-            "examType": "MainExam",
-            "year": 2021,
-            "sem": "Odd",
-            "pdfLink": "/assets/main/civil paper odd 2021.pdf"
+            "examType": "Guess Paper",
+            "pdfLink": "/assets/more/COMMON/Basic Civil Engineering Guess Paper.pdf"
           }
         ]
       },
@@ -335,118 +551,312 @@
         "subjectName": "Basic Electrical Engineering",
         "subjectCode": "2FY3-08",
         "units": [
-          { "unitName": "DC Circuits", "notesPDF": "/assets/notes/BEE Unit 1.pdf", "lectureLink": "https://www.youtube.com/watch?v=XrHtU713vJA&list=PLh9YR2LLEi8og58M95X5jiRAnbf5khSFc&pp=gAQB" },
-          { "unitName": "AC Circuits", "notesPDF": "/assets/notes/BEE Unit 2.pdf", "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X27evF1Nu5rRPilw3cCmtIg&si=RV-srDwy9ssadAfR" },
-          { "unitName": "Transformers", "notesPDF": "/assets/notes/BEE Unit 3.pdf", "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X2QpcefeSjF0jHQqRExgWod&si=fmATGg_uyTvjxRsT" },
-          { "unitName": "Electrical Machines", "notesPDF": "/assets/notes/BEE Unit 4.pdf", "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X1uyo9RK3Me4onxKiDJ8p39&si=ZksCD80SmJq1A9ES" },
-          { "unitName": "Power Converters", "notesPDF": "/assets/notes/BEE Unit 5.pdf", "lectureLink": "https://youtube.com/playlist?list=PLtOfSb08SMFPBAgR-c1n5WJrhBOJo7VAQ&si=j2JT6ntR0z8wO-jn" },
-          { "unitName": "Electrical Installation", "notesPDF": "/assets/notes/BEE Unit 6.pdf", "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X0jDznecxf9QLDjkwZ7b_Nr&si=zQ-EdbFQ4FEgsjor" }
+          {
+            "unitName": "DC Circuits",
+            "notesPDF": "/assets/notes/BEE Unit 1.pdf",
+            "lectureLink": "https://www.youtube.com/watch?v=XrHtU713vJA&list=PLh9YR2LLEi8og58M95X5jiRAnbf5khSFc&pp=gAQB"
+          },
+          {
+            "unitName": "AC Circuits",
+            "notesPDF": "/assets/notes/BEE Unit 2.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X27evF1Nu5rRPilw3cCmtIg&si=RV-srDwy9ssadAfR"
+          },
+          {
+            "unitName": "Transformers",
+            "notesPDF": "/assets/notes/BEE Unit 3.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X2QpcefeSjF0jHQqRExgWod&si=fmATGg_uyTvjxRsT"
+          },
+          {
+            "unitName": "Electrical Machines",
+            "notesPDF": "/assets/notes/BEE Unit 4.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X1uyo9RK3Me4onxKiDJ8p39&si=ZksCD80SmJq1A9ES"
+          },
+          {
+            "unitName": "Power Converters",
+            "notesPDF": "/assets/notes/BEE Unit 5.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLtOfSb08SMFPBAgR-c1n5WJrhBOJo7VAQ&si=j2JT6ntR0z8wO-jn"
+          },
+          {
+            "unitName": "Electrical Installation",
+            "notesPDF": "/assets/notes/BEE Unit 6.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X0jDznecxf9QLDjkwZ7b_Nr&si=zQ-EdbFQ4FEgsjor"
+          }
         ],
-        "pyqs": [
-          { "examType": "MainExam", "year": 2025, "sem": "Odd", "pdfLink": "/assets/main/BEE paper odd 2025.pdf" },
-          { "examType": "MainExam", "year": 2024, "sem": "Even", "pdfLink": "/assets/main/BEE paper even 2024.pdf" },
-          { "examType": "MainExam", "year": 2023, "sem": "Odd", "pdfLink": "/assets/main/BEE paper odd 2023.pdf" },
-          { "examType": "MainExam", "year": 2022, "sem": "Odd", "pdfLink": "/assets/main/BEE paper odd 2022.pdf" }
+        "More": [
+          {
+            "examType": "NK",
+            "pdfLink": "/assets/more/COMMON/BEE NK.pdf"
+          },
+          {
+            "examType": "Guess Paper",
+            "pdfLink": "/assets/more/COMMON/Basic Electrical Engineering Guess Paper.pdf"
+          }
         ]
       },
-        {
+      {
         "subjectName": "Engineering Physics",
         "subjectCode": "2FY2-02",
         "units": [
-          { "unitName": "Wave Optics", "notesPDF": "/assets/notes/Phy Unit 1.pdf", "lectureLink": "https://youtube.com/playlist?list=PLhX7RLRxqtuqxaLkpqedfrlnuJNMwJ3cl&si=pQaiACkOUsSsOs49" },
-          { "unitName": "Quantum Mechanics", "notesPDF": "/assets/notes/Phy Unit 2.pdf", "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X32yIxcPw2aHhKr0xTiCLNK&si=d7sqAD_TDiWWPoA9" },
-          { "unitName": "Optical Fiber", "notesPDF": "/assets/notes/Phy Unit 3.pdf", "lectureLink": "https://youtu.be/mn8_l6bU8OQ?si=MCBhD-pYwv9wgVx0" },
-          { "unitName": "Lasers", "notesPDF": "/assets/notes/Phy Unit 4.pdf", "lectureLink": "https://youtu.be/RnHJ9ZANp9I?si=Izb55uU55VgKmhq7" },
-          { "unitName": "Material Science & Semiconductor Physics", "notesPDF": "/assets/notes/Phy Unit 5.pdf", "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X36ix336R2SZjNlS8EQigSC&si=sCBBYvvT8Jl8YfBg" },
-          { "unitName": "Introduction of Electromagnetism", "notesPDF": "/assets/notes/Phy Unit 6.pdf", "lectureLink": "https://youtube.com/playlist?list=PLhX7RLRxqtuqN6MYtUIU345QiJPLuVJTd&si=an_isI009fA2l2dt" }
+          {
+            "unitName": "Wave Optics",
+            "notesPDF": "/assets/notes/Phy Unit 1.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLhX7RLRxqtuqxaLkpqedfrlnuJNMwJ3cl&si=pQaiACkOUsSsOs49"
+          },
+          {
+            "unitName": "Quantum Mechanics",
+            "notesPDF": "/assets/notes/Phy Unit 2.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X32yIxcPw2aHhKr0xTiCLNK&si=d7sqAD_TDiWWPoA9"
+          },
+          {
+            "unitName": "Optical Fiber",
+            "notesPDF": "/assets/notes/Phy Unit 3.pdf",
+            "lectureLink": "https://youtu.be/mn8_l6bU8OQ?si=MCBhD-pYwv9wgVx0"
+          },
+          {
+            "unitName": "Lasers",
+            "notesPDF": "/assets/notes/Phy Unit 4.pdf",
+            "lectureLink": "https://youtu.be/RnHJ9ZANp9I?si=Izb55uU55VgKmhq7"
+          },
+          {
+            "unitName": "Material Science & Semiconductor Physics",
+            "notesPDF": "/assets/notes/Phy Unit 5.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X36ix336R2SZjNlS8EQigSC&si=sCBBYvvT8Jl8YfBg"
+          },
+          {
+            "unitName": "Introduction of Electromagnetism",
+            "notesPDF": "/assets/notes/Phy Unit 6.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLhX7RLRxqtuqN6MYtUIU345QiJPLuVJTd&si=an_isI009fA2l2dt"
+          }
         ],
-        "pyqs": [
-          { "examType": "MainExam", "year": 2025, "sem": "Odd", "pdfLink": "/assets/main/physics paper odd 2025.pdf" },
-          { "examType": "MainExam", "year": 2024, "sem": "Odd", "pdfLink": "/assets/main/physics paper odd 2024.pdf" },
-          { "examType": "MainExam", "year": 2024, "sem": "Even", "pdfLink": "/assets/main/physics paper even 2024.pdf" },
-          { "examType": "MainExam", "year": 2023, "sem": "Odd", "pdfLink": "/assets/main/physics paper odd 2023.pdf" },
-          { "examType": "MainExam", "year": 2023, "sem": "Even", "pdfLink": "/assets/main/physics paper even 2023.pdf" },
-          { "examType": "MainExam", "year": 2022, "sem": "Odd", "pdfLink": "/assets/main/physics paper odd 2022.pdf" }
+        "More": [
+          {
+            "examType": "Formula Sheet",
+            "pdfLink": "/assets/more/COMMON/Physics Formula Sheet.pdf"
+          },
+          {
+            "examType": "Guess Paper",
+            "pdfLink": "/assets/more/COMMON/Physics Guess Paper.pdf"
+          },
+          {
+            "examType": "Imp Question",
+            "pdfLink": "/assets/more/COMMON/Physics Imp Questions.pdf"
+          },
+          {
+            "examType": "Numerical Solution",
+            "pdfLink": "/assets/more/COMMON/Physics Numerical and Questions Solutions.pdf"
+          }
         ]
       },
-   
       {
         "subjectName": "Basic Mechanical Engineering",
         "subjectCode": "2FY3-07",
         "units": [
-          { "unitName": "Fundamentals", "notesPDF": "/assets/notes/BME Unit 1.pdf", "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X2nw1rlJeyK4QDQVAkHrL_0&si=--CxAZjuAbjg81z8" },
-          { "unitName": "Pumps & IC Engines", "notesPDF": "/assets/notes/BME Unit 2.pdf", "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X2d3tev5912luZFr-SnDGFz&si=2gCeb2M4m_1Tc8Cn" },
-          { "unitName": "RAC", "notesPDF": "/assets/notes/BME Unit 3.pdf", "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X0eJByDg66HgkBHrDmBxfQZ&si=WmggIpXo4DyM6z-c" },
-          { "unitName": "Transmission of Power", "notesPDF": "/assets/notes/BME Unit 4.pdf", "lectureLink": "https://youtu.be/Gd6-v03HWeQ" },
-          { "unitName": "Primary Manufacturing Processes", "notesPDF": "/assets/notes/BME Unit 5.pdf", "lectureLink": "https://youtube.com/playlist?list=PL-JvKqQx2Atd59aCxARxsGtx62TtTy3iN&si=peksC3dqOm2XLju-" },
-          { "unitName": "Engineering Materials & Heat treatment", "notesPDF": "/assets/notes/BME Unit 6.pdf", "lectureLink": "https://youtu.be/LEkLGlOEsLw" }
+          {
+            "unitName": "Fundamentals",
+            "notesPDF": "/assets/notes/BME Unit 1.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X2nw1rlJeyK4QDQVAkHrL_0&si=--CxAZjuAbjg81z8"
+          },
+          {
+            "unitName": "Pumps & IC Engines",
+            "notesPDF": "/assets/notes/BME Unit 2.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X2d3tev5912luZFr-SnDGFz&si=2gCeb2M4m_1Tc8Cn"
+          },
+          {
+            "unitName": "RAC",
+            "notesPDF": "/assets/notes/BME Unit 3.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X0eJByDg66HgkBHrDmBxfQZ&si=WmggIpXo4DyM6z-c"
+          },
+          {
+            "unitName": "Transmission of Power",
+            "notesPDF": "/assets/notes/BME Unit 4.pdf",
+            "lectureLink": "https://youtu.be/Gd6-v03HWeQ"
+          },
+          {
+            "unitName": "Primary Manufacturing Processes",
+            "notesPDF": "/assets/notes/BME Unit 5.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PL-JvKqQx2Atd59aCxARxsGtx62TtTy3iN&si=peksC3dqOm2XLju-"
+          },
+          {
+            "unitName": "Engineering Materials & Heat treatment",
+            "notesPDF": "/assets/notes/BME Unit 6.pdf",
+            "lectureLink": "https://youtu.be/LEkLGlOEsLw"
+          }
         ],
-        "pyqs": [
-          { "examType": "MainExam", "year": 2023, "sem": "Odd", "pdfLink": "/assets/main/mechanical paper odd 2023.pdf" },
-          { "examType": "MainExam", "year": 2023, "sem": "Even", "pdfLink": "/assets/main/mechanical paper even 2023.pdf" },
-          { "examType": "MainExam", "year": 2022, "sem": "Odd", "pdfLink": "/assets/main/mechanical paper odd 2022.pdf" },
-          { "examType": "MainExam", "year": 2024, "sem": "Even", "pdfLink": "/assets/main/mechanical paper even 2024.pdf" },
-          { "examType": "MainExam", "year": 2024, "sem": "Odd", "pdfLink": "/assets/main/mechanical paper odd 2024.pdf" },
-          { "examType": "MainExam", "year": 2025, "sem": "Odd", "pdfLink": "/assets/main/mechanical paper odd 2025.pdf" }
+        "More": [
+          {
+            "examType": "Guess Paper",
+            "pdfLink": "/assets/more/COMMON/Guess Paper BME.pdf"
+          },
+          {
+            "examType": "Imp Topic",
+            "pdfLink": "/assets/more/COMMON/Mechanical Important Topic.pdf"
+          }
         ]
       },
-        {
+      {
         "subjectName": "Engineering Chemistry",
         "subjectCode": "2FY2-03",
         "units": [
-          { "unitName": "Water", "notesPDF": "/assets/notes/Chem Unit 1.pdf", "lectureLink": "https://www.youtube.com/watch?v=OifRPyCVcag" },
-          { "unitName": "Organic Fuels", "notesPDF": "/assets/notes/Chem Unit 2.pdf", "lectureLink": "https://www.youtube.com/watch?v=qrC5jADuiME" },
-          { "unitName": "Corrosion and its control", "notesPDF": "/assets/notes/Chem Unit 3.pdf", "lectureLink": "https://www.youtube.com/playlist?list=PLLf6O8XdGj00lVydanLfC6bcT4aXGJN4V" },
-          { "unitName": "Engineering Materials", "notesPDF": "/assets/notes/Chem Unit 4.pdf", "lectureLink": "https://youtube.com/playlist?list=PLfq4fiRrJSn4k4jst_OLjwLtKmR1RyuvX" },
-          { "unitName": "Organic Reaction Mechanism", "notesPDF": "/assets/notes/Chem Unit 5.pdf", "lectureLink": "https://www.youtube.com/watch?v=2U1xKSEMNkY" }
+          {
+            "unitName": "Water",
+            "notesPDF": "/assets/notes/Chem Unit 1.pdf",
+            "lectureLink": "https://www.youtube.com/watch?v=OifRPyCVcag"
+          },
+          {
+            "unitName": "Organic Fuels",
+            "notesPDF": "/assets/notes/Chem Unit 2.pdf",
+            "lectureLink": "https://www.youtube.com/watch?v=qrC5jADuiME"
+          },
+          {
+            "unitName": "Corrosion and its control",
+            "notesPDF": "/assets/notes/Chem Unit 3.pdf",
+            "lectureLink": "https://www.youtube.com/playlist?list=PLLf6O8XdGj00lVydanLfC6bcT4aXGJN4V"
+          },
+          {
+            "unitName": "Engineering Materials",
+            "notesPDF": "/assets/notes/Chem Unit 4.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLfq4fiRrJSn4k4jst_OLjwLtKmR1RyuvX"
+          },
+          {
+            "unitName": "Organic Reaction Mechanism",
+            "notesPDF": "/assets/notes/Chem Unit 5.pdf",
+            "lectureLink": "https://www.youtube.com/watch?v=2U1xKSEMNkY"
+          }
         ],
-        "pyqs": [
-          { "examType": "MainExam", "year": 2025, "sem": "Odd", "pdfLink": "/assets/main/chemistry paper odd 2025.pdf" },
-          { "examType": "MainExam", "year": 2024, "sem": "Odd", "pdfLink": "/assets/main/chemistry paper odd 2024.pdf" },
-          { "examType": "MainExam", "year": 2024, "sem": "Even", "pdfLink": "/assets/main/chemistry paper even 2024.pdf" },
-          { "examType": "MainExam", "year": 2023, "sem": "Even", "pdfLink": "/assets/main/chemistry paper even 2023.pdf" },
-          { "examType": "MainExam", "year": 2023, "sem": "Odd", "pdfLink": "/assets/main/chemistry paper odd 2023.pdf" },
-          { "examType": "MainExam", "year": 2022, "sem": "Odd", "pdfLink": "/assets/main/chemistry paper odd 2022.pdf" }
+        "More": [
+          {
+            "examType": "Assignments 1",
+            "pdfLink": "/assets/more/COMMON/Engineering Chemistry Assignment 1.pdf"
+          },
+          {
+            "examType": "Assignments 2",
+            "pdfLink": "/assets/more/COMMON/Engineering Chemistry Assignment 2.pdf"
+          },
+          {
+            "examType": "Assignments 3",
+            "pdfLink": "/assets/more/COMMON/Engineering Chemistry Assignment 3.pdf"
+          },
+          {
+            "examType": "Assignments 4",
+            "pdfLink": "/assets/more/COMMON/Engineering Chemistry Assignment 4.pdf"
+          },
+          {
+            "examType": "Assignments 5",
+            "pdfLink": "/assets/more/COMMON/Engineering Chemistry Assignment 5.pdf"
+          },
+          {
+            "examType": "Guess Paper",
+            "pdfLink": "/assets/more/COMMON/Engineering Chemistry Guess Paper.pdf"
+          },
+          {
+            "examType": "Imp Question",
+            "pdfLink": "/assets/more/COMMON/Chemistry Imp Topics.md"
+          }
         ]
       },
       {
         "subjectName": "Communication Skills",
         "subjectCode": "2FY1-04",
         "units": [
-          { "unitName": "Communication", "notesPDF": "/assets/notes/CS Unit 1.pdf", "lectureLink": "https://youtu.be/GY3ADgnWLos?si=OXvPXTxRwSGQnKAq" },
-          { "unitName": "Grammar", "notesPDF": "/assets/notes/CS Unit 2.pdf", "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X3T6FfZy6juNdt7PXJiHDUq&si=jY1-yYPiu_BcL4Dm" },
-          { "unitName": "Composition", "notesPDF": "/assets/notes/CS Unit 3.pdf", "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X0ddkcQNAXpuz3UFfttuOF4&si=6VQuUtP7GM-o_VCf" },
-          { "unitName": "Short Stories", "notesPDF": "/assets/notes/CS Unit 4 Short Stories.pdf", "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X2IP26N9MqRNkeg6PGrYKO8&si=0Rl8rkyr-Faq34b9" },
-          { "unitName": "Poems", "notesPDF": "/assets/notes/CS Unit 5 Poems .pdf", "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X3VNj6hqn8zxpzZKU3OgAAl&si=Si_ucxeenv5Gh8oe" }
+          {
+            "unitName": "Communication",
+            "notesPDF": "/assets/notes/CS Unit 1.pdf",
+            "lectureLink": "https://youtu.be/GY3ADgnWLos?si=OXvPXTxRwSGQnKAq"
+          },
+          {
+            "unitName": "Grammar",
+            "notesPDF": "/assets/notes/CS Unit 2.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X3T6FfZy6juNdt7PXJiHDUq&si=jY1-yYPiu_BcL4Dm"
+          },
+          {
+            "unitName": "Composition",
+            "notesPDF": "/assets/notes/CS Unit 3.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X0ddkcQNAXpuz3UFfttuOF4&si=6VQuUtP7GM-o_VCf"
+          },
+          {
+            "unitName": "Short Stories",
+            "notesPDF": "/assets/notes/CS Unit 4 Short Stories.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X2IP26N9MqRNkeg6PGrYKO8&si=0Rl8rkyr-Faq34b9"
+          },
+          {
+            "unitName": "Poems",
+            "notesPDF": "/assets/notes/CS Unit 5 Poems .pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X3VNj6hqn8zxpzZKU3OgAAl&si=Si_ucxeenv5Gh8oe"
+          }
         ],
-        "pyqs": [
-          { "examType": "MainExam", "year": 2025, "sem": "Odd", "pdfLink": "/assets/main/communication skill paper odd 2025.pdf" },
-          { "examType": "MainExam", "year": 2024, "sem": "Even", "pdfLink": "/assets/main/communication skill paper even 2024.pdf" },
-          { "examType": "MainExam", "year": 2024, "sem": "Odd", "pdfLink": "/assets/main/communication skill paper odd 2024.pdf" },
-          { "examType": "MainExam", "year": 2023, "sem": "Even", "pdfLink": "/assets/main/communication skill paper even 2023.pdf" },
-          { "examType": "MainExam", "year": 2023, "sem": "Odd", "pdfLink": "/assets/main/communication skill paper odd 2023.pdf" },
-          { "examType": "MainExam", "year": 2022, "sem": "Odd", "pdfLink": "/assets/main/communication skill paper odd 2022.pdf" }
+        "More": [
+          {
+            "examType": "Imp Question",
+            "pdfLink": "/assets/more/COMMON/Communication Skills Short Question.pdf"
+          },
+          {
+            "examType": "Synonyms & Antonyms",
+            "pdfLink": "/assets/more/COMMON/Synonyms_and_Antonyms.pdf"
+          },
+          {
+            "examType": "One Words",
+            "pdfLink": "/assets/more/COMMON/One_Word_Substitutions.pdf"
+          }
         ]
       },
       {
         "subjectName": "Human Values and Professional Ethics",
         "subjectCode": "2FY1-05",
         "units": [
-          { "unitName": "Course Introduction", "notesPDF": "/assets/notes/HV Unit 1.pdf", "lectureLink": "https://youtu.be/0jwdgW0fYMA?si=Kex3WEsGl-_HSI6h" },
-          { "unitName": "Harmony in the Human Being", "notesPDF": "/assets/notes/HV Unit 2.pdf", "lectureLink": "https://youtu.be/Z_x1lys8jM4?si=XXePXPJ1aKuhUnlO" },
-          { "unitName": "Harmony in the Family & Society", "notesPDF": "/assets/notes/HV Unit 3.pdf", "lectureLink": "https://youtu.be/K17NiRJBv3E?si=rg42M1M5RdaHFZkw" },
-          { "unitName": "Harmony in Nature & Existence", "notesPDF": "/assets/notes/HV Unit 4.pdf", "lectureLink": "https://youtu.be/XuHFT3JYKnc?si=-AawbUnNcnVrp53f" },
-          { "unitName": "Professional Ethics", "notesPDF": "/assets/notes/HV Unit 5.pdf", "lectureLink": "https://youtu.be/-rwWBaIreJA?si=G5rKUa9aP3lgD0M6" }
+          {
+            "unitName": "Course Introduction",
+            "notesPDF": "/assets/notes/HV Unit 1.pdf",
+            "lectureLink": "https://youtu.be/0jwdgW0fYMA?si=Kex3WEsGl-_HSI6h"
+          },
+          {
+            "unitName": "Harmony in the Human Being",
+            "notesPDF": "/assets/notes/HV Unit 2.pdf",
+            "lectureLink": "https://youtu.be/Z_x1lys8jM4?si=XXePXPJ1aKuhUnlO"
+          },
+          {
+            "unitName": "Harmony in the Family & Society",
+            "notesPDF": "/assets/notes/HV Unit 3.pdf",
+            "lectureLink": "https://youtu.be/K17NiRJBv3E?si=rg42M1M5RdaHFZkw"
+          },
+          {
+            "unitName": "Harmony in Nature & Existence",
+            "notesPDF": "/assets/notes/HV Unit 4.pdf",
+            "lectureLink": "https://youtu.be/XuHFT3JYKnc?si=-AawbUnNcnVrp53f"
+          },
+          {
+            "unitName": "Professional Ethics",
+            "notesPDF": "/assets/notes/HV Unit 5.pdf",
+            "lectureLink": "https://youtu.be/-rwWBaIreJA?si=G5rKUa9aP3lgD0M6"
+          }
         ],
-        "pyqs": [
-          { "examType": "MainExam", "year": 2024, "sem": "Odd", "pdfLink": "/assets/main/human values paper odd 2024.pdf" },
-          { "examType": "MainExam", "year": 2024, "sem": "Even", "pdfLink": "/assets/main/human values paper even 2024.pdf" },
-          { "examType": "MainExam", "year": 2023, "sem": "Odd", "pdfLink": "/assets/main/human values paper odd 2023.pdf" },
-          { "examType": "MainExam", "year": 2023, "sem": "Even", "pdfLink": "/assets/main/human values paper even 2023.pdf" },
-          { "examType": "MainExam", "year": 2022, "sem": "Odd", "pdfLink": "/assets/main/human values paper odd 2022.pdf" }
+        "More": [
+          {
+            "examType": "Assignments 2",
+            "pdfLink": "/assets/more/COMMON/HV Assignment 2.pdf"
+          },
+          {
+            "examType": "Assignments 3 and 4 ",
+            "pdfLink": "/assets/more/COMMON/HV Assignment 3 and 4.pdf"
+          },
+          {
+            "examType": "Assignments 5",
+            "pdfLink": "/assets/more/COMMON/HV Assignment 5.pdf"
+          },
+          {
+            "examType": "Guess Paper",
+            "pdfLink": "/assets/more/COMMON/HV Guess paper.pdf"
+          },
+          {
+            "examType": "HV Part B imp Question",
+            "pdfLink": "/assets/more/COMMON/HV part B solution.pdf"
+          },
+          {
+            "examType": "HV Part C imp Question",
+            "pdfLink": "/assets/more/COMMON/HV part C questions solution.pdf"
+          }
         ]
       },
-       {
+      {
         "subjectName": "Programming and Problem Solving",
         "subjectCode": "2FY3-06",
         "units": [
@@ -466,30 +876,44 @@
             "lectureLink": "https://youtu.be/irqbmMNs2Bo?si=ojgYUGRKAQq26z57"
           }
         ],
-        "pyqs": [
+        "More": [
           {
-            "examType": "MainExam",
-            "year": 2024,
-            "sem": "Odd",
-            "pdfLink": "/assets/main/PPS paper odd 2024.pdf"
+            "examType": "Guess Paper",
+            "pdfLink": "/assets/more/COMMON/PPS Guess Paper.pdf"
           },
           {
-            "examType": "MainExam",
-            "year": 2024,
-            "sem": "Even",
-            "pdfLink": "/assets/main/PPS paper even 2024.pdf"
+            "examType": "Exercise",
+            "pdfLink": "/assets/more/COMMON/PPS Exercises.pdf"
           },
           {
-            "examType": "MainExam",
-            "year": 2023,
-            "sem": "Odd",
-            "pdfLink": "/assets/main/PPS paper odd 2023.pdf"
+            "examType": "Assignments",
+            "pdfLink": "/assets/more/COMMON/PPS Assignments 1,2 and 3.pdf"
           },
           {
-            "examType": "MainExam",
-            "year": 2025,
-            "sem": "Odd",
-            "pdfLink": "/assets/main/PPS paper odd 2025.pdf"
+            "examType": "Imp Question",
+            "pdfLink": "/assets/more/COMMON/Imp Questions Programming for Problem Solving.pdf"
+          }
+        ]
+      }
+    ],
+    "Extra" :[
+      {
+        "More":[
+          {
+            "examType": "Mid Term Papers GIT",
+            "pdfLink": "/assets/more/COMMON/1st Year Mid Term Paper All Subjects.pdf"
+          },
+          {
+            "examType": "All PYQ NK",
+            "pdfLink": "/assets/more/COMMON/NK PYQ Compressed sem 1.pdf"
+          },
+          {
+            "examType":"CAEG",
+            "pdfLink": "/assets/more/COMMON/CAEG short Question.pdf"
+          },
+          {
+            "examType": "IMP RTU Topics",
+            "pdfLink" : "/assets/more/COMMON/IMPORTANT Topics for RTU.md"
           }
         ]
       }

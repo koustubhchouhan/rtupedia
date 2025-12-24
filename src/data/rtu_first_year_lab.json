@@ -1,0 +1,529 @@
+{
+  "COMMON": {
+    "1": [
+      {
+        "subjectName": "Engineering Physics Lab",
+        "subjectCode": "1FY2-20",
+        "examPapers": [
+          {
+            "examType": "Exp Newton's ring",
+            "pdfLink": "/assets/lab/Physics lab exp Newton's ring.pdf"
+          },
+          {
+            "examType": "Exp Charging and discharging of capacitor",
+            "pdfLink": "/assets/lab/Physics lab exp charging discharging.pdf"
+          },
+          {
+            "examType": "Exp Diffraction grating",
+            "pdfLink": "/assets/lab/Physics lab exp- Diffraction grating.pdf"
+          },
+          {
+            "examType": "Exp Dispersive power",
+            "pdfLink": "/assets/lab/Physics lab dispersive power.pdf"
+          },
+          {
+            "examType": "Exp Numerical aperture",
+            "pdfLink": "/assets/lab/Physics lab exp Numerical aperture.pdf"
+          },
+          {
+            "examType": "Exp Energy gap of semiconductor",
+            "pdfLink": "/assets/lab/Physics lab exp Energy band gap.pdf"
+          },
+          {
+            "examType": "Exp 8",
+            "pdfLink": "/assets/lab/Physics lab exp 8.pdf"
+          }
+        ]
+      },
+      {
+        "subjectName": "Engineering Chemistry Lab",
+        "subjectCode": "1FY2-21",
+        "examPapers": [
+          {
+            "examType": "Exp 1",
+            "pdfLink": "/assets/lab/Chem lab exp 1.pdf"
+          },
+          {
+            "examType": "Exp 2",
+            "pdfLink": "/assets/lab/Chem lab exp 2.pdf"
+          },
+          {
+            "examType": "Exp 3",
+            "pdfLink": "/assets/lab/Chem lab exp 3.pdf"
+          },
+          {
+            "examType": "Exp 4-5",
+            "pdfLink": "/assets/lab/Chem lab exp 4 and 5.pdf"
+          },
+          {
+            "examType": "Exp 6",
+            "pdfLink": "/assets/lab/Chem lab exp 6.pdf"
+          },
+          {
+            "examType": "Exp 7-8-9",
+            "pdfLink": "/assets/lab/Chem lab exp 7, 8 and 9.pdf"
+          },
+          {
+            "examType": "Exp 10-11",
+            "pdfLink": "/assets/lab/Chem lab exp 10 and 11.pdf"
+          }
+        ]
+      },
+      {
+        "subjectName": "Language Lab",
+        "subjectCode": "1FY1-22",
+        "examPapers": [
+          {
+            "examType": "Exp 1-2",
+            "pdfLink": "/assets/lab/lang lab exp. 1 and 2.pdf"
+          },
+          {
+            "examType":"Exp 3 to 8",
+            "pdfLink": "/assets/lab/lang lab exp 3, 4, 5, 6, 7 and 8.pdf"
+          }
+        ]
+      },
+      {
+        "subjectName": "Human Values Activities and Sports",
+        "subjectCode": "1FY1-23",
+        "examPapers": [
+          {
+            "examType": "PS 1-2",
+            "pdfLink": "/assets/lab/HV lab exp 1 and 2.pdf"
+          },
+          {
+            "examType": "PS 3",
+            "pdfLink": "/assets/lab/HV lab exp 3.pdf"
+          },
+          {
+            "examType": "PS 4-5",
+            "pdfLink": "/assets/lab/HV Lab PS 4 and 5.pdf"
+          },
+          {
+            "examType": "PS 6",
+            "pdfLink": "/assets/lab/HV Lab PS 6.pdf"
+          },
+          {
+            "examType": "PS 7",
+            "pdfLink": "/assets/lab/HV Lab PS 7.pdf"
+          },
+          {
+            "examType": "PS 8-10",
+            "pdfLink": "/assets/lab/HV Lab PS 8, 9 and 10.pdf"
+          }
+        ]
+      },
+      {
+        "subjectName": "Computer Programming Lab",
+        "subjectCode": "1FY3-24",
+        "examPapers": [
+          {
+            "examType": "Program 1-3",
+            "pdfLink": "/assets/lab/CP Lab exp 1,2 and 3.pdf"
+          },  
+          {
+            "examType": "Program 4",
+            "pdfLink": "/assets/lab/CP Lab exp 4.pdf"
+          },
+          {
+            "examType": "Program 5-6",
+            "pdfLink": "/assets/lab/CP Lab exp 5 and 6.pdf"
+          },
+          {
+            "examType": "Program 7-8",
+            "pdfLink": "/assets/lab/CP Lab exp 7 and 8.pdf"
+          },
+          {
+            "examType": "Program 9",
+            "pdfLink": "/assets/lab/CP Lab exp 9.pdf"
+          },
+          {
+            "examType": "Program 10-11",
+            "pdfLink": "/assets/lab/CP Lab exp 10 and 11.pdf"
+          },
+          {
+            "examType": "Program 12",
+            "pdfLink": "/assets/lab/CP Lab exp 12.pdf"
+          }
+        ]
+      },
+      {
+        "subjectName": "Manufacturing Practices Workshop",
+        "subjectCode": "1FY3-25",
+        "examPapers": [
+          {
+            "examType": "Workshop Exp 1",
+            "pdfLink": "/assets/lab/workshop lab exp 1 A.pdf"
+          },
+          {
+            "examType": "Workshop Exp 2",
+            "pdfLink": "/assets/lab/workshop lab 2.pdf"
+          },
+          {
+            "examType": "Workshop Exp 3",
+            "pdfLink": "/assets/lab/workshop lab exp 3.pdf"
+          },
+          {
+            "examType": "Workshop Exp 4",
+            "pdfLink": "/assets/lab/workshop lab exp 4.pdf"
+          },
+          {
+            "examType": "Workshop Exp 5",
+            "pdfLink": "/assets/lab/workshop lab exp 5.pdf"
+          }
+        ]
+      },
+      {
+        "subjectName": "Basic Electrical Engineering Lab",
+        "subjectCode": "1FY3-26",
+        "examPapers": [
+          {
+            "examType": "Exp 1-4",
+            "pdfLink": "/assets/lab/BEE exp 1, 2, 3 and 4.pdf"
+          },
+          {
+            "examType": "Exp 5",
+            "pdfLink": "/assets/lab/BEE exp 5.pdf"
+          },
+          {
+            "examType": "Exp 6",
+            "pdfLink": "/assets/lab/BEE exp 6.pdf"
+          },
+          {
+            "examType": "Exp 7",
+            "pdfLink": "/assets/lab/BEE exp 7.pdf"
+          },
+          {
+            "examType": "Exp 8",
+            "pdfLink": "/assets/lab/BEE exp 8.pdf"
+          },
+          {
+            "examType": "Exp 9",
+            "pdfLink": "/assets/lab/BEE exp 9.pdf"
+          }
+        ]
+      },
+      {
+        "subjectName": "Basic Civil Engineering Lab",
+        "subjectCode": "1FY3-27",
+        "examPapers": [
+          {
+            "examType": "Exp 1A-1B",
+            "pdfLink": "/assets/lab/Civil lab exp 1 A and B.pdf"
+          },
+          {
+            "examType": "Exp 2",
+            "pdfLink": "/assets/lab/Civil lab exp 2.pdf"
+          },
+          {
+            "examType": "Exp 3",
+            "pdfLink": "/assets/lab/Civil lab exp 3(B).pdf"
+          },
+          {
+            "examType": "Exp 4-6",
+            "pdfLink": "/assets/lab/Civil lab exp 4, 5 and 6.pdf"
+          },
+          {
+            "examType": "Exp 7-8",
+            "pdfLink": "/assets/lab/Civil lab exp 7 and 8.pdf"
+          }
+        ]
+      },
+      {
+        "subjectName": "Computer Aided Engineering Graphics",
+        "subjectCode": "1FY3-28",
+        "examPapers": [
+          {
+            "examType": "CAEG Sheet 1-2",
+            "pdfLink": "/assets/lab/CAEG lab sheet 1 and 2.pdf"
+          },
+          {
+            "examType": "CAEG Sheet 3",
+            "pdfLink": "/assets/lab/CAEG lab 3rd sheet.pdf"
+          },
+          {
+            "examType": "CAEG Sheet 4",
+            "pdfLink": "/assets/lab/CAEG lab 4th sheet.pdf"
+          },
+          {
+            "examType": "CAEG Sketch Book",
+            "pdfLink": "/assets/lab/CAEG lab sketch book.pdf"
+          }
+        ]
+      },
+      {
+        "subjectName": "Computer Aided Machine Drawing",
+        "subjectCode": "1FY3-29",
+        "examPapers": [
+          {
+            "examType": "CAMD Sheets",
+            "pdfLink": "/assets/lab/CAMD LAB sheets.pdf"
+          }
+        ]
+      }
+    ],
+    "2": [
+      {
+  
+        "subjectName": "Engineering Physics Lab",
+        "subjectCode": "1FY2-20",
+        "examPapers": [
+          {
+            "examType": "Exp Newton's ring",
+            "pdfLink": "/assets/lab/Physics lab exp Newton's ring.pdf"
+          },
+          {
+            "examType": "Exp Charging and discharging of capacitor",
+            "pdfLink": "/assets/lab/Physics lab exp charging discharging.pdf"
+          },
+          {
+            "examType": "Exp Diffraction grating",
+            "pdfLink": "/assets/lab/Physics lab exp- Diffraction grating.pdf"
+          },
+          {
+            "examType": "Exp Dispersive power",
+            "pdfLink": "/assets/lab/Physics lab dispersive power.pdf"
+          },
+          {
+            "examType": "Exp Numerical aperture",
+            "pdfLink": "/assets/lab/Physics lab exp Numerical aperture.pdf"
+          },
+          {
+            "examType": "Exp Energy gap of semiconductor",
+            "pdfLink": "/assets/lab/Physics lab exp Energy band gap.pdf"
+          },
+          {
+            "examType": "Exp 8",
+            "pdfLink": "/assets/lab/Physics lab exp 8.pdf"
+          }
+        ]
+      },
+      {
+        "subjectName": "Engineering Chemistry Lab",
+        "subjectCode": "1FY2-21",
+        "examPapers": [
+          {
+            "examType": "Exp 1",
+            "pdfLink": "/assets/lab/Chem lab exp 1.pdf"
+          },
+          {
+            "examType": "Exp 2",
+            "pdfLink": "/assets/lab/Chem lab exp 2.pdf"
+          },
+          {
+            "examType": "Exp 3",
+            "pdfLink": "/assets/lab/Chem lab exp 3.pdf"
+          },
+          {
+            "examType": "Exp 4-5",
+            "pdfLink": "/assets/lab/Chem lab exp 4 and 5.pdf"
+          },
+          {
+            "examType": "Exp 6",
+            "pdfLink": "/assets/lab/Chem lab exp 6.pdf"
+          },
+          {
+            "examType": "Exp 7-8-9",
+            "pdfLink": "/assets/lab/Chem lab exp 7, 8 and 9.pdf"
+          },
+          {
+            "examType": "Exp 10-11",
+            "pdfLink": "/assets/lab/Chem lab exp 10 and 11.pdf"
+          }
+        ]
+      },
+      {
+        "subjectName": "Language Lab",
+        "subjectCode": "1FY1-22",
+        "examPapers": [
+          {
+            "examType": "Exp 1-2",
+            "pdfLink": "/assets/lab/lang lab exp. 1 and 2.pdf"
+          },
+          {
+            "examType":"Exp 3 to 8",
+            "pdfLink": "/assets/lab/lang lab exp 3, 4, 5, 6, 7 and 8.pdf"
+          }
+        ]
+      },
+      {
+        "subjectName": "Human Values Activities and Sports",
+        "subjectCode": "1FY1-23",
+        "examPapers": [
+          {
+            "examType": "PS 1-2",
+            "pdfLink": "/assets/lab/HV lab exp 1 and 2.pdf"
+          },
+          {
+            "examType": "PS 3",
+            "pdfLink": "/assets/lab/HV lab exp 3.pdf"
+          },
+          {
+            "examType": "PS 4-5",
+            "pdfLink": "/assets/lab/HV Lab PS 4 and 5.pdf"
+          },
+          {
+            "examType": "PS 6",
+            "pdfLink": "/assets/lab/HV Lab PS 6.pdf"
+          },
+          {
+            "examType": "PS 7",
+            "pdfLink": "/assets/lab/HV Lab PS 7.pdf"
+          },
+          {
+            "examType": "PS 8-10",
+            "pdfLink": "/assets/lab/HV Lab PS 8, 9 and 10.pdf"
+          }
+        ]
+      },
+      {
+        "subjectName": "Computer Programming Lab",
+        "subjectCode": "1FY3-24",
+        "examPapers": [
+          {
+            "examType": "Program 1-3",
+            "pdfLink": "/assets/lab/CP Lab exp 1,2 and 3.pdf"
+          },  
+          {
+            "examType": "Program 4",
+            "pdfLink": "/assets/lab/CP Lab exp 4.pdf"
+          },
+          {
+            "examType": "Program 5-6",
+            "pdfLink": "/assets/lab/CP Lab exp 5 and 6.pdf"
+          },
+          {
+            "examType": "Program 7-8",
+            "pdfLink": "/assets/lab/CP Lab exp 7 and 8.pdf"
+          },
+          {
+            "examType": "Program 9",
+            "pdfLink": "/assets/lab/CP Lab exp 9.pdf"
+          },
+          {
+            "examType": "Program 10-11",
+            "pdfLink": "/assets/lab/CP Lab exp 10 and 11.pdf"
+          },
+          {
+            "examType": "Program 12",
+            "pdfLink": "/assets/lab/CP Lab exp 12.pdf"
+          }
+        ]
+      },
+      {
+        "subjectName": "Manufacturing Practices Workshop",
+        "subjectCode": "1FY3-25",
+        "examPapers": [
+          {
+            "examType": "Workshop Exp 1",
+            "pdfLink": "/assets/lab/workshop lab exp 1 A.pdf"
+          },
+          {
+            "examType": "Workshop Exp 2",
+            "pdfLink": "/assets/lab/workshop lab 2.pdf"
+          },
+          {
+            "examType": "Workshop Exp 3",
+            "pdfLink": "/assets/lab/workshop lab exp 3.pdf"
+          },
+          {
+            "examType": "Workshop Exp 4",
+            "pdfLink": "/assets/lab/workshop lab exp 4.pdf"
+          },
+          {
+            "examType": "Workshop Exp 5",
+            "pdfLink": "/assets/lab/workshop lab exp 5.pdf"
+          }
+        ]
+      },
+      {
+        "subjectName": "Basic Electrical Engineering Lab",
+        "subjectCode": "1FY3-26",
+        "examPapers": [
+          {
+            "examType": "Exp 1-4",
+            "pdfLink": "/assets/lab/BEE exp 1, 2, 3 and 4.pdf"
+          },
+          {
+            "examType": "Exp 5",
+            "pdfLink": "/assets/lab/BEE exp 5.pdf"
+          },
+          {
+            "examType": "Exp 6",
+            "pdfLink": "/assets/lab/BEE exp 6.pdf"
+          },
+          {
+            "examType": "Exp 7",
+            "pdfLink": "/assets/lab/BEE exp 7.pdf"
+          },
+          {
+            "examType": "Exp 8",
+            "pdfLink": "/assets/lab/BEE exp 8.pdf"
+          },
+          {
+            "examType": "Exp 9",
+            "pdfLink": "/assets/lab/BEE exp 9.pdf"
+          }
+        ]
+      },
+      {
+        "subjectName": "Basic Civil Engineering Lab",
+        "subjectCode": "1FY3-27",
+        "examPapers": [
+          {
+            "examType": "Exp 1A-1B",
+            "pdfLink": "/assets/lab/Civil lab exp 1 A and B.pdf"
+          },
+          {
+            "examType": "Exp 2",
+            "pdfLink": "/assets/lab/Civil lab exp 2.pdf"
+          },
+          {
+            "examType": "Exp 3",
+            "pdfLink": "/assets/lab/Civil lab exp 3(B).pdf"
+          },
+          {
+            "examType": "Exp 4-6",
+            "pdfLink": "/assets/lab/Civil lab exp 4, 5 and 6.pdf"
+          },
+          {
+            "examType": "Exp 7-8",
+            "pdfLink": "/assets/lab/Civil lab exp 7 and 8.pdf"
+          }
+        ]
+      },
+      {
+        "subjectName": "Computer Aided Engineering Graphics",
+        "subjectCode": "1FY3-28",
+        "examPapers": [
+          {
+            "examType": "CAEG Sheet 1-2",
+            "pdfLink": "/assets/lab/CAEG lab sheet 1 and 2.pdf"
+          },
+          {
+            "examType": "CAEG Sheet 3",
+            "pdfLink": "/assets/lab/CAEG lab 3rd sheet.pdf"
+          },
+          {
+            "examType": "CAEG Sheet 4",
+            "pdfLink": "/assets/lab/CAEG lab 4th sheet.pdf"
+          },
+          {
+            "examType": "CAEG Sketch Book",
+            "pdfLink": "/assets/lab/CAEG lab sketch book.pdf"
+          }
+        ]
+      },
+      {
+        "subjectName": "Computer Aided Machine Drawing",
+        "subjectCode": "1FY3-29",
+        "examPapers": [
+          {
+            "examType": "CAMD Sheets",
+            "pdfLink": "/assets/lab/CAMD LAB sheets.pdf"
+          }
+        ]
+      }
+    ]
+  }
+}

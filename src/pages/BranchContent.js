@@ -3,8 +3,11 @@ import { useParams } from "react-router-dom";
 import {
   fetchBranches,
   loadNotes,
-  fetchPYQFromBackend
+  fetchPYQFromBackend,
+  loadLabs,
+  loadExtraMore
 } from "../utils/dataFetcher";
+
 import "./SGPACalculator.css";
 import "../styles/global.css";
 
@@ -18,6 +21,9 @@ const yearSemesterMap = {
 const BranchContent = () => {
   const { yearSlug } = useParams();
 
+  /* =========================
+     STATE
+  ========================= */
   const [branches, setBranches] = useState([]);
   const [selectedBranch, setSelectedBranch] = useState("");
 
@@ -28,153 +34,217 @@ const BranchContent = () => {
 
   const [notes, setNotes] = useState([]);
   const [pyqGrouped, setPyqGrouped] = useState([]);
+  const [labGrouped, setLabGrouped] = useState([]);
+  const [moreGrouped, setMoreGrouped] = useState([]);
+  const [extraMore, setExtraMore] = useState([]);
+
   const [loadingPYQ, setLoadingPYQ] = useState(false);
 
-  /* LOAD BRANCHES */
+  /* =========================
+     LOAD BRANCHES
+  ========================= */
   useEffect(() => {
-    const list = fetchBranches(yearSlug) || [];
+    const list = fetchBranches(yearSlug);
     setBranches(list);
     setSelectedBranch(list[0] || "");
   }, [yearSlug]);
 
-  /* SET SEMESTERS (ODD DEFAULT) */
+  /* =========================
+     LOAD SEMESTERS (FORCE RESET)
+  ========================= */
   useEffect(() => {
     const semList = yearSemesterMap[yearSlug] || [];
     setSemesters(semList);
     setSelectedSemester(semList[0] || "");
   }, [yearSlug]);
 
-  /* LOAD NOTES */
+  /* =========================
+     LOAD NOTES (BASE DATA)
+  ========================= */
   useEffect(() => {
     if (!selectedBranch || !selectedSemester) return;
+
     const data = loadNotes(yearSlug, selectedBranch, selectedSemester);
     setNotes(Array.isArray(data) ? data : []);
   }, [yearSlug, selectedBranch, selectedSemester]);
 
-  /* LOAD PYQs FROM BACKEND */
+  /* =========================
+     LOAD PYQs (BACKEND)
+  ========================= */
   useEffect(() => {
-    if (tab !== "pyq" || !selectedBranch || !selectedSemester) return;
+    if (tab !== "pyq" || notes.length === 0) return;
 
     setLoadingPYQ(true);
 
     fetchPYQFromBackend(selectedBranch, selectedSemester, notes)
-      .then((data) => {
-        setPyqGrouped(Array.isArray(data) ? data : []);
-      })
-      .catch(() => setPyqGrouped([]))
+      .then((data) => setPyqGrouped(Array.isArray(data) ? data : []))
       .finally(() => setLoadingPYQ(false));
-
   }, [tab, selectedBranch, selectedSemester, notes]);
 
+  /* =========================
+     LOAD LABS
+  ========================= */
+  useEffect(() => {
+    if (tab !== "lab") return;
+
+    const labs = loadLabs(yearSlug, selectedBranch, selectedSemester);
+    setLabGrouped(Array.isArray(labs) ? labs : []);
+  }, [tab, yearSlug, selectedBranch, selectedSemester]);
+
+  /* =========================
+     LOAD MORE (SUBJECT + EXTRA)
+  ========================= */
+  useEffect(() => {
+    if (tab !== "more") return;
+
+    // SUBJECT-WISE MORE
+    const subjectMore = notes
+      .filter((s) => Array.isArray(s.More) && s.More.length > 0)
+      .map((s) => ({
+        subjectName: s.subjectName,
+        subjectCode: s.subjectCode,
+        items: s.More
+      }));
+
+    setMoreGrouped(subjectMore);
+
+    // EXTRA (NO SUBJECT)
+    const extra = loadExtraMore(yearSlug);
+    setExtraMore(extra);
+  }, [tab, notes, yearSlug]);
+
+  /* =========================
+     UI
+  ========================= */
   return (
     <div style={{ padding: 25 }}>
       <h2>{yearSlug.replace("-", " ").toUpperCase()} Resources</h2>
 
-      {/* Branch + Semester Selector */}
-      <div style={{ display: "flex", gap: 20, marginBottom: 20 }}>
-        <div>
-          <label>Branch:</label>
-          <select
-            value={selectedBranch}
-            onChange={(e) => setSelectedBranch(e.target.value)}
-          >
-            {branches.map((b) => (
-              <option key={b} value={b}>{b}</option>
-            ))}
-          </select>
-        </div>
+      {/* Branch + Semester */}
+      <div className="select-row">
+        <select value={selectedBranch} onChange={(e) => setSelectedBranch(e.target.value)}>
+          {branches.map((b) => (
+            <option key={b}>{b}</option>
+          ))}
+        </select>
 
-        <div>
-          <label>Semester:</label>
-          <select
-            value={selectedSemester}
-            onChange={(e) => setSelectedSemester(e.target.value)}
-          >
-            {semesters.map((s) => (
-              <option key={s} value={s}>
-                Semester {s}
-              </option>
-            ))}
-          </select>
-        </div>
+        <select
+          key={yearSlug}
+          value={selectedSemester}
+          onChange={(e) => setSelectedSemester(e.target.value)}
+        >
+          {semesters.map((s) => (
+            <option key={s} value={s}>
+              Semester {s}
+            </option>
+          ))}
+        </select>
       </div>
 
       {/* Tabs */}
       <div className="tab-row">
-  <button
-    className={`rt-tab-btn ${tab === "notes" ? "active" : ""}`}
-    onClick={() => setTab("notes")}
-  >
-    Notes
-  </button>
-
-  <button
-    className={`rt-tab-btn ${tab === "pyq" ? "active" : ""}`}
-    onClick={() => setTab("pyq")}
-  >
-    PYQ (Main Exam)
-  </button>
-</div>
+        {[
+          { id: "notes", label: "Notes" },
+          { id: "pyq", label: "PYQ (Main Exam)" },
+          { id: "lab", label: "Lab" },
+          { id: "more", label: "More" }
+        ].map((t) => (
+          <button
+            key={t.id}
+            className={`rt-tab-btn ${tab === t.id ? "active" : ""}`}
+            onClick={() => setTab(t.id)}
+          >
+            {t.label}
+          </button>
+        ))}
+      </div>
 
       {/* NOTES */}
-      {tab === "notes" && (
-        <div>
-          <h3>Unit-wise Notes & Videos</h3>
+      {tab === "notes" &&
+        notes.map((sub, i) => (
+          <div className="resource-card" key={i}>
+            <details>
+              <summary style={{fontWeight:"bold"}}>
+                {sub.subjectName} ({sub.subjectCode})
+              </summary>
 
-          {notes.length === 0 && <p>No notes available.</p>}
-
-       {notes.map((sub, i) => (
-  <div className="resource-card" key={i}>
-    <details>
-      <summary style={{ fontWeight: "bold" }}>
-        {sub.subjectName} ({sub.subjectCode})
-      </summary>
-
-      {(sub.units || []).map((u, j) => (
-        <div key={j} style={{ marginLeft: 20, marginTop: 10 }}>
-          <div style={{ fontWeight: 700 }}>{u.unitName}</div>
-
-          <a href={u.notesPDF} target="_blank" rel="noreferrer" style={{color: "var(--color-tertiary)", fontWeight: "500"}}>
-            📑 PDF Notes
-          </a>{" "}
-          <span style={{ margin: "0 6px" }}>|</span>
-          <a href={u.lectureLink} target="_blank" rel="noreferrer"  style={{color: "var(--color-tertiary)", fontWeight: "500"}}>
-            ▶ Video Lecture
-          </a>
-        </div>
-      ))}
-    </details>
-  </div>
-))}
-
-        </div>
-      )}
+              {sub.units.map((u, j) => (
+                <div key={j} style={{ marginTop: 10 }}>
+                  <strong>{u.unitName}</strong>
+                  <div style={{ display: "flex", gap: 12 }}>
+                    <a className="resource-link" href={u.notesPDF} target="_blank">📑 PDF</a>
+                    <a className="resource-link" href={u.lectureLink} target="_blank">▶ Video</a>
+                  </div>
+                </div>
+              ))}
+            </details>
+          </div>
+        ))}
 
       {/* PYQs */}
       {tab === "pyq" && (
-        <div>
-          <h3>Previous Year Question Papers (Main Exam)</h3>
-
+        <>
           {loadingPYQ && <p>Loading PYQs...</p>}
-
-          {!loadingPYQ && pyqGrouped.map((grp, i) => (
+          {pyqGrouped.map((grp, i) => (
             <div className="pyq-subject-box" key={i}>
               <div className="pyq-subject-title">
                 {grp.subjectName} ({grp.subjectCode})
               </div>
-
               {grp.pyqs.map((q, idx) => (
-                <a
-                  key={idx}
-                  className="pyq-paper-link"
-                  href={q.pdf}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
+                <a key={idx} className="pyq-paper-link" href={q.pdf} target="_blank">
                   📄 {q.title}
                 </a>
               ))}
             </div>
+          ))}
+        </>
+      )}
+
+      {/* LABS */}
+      {tab === "lab" &&
+        labGrouped.map((grp, i) => (
+          <div className="pyq-subject-box" key={i}>
+            <div className="pyq-subject-title">
+              {grp.subjectName} ({grp.subjectCode})
+            </div>
+          {grp.examPapers?.map((paper, idx) => (
+  <a
+    key={idx}
+    className="pyq-paper-link"
+    href={paper.pdfLink}
+    target="_blank"
+    rel="noreferrer"
+  >
+    📄 {paper.examType}
+  </a>
+))}
+
+          </div>
+        ))}
+
+      {/* MORE (SUBJECT-WISE) */}
+      {tab === "more" &&
+        moreGrouped.map((grp, i) => (
+          <div className="pyq-subject-box" key={i}>
+            <div className="pyq-subject-title">
+              {grp.subjectName} ({grp.subjectCode})
+            </div>
+            {grp.items.map((m, idx) => (
+              <a key={idx} className="pyq-paper-link" href={m.pdfLink} target="_blank">
+                📄 {m.examType}
+              </a>
+            ))}
+          </div>
+        ))}
+
+      {/* EXTRA (NO SUBJECT) */}
+      {tab === "more" && extraMore.length > 0 && (
+        <div className="pyq-subject-box">
+          <div className="pyq-subject-title">Extra Resources</div>
+          {extraMore.map((m, idx) => (
+            <a key={idx} className="pyq-paper-link" href={m.pdfLink} target="_blank">
+              📄 {m.examType}
+            </a>
           ))}
         </div>
       )}
