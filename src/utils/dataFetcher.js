@@ -3,6 +3,7 @@ import yearSecond from "../data/rtu_second_year.json";
 import yearThird from "../data/rtu_third_year.json";
 import yearFourth from "../data/rtu_fourth_year.json";
 import yearFirstLab from "../data/rtu_first_year_lab.json";
+import yearSecondLab from "../data/rtu_second_year_lab.json";
 
 /* =========================
    BACKEND
@@ -43,7 +44,9 @@ const normalize = (str) =>
 ========================= */
 export const fetchBranches = (yearSlug) => {
   if (yearSlug === "first-year") return ["COMMON"];
-
+  if (yearSlug === "second-year") {
+    return ["CSE", "AIDS", "ME", "CE", "EE", "IT", "CY"];
+  }
   const data = getYearJSON(yearSlug);
   return data ? Object.keys(data).map((b) => b.toUpperCase()) : [];
 };
@@ -121,9 +124,24 @@ export const loadLabs = (yearSlug, branch, semester) => {
   const key = `${yearSlug}-${branch}-${semester}`;
   if (cache.lab[key]) return cache.lab[key];
 
-  if (yearSlug !== "first-year") return [];
+  let subjects = [];
 
-  const subjects = yearFirstLab.COMMON?.[semester] || [];
+  // ✅ FIRST YEAR (same for all branches & semesters)
+  if (yearSlug === "first-year") {
+    subjects = yearFirstLab?.COMMON?.[semester] || [];
+  }
+
+  // ✅ SECOND YEAR (branch + semester specific)
+  else if (yearSlug === "second-year") {
+    subjects = yearSecondLab?.[branch]?.[semester] || [];
+  }
+  // else if ( yearSlug === "third-year"){
+  //   subjects = yearThirdLab?.[branch]?.[semester] || [];
+  // }
+  // else if ( yearSlug === "fourth-year"){
+  //   subjects = yearFourthLab?.[branch]?.[semester] || [];
+  // }
+
   cache.lab[key] = subjects;
   return subjects;
 };
