@@ -233,9 +233,9 @@
             "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X2mpg2ZoaZjyxhn-uZfxTUV&si=bwp1tNyAuWvwtikP"
           }
         ],
-        "pyqs": [
-          { "examType": "MainExam", "year": 2023, "sem": "Odd", "pdfLink": "/assets/main/PPS paper odd 2023.pdf" },
-          { "examType": "MainExam", "year": 2025, "sem": "Odd", "pdfLink": "/assets/main/PPS paper odd 2025.pdf" }
+        "More": [
+          { "examType": "Guess Paper", "pdfLink": "/assets/more/CSE/SE Guess Paper.pdf" }
+          
         ]
       }
     ],
