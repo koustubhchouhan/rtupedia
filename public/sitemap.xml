@@ -3,42 +3,34 @@
 
   <url>
     <loc>https://rtupedia.vercel.app/</loc>
-    <priority>1.0</priority>
   </url>
 
   <url>
     <loc>https://rtupedia.vercel.app/about</loc>
-    <priority>0.8</priority>
   </url>
 
   <url>
     <loc>https://rtupedia.vercel.app/contact</loc>
-    <priority>0.8</priority>
   </url>
 
   <url>
     <loc>https://rtupedia.vercel.app/SGPACalculator</loc>
-    <priority>0.9</priority>
   </url>
 
   <url>
     <loc>https://rtupedia.vercel.app/year/first-year</loc>
-    <priority>0.9</priority>
   </url>
 
   <url>
     <loc>https://rtupedia.vercel.app/year/second-year</loc>
-    <priority>0.9</priority>
   </url>
 
   <url>
     <loc>https://rtupedia.vercel.app/year/third-year</loc>
-    <priority>0.9</priority>
   </url>
 
   <url>
     <loc>https://rtupedia.vercel.app/year/fourth-year</loc>
-    <priority>0.9</priority>
   </url>
 
 </urlset>
