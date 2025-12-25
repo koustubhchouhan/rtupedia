@@ -11,7 +11,6 @@ import BranchContent from './pages/BranchContent';
 import SGPACalculator from "./pages/SGPACalculator";
 
 
-
 const App = () => {
   return (
     <Router>
