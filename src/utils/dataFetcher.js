@@ -73,6 +73,7 @@ export const loadNotes = (yearSlug, branch, semester) => {
 /* =========================
    FETCH PYQs (BACKEND)
 ========================= */
+
 export const fetchPYQFromBackend = async (branch, semester, subjects) => {
   const key = `${branch}-${semester}`;
   if (cache.pyq[key]) return cache.pyq[key];
@@ -101,7 +102,7 @@ export const fetchPYQFromBackend = async (branch, semester, subjects) => {
           const year = file.title.match(/\d{4}/)?.[0] || "Unknown";
           g.pyqs.push({
             title: `${year} Paper`,
-            pdf: `${BACKEND_BASE}${file.pdf}`
+            pdf: file.pdf // ✅ USE AS-IS
           });
         }
       });
@@ -116,6 +117,7 @@ export const fetchPYQFromBackend = async (branch, semester, subjects) => {
     return [];
   }
 };
+
 
 /* =========================
    LOAD LABS (FIRST YEAR ONLY)
