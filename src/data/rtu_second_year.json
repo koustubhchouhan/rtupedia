@@ -128,9 +128,8 @@
             "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X0xlbtBMp-1XC8hmA6QweUX&si=YbdP9Pcv1P7XL5-5"
           }
         ],
-        "pyqs": [
-          { "examType": "MainExam", "year": 2023, "sem": "Odd", "pdfLink": "/assets/main/PPS paper odd 2023.pdf" },
-          { "examType": "MainExam", "year": 2025, "sem": "Odd", "pdfLink": "/assets/main/PPS paper odd 2025.pdf" }
+           "More": [
+          { "examType": "DE NK", "pdfLink": "/assets/more/CSE/DE NK.pdf" }
         ]
       },
       {
@@ -163,9 +162,8 @@
             "lectureLink": "https://youtu.be/lg48ZZe7YUA?si=m7rChfFY-Gc2IjLV"
           }
         ],
-        "pyqs": [
-          { "examType": "MainExam", "year": 2023, "sem": "Odd", "pdfLink": "/assets/main/PPS paper odd 2023.pdf" },
-          { "examType": "MainExam", "year": 2025, "sem": "Odd", "pdfLink": "/assets/main/PPS paper odd 2025.pdf" }
+           "More": [
+          { "examType": "DSA NK", "pdfLink": "/assets/more/CSE/DSA NK.pdf" }
         ]
       },
       {
@@ -198,9 +196,8 @@
             "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X1tysYiymZ1uXLNR2LCyYDo&si=ChgJLYScYGQ-gQmq"
           }
         ],
-        "pyqs": [
-          { "examType": "MainExam", "year": 2023, "sem": "Odd", "pdfLink": "/assets/main/PPS paper odd 2023.pdf" },
-          { "examType": "MainExam", "year": 2025, "sem": "Odd", "pdfLink": "/assets/main/PPS paper odd 2025.pdf" }
+           "More": [
+          { "examType": "OOPs NK", "pdfLink": "/assets/more/CSE/OOPs NK.pdf" }
         ]
       },
       {
@@ -234,8 +231,8 @@
           }
         ],
         "More": [
-          { "examType": "Guess Paper", "pdfLink": "/assets/more/CSE/SE Guess Paper.pdf" }
-          
+          { "examType": "Guess Paper", "pdfLink": "/assets/more/CSE/SE Guess Paper.pdf" },
+          { "examType": "SE NK", "pdfLink": "/assets/more/CSE/SE NK.pdf" }
         ]
       }
     ],
@@ -503,6 +500,16 @@
         "pyqs": [
           { "examType": "MainExam", "year": 2023, "sem": "Odd", "pdfLink": "/assets/main/PPS paper odd 2023.pdf" },
           { "examType": "MainExam", "year": 2025, "sem": "Odd", "pdfLink": "/assets/main/PPS paper odd 2025.pdf" }
+        ]
+      }
+    ],
+    "Extra" :[
+      {
+        "More":[
+          {
+            "examType": "All PYQ NK",
+            "pdfLink": "/assets/more/COMMON/NK PYQ.pdf"
+          }
         ]
       }
     ]
