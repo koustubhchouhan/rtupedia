@@ -104,7 +104,7 @@ const YearSelection = () => {
       <div className="home-container" style={{marginTop:"50px"}}>
         <div className="sgpa-card" onClick={() => navigate("/SGPACalculator")}>
           <h2>SGPA Calculator</h2>
-          <p>Calculate your RTU SGPA instantly using semester-wise credits.</p>
+          <p>Calculate your RTU B.tech. SGPA instantly using semester-wise credits.</p>
           <button className="sgpa-btn">Open Calculator</button>
         </div>
       </div>
@@ -120,7 +120,7 @@ const YearSelection = () => {
             </div>
             <h3 className="why-heading">Student-Driven Platform</h3>
             <p className="why-text">
-              Designed by RTU students to simplify the journey for every RTU student
+              Designed by RTU students to simplify the journey for every RTU B.tech. student
             </p>
           </div>
 

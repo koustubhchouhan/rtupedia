@@ -105,7 +105,7 @@ const AboutUs = () => {
         {/* Intro */}
        <b> <p style={styles.introText}>
           RTUpedia is a student-powered platform built to bring together 
-          notes, PYQs, study tools, and resources for every RTU student — 
+          notes, PYQs, study tools, and resources for every RTU B.tech. student — 
           all in one organized, clean and reliable place.  
           Our mission is to simplify academics and help students succeed 
           with the right guidance and accessible study material.
@@ -116,6 +116,7 @@ const AboutUs = () => {
         <div style={styles.card}>
           <h2 style={styles.sectionTitle}>What We Offer</h2>
       <b> <p style={styles.text}>
+            ※ Initially Focused on B.tech (Computer science and engineering) students <br></br>
             ※ Complete Notes  <br></br>
             ※ Branch-wise and Semester-wise PYQs<br></br>  
             ※ SGPA/CGPA Calculators  <br></br>
@@ -165,9 +166,9 @@ const AboutUs = () => {
         <div style={styles.card}>
           <h2 style={styles.sectionTitle}>Our Journey So Far</h2>
           <p style={styles.text}>
-            ※ Launched in 2025, RTUpedia has quickly grown to support thousands of RTU students.<br></br>
+            ※ Launched in 2025, RTUpedia has quickly grown to support thousands of RTU B.tech. students.<br></br>
             ※ Continuously adding new features based on student feedback and needs.<br></br>
-            ※ Committed to expanding our offerings and supporting the RTU student community. 
+            ※ Committed to expanding our offerings and supporting the RTU B.tech. student community. 
           </p>
         </div>
 
