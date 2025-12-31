@@ -32,7 +32,8 @@
           }
         ],
         "More": [
-          { "examType": "AEM NK", "pdfLink": "/assets/more/CSE/AEM NK.pdf" }
+          { "examType": "AEM NK", "pdfLink": "/assets/more/CSE/AEM NK.pdf" },
+          { "examType": "AEM Formulas and Methods", "pdfLink": "/assets/more/CSE/AEM Formulas and Methods.pdf" }
         ]
       },
       {
