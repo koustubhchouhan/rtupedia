@@ -1,6 +1,9 @@
 // src/pages/ContactUs.js
-import React from "react";
+import React, { useState } from "react";
 import { FaInstagram, FaYoutube, FaLinkedin, FaGithub } from "react-icons/fa";
+import { submitReview } from "../utils/reviewApi";
+import StarRating from "../components/Review/StarRating";
+
 
 const ContactUs = () => {
   const styles = {
@@ -16,6 +19,13 @@ const ContactUs = () => {
       margin: "0 auto",
       textAlign: "center",
     },
+    contactContainer: {
+      background: "var(--color-card-bg)",
+      padding: "30px",
+      borderRadius: "16px",
+      marginBottom: "30px",
+    },
+
     title: {
       fontSize: "32px",
       fontWeight: "700",
@@ -26,6 +36,7 @@ const ContactUs = () => {
       fontSize: "16px",
       opacity: "0.8",
       marginBottom: "40px",
+
     },
     card: {
       background: "var(--color-card-bg)",
@@ -103,6 +114,39 @@ const ContactUs = () => {
     marginTop: "20px",
   };
 
+
+  const [name, setName] = useState("");
+  const [message, setMessage] = useState("");
+  const [rating, setRating] = useState(5);
+  const [success, setSuccess] = useState("");
+  const [email, setEmail] = useState("");
+
+const handleSubmit = async (e) => {
+  e.preventDefault();
+  console.log("Submit clicked"); // 👈 TEMP DEBUG
+
+  if (!name || !email || !message) {
+    alert("Please fill all fields");
+    return;
+  }
+  try {
+    const res = await submitReview({ name, email, message, rating });
+    console.log("Response:", res);
+
+    if (!res.success) throw new Error("Failed");
+
+    setSuccess("Thanks! Your review is sent for approval.");
+    setName("");
+    setEmail("");
+    setMessage("");
+    setRating(5);
+  } catch (err) {
+    console.error(err);
+    alert("Submission failed");
+  }
+};
+
+
   return (
     <div style={styles.page}>
       <div style={styles.container}>
@@ -115,8 +159,39 @@ const ContactUs = () => {
             Then contact us on WhatsApp or email.
           </b>
           <br />
+          <br/>
           We’d love to hear from you!
         </p>
+
+{/* review form */}
+      <div className="contact-container">
+  <h2 style={styles.cardTitle}>Share your experience</h2>
+
+  <form className="review-form" onSubmit={handleSubmit}>
+    <input
+      type="text"
+      placeholder="Your Name"
+      value={name}
+      onChange={(e) => setName(e.target.value)}
+    />
+    <input
+      type="email"
+      placeholder="Your Email"
+      value={email}
+      onChange={(e) => setEmail(e.target.value)}
+    />
+    <textarea
+      placeholder="Your Review"
+      value={message}
+      onChange={(e) => setMessage(e.target.value)}
+    />
+    {/* Star Rating */}
+    <StarRating value={rating} onChange={setRating} />
+    <button type="submit" style={{color: "var(--color-background)", backgroundColor: "var(--color-primary)"}}>Submit Review</button>
+  </form>
+  {success && <p className="success-text">{success}</p>}
+</div>
+
 
         {/* Social Media Section */}
         <div style={styles.card}>
@@ -159,6 +234,8 @@ const ContactUs = () => {
               <FaGithub />
             </a>
           </div>
+
+
 
           <p style={styles.textSmall}>
             Stay updated with RTUpedia announcements & releases.

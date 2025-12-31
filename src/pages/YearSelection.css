@@ -11,7 +11,7 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-
+  
   cursor: pointer;
   box-shadow: 0px 3px 10px rgba(0,0,0,0.1);
   transition: 0.3s ease;
@@ -79,6 +79,7 @@
   color: var(--color-text);
   text-align: center;
   font-family: Poppins, sans-serif;
+  margin-bottom: -40px;
 }
 
 .why-title {
@@ -177,4 +178,174 @@
   .year-card-grid {
     grid-template-columns: 1fr;
   }
+}
+
+.admin-container {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 20px;
+}
+
+.admin-title {
+  font-size: 26px;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin-bottom: 20px;
+}
+
+.admin-card {
+  background: var(--color-card-bg);
+  border: 1px solid var(--color-border);
+  border-radius: 14px;
+  padding: 20px;
+  margin-bottom: 18px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.admin-name {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--color-primary);
+}
+
+.admin-message {
+  margin: 10px 0;
+  opacity: 0.9;
+}
+
+.admin-rating {
+  color: gold;
+  font-size: 16px;
+}
+
+.admin-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.admin-actions button {
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.admin-approve {
+  background: #22c55e;
+  color: #fff;
+}
+
+.admin-delete {
+  background: #ef4444;
+  color: #fff;
+}
+
+.admin-actions button:hover {
+  opacity: 0.9;
+}
+
+/* ================================
+   REVIEWS SECTION */
+
+.review-section {
+  margin: 60px auto;
+  max-width: 1000px;
+  text-align: center;
+}
+
+.review-title {
+  font-size: 28px;
+  font-weight: 700;
+  margin-top: 40px;
+  color: var(--color-primary);
+  margin-bottom: 30px;
+}
+
+.review-card {
+  background: var(--color-card-bg);
+  border: 1px solid var(--color-border);
+  border-radius: 16px;
+  padding: 22px;
+  margin-bottom: 30px;   /* ✅ SPACE BETWEEN REVIEWS */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* For grid layout (All Reviews page) */
+.review-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 28px; /* ✅ SPACE BETWEEN CARDS */
+}
+
+
+.review-card h4 {
+  color: var(--color-primary);
+  margin-bottom: 6px;
+}
+
+.stars {
+  color: gold;
+  margin-bottom: 10px;
+}
+
+/* Remove slider / indicator dot */
+.review-section::after,
+.review-section::before {
+  display: none !important;
+  content: none !important;
+}
+
+/* If any dot element exists */
+.review-dot,
+.review-indicator,
+.review-pagination {
+  display: none !important;
+}
+
+.dot,
+.dot.active {
+  display: none !important;
+}
+
+/* reviewslider */
+
+.review-slider {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+.review-controls {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.review-controls button {
+  background: var(--color-primary);
+  color: var(--color-background);
+  border: none;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.review-controls button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.view-all {
+  display: inline-block;
+  margin-top: 10px;
+  color: var(--color-primary);
+  font-weight: 600;
+  text-decoration: none;
 }

@@ -172,8 +172,8 @@ const BranchContent = () => {
                 <div key={j} style={{ marginTop: 10 }}>
                   <strong>{u.unitName}</strong>
                   <div style={{ display: "flex", gap: 12 }}>
-                    <a className="resource-link" href={u.notesPDF} target="_blank">📑 PDF</a>
-                    <a className="resource-link" href={u.lectureLink} target="_blank">▶ Video</a>
+                    <a className="resource-link" href={u.notesPDF} target="_blank"   rel="noopener noreferrer">📑 PDF</a>
+                    <a className="resource-link" href={u.lectureLink} target="_blank"   rel="noopener noreferrer">▶ Video</a>
                   </div>
                 </div>
               ))}
@@ -191,7 +191,7 @@ const BranchContent = () => {
                 {grp.subjectName} ({grp.subjectCode})
               </div>
               {grp.pyqs.map((q, idx) => (
-                <a key={idx} className="pyq-paper-link" href={q.pdf} target="_blank">
+                <a key={idx} className="pyq-paper-link" href={q.pdf} target="_blank"  rel="noopener noreferrer">
                   📄 {q.title}
                 </a>
               ))}
@@ -230,7 +230,7 @@ const BranchContent = () => {
               {grp.subjectName} ({grp.subjectCode})
             </div>
             {grp.items.map((m, idx) => (
-              <a key={idx} className="pyq-paper-link" href={m.pdfLink} target="_blank">
+              <a key={idx} className="pyq-paper-link" href={m.pdfLink} target="_blank" rel="noopener noreferrer">
                 📄 {m.examType}
               </a>
             ))}
@@ -242,7 +242,7 @@ const BranchContent = () => {
         <div className="pyq-subject-box">
           <div className="pyq-subject-title">Extra Resources</div>
           {extraMore.map((m, idx) => (
-            <a key={idx} className="pyq-paper-link" href={m.pdfLink} target="_blank">
+            <a key={idx} className="pyq-paper-link" href={m.pdfLink} target="_blank" rel="noopener noreferrer">
               📄 {m.examType}
             </a>
           ))}

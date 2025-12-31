@@ -6,7 +6,6 @@ import App from './App';
 import { ThemeProvider } from './hooks/useTheme'; 
 import './styles/global.css';
 import './styles/themes.css';
-import { SpeedInsights } from "@vercel/speed-insights/react"
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 

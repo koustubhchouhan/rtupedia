@@ -1,4 +1,5 @@
 import React from "react";
+import ReviewSlider from "../components/Review/ReviewSlider";
 
 const AboutUs = () => {
   const styles = {
@@ -123,6 +124,8 @@ const AboutUs = () => {
             ※ Student-first features and tools  
           </p> </b>   
         </div>
+
+       <ReviewSlider limit={2} />
 
         {/* Team Section */}
         <h2 style={styles.sectionTitle}>Meet Our Team</h2>

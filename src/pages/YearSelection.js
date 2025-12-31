@@ -9,6 +9,7 @@ import LoadingSpinner from "../components/UI/LoadingSpinner";
 
 import yearDataJSON from "../data/year_data.json";
 import syllabusLinks from "../data/syllabus_links.json";
+import ReviewSlider from "../components/Review/ReviewSlider";
 
 import "./YearSelection.css";
 
@@ -16,6 +17,7 @@ import { FaRegHandshake } from "react-icons/fa6";
 import { GiBookshelf } from "react-icons/gi";
 import { MdVideoSettings } from "react-icons/md";
 import { PiMedalFill } from "react-icons/pi";
+
 
 const YearSelection = () => {
   const [yearData, setYearData] = useState([]);
@@ -44,7 +46,7 @@ const YearSelection = () => {
 
   return (
     <>
-      <h2>Select Your Academic Year</h2>
+      <h2 style={{marginTop:"10px"}}>Select Your Academic Year</h2>
       <p>Choose your current B.Tech year to access notes, PYQs, and resources.</p>
 
   {/* YEAR CARDS SECTION */}
@@ -62,7 +64,7 @@ const YearSelection = () => {
   ))}
 </div>
 
-      <hr style={{ marginLeft:"30px",borderColor: "var(--color-border)",marginTop:"40px",marginBottom:"40px" }} />
+      <hr style={{ marginLeft:"30px",borderColor: "var(--color-border)",marginTop:"60px",marginBottom:"40px" }} />
 
       {/* SYLLABUS SECTION */}
       <div style={{ textAlign: "center" }}>
@@ -99,7 +101,7 @@ const YearSelection = () => {
       </div>
 
       {/* SGPA CALCULATOR */}
-      <div className="home-container">
+      <div className="home-container" style={{marginTop:"50px"}}>
         <div className="sgpa-card" onClick={() => navigate("/SGPACalculator")}>
           <h2>SGPA Calculator</h2>
           <p>Calculate your RTU SGPA instantly using semester-wise credits.</p>
@@ -153,6 +155,8 @@ const YearSelection = () => {
           </div>
         </div>
       </div>
+    
+      <ReviewSlider limit={3} />
     </>
   );
 };

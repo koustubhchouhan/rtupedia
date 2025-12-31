@@ -73,7 +73,6 @@ export const loadNotes = (yearSlug, branch, semester) => {
 /* =========================
    FETCH PYQs (BACKEND)
 ========================= */
-
 export const fetchPYQFromBackend = async (branch, semester, subjects) => {
   const key = `${branch}-${semester}`;
   if (cache.pyq[key]) return cache.pyq[key];
@@ -102,7 +101,7 @@ export const fetchPYQFromBackend = async (branch, semester, subjects) => {
           const year = file.title.match(/\d{4}/)?.[0] || "Unknown";
           g.pyqs.push({
             title: `${year} Paper`,
-            pdf: file.pdf // ✅ USE AS-IS
+            pdf: file.pdf
           });
         }
       });
@@ -118,9 +117,8 @@ export const fetchPYQFromBackend = async (branch, semester, subjects) => {
   }
 };
 
-
 /* =========================
-   LOAD LABS (FIRST YEAR ONLY)
+   LOAD LABS
 ========================= */
 export const loadLabs = (yearSlug, branch, semester) => {
   const key = `${yearSlug}-${branch}-${semester}`;
@@ -128,28 +126,18 @@ export const loadLabs = (yearSlug, branch, semester) => {
 
   let subjects = [];
 
-  // ✅ FIRST YEAR (same for all branches & semesters)
   if (yearSlug === "first-year") {
     subjects = yearFirstLab?.COMMON?.[semester] || [];
-  }
-
-  // ✅ SECOND YEAR (branch + semester specific)
-  else if (yearSlug === "second-year") {
+  } else if (yearSlug === "second-year") {
     subjects = yearSecondLab?.[branch]?.[semester] || [];
   }
-  // else if ( yearSlug === "third-year"){
-  //   subjects = yearThirdLab?.[branch]?.[semester] || [];
-  // }
-  // else if ( yearSlug === "fourth-year"){
-  //   subjects = yearFourthLab?.[branch]?.[semester] || [];
-  // }
 
   cache.lab[key] = subjects;
   return subjects;
 };
 
 /* =========================
-   LOAD EXTRA MORE (NO SUBJECT)
+   LOAD EXTRA MORE
 ========================= */
 export const loadExtraMore = (yearSlug) => {
   if (cache.extraMore[yearSlug]) return cache.extraMore[yearSlug];
@@ -157,7 +145,6 @@ export const loadExtraMore = (yearSlug) => {
   const data = getYearJSON(yearSlug);
   if (!data) return [];
 
-  // Only COMMON has Extra
   const extra =
     data.COMMON?.Extra?.[0]?.More && Array.isArray(data.COMMON.Extra[0].More)
       ? data.COMMON.Extra[0].More
@@ -168,12 +155,14 @@ export const loadExtraMore = (yearSlug) => {
 };
 
 /* =========================
-   DEFAULT EXPORT
+   DEFAULT EXPORT (FIXED)
 ========================= */
-export default {
+const dataFetcher = {
   fetchBranches,
   loadNotes,
   fetchPYQFromBackend,
   loadLabs,
   loadExtraMore
 };
+
+export default dataFetcher;

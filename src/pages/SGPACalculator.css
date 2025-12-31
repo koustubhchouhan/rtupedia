@@ -7,6 +7,7 @@
   border-radius: 12px;
   padding: 20px;
   display: flex;
+  margin-top: 30px;
   flex-direction: column;
   align-items: center;
   text-align: center;
@@ -422,4 +423,34 @@ select {
 /* Hover */
 .rt-tab-btn:not(.active):hover {
   opacity: 0.85;
+}
+
+/* Page container */
+.all-reviews-container {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+/* Page title */
+.all-reviews-title {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--color-primary);
+}
+
+/* ✅ GRID LAYOUT */
+.all-reviews-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 🖥 2-2 layout */
+  gap: 28px;
+}
+
+/* 📱 MOBILE: 1-1 layout */
+@media (max-width: 768px) {
+  .all-reviews-grid {
+    grid-template-columns: 1fr;
+  }
 }

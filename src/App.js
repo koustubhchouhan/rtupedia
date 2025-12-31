@@ -9,21 +9,23 @@ import AboutUs from './pages/AboutUs';
 import ContactUs from './pages/ContactUs';
 import BranchContent from './pages/BranchContent';
 import SGPACalculator from "./pages/SGPACalculator";
-
+import AdminReviews from "./pages/AdminReview";
+import AllReviews from "./pages/AllReviews";
 
 const App = () => {
   return (
     <Router>
       <Header />
-      <main style={{flexGrow: 1}}>
+      <main style={{ flexGrow: 1 }}>
         <Routes>
           <Route path="/" element={<Home />} />
           {/* Dynamic route for year/branch selection */}
-          <Route path="/year/:yearSlug" element={<BranchContent />} /> 
+          <Route path="/year/:yearSlug" element={<BranchContent />} />
           <Route path="/about" element={<AboutUs />} />
           <Route path="/contact" element={<ContactUs />} />
           <Route path="/SGPACalculator" element={<SGPACalculator />} />
-
+          <Route path="/admin/reviews" element={<AdminReviews />} />
+          <Route path="/reviews" element={<AllReviews />} />
           {/* Fallback route for 404 */}
           <Route path="*" element={<div className="container"><h2>404 - Page Not Found</h2></div>} />
         </Routes>
