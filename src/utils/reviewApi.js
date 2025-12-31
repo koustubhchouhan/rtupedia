@@ -1,7 +1,10 @@
 //reviewApi.js
 
-// const BASE = "https://rtupedia-backend-2.onrender.com";
-const BASE = "http://localhost:5000";
+const BASE =
+  process.env.NODE_ENV === "production"
+    ? "https://rtupedia-backend-2.onrender.com"
+    : "http://localhost:5000";
+
 
 
 export const submitReview = (data) =>
