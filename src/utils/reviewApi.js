@@ -26,18 +26,18 @@ export const getReviews = async () => {
 };
 
 export const getPendingReviews = () =>
-  fetch(`${BASE}/admin/reviews`, {
+  fetch(`${BASE}/api/admin/reviews`, {
     headers: { "x-admin-key": "rtupedia_admin_secret" }
   }).then(res => res.json());
 
 export const approveReview = (id) =>
-  fetch(`${BASE}/admin/reviews/${id}/approve`, {
+  fetch(`${BASE}/api/admin/reviews/${id}/approve`, {
     method: "PUT",
     headers: { "x-admin-key": "rtupedia_admin_secret" }
   });
 
 export const deleteReview = (id) =>
-  fetch(`${BASE}/admin/reviews/${id}`, {
+  fetch(`${BASE}/api/admin/reviews/${id}`, {
     method: "DELETE",
     headers: { "x-admin-key": "rtupedia_admin_secret" }
   });
