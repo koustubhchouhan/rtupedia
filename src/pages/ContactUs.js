@@ -3,7 +3,8 @@ import React, { useState } from "react";
 import { FaInstagram, FaYoutube, FaLinkedin, FaGithub } from "react-icons/fa";
 import { submitReview } from "../utils/reviewApi";
 import StarRating from "../components/Review/StarRating";
-
+import "./SGPACalculator.css";
+ 
 
 const ContactUs = () => {
   const styles = {
@@ -114,7 +115,7 @@ const ContactUs = () => {
     marginTop: "20px",
   };
 
-
+const [showPopup, setShowPopup] = useState(false);
   const [name, setName] = useState("");
   const [message, setMessage] = useState("");
   const [rating, setRating] = useState(5);
@@ -123,26 +124,31 @@ const ContactUs = () => {
 
 const handleSubmit = async (e) => {
   e.preventDefault();
-  console.log("Submit clicked"); // 👈 TEMP DEBUG
 
   if (!name || !email || !message) {
     alert("Please fill all fields");
     return;
   }
+
   try {
-    const res = await submitReview({ name, email, message, rating });
-    console.log("Response:", res);
+    await submitReview({ name, email, message, rating });
 
-    if (!res.success) throw new Error("Failed");
+    // ✅ SHOW POPUP
+    setShowPopup(true);
 
-    setSuccess("Thanks! Your review is sent for approval.");
+    // ✅ AUTO HIDE AFTER 3 SECONDS
+    setTimeout(() => {
+      setShowPopup(false);
+    }, 3000);
+
+    // RESET FORM
     setName("");
     setEmail("");
     setMessage("");
     setRating(5);
+
   } catch (err) {
-    console.error(err);
-    alert("Submission failed");
+    alert("Something went wrong. Please try again.");
   }
 };
 
@@ -191,6 +197,11 @@ const handleSubmit = async (e) => {
   </form>
   {success && <p className="success-text">{success}</p>}
 </div>
+{showPopup && (
+  <div className="review-popup">
+    ✅ Thanks! Your review is sent for approval.
+  </div>
+)}
 
 
         {/* Social Media Section */}
