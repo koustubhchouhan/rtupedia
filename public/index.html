@@ -1,33 +1,68 @@
-<head>
-  <meta charset="utf-8" />
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
 
-  <!-- Favicons -->
-  <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-  <link rel="icon" type="image/png" sizes="32x32" href="%PUBLIC_URL%/favicon.png" />
-  <link rel="icon" type="image/png" sizes="192x192" href="%PUBLIC_URL%/logo512.png" />
-  <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo512.png" />
+    <!-- Primary Favicons -->
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="32x32" href="%PUBLIC_URL%/favicon.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="%PUBLIC_URL%/logo512.png" />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo512.png" />
 
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="theme-color" content="#0b2a4a" />
+    <!-- Basic Meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#0b2a4a" />
 
-  <meta
-    name="description"
-    content="RTUpedia – Notes, PYQs, study material, and resources for Rajasthan Technical University students. This is for Only B.Tech students of RTU."
-  />
+    <!-- SEO Meta -->
+    <meta
+      name="description"
+      content="RTUpedia – Complete notes, PYQs, and study resources for Rajasthan Technical University (RTU) B.Tech students."
+    />
 
-  <meta name="google-site-verification" content="EsslA4pC2ndUpZ2j_iMJl4kt1NPo2WevshX1T0NnLKY" />
+    <!-- Google Site Verification -->
+    <meta
+      name="google-site-verification"
+      content="EsslA4pC2ndUpZ2j_iMJl4kt1NPo2WevshX1T0NnLKY"
+    />
 
-  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!-- Web App Manifest -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
 
-  <title>RTUpedia</title>
-</head>
+    <!-- Title -->
+    <title>RTUpedia | RTU Notes, PYQs & Study Resources</title>
 
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "RTUpedia",
-  "url": "https://rtupedia.vercel.app/",
-  "logo": "https://rtupedia.vercel.app/logo512.png"
-}
-</script>
+    <!-- Organization Logo Schema (VERY IMPORTANT FOR GOOGLE LOGO) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "RTUpedia",
+      "url": "https://rtupedia.vercel.app/",
+      "logo": "https://rtupedia.vercel.app/logo512.png"
+    }
+    </script>
+
+    <!-- Educational Organization Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "EducationalOrganization",
+      "name": "RTUpedia",
+      "alternateName": [
+        "RTU Notes",
+        "RTU PYQ",
+        "RTU Study Material",
+        "Rajasthan Technical University Notes",
+        "RTU Video Lectures"
+      ],
+      "url": "https://rtupedia.vercel.app/"
+    }
+    </script>
+
+  </head>
+
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+  </body>
+</html>
