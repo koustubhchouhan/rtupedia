@@ -288,10 +288,6 @@
         ],
         "More": [
           {
-            "examType": "NK",
-            "pdfLink": "/assets/more/COMMON/BEE NK.pdf"
-          },
-          {
             "examType": "Guess Paper",
             "pdfLink": "/assets/more/COMMON/Basic Electrical Engineering Guess Paper.pdf"
           }
@@ -480,10 +476,7 @@
             "examType": "steps for unit 5",
             "pdfLink": "/assets/more/COMMON/Steps for Unit 5 Engineering Mathematics 2.pdf"
           },
-          {
-            "examType": "Maths 2 NK",
-            "pdfLink": "/assets/more/COMMON/Maths 2 NK.pdf"
-          },
+  
           {
             "examType": "Formula Sheet unit 1",
             "pdfLink": "/assets/more/COMMON/Formula Sheet Maths 2 (unit 1).pdf"
@@ -583,10 +576,6 @@
           }
         ],
         "More": [
-          {
-            "examType": "NK",
-            "pdfLink": "/assets/more/COMMON/BEE NK.pdf"
-          },
           {
             "examType": "Guess Paper",
             "pdfLink": "/assets/more/COMMON/Basic Electrical Engineering Guess Paper.pdf"
@@ -902,10 +891,6 @@
           {
             "examType": "Mid Term Papers GIT",
             "pdfLink": "/assets/more/COMMON/1st Year Mid Term Paper All Subjects.pdf"
-          },
-          {
-            "examType": "All PYQ NK",
-            "pdfLink": "/assets/more/COMMON/NK PYQ Compressed sem 1.pdf"
           },
           {
             "examType":"CAEG",

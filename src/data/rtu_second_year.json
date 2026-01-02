@@ -32,7 +32,6 @@
           }
         ],
         "More": [
-          { "examType": "AEM NK", "pdfLink": "/assets/more/CSE/AEM NK.pdf" },
           { "examType": "AEM Formulas and Methods", "pdfLink": "/assets/more/CSE/AEM Formulas and Methods.pdf" }
         ]
       },
@@ -62,7 +61,6 @@
           }
         ],
         "More": [
-          { "examType": "TC NK", "pdfLink": "/assets/more/CSE/TC NK.pdf" }
         ]
       },
       {
@@ -96,8 +94,9 @@
           }
         ],
         "More": [
-          { "examType": "MEFA NK", "pdfLink": "/assets/more/CSE/MEFA NK.pdf" }
+
         ]
+        
       },
       {
         "subjectName": "Digital Electronics",
@@ -130,7 +129,6 @@
           }
         ],
            "More": [
-          { "examType": "DE NK", "pdfLink": "/assets/more/CSE/DE NK.pdf" }
         ]
       },
       {
@@ -164,7 +162,7 @@
           }
         ],
            "More": [
-          { "examType": "DSA NK", "pdfLink": "/assets/more/CSE/DSA NK.pdf" }
+      
         ]
       },
       {
@@ -198,7 +196,7 @@
           }
         ],
            "More": [
-          { "examType": "OOPs NK", "pdfLink": "/assets/more/CSE/OOPs NK.pdf" }
+      
         ]
       },
       {
@@ -232,8 +230,8 @@
           }
         ],
         "More": [
-          { "examType": "Guess Paper", "pdfLink": "/assets/more/CSE/SE Guess Paper.pdf" },
-          { "examType": "SE NK", "pdfLink": "/assets/more/CSE/SE NK.pdf" }
+          { "examType": "Guess Paper", "pdfLink": "/assets/more/CSE/SE Guess Paper.pdf" }
+    
         ]
       }
     ],
@@ -507,10 +505,7 @@
     "Extra" :[
       {
         "More":[
-          {
-            "examType": "All PYQ NK",
-            "pdfLink": "/assets/more/COMMON/NK PYQ.pdf"
-          }
+        
         ]
       }
     ]
