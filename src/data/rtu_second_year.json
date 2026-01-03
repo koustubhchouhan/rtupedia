@@ -94,7 +94,8 @@
           }
         ],
         "More": [
-
+       { "examType": "MEFA Formulas and Concepts", "pdfLink": "/assets/more/CSE/MEFA Imp Formulas Unit 1 to 3.pdf" },
+       { "examType": "MEFA All PYQs", "pdfLink": "/assets/more/CSE/Complete MEFA with PYQS.pdf" }
         ]
         
       },
