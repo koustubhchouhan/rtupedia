@@ -1,6 +1,7 @@
 {
   "COMMON": {
-    "1": [
+    "1": {
+      "subjects":[
       {
         "subjectName": "Engineering Mathematics1",
         "subjectCode": "1FY2-01",
@@ -436,7 +437,23 @@
         ]
       }
     ],
-    "2": [
+    "Extra" :[
+   {
+            "examType": "Mid Term Papers GIT",
+            "pdfLink": "/assets/more/COMMON/1st Year Mid Term Paper All Subjects.pdf"
+          },
+          {
+            "examType":"CAEG",
+            "pdfLink": "/assets/more/COMMON/CAEG short Question.pdf"
+          },
+          {
+            "examType": "IMP RTU Topics",
+            "pdfLink" : "/assets/more/COMMON/IMPORTANT Topics for RTU.md"
+          }
+    ]
+    },
+    "2": {
+      "subjects":[
       {
         "subjectName": "Engineering Mathematics2",
         "subjectCode": "2FY2-01",
@@ -882,12 +899,9 @@
             "examType": "Imp Question",
             "pdfLink": "/assets/more/COMMON/Imp Questions Programming for Problem Solving.pdf"
           }
-        ]
-      }
-    ],
-    "Extra" :[
-      {
-        "More":[
+        ],
+        
+      "Extra": [
           {
             "examType": "Mid Term Papers GIT",
             "pdfLink": "/assets/more/COMMON/1st Year Mid Term Paper All Subjects.pdf"
@@ -900,8 +914,11 @@
             "examType": "IMP RTU Topics",
             "pdfLink" : "/assets/more/COMMON/IMPORTANT Topics for RTU.md"
           }
-        ]
+            ]
       }
     ]
   }
-}
+  
+  }
+  
+  }

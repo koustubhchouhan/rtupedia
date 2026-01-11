@@ -1,7 +1,9 @@
 {
   "CSE": {
-    "3": [
+    "3": 
       {
+      "subjects": [
+        {
         "subjectName": "Advanced Engineering Mathematics",
         "subjectCode": "3CS2-01",
         "units": [
@@ -198,7 +200,8 @@
           }
         ],
            "More": [
-      
+      {"examType": "OOPS Imp Short Questions", "pdfLink":  "/assets/more/CSE/OOPs Imp Short Questions.pdf" },
+      {"examType": "OOPS All Codes", "pdfLink":  "/assets/more/CSE/OOPs Codes.pdf" }
         ]
       },
       {
@@ -232,12 +235,18 @@
           }
         ],
         "More": [
-          { "examType": "Guess Paper", "pdfLink": "/assets/more/CSE/SE Guess Paper.pdf" }
-    
+          { "examType": "Guess Paper", "pdfLink": "/assets/more/CSE/SE Guess Paper.pdf" },
+          {"examType": "SE RTU Paper Solution 2025", "pdfLink": "/assets/more/CSE/SE RTU Solution 2025.pdf"}
         ]
       }
-    ],
-    "4": [
+  ], 
+         "Extra" :[
+          { "examType": "RTU Imp Topics for 3rd SEM", "pdfLink": "/assets/more/CSE/IMP RTU TOPICS 3rd SEM.md" }
+    ]
+    },
+    "4": {
+
+    "subjects": [
       {
         "subjectName": "Discrete Mathematics Structure",
         "subjectCode": "4CS2-01",
@@ -505,12 +514,9 @@
       }
     ],
     "Extra" :[
-      {
-        "More":[
-        
-        ]
-      }
+          { "examType": "RTU Imp Topics for 4th SEM", "pdfLink": "/assets/more/CSE/IMP RTU TOPICS 4th SEM.md" }
     ]
+    }
   },
   "EE": { "3": [], "4": [] },
   "ME": { "3": [], "4": [] },

@@ -35,6 +35,7 @@ const getYearJSON = (yearSlug) => {
 
 /* =========================
    NORMALIZER (PYQ MATCHING)
+   ⚠️ DO NOT CHANGE – BACKEND SAFE
 ========================= */
 const normalize = (str) =>
   String(str || "").toLowerCase().replace(/[^a-z0-9]/g, "");
@@ -44,15 +45,12 @@ const normalize = (str) =>
 ========================= */
 export const fetchBranches = (yearSlug) => {
   if (yearSlug === "first-year") return ["COMMON"];
-  if (yearSlug === "second-year") {
-    return ["CSE", "AIDS", "ME", "CE", "EE", "IT", "CY"];
-  }
   const data = getYearJSON(yearSlug);
   return data ? Object.keys(data).map((b) => b.toUpperCase()) : [];
 };
 
 /* =========================
-   LOAD NOTES (BASE DATA)
+   LOAD NOTES (NEW SCHEMA)
 ========================= */
 export const loadNotes = (yearSlug, branch, semester) => {
   const key = `${yearSlug}-${branch}-${semester}`;
@@ -61,20 +59,23 @@ export const loadNotes = (yearSlug, branch, semester) => {
   const data = getYearJSON(yearSlug);
   if (!data) return [];
 
-  const subjects =
-    yearSlug === "first-year"
-      ? data.COMMON?.[semester] || []
-      : data[branch]?.[semester] || [];
+  let subjects = [];
+
+  if (yearSlug === "first-year") {
+    subjects = data.COMMON?.[semester]?.subjects || [];
+  } else {
+    subjects = data[branch]?.[semester]?.subjects || [];
+  }
 
   cache.notes[key] = subjects;
   return subjects;
 };
 
 /* =========================
-   FETCH PYQs (BACKEND)
+   FETCH PYQs (BACKEND – UNCHANGED LOGIC)
 ========================= */
-export const fetchPYQFromBackend = async (branch, semester, subjects) => {
-  const key = `${branch}-${semester}`;
+export const fetchPYQFromBackend = async ( yearSlug, branch, semester, subjects) => {
+  const key = `${yearSlug}-${branch}-${semester}`;
   if (cache.pyq[key]) return cache.pyq[key];
 
   try {
@@ -101,7 +102,7 @@ export const fetchPYQFromBackend = async (branch, semester, subjects) => {
           const year = file.title.match(/\d{4}/)?.[0] || "Unknown";
           g.pyqs.push({
             title: `${year} Paper`,
-            pdf: file.pdf
+            pdf: file.pdf   // ✅ backend-controlled URL
           });
         }
       });
@@ -118,7 +119,7 @@ export const fetchPYQFromBackend = async (branch, semester, subjects) => {
 };
 
 /* =========================
-   LOAD LABS
+   LOAD LABS (UNCHANGED)
 ========================= */
 export const loadLabs = (yearSlug, branch, semester) => {
   const key = `${yearSlug}-${branch}-${semester}`;
@@ -137,32 +138,34 @@ export const loadLabs = (yearSlug, branch, semester) => {
 };
 
 /* =========================
-   LOAD EXTRA MORE
+   LOAD EXTRA MORE (NEW SCHEMA)
 ========================= */
-export const loadExtraMore = (yearSlug) => {
-  if (cache.extraMore[yearSlug]) return cache.extraMore[yearSlug];
+export const loadExtraMore = (yearSlug, branch, semester) => {
+  const key = `${yearSlug}-${branch}-${semester}`;
+  if (cache.extraMore[key]) return cache.extraMore[key];
 
   const data = getYearJSON(yearSlug);
   if (!data) return [];
 
-  const extra =
-    data.COMMON?.Extra?.[0]?.More && Array.isArray(data.COMMON.Extra[0].More)
-      ? data.COMMON.Extra[0].More
-      : [];
+  let extra = [];
 
-  cache.extraMore[yearSlug] = extra;
+  if (yearSlug === "first-year") {
+    extra = data.COMMON?.[semester]?.Extra || [];
+  } else {
+    extra = data[branch]?.[semester]?.Extra || [];
+  }
+
+  cache.extraMore[key] = extra;
   return extra;
 };
 
 /* =========================
-   DEFAULT EXPORT (FIXED)
+   DEFAULT EXPORT
 ========================= */
-const dataFetcher = {
+export default {
   fetchBranches,
   loadNotes,
   fetchPYQFromBackend,
   loadLabs,
   loadExtraMore
 };
-
-export default dataFetcher;
