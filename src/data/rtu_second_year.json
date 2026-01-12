@@ -236,7 +236,8 @@
         ],
         "More": [
           { "examType": "Guess Paper", "pdfLink": "/assets/more/CSE/SE Guess Paper.pdf" },
-          {"examType": "SE RTU Paper Solution 2025", "pdfLink": "/assets/more/CSE/SE RTU Solution 2025.pdf"}
+          {"examType": "SE RTU Paper Solution 2025", "pdfLink": "/assets/more/CSE/SE RTU Solution 2025.pdf"},
+             {"examType": "SE RTU Paper Solution 2024", "pdfLink": "/assets/more/CSE/SE RTU Solution 2024.pdf"}
         ]
       }
   ], 
