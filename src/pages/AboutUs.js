@@ -1,7 +1,16 @@
-import React from "react";
-import ReviewSlider from "../components/Review/ReviewSlider";
+import React, { useEffect, useState } from "react";
+
+
+import { getReviews } from "../utils/reviewApi";
+import ReviewCard from "../components/Review/ReviewCard";
+import  { Link } from "react-router-dom";
 
 const AboutUs = () => {
+  const [reviews, setReviews] = useState([]);
+useEffect(() => {
+  getReviews().then(setReviews);
+}, []);
+
   const styles = {
     page: {
       padding: "40px 20px",
@@ -126,7 +135,21 @@ const AboutUs = () => {
           </p> </b>   
         </div>
 
-       <ReviewSlider limit={2} />
+   {/* STUDENT REVIEWS PREVIEW */}
+<div style={{ marginTop: "60px", textAlign: "center",  }}>
+  <h2 style={{textAlign: "left"}}>What Students Say</h2>
+
+  <div className="review-preview-grid">
+    {reviews.slice(0, 4).map((r) => (
+      <ReviewCard key={r._id} review={r} preview />
+    ))}
+  </div>
+
+  <Link to="/reviews" className="view-all-btn">
+    View all reviews →
+  </Link>
+</div>
+   
 
         {/* Team Section */}
         <h2 style={styles.sectionTitle}>Meet Our Team</h2>

@@ -2,14 +2,14 @@
 
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-
+import { Link } from "react-router-dom";
 import Card from "../components/UI/Card";
 import Button from "../components/UI/Button";
 import LoadingSpinner from "../components/UI/LoadingSpinner";
 
 import yearDataJSON from "../data/year_data.json";
 import syllabusLinks from "../data/syllabus_links.json";
-import ReviewSlider from "../components/Review/ReviewSlider";
+
 
 import "./YearSelection.css";
 
@@ -17,7 +17,9 @@ import { FaRegHandshake } from "react-icons/fa6";
 import { GiBookshelf } from "react-icons/gi";
 import { MdVideoSettings } from "react-icons/md";
 import { PiMedalFill } from "react-icons/pi";
-
+import { getReviews } from "../utils/reviewApi";
+import ReviewCard from "../components/Review/ReviewCard";
+ 
 
 const YearSelection = () => {
   const [yearData, setYearData] = useState([]);
@@ -39,6 +41,13 @@ const YearSelection = () => {
   const downloadSyllabus = (link) => {
     window.open(link, "_blank");
   };
+
+  const [reviews, setReviews] = useState([]);
+
+useEffect(() => {
+  getReviews().then(setReviews);
+}, []);
+
 
   if (loading) return <LoadingSpinner />;
 
@@ -156,7 +165,21 @@ const YearSelection = () => {
         </div>
       </div>
     
-      <ReviewSlider limit={3} />
+   {/* STUDENT REVIEWS PREVIEW */}
+<div style={{ marginTop: "60px", textAlign: "center" }}>
+  <h2>What Students Say</h2>
+
+  <div className="review-preview-grid">
+    {reviews.slice(0, 4).map((r) => (
+      <ReviewCard key={r._id} review={r} preview />
+    ))}
+  </div>
+
+  <Link to="/reviews" className="view-all-btn">
+    View all reviews →
+  </Link>
+</div>
+
     </>
   );
 };
