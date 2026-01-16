@@ -162,10 +162,15 @@ export const loadExtraMore = (yearSlug, branch, semester) => {
 /* =========================
    DEFAULT EXPORT
 ========================= */
-export default {
+/* =========================
+   DEFAULT EXPORT
+========================= */
+const dataFetcher = {
   fetchBranches,
   loadNotes,
   fetchPYQFromBackend,
   loadLabs,
   loadExtraMore
 };
+
+export default dataFetcher;

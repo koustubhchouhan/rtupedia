@@ -119,7 +119,6 @@ const [showPopup, setShowPopup] = useState(false);
   const [name, setName] = useState("");
   const [message, setMessage] = useState("");
   const [rating, setRating] = useState(5);
-  const [success, setSuccess] = useState("");
   const [email, setEmail] = useState("");
 
 const handleSubmit = async (e) => {
@@ -195,7 +194,6 @@ const handleSubmit = async (e) => {
     <StarRating value={rating} onChange={setRating} />
     <button type="submit" style={{color: "var(--color-background)", backgroundColor: "var(--color-primary)"}}>Submit Review</button>
   </form>
-  {success && <p className="success-text">{success}</p>}
 </div>
 {showPopup && (
   <div className="review-popup">
