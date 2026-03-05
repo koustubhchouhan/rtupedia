@@ -254,33 +254,28 @@
         "subjectCode": "4CS2-01",
         "units": [
           {
-            "unitName": "Introduction: Objective, scope and outcome of the course.",
-            "notesPDF": "/assets/notes/Discrete Mathematics Unit 1.pdf",
-            "lectureLink": "https://youtube.com/playlist?list=discrete-mathematics-unit1"
-          },
-          {
             "unitName": "Set Theory, Relation, Function: Countable/uncountable sets, cardinality, inclusion-exclusion principle, pigeonhole principle.",
-            "notesPDF": "/assets/notes/Discrete Mathematics Unit 2.pdf",
-            "lectureLink": "https://youtube.com/playlist?list=discrete-mathematics-unit2"
+            "notesPDF": "/assets/notes/CSE/4/DMS Unit 1.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X2YmyM9VnytGmbMFjUlV-R8&si=WJc4HSDHFUdDvnYY"
           },
           {
             "unitName": "Propositional Logic: Logical operations, predicates, normal forms, quantifiers.",
-            "notesPDF": "/assets/notes/Discrete Mathematics Unit 3.pdf",
+            "notesPDF": "/assets/notes/CSE/4/DMS Unit 2.pdf",
             "lectureLink": "https://youtube.com/playlist?list=discrete-mathematics-unit3"
           },
           {
             "unitName": "Posets, Hasse diagram, Lattices, Combinatorics, Recurrence Relations, Generating Functions.",
-            "notesPDF": "/assets/notes/Discrete Mathematics Unit 4.pdf",
+            "notesPDF": "/assets/notes/CSE/4/DMS Unit 3.pdf",
             "lectureLink": "https://youtube.com/playlist?list=discrete-mathematics-unit4"
           },
           {
             "unitName": "Algebraic Structures: Groups, Rings, Fields, Commutativity, Homomorphism.",
-            "notesPDF": "/assets/notes/Discrete Mathematics Unit 5.pdf",
+            "notesPDF": "/assets/notes/CSE/4/DMS Unit 4.pdf",
             "lectureLink": "https://youtube.com/playlist?list=discrete-mathematics-unit5"
           },
           {
             "unitName": "Graph Theory: Paths, cycles, connectivity, Eulerian/Hamiltonian paths, graph coloring.",
-            "notesPDF": "/assets/notes/Discrete Mathematics Unit 6.pdf",
+            "notesPDF": "/assets/notes/CSE/4/DMS Unit 5.pdf",
             "lectureLink": "https://youtube.com/playlist?list=discrete-mathematics-unit6"
           }
         ],
@@ -294,33 +289,28 @@
         "subjectCode": "4CS3-04",
         "units": [
           {
-            "unitName": "Introduction: Microprocessor basics, applications.",
-            "notesPDF": "/assets/notes/Microprocessor Unit 1.pdf",
-            "lectureLink": "https://youtube.com/playlist?list=microprocessor-unit1"
-          },
-          {
-            "unitName": "Architecture of 8085 Microprocessor: Internal blocks, instruction cycle, addressing modes.",
-            "notesPDF": "/assets/notes/Microprocessor Unit 2.pdf",
-            "lectureLink": "https://youtube.com/playlist?list=microprocessor-unit2"
+            "unitName": "Introduction: Microprocessor basics, applications. Architecture of 8085 Microprocessor: Internal blocks, instruction cycle, addressing modes.",
+            "notesPDF": "/assets/notes/CSE/4/MPI Unit 1.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLxCzCOWd7aiHL7mF_dRsj4Q9x1NNaZqkh&si=ciJKMdrd0gv00BF4"
           },
           {
             "unitName": "8085 Instruction Set and Programming: Data transfer, arithmetic, logical, branch instructions.",
-            "notesPDF": "/assets/notes/Microprocessor Unit 3.pdf",
+            "notesPDF": "/assets/notes/CSE/4/MPI Unit 2.pdf",
             "lectureLink": "https://youtube.com/playlist?list=microprocessor-unit3"
           },
           {
             "unitName": "Interfacing Memory and I/O Devices.",
-            "notesPDF": "/assets/notes/Microprocessor Unit 4.pdf",
+            "notesPDF": "/assets/notes/CSE/4/MPI Unit 3.pdf",
             "lectureLink": "https://youtube.com/playlist?list=microprocessor-unit4"
           },
           {
             "unitName": "8085 Microprocessor Interfacing (8255, 8259 etc.)",
-            "notesPDF": "/assets/notes/Microprocessor Unit 5.pdf",
+            "notesPDF": "/assets/notes/CSE/4/MPI Unit 4.pdf",
             "lectureLink": "https://youtube.com/playlist?list=microprocessor-unit5"
           },
           {
             "unitName": "Microprocessor Applications.",
-            "notesPDF": "/assets/notes/Microprocessor Unit 6.pdf",
+            "notesPDF": "/assets/notes/CSE/4/MPI Unit 5.pdf",
             "lectureLink": "https://youtube.com/playlist?list=microprocessor-unit6"
           }
         ],
@@ -335,32 +325,32 @@
         "units": [
           {
             "unitName": "Introduction: Database concepts, data models, DBMS architecture.",
-            "notesPDF": "/assets/notes/DBMS Unit 1.pdf",
+            "notesPDF": "/assets/notes/CSE/4/DBMS Unit 1.pdf",
             "lectureLink": "https://youtube.com/playlist?list=dbms-unit1"
           },
           {
             "unitName": "Entity Relationship Model: Mapping cardinalities, keys, constraints.",
-            "notesPDF": "/assets/notes/DBMS Unit 2.pdf",
+            "notesPDF": "/assets/notes/CSE/4/DBMS Unit 2.pdf",
             "lectureLink": "https://youtube.com/playlist?list=dbms-unit2"
           },
           {
             "unitName": "Relational Algebra and Calculus, SQL Queries, Trigger Programming.",
-            "notesPDF": "/assets/notes/DBMS Unit 3.pdf",
+            "notesPDF": "/assets/notes/CSE/4/DBMS Unit 3.pdf",
             "lectureLink": "https://youtube.com/playlist?list=dbms-unit3"
           },
           {
             "unitName": "Schema Refinement and Normal Forms.",
-            "notesPDF": "/assets/notes/DBMS Unit 4.pdf",
+            "notesPDF": "/assets/notes/CSE/4/DBMS Unit 4.pdf",
             "lectureLink": "https://youtube.com/playlist?list=dbms-unit4"
           },
           {
             "unitName": "Transaction Processing.",
-            "notesPDF": "/assets/notes/DBMS Unit 5.pdf",
+            "notesPDF": "/assets/notes/CSE/4/DBMS Unit 5.pdf",
             "lectureLink": "https://youtube.com/playlist?list=dbms-unit5"
           },
           {
             "unitName": "Concurrency Control, Database Failure and Recovery.",
-            "notesPDF": "/assets/notes/DBMS Unit 6.pdf",
+            "notesPDF": "/assets/notes/CSE/4/DBMS Unit 6.pdf",
             "lectureLink": "https://youtube.com/playlist?list=dbms-unit6"
           }
         ],
@@ -375,22 +365,22 @@
         "units": [
           {
             "unitName": "Introduction to Technical Communication: Process of Communication, Language as a tool of communication, Technical communication: meaning, importance and role.",
-            "notesPDF": "/assets/notes/Technical Communication Unit 1.pdf",
-            "lectureLink": "https://youtube.com/playlist?list=technical-communication-unit1"
+            "notesPDF": "/assets/notes/CSE/4/TC Unit 1.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X2G_KPRnBdEDjiF1n7uuDIV&si=t1CAV3joirkRGLce"
           },
           {
             "unitName": "Comprehension of Technical Materials/Texts and Information Design & Development: Reading techniques, summarizing, abstracting, information collection, organization and presentation.",
-            "notesPDF": "/assets/notes/Technical Communication Unit 2.pdf",
-            "lectureLink": "https://youtube.com/playlist?list=technical-communication-unit2"
+            "notesPDF": "/assets/notes/CSE/4/TC Unit 2.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X2ELdJUMWwTMh0i65_I80FH&si=bUezUsLL9wHdynSi"
           },
           {
             "unitName": "Technical Writing, Grammar and Editing: Technical style, technical definitions, technical descriptions, technical manuals, grammar usage and common errors.",
-            "notesPDF": "/assets/notes/Technical Communication Unit 3.pdf",
+            "notesPDF": "/assets/notes/CSE/4/TC Unit 3.pdf",
             "lectureLink": "https://youtube.com/playlist?list=technical-communication-unit3"
           },
           {
             "unitName": "Advanced Technical Writing: Research papers, project reports, dissertations, proposals, technical emails.",
-            "notesPDF": "/assets/notes/Technical Communication Unit 4.pdf",
+            "notesPDF": "/assets/notes/CSE/4/TC Unit 4.pdf",
             "lectureLink": "https://youtube.com/playlist?list=technical-communication-unit4"
           }
         ],
@@ -405,27 +395,27 @@
         "units": [
           {
             "unitName": "Basic Economic Concepts: Meaning, nature and scope of economics; basic economic problems; scarcity and choice; national income.",
-            "notesPDF": "/assets/notes/Managerial Economics Unit 1.pdf",
+            "notesPDF": "/assets/notes/CSE/4/MEFA Unit 1.pdf",
             "lectureLink": "https://youtube.com/playlist?list=managerial-economics-unit1"
           },
           {
             "unitName": "Demand and Supply Analysis: Demand forecasting, elasticity of demand, supply function, elasticity of supply.",
-            "notesPDF": "/assets/notes/Managerial Economics Unit 2.pdf",
+            "notesPDF": "/assets/notes/CSE/4/MEFA Unit 2.pdf",
             "lectureLink": "https://youtube.com/playlist?list=managerial-economics-unit2"
           },
           {
             "unitName": "Production and Cost Analysis: Production function, laws of returns to scale, least cost combination, isoquants, cost curves.",
-            "notesPDF": "/assets/notes/Managerial Economics Unit 3.pdf",
+            "notesPDF": "/assets/notes/CSE/4/MEFA Unit 3.pdf",
             "lectureLink": "https://youtube.com/playlist?list=managerial-economics-unit3"
           },
           {
             "unitName": "Market structure and pricing theory: Perfect competition, monopoly, monopolistic competition, oligopoly.",
-            "notesPDF": "/assets/notes/Managerial Economics Unit 4.pdf",
+            "notesPDF": "/assets/notes/CSE/4/MEFA Unit 4.pdf",
             "lectureLink": "https://youtube.com/playlist?list=managerial-economics-unit4"
           },
           {
             "unitName": "Financial Statement Analysis: Balance sheet, P&L statements, cash-flow analysis, fund-flow analysis, financial ratios.",
-            "notesPDF": "/assets/notes/Managerial Economics Unit 5.pdf",
+            "notesPDF": "/assets/notes/CSE/4/MEFA Unit 5.pdf",
             "lectureLink": "https://youtube.com/playlist?list=managerial-economics-unit5"
           }
         ],
@@ -439,33 +429,27 @@
         "subjectCode": "4CS4-06",
         "units": [
           {
-            "unitName": "Introduction: Basics of automata theory and formal languages.",
-            "notesPDF": "/assets/notes/Theory Of Computation Unit 1.pdf",
-            "lectureLink": "https://youtube.com/playlist?list=toc-unit1"
-          },
-          {
-            "unitName": "Finite Automata & Regular Expression.",
-            "notesPDF": "/assets/notes/Theory Of Computation Unit 2.pdf",
+            "unitName": "Introduction: Basics of automata theory and formal languages. Finite Automata & Regular Expression.",
+            "notesPDF": "/assets/notes/CSE/4/TOC Unit 1.pdf",
             "lectureLink": "https://youtube.com/playlist?list=toc-unit2"
           },
           {
             "unitName": "Context-Free Grammar and Pushdown Automata.",
-            "notesPDF": "/assets/notes/Theory Of Computation Unit 3.pdf",
+            "notesPDF": "/assets/notes/CSE/4/TOC Unit 2.pdf",
             "lectureLink": "https://youtube.com/playlist?list=toc-unit3"
           },
           {
             "unitName": "Turing Machines.",
-            "notesPDF": "/assets/notes/Theory Of Computation Unit 4.pdf",
+            "notesPDF": "/assets/notes/CSE/4/TOC Unit 3.pdf",
             "lectureLink": "https://youtube.com/playlist?list=toc-unit4"
           },
           {
             "unitName": "Hierarchy of Formal Languages.",
-            "notesPDF": "/assets/notes/Theory Of Computation Unit 5.pdf",
+            "notesPDF": "/assets/notes/CSE/4/TOC Unit 4.pdf",
             "lectureLink": "https://youtube.com/playlist?list=toc-unit5"
           },
           {
-            "unitName": "Tractable and Untractable Problems (P and NP Classes).",
-            "notesPDF": "/assets/notes/Theory Of Computation Unit 6.pdf",
+            "unitName": "Tractable and CSE/4/TOC Unit 5.pdf",
             "lectureLink": "https://youtube.com/playlist?list=toc-unit6"
           }
         ],
@@ -478,34 +462,30 @@
         "subjectName": "Data Communication and Computer Networks",
         "subjectCode": "4CS4-07",
         "units": [
+        
           {
-            "unitName": "Introduction: Basics of data communication, network types, protocol architecture.",
-            "notesPDF": "/assets/notes/DCCN Unit 1.pdf",
-            "lectureLink": "https://youtube.com/playlist?list=dccn-unit1"
-          },
-          {
-            "unitName": "Data Transmission, Transmission Media, Channel Capacity.",
-            "notesPDF": "/assets/notes/DCCN Unit 2.pdf",
+            "unitName": "Introduction: Basics of data communication, network types, protocol architecture. Data Transmission, Transmission Media, Channel Capacity.",
+            "notesPDF": "/assets/notes/CSE/4/DCCN Unit 1.pdf",
             "lectureLink": "https://youtube.com/playlist?list=dccn-unit2"
           },
           {
             "unitName": "Data Link Layer: Framing, Error control, Flow control.",
-            "notesPDF": "/assets/notes/DCCN Unit 3.pdf",
+            "notesPDF": "/assets/notes/CSE/4/DCCN Unit 2.pdf",
             "lectureLink": "https://youtube.com/playlist?list=dccn-unit3"
           },
           {
             "unitName": "Network Layer: Routing algorithms, Congestion control, IPv4/IPv6.",
-            "notesPDF": "/assets/notes/DCCN Unit 4.pdf",
+            "notesPDF": "/assets/notes/CSE/4/DCCN Unit 3.pdf",
             "lectureLink": "https://youtube.com/playlist?list=dccn-unit4"
           },
           {
             "unitName": "Transport Layer: TCP, UDP, Flow control, Connection management.",
-            "notesPDF": "/assets/notes/DCCN Unit 5.pdf",
+            "notesPDF": "/assets/notes/CSE/4/DCCN Unit 4.pdf",
             "lectureLink": "https://youtube.com/playlist?list=dccn-unit5"
           },
           {
             "unitName": "Application Layer: DNS, Email, FTP, HTTP.",
-            "notesPDF": "/assets/notes/DCCN Unit 6.pdf",
+            "notesPDF": "/assets/notes/CSE/4/DCCN Unit 5.pdf",
             "lectureLink": "https://youtube.com/playlist?list=dccn-unit6"
           }
         ],
