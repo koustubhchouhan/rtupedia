@@ -324,33 +324,28 @@
         "subjectCode": "4CS4-05",
         "units": [
           {
-            "unitName": "Introduction: Database concepts, data models, DBMS architecture.",
+            "unitName": "Introduction: Database concepts, data models, DBMS architecture. Entity Relationship Model: Mapping cardinalities, keys, constraints.",
             "notesPDF": "/assets/notes/CSE/4/DBMS Unit 1.pdf",
             "lectureLink": "https://youtube.com/playlist?list=dbms-unit1"
           },
           {
-            "unitName": "Entity Relationship Model: Mapping cardinalities, keys, constraints.",
-            "notesPDF": "/assets/notes/CSE/4/DBMS Unit 2.pdf",
-            "lectureLink": "https://youtube.com/playlist?list=dbms-unit2"
-          },
-          {
             "unitName": "Relational Algebra and Calculus, SQL Queries, Trigger Programming.",
-            "notesPDF": "/assets/notes/CSE/4/DBMS Unit 3.pdf",
+            "notesPDF": "/assets/notes/CSE/4/DBMS Unit 2.pdf",
             "lectureLink": "https://youtube.com/playlist?list=dbms-unit3"
           },
           {
             "unitName": "Schema Refinement and Normal Forms.",
-            "notesPDF": "/assets/notes/CSE/4/DBMS Unit 4.pdf",
+            "notesPDF": "/assets/notes/CSE/4/DBMS Unit 3.pdf",
             "lectureLink": "https://youtube.com/playlist?list=dbms-unit4"
           },
           {
             "unitName": "Transaction Processing.",
-            "notesPDF": "/assets/notes/CSE/4/DBMS Unit 5.pdf",
+            "notesPDF": "/assets/notes/CSE/4/DBMS Unit 4.pdf",
             "lectureLink": "https://youtube.com/playlist?list=dbms-unit5"
           },
           {
             "unitName": "Concurrency Control, Database Failure and Recovery.",
-            "notesPDF": "/assets/notes/CSE/4/DBMS Unit 6.pdf",
+            "notesPDF": "/assets/notes/CSE/4/DBMS Unit 5.pdf",
             "lectureLink": "https://youtube.com/playlist?list=dbms-unit6"
           }
         ],
