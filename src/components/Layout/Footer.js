@@ -9,9 +9,12 @@ const Footer = () => {
         backgroundColor: 'var(--color-primary)',
         color: 'var(--color-background)',
         textAlign: 'center',
-        padding: '18px 10px',
         marginTop: 'auto',
-        fontSize: '0.95rem',
+ 
+        padding:'30px 0',
+  fontSize:"14px",
+
+
       }}
     >
       <div className="container">

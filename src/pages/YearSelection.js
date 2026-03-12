@@ -55,16 +55,61 @@ useEffect(() => {
 
   return (
     <>
+    {/* HERO SECTION */}
+{/* HERO SECTION */}
+
+<div className="hero-section">
+
+  <div className="hero-content">
+
+    <div className="hero-left">
+
+      <h1 className="hero-title">
+        <span className="hero-rtu">RTU</span>
+        <span className="hero-pedia">pedia</span>
+      </h1>
+
+      <p className="hero-subtitle">
+        Your complete RTU study companion for Notes, PYQs, Syllabus and Smart Tools.
+      </p>
+
+      <button
+        className="hero-btn"
+        onClick={() =>
+          document
+            .querySelector(".year-card-grid")
+            .scrollIntoView({ behavior: "smooth" })
+        }
+      >
+        Explore Notes
+      </button>
+
+    </div>
+
+    {/* RIGHT SIDE ILLUSTRATION */}
+
+    <div className="hero-right">
+      <img
+        src="https://cdn-icons-png.flaticon.com/512/3135/3135755.png"
+        alt="study illustration"
+      />
+    </div>
+
+  </div>
+
+</div>
+
       <h2 style={{marginTop:"10px"}}>Select Your Academic Year</h2>
       <p>Choose your current B.Tech year to access notes, PYQs, and resources.</p>
 
   {/* YEAR CARDS SECTION */}
-<div className="year-card-grid">
+<div className="year-card-grid" data-aos="fade-up">
   {yearData.map((year) => (
     <Card
       key={year.slug}
-      title={`${year.year} Notes`}
+      title={`📚 ${year.year} Notes`}
       onClick={() => handleYearSelect(year.slug)}
+      data-aos="fade-up"
     >
       <p style={{ marginTop: "10px", color: "var(--color-text)" }}>
         Click to view branches and subjects.
@@ -73,7 +118,7 @@ useEffect(() => {
   ))}
 </div>
 
-      <hr style={{ marginLeft:"30px",borderColor: "var(--color-border)",marginTop:"60px",marginBottom:"40px" }} />
+     <div className="section-divider" data-aos="fade-up"></div>
 
       {/* SYLLABUS SECTION */}
       <div style={{ textAlign: "center" }}>
@@ -82,7 +127,7 @@ useEffect(() => {
           Download the official B.Tech syllabus
         </p>
 
-        <div className="card-grid">
+        <div className="card-grid"  data-aos="fade-up">
           {branches.map((branch) => {
             const branchSyllabus = syllabusLinks.filter(
               (i) => i.branch === branch
@@ -92,7 +137,8 @@ useEffect(() => {
               <Card
                 key={branch}
                 title={branchFullName(branch)}
-                style={{ textAlign: "center", minHeight: "180px" }}
+                style={{ textAlign: "center", minHeight: "180px" }} 
+                data-aos="fade-up"
               >
                 {branchSyllabus.map((linkItem) => (
                   <Button
@@ -109,21 +155,25 @@ useEffect(() => {
         </div>
       </div>
 
+     <div className="section-divider" data-aos="fade-up"></div>
+
       {/* SGPA CALCULATOR */}
       <div className="home-container" style={{marginTop:"50px"}}>
-        <div className="sgpa-card" onClick={() => navigate("/SGPACalculator")}>
+        <div className="sgpa-card" data-aos="fade-up" onClick={() => navigate("/SGPACalculator")}>
           <h2>SGPA Calculator</h2>
           <p>Calculate your RTU B.tech. SGPA instantly using semester-wise credits.</p>
           <button className="sgpa-btn">Open Calculator</button>
         </div>
       </div>
 
+     <div className="section-divider" data-aos="fade-up"></div>
+
       {/* WHY CHOOSE US */}
-      <div className="why-container">
+      <div className="why-container" data-aos="fade-up">
         <h2 className="why-title">Why Choose RTUpedia?</h2>
 
         <div className="why-grid">
-          <div className="why-card">
+          <div className="why-card" data-aos="fade-up">
             <div className="why-icon">
               <FaRegHandshake />
             </div>
@@ -133,7 +183,7 @@ useEffect(() => {
             </p>
           </div>
 
-          <div className="why-card">
+          <div className="why-card" data-aos="fade-up">
             <div className="why-icon">
               <GiBookshelf />
             </div>
@@ -143,7 +193,7 @@ useEffect(() => {
             </p>
           </div>
 
-          <div className="why-card">
+          <div className="why-card" data-aos="fade-up">
             <div className="why-icon">
               <MdVideoSettings />
             </div>
@@ -153,7 +203,7 @@ useEffect(() => {
             </p>
           </div>
 
-          <div className="why-card">
+          <div className="why-card" data-aos="fade-up">
             <div className="why-icon">
               <PiMedalFill />
             </div>
@@ -164,12 +214,14 @@ useEffect(() => {
           </div>
         </div>
       </div>
+
+           <div className="section-divider" data-aos="fade-up"></div>
     
    {/* STUDENT REVIEWS PREVIEW */}
-<div style={{ marginTop: "60px", textAlign: "center" }}>
+<div data-aos="fade-up"  style={{ marginTop: "60px", textAlign: "center" }}>
   <h2>What Students Say</h2>
 
-  <div className="review-preview-grid">
+  <div className="review-preview-grid" data-aos="fade-up">
     {reviews.slice(0, 4).map((r) => (
       <ReviewCard key={r._id} review={r} preview />
     ))}
