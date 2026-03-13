@@ -1,0 +1,163 @@
+/* =================================
+   HEADER / NAVBAR
+================================= */
+
+.main-header{
+
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+  padding: 12px 0;
+
+  background: var(--color-primary);
+
+  box-shadow: 0 2px 8px rgba(0,0,0,0.25);
+
+  transition: background .25s ease;
+
+}
+
+
+/* =================================
+   CONTAINER
+================================= */
+
+.header-container{
+
+  max-width:1200px;
+  margin:auto;
+
+  padding:0 20px;
+
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+
+}
+
+
+/* =================================
+   LOGO
+================================= */
+
+.logo{
+
+  font-family:"EB Garamond", serif;
+
+  font-size:40px;
+  font-weight:600;
+
+  color:var(--color-background);
+
+  text-decoration:none;
+
+  letter-spacing:0.5px;
+
+}
+
+
+/* =================================
+   NAVIGATION
+================================= */
+
+.nav-links{
+
+  display:flex;
+  align-items:center;
+  gap:20px;
+
+}
+
+
+/* =================================
+   NAV LINKS
+================================= */
+
+.nav-links a{
+
+  text-decoration:none;
+
+  color:var(--color-background);
+
+  font-weight:600;
+  font-size:15px;
+
+  position:relative;
+
+  transition:color .25s ease;
+
+}
+
+
+/* underline hover animation */
+
+.nav-links a::after{
+
+  content:"";
+  position:absolute;
+
+  left:0;
+  bottom:-4px;
+
+  width:0%;
+  height:2px;
+
+  background:var(--color-secondary);
+
+  transition:width .25s ease;
+
+}
+
+.nav-links a:hover::after{
+  width:100%;
+}
+
+.nav-links a:hover{
+  color:var(--color-secondary);
+}
+
+
+/* =================================
+   MOBILE RESPONSIVE
+================================= */
+
+@media (max-width:768px){
+
+.header-container{
+  flex-direction:column;
+  gap:8px;
+}
+
+.logo{
+  font-size:22px;
+}
+
+.nav-links{
+
+  width:100%;
+  justify-content:center;
+
+  gap:14px;
+
+}
+
+}
+
+
+/* small phones */
+
+@media (max-width:480px){
+
+.nav-links{
+  gap:10px;
+}
+
+.nav-links a{
+  font-size:13px;
+}
+
+}
+.main-header{
+  border-bottom:1px solid rgba(255,255,255,0.06);
+}

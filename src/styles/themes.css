@@ -2,78 +2,99 @@
    LIGHT THEME (Default)
 ================================ */
 :root {
-  --color-primary: #0C2B4E;      /* Main heading color */
-  --color-secondary: #FFC107;    /* Yellow accent */
-  --color-tertiary: #17243B;     /* Dark blue for buttons */
 
-  --color-background: #F5F7FA;   /* Light grey */
+  --color-primary: #0C2B4E;
+  --color-secondary: #FFC107;
+  --color-tertiary: #17243B;
+
+  --color-background: #F5F7FA;
   --color-text: #212529;
 
   --color-card-bg: #FFFFFF;
   --color-border: #D6D9DD;
 
-  /* Accordion & Card Specific */
+  /* Accordion */
   --accordion-bg: #F7F7F7;
   --accordion-hover: #EFEFEF;
   --accordion-text: #0C2B4E;
 
+  /* Tabs */
   --tab-bg: #F1F1F1;
   --tab-active-bg: #0C2B4E;
   --tab-active-text: #FFFFFF;
 
+  /* Select */
   --select-bg: #FFFFFF;
   --select-border: #B8B8B8;
 }
 
+
 /* ================================
-   DARK MODE (RTUpedia-style)
+   DARK MODE (New Modern Theme)
 ================================ */
 [data-theme="dark"] {
-  --color-primary: #FFFFFF;       /* Bright clean white */
-  --color-secondary: #FBC02D;     /* Yellow stays visible */
-  --color-tertiary: #C5D6E4;      /* Light blue-grey */
 
-  --color-background: #2F3B4A;    /* Main page background */
-  --color-text: #E8EEF4;          /* Soft white text */
+  /* TEXT */
+  --color-primary: #FFFFFF;
+  --color-text: #94A3B8;
 
-  --color-card-bg: #1F2833;       /* Dark card bg */
-  --color-border: #4A5568;        /* Soft border */
+  /* ACCENT */
+  --color-secondary: #3B82F6;
+  --color-tertiary: #2563EB;
 
-  /* Accordion & Card Specific */
-  --accordion-bg: #243242;        /* Matches screenshot */
-  --accordion-hover: #313F52;     /* Hover effect */
+  /* BACKGROUNDS */
+  --color-background: #0F172A;
+  --color-card-bg: #1E293B;
+
+  /* BORDERS */
+  --color-border: #334155;
+
+  /* ACCORDION */
+  --accordion-bg: #1E293B;
+  --accordion-hover: #263449;
   --accordion-text: #FFFFFF;
 
-  --tab-bg: #3E4A59;              /* Light dark */
-  --tab-active-bg: #FFFFFF;       /* White active tab */
-  --tab-active-text: #0B2346;     /* Dark blue text inside active */
+  /* TABS */
+  --tab-bg: #1E293B;
+  --tab-active-bg: #3B82F6;
+  --tab-active-text: #FFFFFF;
 
-  --select-bg: #1F2833;
-  --select-border: #526170;
+  /* SELECT */
+  --select-bg: #1E293B;
+  --select-border: #334155;
 }
 
+
 /* ================================
-   APPLY COLORS TO ELEMENTS
+   APPLY COLORS
 ================================ */
 
-/* Background */
+/* BODY */
 body {
   background-color: var(--color-background);
   color: var(--color-text);
 }
 
-/* Cards */
-.resource-card {
+/* CARDS */
+.resource-card,
+.pyq-subject-box,
+.ui-card {
+
   background: var(--color-card-bg);
-  border-left: 4px solid var(--color-secondary);
   border: 1px solid var(--color-border);
+
 }
 
-/* Accordions */
+/* SUBJECT LEFT ACCENT */
+.resource-card {
+  border-left: 4px solid var(--color-secondary);
+}
+
+
+/* ACCORDION */
 .accordion {
   background: var(--accordion-bg);
   border: 1px solid var(--color-border);
-  border-radius: 6px;
 }
 
 .accordion-header {
@@ -85,19 +106,22 @@ body {
   background: var(--accordion-hover);
 }
 
-/* Accordion body */
+
+/* ACCORDION BODY */
 .accordion-body {
   background: var(--color-card-bg);
 }
 
-/* Select Boxes */
+
+/* SELECT */
 select {
   background: var(--select-bg);
   border: 1px solid var(--select-border);
-  color: var(--color-text);
+  color: var(--color-primary);
 }
 
-/* Tabs */
+
+/* TABS */
 .rt-tab-btn {
   background: var(--tab-bg);
   color: var(--color-primary);
@@ -108,11 +132,33 @@ select {
   color: var(--tab-active-text);
 }
 
-/* PYQ Links */
-.resource-link {
+
+/* LINKS */
+.resource-link,
+.pyq-paper-link {
   color: var(--color-primary);
 }
 
-.resource-link:hover {
-  opacity: 0.7;
+.resource-link:hover,
+.pyq-paper-link:hover {
+  opacity: 0.8;
+}
+
+
+/* UNIT ROW */
+.unit-row {
+  background: rgba(255,255,255,0.04);
+}
+
+.unit-row:hover {
+  background: rgba(255,255,255,0.08);
+}
+
+
+body,
+.resource-card,
+.ui-card,
+.rt-tab-btn,
+select {
+  transition: background 0.25s ease, color 0.25s ease, border 0.25s ease;
 }

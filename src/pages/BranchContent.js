@@ -175,14 +175,17 @@ const BranchContent = () => {
 
       {/* NOTES */}
       {tab === "notes" && notes.map((sub, i) => (
-        <div className="resource-card" key={i}>
+        <div className="resource-card subject-card" key={i} data-aos="fade-up">
           <details>
             <summary style={{ fontWeight: "bold" }}>
-              {sub.subjectName} ({sub.subjectCode})
-            </summary>
+          
 
+              {sub.subjectName} ({sub.subjectCode})
+               <span className="subject-units">{sub.units.length} Units</span>
+            </summary>
+          
             {sub.units.map((u, j) => (
-              <div key={j} style={{ marginTop: 10 }}>
+              <div key={j} className="unit-row" style={{ marginTop: 10 }}>
                 <strong>{u.unitName}</strong>
                 <div style={{ display: "flex", gap: 12 }}>
                   <a className="resource-link" href={u.notesPDF} target="_blank" rel="noopener noreferrer">📑 PDF</a>
@@ -199,7 +202,7 @@ const BranchContent = () => {
         <>
           {loadingPYQ && <p>Loading PYQs...</p>}
           {pyqGrouped.map((grp, i) => (
-            <div className="pyq-subject-box" key={i}>
+            <div className="pyq-subject-box" key={i} data-aos="fade-up">
               <div className="pyq-subject-title">
                 {grp.subjectName} ({grp.subjectCode})
               </div>
@@ -215,7 +218,7 @@ const BranchContent = () => {
 
       {/* LABS */}
       {tab === "lab" && labGrouped.map((grp, i) => (
-        <div className="pyq-subject-box" key={i}>
+        <div className="pyq-subject-box" key={i} data-aos="fade-up">
           <div className="pyq-subject-title">
             {grp.subjectName} ({grp.subjectCode})
           </div>
@@ -229,7 +232,7 @@ const BranchContent = () => {
 
       {/* MORE (SUBJECT-WISE) */}
       {tab === "more" && moreGrouped.map((grp, i) => (
-        <div className="pyq-subject-box" key={i}>
+        <div className="pyq-subject-box" key={i} data-aos="fade-up">
           <div className="pyq-subject-title">
             {grp.subjectName} ({grp.subjectCode})
           </div>
@@ -243,7 +246,7 @@ const BranchContent = () => {
 
       {/* EXTRA (SEMESTER-LEVEL) */}
       {tab === "more" && (
-        <div className="pyq-subject-box">
+        <div className="pyq-subject-box" data-aos="fade-up" >
           <div className="pyq-subject-title">Extra Resources</div>
 
           {extraMore.length > 0 ? (
