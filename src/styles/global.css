@@ -648,6 +648,25 @@ a {
 }
 
 
+.pyq-paper-link {
+  all: unset; /* reset everything */
+
+  color: #3b82f6;
+  cursor: pointer;
+
+  padding: 6px 10px;
+  border-radius: 8px;
+
+  display: inline-block;
+}
+
+.pyq-paper-link:hover {
+  background: rgba(59, 130, 246, 0.1);
+}
+
+
+
+
 /* Review Form */
 .contact-container{
   max-width: 900px;

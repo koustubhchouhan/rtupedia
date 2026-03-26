@@ -7,7 +7,7 @@ import {
   loadLabs,
   loadExtraMore
 } from "../utils/dataFetcher";
-
+import PDFViewer from "../components/PDFViewer";
 import "./SGPACalculator.css";
 import "../styles/global.css";
 
@@ -25,6 +25,7 @@ const BranchContent = () => {
      STATE
   ========================= */
   const [branches, setBranches] = useState([]);
+  const [pdfUrl, setPdfUrl] = useState(null);
   const [selectedBranch, setSelectedBranch] = useState("");
 
   const [semesters, setSemesters] = useState([]);
@@ -127,6 +128,26 @@ const BranchContent = () => {
 
   }, [tab, notes, yearSlug, selectedBranch, selectedSemester]);
 
+  useEffect(() => {
+  const handleKeyDown = (e) => {
+    if (
+      (e.ctrlKey && e.key === "s") ||
+      (e.ctrlKey && e.key === "p") ||
+      (e.ctrlKey && e.key === "c") ||
+      (e.ctrlKey && e.key === "u") ||
+      e.key === "F12"
+    ) {
+      e.preventDefault();
+    }
+  };
+
+  document.addEventListener("keydown", handleKeyDown);
+
+  return () => {
+    document.removeEventListener("keydown", handleKeyDown);
+  };
+}, []);
+
   /* =========================
      UI
   ========================= */
@@ -178,17 +199,23 @@ const BranchContent = () => {
         <div className="resource-card subject-card" key={i} data-aos="fade-up">
           <details>
             <summary style={{ fontWeight: "bold" }}>
-          
+
 
               {sub.subjectName} ({sub.subjectCode})
-               <span className="subject-units">{sub.units.length} Units</span>
+              <span className="subject-units">{sub.units.length} Units</span>
             </summary>
-          
+
             {sub.units.map((u, j) => (
               <div key={j} className="unit-row" style={{ marginTop: 10 }}>
                 <strong>{u.unitName}</strong>
                 <div style={{ display: "flex", gap: 12 }}>
-                  <a className="resource-link" href={u.notesPDF} target="_blank" rel="noopener noreferrer">📑 PDF</a>
+
+<button
+  className="resource-link"
+  onClick={() => setPdfUrl(u.notesPDF)}
+>
+  📑 View Notes
+</button>
                   <a className="resource-link" href={u.lectureLink} target="_blank" rel="noopener noreferrer">▶ Video</a>
                 </div>
               </div>
@@ -207,7 +234,7 @@ const BranchContent = () => {
                 {grp.subjectName} ({grp.subjectCode})
               </div>
               {grp.pyqs.map((q, idx) => (
-                <a key={idx} className="pyq-paper-link" href={q.pdf} target="_blank" rel="noopener noreferrer">
+                <a key={idx} className="pyq-paper-link" href={`${window.location.origin + q.pdf}#toolbar=0`}  target="_blank" rel="noopener noreferrer">
                   📄 {q.title}
                 </a>
               ))}
@@ -223,9 +250,14 @@ const BranchContent = () => {
             {grp.subjectName} ({grp.subjectCode})
           </div>
           {grp.examPapers?.map((paper, idx) => (
-            <a key={idx} className="pyq-paper-link" href={paper.pdfLink} target="_blank" rel="noopener noreferrer">
-              📄 {paper.examType}
-            </a>
+            
+            <button
+  key={idx}
+  className="pyq-paper-link"
+  onClick={() => setPdfUrl(paper.pdfLink)}
+>
+  📄 {paper.examType}
+</button>
           ))}
         </div>
       ))}
@@ -237,9 +269,13 @@ const BranchContent = () => {
             {grp.subjectName} ({grp.subjectCode})
           </div>
           {grp.items.map((m, idx) => (
-            <a key={idx} className="pyq-paper-link" href={m.pdfLink} target="_blank" rel="noopener noreferrer">
-              📄 {m.examType}
-            </a>
+           <button
+  key={idx}
+  className="pyq-paper-link"
+  onClick={() => setPdfUrl(m.pdfLink)}
+>
+  📄 {m.examType}
+</button>
           ))}
         </div>
       ))}
@@ -251,9 +287,13 @@ const BranchContent = () => {
 
           {extraMore.length > 0 ? (
             extraMore.map((m, idx) => (
-              <a key={idx} className="pyq-paper-link" href={m.pdfLink} target="_blank" rel="noopener noreferrer">
-                📄 {m.examType}
-              </a>
+            <button
+  key={idx}
+  className="pyq-paper-link"
+  onClick={() => setPdfUrl(m.pdfLink)}
+>
+  📄 {m.examType}
+</button>
             ))
           ) : (
             <div className="pyq-empty-text">
@@ -262,6 +302,15 @@ const BranchContent = () => {
           )}
         </div>
       )}
+
+
+{pdfUrl && (
+  <PDFViewer
+    file={pdfUrl}
+    onClose={() => setPdfUrl(null)}
+  />
+)}
+
     </div>
   );
 };
