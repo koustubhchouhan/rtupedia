@@ -41,7 +41,40 @@
 
 .close-btn:hover {
   background: #dc2626;
-  transform: translateY(-1px);
+}
+
+/* ===============================
+   ZOOM CONTROLS
+================================ */
+
+.zoom-controls {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+
+  background: rgba(0,0,0,0.7);
+  padding: 8px 12px;
+  border-radius: 8px;
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  z-index: 10000;
+}
+
+.zoom-controls button {
+  background: #3b82f6;
+  border: none;
+  color: white;
+  padding: 6px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.zoom-controls span {
+  color: white;
+  font-size: 14px;
 }
 
 /* ===============================
@@ -52,10 +85,10 @@
   margin-top: 60px;
   height: calc(100vh - 60px);
 
-  overflow-y: scroll;
+  overflow-y: auto;
   overflow-x: hidden;
 
-  padding: 20px;
+  padding: 10px;
 
   display: flex;
   flex-direction: column;
@@ -63,44 +96,40 @@
 }
 
 /* ===============================
-   PDF PAGE STYLE
+   PAGE WRAPPER (IMPORTANT)
+================================ */
+
+.page-wrapper {
+  position: relative;
+  margin-bottom: 16px;
+}
+
+/* ===============================
+   PDF PAGE
 ================================ */
 
 .react-pdf__Page {
-  margin-bottom: 20px;
-
-  box-shadow: 0 8px 24px rgba(0,0,0,0.4);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.4);
   border-radius: 8px;
   overflow: hidden;
+
+  max-width: 100%;
 }
 
-/* ===============================
-   DISABLE TEXT SELECTION
-================================ */
-
+/* canvas responsive */
 .react-pdf__Page canvas {
+  width: 100% !important;
+  height: auto !important;
+
   user-select: none;
   -webkit-user-select: none;
+  touch-action: manipulation;
 }
 
 /* ===============================
-   SCROLLBAR (OPTIONAL BEAUTY)
+   WATERMARK
 ================================ */
 
-.pdf-container::-webkit-scrollbar {
-  width: 8px;
-}
-
-.pdf-container::-webkit-scrollbar-thumb {
-  background: #3b82f6;
-  border-radius: 6px;
-}
-
-.pdf-container::-webkit-scrollbar-track {
-  background: #111827;
-}
-
-/* WATERMARK */
 .watermark {
   position: absolute;
   top: 0;
@@ -112,9 +141,7 @@
   justify-content: center;
   align-items: center;
 
-  pointer-events: none; /* important */
-
-  z-index: 10;
+  pointer-events: none;
 }
 
 .watermark-text {
@@ -123,5 +150,43 @@
   color: rgba(0, 0, 0, 0.08);
 
   transform: rotate(-30deg);
-  user-select: none;
+}
+
+/* ===============================
+   SCROLLBAR
+================================ */
+
+.pdf-container::-webkit-scrollbar {
+  width: 6px;
+}
+
+.pdf-container::-webkit-scrollbar-thumb {
+  background: #3b82f6;
+  border-radius: 6px;
+}
+
+/* ===============================
+   MOBILE RESPONSIVE
+================================ */
+
+@media (max-width: 768px) {
+  .pdf-container {
+    padding: 5px;
+  }
+
+  .close-btn {
+    top: 10px;
+    right: 10px;
+    padding: 6px 10px;
+    font-size: 12px;
+  }
+
+  .zoom-controls {
+    bottom: 10px;
+    right: 10px;
+  }
+
+  .watermark-text {
+    font-size: 24px;
+  }
 }

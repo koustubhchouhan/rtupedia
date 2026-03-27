@@ -2,40 +2,61 @@ import React, { useState } from "react";
 import { Document, Page, pdfjs } from "react-pdf";
 import "./PDFViewer.css";
 
-// ✅ worker
+// ✅ Worker setup (correct)
 pdfjs.GlobalWorkerOptions.workerSrc =
   process.env.PUBLIC_URL + "/pdf.worker.min.js";
 
 const PDFViewer = ({ file, onClose }) => {
   const [numPages, setNumPages] = useState(null);
+  const [scale, setScale] = useState(1);
+
+  const onDocumentLoadSuccess = ({ numPages }) => {
+    setNumPages(numPages);
+  };
 
   return (
     <div className="pdf-modal">
+      
+      {/* Close Button */}
       <button className="close-btn" onClick={onClose}>
         ✖ Close
       </button>
 
+      {/* Zoom Controls */}
+      <div className="zoom-controls">
+        <button onClick={() => setScale(prev => Math.max(prev - 0.2, 0.5))}>
+          ➖
+        </button>
+
+        <span>{Math.round(scale * 100)}%</span>
+
+        <button onClick={() => setScale(prev => Math.min(prev + 0.2, 2.5))}>
+          ➕
+        </button>
+      </div>
+
+      {/* PDF */}
       <div
         className="pdf-container"
         onContextMenu={(e) => e.preventDefault()}
       >
         <Document
           file={encodeURI(file)}
-          onLoadSuccess={({ numPages }) => setNumPages(numPages)}
+          onLoadSuccess={onDocumentLoadSuccess}
           onLoadError={(err) => console.error("PDF ERROR:", err)}
         >
-          {/* ✅ SINGLE LOOP ONLY */}
           {Array.from(new Array(numPages), (_, index) => (
-            <div key={index} style={{ position: "relative" }}>
+            <div key={index} className="page-wrapper">
               
-              {/* PDF PAGE */}
+              {/* Page */}
               <Page
                 pageNumber={index + 1}
+                scale={scale}
                 renderTextLayer={false}
                 renderAnnotationLayer={false}
               />
 
-              {/* WATERMARK */}
+              {/* Watermark */}
               <div className="watermark">
                 <div className="watermark-text">RTUpedia</div>
               </div>
