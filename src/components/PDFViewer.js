@@ -55,6 +55,29 @@ const PDFViewer = ({ file, onClose }) => {
                 renderTextLayer={false}
                 renderAnnotationLayer={false}
               />
+              {Array.from(new Array(numPages), (_, index) => (
+                <div key={index} className="page-wrapper">
+    
+                {/* Page */}
+                <Page
+                 pageNumber={index + 1}
+                 scale={scale}
+                 renderTextLayer={false}
+                 renderAnnotationLayer={false}
+                 />
+
+                 {/* ✅ Page Number */}
+                 <div className="page-number">
+                 Page {index + 1} of {numPages}
+                 </div>
+
+                 {/* Watermark */}
+                 <div className="watermark">
+                 <div className="watermark-text">RTUpedia</div>
+                 </div>
+
+                 </div>
+                 ))}
 
               {/* Watermark */}
               <div className="watermark">
