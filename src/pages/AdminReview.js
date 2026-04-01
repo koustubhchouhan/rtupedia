@@ -5,6 +5,7 @@ import {
   deleteReview
 } from "../utils/reviewApi";
 import { ADMIN_PASSWORD } from "../config/admin";
+import { useAuth } from "../context/AuthContext";
 
 export default function AdminReviews() {
   const [reviews, setReviews] = useState([]);
@@ -15,6 +16,15 @@ export default function AdminReviews() {
     const data = await getPendingReviews();
     setReviews(data);
   };
+
+  const { user } = useAuth();
+
+useEffect(() => {
+  if (!user) {
+    alert("Login required");
+    window.location.href = "/login";
+  }
+}, [user]);
 
   useEffect(() => {
     if (authorized) loadReviews();

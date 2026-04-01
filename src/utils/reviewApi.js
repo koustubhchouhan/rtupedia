@@ -1,26 +1,32 @@
-// src/utils/reviewApi.js
-
-
 const BASE =
   window.location.hostname === "localhost"
     ? "http://localhost:5000"
     : "https://rtupedia-backend-2.onrender.com";
 
+/* =========================
+   HELPER: GET TOKEN
+========================= */
+const getToken = () => localStorage.getItem("userToken");
 
 /* =========================
-   SUBMIT REVIEW
+   SUBMIT REVIEW (🔐 PROTECTED)
 ========================= */
-export const submitReview = (data) =>
-  fetch(`${BASE}/api/reviews`, {
+export const submitReview = async (data) => {
+  const res = await fetch(`${BASE}/api/reviews`, {
     method: "POST",
-    headers: { "Content-Type": "application/json" },
+    headers: {
+      "Content-Type": "application/json",
+      Authorization: `Bearer ${getToken()}`, // 🔥 IMPORTANT
+    },
     body: JSON.stringify(data),
-  }).then((res) => {
-    if (!res.ok) {
-      throw new Error("Failed to submit review");
-    }
-    return res.json();
   });
+
+  if (!res.ok) {
+    throw new Error("Login required or failed to submit");
+  }
+
+  return res.json();
+};
 
 /* =========================
    GET APPROVED REVIEWS
@@ -32,38 +38,43 @@ export const getReviews = async () => {
     return await res.json();
   } catch (err) {
     console.error("getReviews failed:", err);
-    return []; // ✅ prevents UI crash
+    return [];
   }
 };
 
 /* =========================
    ADMIN: GET PENDING REVIEWS
 ========================= */
-export const getPendingReviews = () =>
-  fetch(`${BASE}/api/admin/reviews`, {
+export const getPendingReviews = async () => {
+  const res = await fetch(`${BASE}/api/admin/reviews/pending`, {
     headers: {
-      "x-admin-key": "rtupedia_admin_secret",
+      Authorization: `Bearer ${getToken()}`, // 🔐 now using JWT
     },
-  }).then((res) => res.json());
+  });
+
+  return res.json();
+};
 
 /* =========================
    ADMIN: APPROVE REVIEW
 ========================= */
-export const approveReview = (id) =>
-  fetch(`${BASE}/api/admin/reviews/${id}/approve`, {
+export const approveReview = async (id) => {
+  await fetch(`${BASE}/api/admin/reviews/approve/${id}`, {
     method: "PUT",
     headers: {
-      "x-admin-key": "rtupedia_admin_secret",
+      Authorization: `Bearer ${getToken()}`,
     },
   });
+};
 
 /* =========================
    ADMIN: DELETE REVIEW
 ========================= */
-export const deleteReview = (id) =>
-  fetch(`${BASE}/api/admin/reviews/${id}`, {
+export const deleteReview = async (id) => {
+  await fetch(`${BASE}/api/admin/reviews/${id}`, {
     method: "DELETE",
     headers: {
-      "x-admin-key": "rtupedia_admin_secret",
+      Authorization: `Bearer ${getToken()}`,
     },
   });
+};

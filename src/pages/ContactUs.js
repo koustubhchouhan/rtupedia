@@ -4,6 +4,7 @@ import { FaInstagram, FaYoutube, FaLinkedin, FaGithub } from "react-icons/fa";
 import { submitReview } from "../utils/reviewApi";
 import StarRating from "../components/Review/StarRating";
 import "./SGPACalculator.css";
+import { useAuth } from "../context/AuthContext";
  
 
 const ContactUs = () => {
@@ -116,41 +117,44 @@ const ContactUs = () => {
   };
 
 const [showPopup, setShowPopup] = useState(false);
-  const [name, setName] = useState("");
+  const { user } = useAuth();
   const [message, setMessage] = useState("");
   const [rating, setRating] = useState(5);
-  const [email, setEmail] = useState("");
 
 const handleSubmit = async (e) => {
   e.preventDefault();
 
-  if (!name || !email || !message) {
-    alert("Please fill all fields");
+  // 🔐 LOGIN CHECK
+  if (!user) {
+    alert("Please login to submit review");
+    return;
+  }
+
+  if (!message) {
+    alert("Please enter review");
     return;
   }
 
   try {
-    await submitReview({ name, email, message, rating });
+    await submitReview({
+      message,
+      rating,
+    });
 
-    // ✅ SHOW POPUP
     setShowPopup(true);
 
-    // ✅ AUTO HIDE AFTER 3 SECONDS
     setTimeout(() => {
       setShowPopup(false);
     }, 3000);
 
-    // RESET FORM
-    setName("");
-    setEmail("");
+    // RESET
     setMessage("");
     setRating(5);
 
   } catch (err) {
-    alert("Something went wrong. Please try again.");
+    alert(err.message || "Error submitting review");
   }
 };
-
 
   return (
     <div style={styles.page}>
@@ -172,19 +176,23 @@ const handleSubmit = async (e) => {
       <div className="contact-container">
   <h2 style={styles.cardTitle}>Share your experience</h2>
 
+  {user && (
+  <div
+    style={{
+      background: "var(--color-card-bg)",
+      border: "1px solid var(--color-border)",
+      padding: "8px 12px",
+      borderRadius: "8px",
+      marginBottom: "12px",
+      fontSize: "14px"
+    }}
+  >
+    Reviewing as <b>{user.name}</b>
+  </div>
+)}
+
   <form className="review-form" onSubmit={handleSubmit}>
-    <input
-      type="text"
-      placeholder="Your Name"
-      value={name}
-      onChange={(e) => setName(e.target.value)}
-    />
-    <input
-      type="email"
-      placeholder="Your Email"
-      value={email}
-      onChange={(e) => setEmail(e.target.value)}
-    />
+   
     <textarea
       placeholder="Your Review"
       value={message}

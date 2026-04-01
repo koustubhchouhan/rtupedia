@@ -161,3 +161,46 @@
 .main-header{
   border-bottom:1px solid rgba(255,255,255,0.06);
 }
+
+
+.profile-wrapper {
+  position: relative;
+}
+
+.profile-icon {
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.profile-dropdown {
+  position: absolute;
+  right: 0;
+  top: 40px;
+
+  background: var(--color-card-bg);
+  border: 1px solid var(--color-border);
+
+  padding: 12px;
+  border-radius: 10px;
+  min-width: 180px;
+
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  z-index: 100;
+}
+
+.profile-dropdown p {
+  margin: 4px 0;
+  font-size: 14px;
+}
+
+.profile-dropdown button {
+  margin-top: 8px;
+  width: 100%;
+  padding: 8px;
+  border: none;
+  border-radius: 6px;
+
+  background: var(--color-primary);
+  color: white;
+  cursor: pointer;
+}

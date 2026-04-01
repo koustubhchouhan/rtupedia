@@ -1,6 +1,7 @@
-import React, { useState } from "react";
+import  { useEffect, useState, useNavigate } from "react";
 import { Document, Page, pdfjs } from "react-pdf";
 import "./PDFViewer.css";
+import { useAuth } from "../context/AuthContext";
 
 // ✅ Worker setup (correct)
 pdfjs.GlobalWorkerOptions.workerSrc =
@@ -9,10 +10,19 @@ pdfjs.GlobalWorkerOptions.workerSrc =
 const PDFViewer = ({ file, onClose }) => {
   const [numPages, setNumPages] = useState(null);
   const [scale, setScale] = useState(1);
+  const { user } = useAuth();
+  const navigate = useNavigate();
 
   const onDocumentLoadSuccess = ({ numPages }) => {
     setNumPages(numPages);
   };
+
+  useEffect(() => {
+  if (!user) {
+    alert("Please login to view PDFs");
+    navigate("/login");
+  }
+}, [user, navigate]);
 
   return (
     <div className="pdf-modal">
