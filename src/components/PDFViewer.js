@@ -1,4 +1,5 @@
-import  { useEffect, useState, useNavigate } from "react";
+import  { useEffect, useState} from "react";
+import { useNavigate } from "react-router-dom";
 import { Document, Page, pdfjs } from "react-pdf";
 import "./PDFViewer.css";
 import { useAuth } from "../context/AuthContext";
