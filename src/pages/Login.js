@@ -3,10 +3,13 @@ import axios from "axios";
 import { useAuth } from "../context/AuthContext";
 import { useNavigate } from "react-router-dom";
 import "../styles/Login.css";
+import {useLocation} from "react-router-dom";
 
 const Login = () => {
   const { login } = useAuth();
   const navigate = useNavigate();
+  const location = useLocation(); 
+  const from = location.state?.from?.pathname || "/";
 
   const API_URL = process.env.REACT_APP_API_URL;
 
@@ -25,7 +28,7 @@ const Login = () => {
       localStorage.setItem("userToken", res.data.token);
       localStorage.setItem("userInfo", JSON.stringify(res.data.user));
 
-      navigate("/");
+      navigate(from);
 
     } catch (err) {
       console.error(err);

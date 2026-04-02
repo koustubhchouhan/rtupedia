@@ -18,17 +18,15 @@ export default function AdminReviews() {
   };
 
   const { user } = useAuth();
-
-useEffect(() => {
-  if (!user) {
-    alert("Login required");
-    window.location.href = "/login";
-  }
-}, [user]);
-
-  useEffect(() => {
+   useEffect(() => {
     if (authorized) loadReviews();
   }, [authorized]);
+
+if (user?.email !== "rtupedia@gmail.com" && user?.email !== "manangupta902@gmail.com" && user?.email !== "kanchanprajapat208@gmail.com" && user?.email !== "koustubhchouhan9@gmail.com" && user?.email !== "manangupta9887@gmail.com" && user?.email !== "kanchanprajapat2926@gmail.com") {
+  return <p>Not authorized</p>;
+}
+
+ 
 
   /* 🔐 PASSWORD CHECK */
   if (!authorized) {
