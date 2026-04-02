@@ -234,7 +234,7 @@ const BranchContent = () => {
                 {grp.subjectName} ({grp.subjectCode})
               </div>
               {grp.pyqs.map((q, idx) => (
-                <a key={idx} className="pyq-paper-link" href={`${window.location.origin + q.pdf}#toolbar=0`}  target="_blank" rel="noopener noreferrer">
+                <a key={idx} className="pyq-paper-link" href={`${window.location.origin + q.pdf}`}  target="_blank" rel="noopener noreferrer">
                   📄 {q.title}
                 </a>
               ))}
