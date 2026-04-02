@@ -5,7 +5,7 @@ const AuthContext = createContext();
 export const AuthProvider = ({ children }) => {
   const [user, setUser] = useState(null);
 
-  // 🔥 AUTO LOGIN AFTER REFRESH
+
   useEffect(() => {
     const storedUser = localStorage.getItem("userInfo");
     if (storedUser) {
