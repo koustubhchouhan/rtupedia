@@ -14,9 +14,7 @@ import AllReviews from "./pages/AllReviews";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Login from "./pages/Login";
-import Register from "./pages/Register";
-import ForgotPassword from "./pages/ForgotPassword";
-import ResetPassword from "./pages/ResetPassword";
+
 
 
 
@@ -64,9 +62,7 @@ const App = () => {
           <Route path="/reviews" element={<AllReviews />} />
           <Route path="*" element={<div className="container"><h2>404 - Page Not Found</h2></div>} />
           <Route path="/login" element={<Login />} />
-<Route path="/register" element={<Register />} />
-<Route path="/forgot-password" element={<ForgotPassword />} />
-<Route path="/reset-password/:token" element={<ResetPassword />} />
+
         </Routes>
       </main>
 

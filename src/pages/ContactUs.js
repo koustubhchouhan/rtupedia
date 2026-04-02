@@ -21,12 +21,6 @@ const ContactUs = () => {
       margin: "0 auto",
       textAlign: "center",
     },
-    contactContainer: {
-      background: "var(--color-card-bg)",
-      padding: "30px",
-      borderRadius: "16px",
-      marginBottom: "30px",
-    },
 
     title: {
       fontSize: "32px",
@@ -177,15 +171,7 @@ const handleSubmit = async (e) => {
   <h2 style={styles.cardTitle}>Share your experience</h2>
 
   {user && (
-  <div
-    style={{
-      background: "var(--color-card-bg)",
-      border: "1px solid var(--color-border)",
-      padding: "8px 12px",
-      borderRadius: "8px",
-      marginBottom: "12px",
-      fontSize: "14px"
-    }}
+  <div style={{marginBottom:"15px"}}
   >
     Reviewing as <b>{user.name}</b>
   </div>

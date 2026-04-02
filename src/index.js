@@ -6,10 +6,10 @@ import App from './App';
 import { ThemeProvider } from './hooks/useTheme'; 
 import './styles/global.css';
 import './styles/themes.css';
-import { AuthProvider } from "./context/AuthContext";
-
+import { GoogleOAuthProvider } from "@react-oauth/google";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { AuthProvider } from "./context/AuthContext";
 
 AOS.init({ duration: 800 });
 
@@ -18,9 +18,13 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <ThemeProvider>
-    <AuthProvider>
-      <App />
-    </AuthProvider>
+      <AuthProvider>
+  
+<GoogleOAuthProvider clientId={process.env.REACT_APP_GOOGLE_CLIENT_ID}>
+  <App />
+</GoogleOAuthProvider>
+
+</AuthProvider>
     </ThemeProvider>
   </React.StrictMode>
 );

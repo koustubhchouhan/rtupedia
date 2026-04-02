@@ -1,16 +1,20 @@
-import { createContext, useContext, useState } from "react";
+import { createContext, useContext, useState, useEffect } from "react";
 
 const AuthContext = createContext();
 
 export const AuthProvider = ({ children }) => {
-  const [user, setUser] = useState(
-    JSON.parse(localStorage.getItem("userInfo")) || null
-  );
+  const [user, setUser] = useState(null);
+
+  // 🔥 AUTO LOGIN AFTER REFRESH
+  useEffect(() => {
+    const storedUser = localStorage.getItem("userInfo");
+    if (storedUser) {
+      setUser(JSON.parse(storedUser));
+    }
+  }, []);
 
   const login = (data) => {
     setUser(data.user);
-    localStorage.setItem("userInfo", JSON.stringify(data.user));
-    localStorage.setItem("userToken", data.token);
   };
 
   const logout = () => {
@@ -19,7 +23,7 @@ export const AuthProvider = ({ children }) => {
   };
 
   return (
-    <AuthContext.Provider value={{ user, setUser, login, logout }}>
+    <AuthContext.Provider value={{ user, login, logout }}>
       {children}
     </AuthContext.Provider>
   );

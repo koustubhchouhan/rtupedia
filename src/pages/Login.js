@@ -1,78 +1,62 @@
-import { useState } from "react";
+import { GoogleLogin } from "@react-oauth/google";
 import axios from "axios";
-import { useNavigate } from "react-router-dom";
 import { useAuth } from "../context/AuthContext";
+import { useNavigate } from "react-router-dom";
+import "../styles/Login.css";
 
 const Login = () => {
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
-
-  const navigate = useNavigate();
   const { login } = useAuth();
+  const navigate = useNavigate();
 
   const API_URL = process.env.REACT_APP_API_URL;
-console.log("API_URL:", API_URL); // Debugging line
-  const handleLogin = async (e) => {
-    e.preventDefault();
 
+  const handleGoogleSuccess = async (credentialResponse) => {
     try {
       const res = await axios.post(
-        `${API_URL}/api/auth/login`,
-        { email, password }
+        `${API_URL}/api/auth/google`,
+        {
+          token: credentialResponse.credential,
+        }
       );
 
-      // 🔥 use context (IMPORTANT)
+      // ✅ save user
       login(res.data);
 
-      alert("Login successful!");
+      localStorage.setItem("userToken", res.data.token);
+      localStorage.setItem("userInfo", JSON.stringify(res.data.user));
+
       navigate("/");
 
     } catch (err) {
-      alert(err.response?.data?.message || "Login failed");
+      console.error(err);
+      alert("Google login failed");
     }
   };
 
-  return (
-    <div className="container">
-      <div className="contact-container">
-        <h2>Login</h2>
+return (
+   <div className="login-container">
+  <div className="login-card">
 
-        <form className="review-form" onSubmit={handleLogin}>
-          <input
-            type="email"
-            placeholder="Enter Email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            required
-          />
+    <h2>Welcome to RTUpedia</h2>
+    <p>Continue with Google to access notes & PYQs</p>
 
-          <input
-            type="password"
-            placeholder="Enter Password"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-            required
-          />
-
-          <button type="submit">Login</button>
-
-          <p
-            style={{ marginTop: "10px", cursor: "pointer" }}
-            onClick={() => navigate("/register")}
-          >
-            Don’t have an account? Register
-          </p>
-
-          <p
-            style={{ marginTop: "5px", cursor: "pointer" }}
-            onClick={() => navigate("/forgot-password")}
-          >
-            Forgot Password?
-          </p>
-        </form>
+    {/* <div className="google-btn">
+      <img
+        src="https://www.svgrepo.com/show/475656/google-color.svg"
+        alt="google"
+      />
+      <span>Continue with Google</span>
+    </div> */}
+       <button className="google-btn">
+        <GoogleLogin
+          onSuccess={handleGoogleSuccess}
+          onError={() => alert("Google Login Failed")}
+        />
+        </button>
       </div>
     </div>
   );
 };
+
 
 export default Login;
