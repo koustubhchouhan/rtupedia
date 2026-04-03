@@ -50,7 +50,7 @@ return (
       />
       <span>Continue with Google</span>
     </div> */}
-       <button className="google-btn">
+       <button className="google-btn"   >
         <GoogleLogin
           onSuccess={handleGoogleSuccess}
           onError={() => alert("Google Login Failed")}

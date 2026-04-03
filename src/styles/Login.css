@@ -34,7 +34,7 @@
   justify-content: center;
   
   border: 1px solid #ddd;
-  
+  margin-left: 20% auto;
   border-radius: 8px;
   cursor: pointer;
   transition: 0.2s;
@@ -46,4 +46,16 @@
 
 .google-btn img {
   width: 20px;
+}
+
+@media (max-width: 480px) {
+  .google-btn {
+    margin-left: 10%;
+  }
+}
+
+@media (max-width : 768px) {
+  .google-btn {
+    margin-left: 15%;
+  }
 }
