@@ -142,6 +142,79 @@
                     }
                 ]
             }
+        ],
+
+        "4" : [
+
+            {
+                "subjectName":"Microprocessor & Interfaces Lab",
+                "subjectCode":"4CS4-21",
+                "examPapers":[
+                    {
+                        "examType":"Exp 1-2",
+                        "pdfLink":"/assets/lab/CSE/4/MPI Lab exp 1 and 2.pdf"
+                    },
+                    {
+                        "examType":"Exp 5-8",
+                        "pdfLink":"/assets/lab/CSE/4/MPI Lab exp 5 to 8.pdf"
+                    }
+                ]
+            },
+            {
+                "subjectName":"DataBase Manangement System Lab",
+                "subjectCode":"4CS4-22",
+                "examPapers":[
+                    
+                ]
+            },
+            {
+                "subjectName":"Metwork Programming Lab",
+                "subjectCode":"4CS4-23",
+                "examPapers":[
+                    {
+                        "examType":"NP Lab exp 1",
+                        "pdfLink":"/assets/lab/CSE/4/NP Lab exp 1.pdf"
+                    },
+                    {
+                        "examType":"NP Lab exp 2 to 5 ",
+                        "pdfLink":"/assets/lab/CSE/4/NP Lab exp 2 to 5.pdf"
+                    },
+                   
+                    {
+                        "examType":"NP Lab exp 6 to 10",
+                        "pdfLink":"/assets/lab/CSE/4/NP Lab exp 6 to 10.pdf"
+                    }
+                ]
+            },{
+                "subjectName":"Linux Shell Programming Lab",
+                "subjectCode":"4CS4-24",
+                "examPapers":[
+                   
+                ]
+            },
+            {
+                "subjectName":"Java Lab",
+                "subjectCode":"4CS4-25",
+                "examPapers":[
+                    {
+                        "examType":"Java lab exp 1",
+                        "pdfLink":"/assets/lab/CSE/4/Java lab exp 1.pdf"
+                    },
+                    {
+                        "examType":"Java lab exp 2 and 3",
+                        "pdfLink":"/assets/lab/CSE/4/Java lab exp 2 and 3.pdf"
+                    },
+                    {
+                        "examType":"Java lab exp 4 and 5",
+                        "pdfLink":"/assets/lab/CSE/4/Java lab exp 4 and 5.pdf"
+                    },
+                    {
+                        "examType":"Java lab exp 6",
+                        "pdfLink":"/assets/lab/CSE/4/Java lab exp 6.pdf"
+                    }
+                ]
+            }
+        
         ]
     }
 }
