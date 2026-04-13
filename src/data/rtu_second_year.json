@@ -434,7 +434,7 @@
             "lectureLink": "https://youtube.com/playlist?list=toc-unit3"
           },
           {
-            "unitName": "Turing Machines.",
+            "unitName": "Pushdown Automata.",
             "notesPDF": "/assets/notes/CSE/4/TOC Unit 3.pdf",
             "lectureLink": "https://youtube.com/playlist?list=toc-unit4"
           },
@@ -444,7 +444,7 @@
             "lectureLink": "https://youtube.com/playlist?list=toc-unit5"
           },
           {
-            "unitName": "Tractable and CSE/4/TOC Unit 5.pdf",
+            "unitName": "Tractable Problems.pdf",
             "lectureLink": "https://youtube.com/playlist?list=toc-unit6"
           }
         ],
