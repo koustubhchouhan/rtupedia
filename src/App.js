@@ -15,6 +15,8 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import Login from "./pages/Login";
 import ProtectedRoute from "./components/ProtectedRoute";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
+import Terms from "./pages/TermsAndConditions";
 
 
 
@@ -22,7 +24,7 @@ import ProtectedRoute from "./components/ProtectedRoute";
 
 const App = () => {
 
- useEffect(() => {
+  useEffect(() => {
     AOS.init({
       duration: 800,
       once: true
@@ -59,10 +61,12 @@ const App = () => {
           <Route path="/about" element={<AboutUs />} />
           <Route path="/contact" element={<ContactUs />} />
           <Route path="/SGPACalculator" element={<SGPACalculator />} />
-          <Route  path="/admin/reviews" element={<ProtectedRoute><AdminReviews /></ProtectedRoute>} />
+          <Route path="/admin/reviews" element={<ProtectedRoute><AdminReviews /></ProtectedRoute>} />
           <Route path="/reviews" element={<AllReviews />} />
           <Route path="*" element={<div className="container"><h2>404 - Page Not Found</h2></div>} />
           <Route path="/login" element={<Login />} />
+          <Route path="/privacy" element={<PrivacyPolicy />} />
+          <Route path="/terms" element={<Terms />} />
 
         </Routes>
       </main>

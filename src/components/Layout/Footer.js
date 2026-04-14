@@ -1,53 +1,39 @@
 // src/components/Layout/Footer.js
 
-import React from 'react';
+import React from "react";
+import "./Footer.css"; // 👈 new css file
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <footer
-      style={{
-        backgroundColor: 'var(--color-primary)',
-        color: 'var(--color-background)',
-        textAlign: 'center',
-        marginTop: 'auto',
- 
-        padding:'30px 0',
-  fontSize:"14px",
+    <footer className="footer">
 
+      <div className="footer-bottom">
+  <p>© {new Date().getFullYear()} RTUpedia. All rights reserved.</p>
 
-      }}
-    >
-      <div className="container">
-        <a
-          href="/about"
-          style={{
-            textDecoration: "none",
-            color: "var(--color-background)",
-          }}
-        >
-          &copy; {new Date().getFullYear()} RTUpedia. All rights reserved.
-        </a>
-      </div>
+  <div className="footer-links">
+    <Link to="/privacy">Privacy Policy</Link>
+    <Link to="/terms">Terms & Conditions</Link>
+    <Link to="/contact">Contact Us</Link>
+    <Link to="/about">About Us</Link>
+  </div>
 
-      {/* Responsive Footer Style */}
-      <style>
-        {`
-          @media (max-width: 768px) {
-            footer {
-              font-size: 0.85rem !important;
-              padding: 16px 8px !important;
-            }
-          }
+  <div className="footer-socials">
+    <a href="https://github.com/Kanchan-Prajapat" target="_blank" rel="noreferrer">
+      <i className="fab fa-github"></i>
+    </a>
+    <a href="https://www.linkedin.com/in/kanchan-prajapat-829336327/" target="_blank" rel="noreferrer">
+      <i className="fab fa-linkedin"></i>
+    </a>
+    <a href="https://www.youtube.com/@RTUpedia" target="_blank" rel="noreferrer">
+      <i className="fab fa-youtube"></i>
+    </a>
+    <a href="https://wa.me/919257794431" target="_blank" rel="noreferrer">
+      <i className="fab fa-whatsapp"></i>
+    </a>
+  </div>
+</div>
 
-          @media (max-width: 480px) {
-            footer {
-              font-size: 0.78rem !important;
-              padding: 14px 5px !important;
-              line-height: 1.4 !important;
-            }
-          }
-        `}
-      </style>
     </footer>
   );
 };

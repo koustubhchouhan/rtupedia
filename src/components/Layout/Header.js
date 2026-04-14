@@ -17,9 +17,14 @@ const Header = () => {
       <div className="header-container">
 
         {/* Logo */}
+        <div className="logo-group">
         <Link to="/" className="logo">
           RTUpedia
         </Link>
+
+         <h5>Smart Study Hub for RTU Students</h5>
+
+         </div>
 
         {/* Navigation */}
         <nav className="nav-links">

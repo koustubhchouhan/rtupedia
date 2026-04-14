@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { FaInstagram, FaYoutube, FaLinkedin, FaGithub } from "react-icons/fa";
+import { FaWhatsapp, FaYoutube, FaLinkedin, FaGithub } from "react-icons/fa";
 import { submitReview } from "../utils/reviewApi";
 import StarRating from "../components/Review/StarRating";
 import { useAuth } from "../context/AuthContext";
@@ -98,9 +98,9 @@ const ContactUs = () => {
   <h2 className="follow-title">Follow Us</h2>
 
   <div className="social-container">
-    <a href="https://instagram.com" target="_blank" rel="noreferrer" className="social-icon">
-      <FaInstagram />
-    </a>
+     <a href="https://wa.me/919257794431" target="_blank" rel="noreferrer">
+              <FaWhatsapp className="social-icon" />
+            </a>
 
     <a href="https://www.youtube.com/@RTUpedia" target="_blank" rel="noreferrer" className="social-icon">
       <FaYoutube />
