@@ -143,7 +143,7 @@ const ContactUs = () => {
 
             {/* Mayank */}
             <div className="team-card">
-              <img src="/assets/team/mayank.jpeg" className="team-photo" alt="Mayank" />
+              <img src="/assets/team/Mayank.jpg" className="team-photo" alt="Mayank" />
               <p className="member-name">Mayank Phalodia</p>
 
               <p className="member-contact">
