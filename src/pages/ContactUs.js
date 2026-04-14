@@ -96,28 +96,25 @@ const ContactUs = () => {
         {/* ================= SOCIAL ================= */}
         <div className="follow-section">
   <h2 className="follow-title">Follow Us</h2>
+<div className="social-container">
 
-  <div className="social-container">
-     <a href="https://wa.me/919257794431" target="_blank" rel="noreferrer">
-              <FaWhatsapp className="social-icon" />
-            </a>
+  <a href="https://wa.me/919257794431" target="_blank" rel="noreferrer" className="social-icon whatsapp">
+    <FaWhatsapp />
+  </a>
 
-    <a href="https://www.youtube.com/@RTUpedia" target="_blank" rel="noreferrer" className="social-icon">
-      <FaYoutube />
-    </a>
+  <a href="https://www.youtube.com/@RTUpedia" target="_blank" rel="noreferrer" className="social-icon youtube">
+    <FaYoutube />
+  </a>
 
-    <a href="https://www.linkedin.com/in/kanchan-prajapat-829336327/" target="_blank" rel="noreferrer" className="social-icon">
-      <FaLinkedin />
-    </a>
+  <a href="https://www.linkedin.com/in/kanchan-prajapat-829336327/" target="_blank" rel="noreferrer" className="social-icon linkedin">
+    <FaLinkedin />
+  </a>
 
-    <a href="https://github.com/Kanchan-Prajapat" target="_blank" rel="noreferrer" className="social-icon">
-      <FaGithub />
-    </a>
-  </div>
+  <a href="https://github.com/Kanchan-Prajapat" target="_blank" rel="noreferrer" className="social-icon github">
+    <FaGithub />
+  </a>
 
-  <p className="follow-text">
-    Stay updated with RTUpedia announcements & releases.
-  </p>
+</div>
 </div>
 
 
