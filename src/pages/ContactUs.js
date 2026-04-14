@@ -1,301 +1,191 @@
-// src/pages/ContactUs.js
 import React, { useState } from "react";
 import { FaInstagram, FaYoutube, FaLinkedin, FaGithub } from "react-icons/fa";
 import { submitReview } from "../utils/reviewApi";
 import StarRating from "../components/Review/StarRating";
-import "./SGPACalculator.css";
 import { useAuth } from "../context/AuthContext";
- 
+import "./ContactUs.css";  
+import "./SGPACalculator.css"; 
 
 const ContactUs = () => {
-  const styles = {
-    page: {
-      padding: "40px 20px",
-      color: "var(--color-text)",
-      background: "var(--color-background)",
-      fontFamily: "Poppins, sans-serif",
-      minHeight: "100vh",
-    },
-    container: {
-      maxWidth: "900px",
-      margin: "0 auto",
-      textAlign: "center",
-    },
 
-    title: {
-      fontSize: "32px",
-      fontWeight: "700",
-      color: "var(--color-primary)",
-      marginBottom: "10px",
-    },
-    subtext: {
-      fontSize: "16px",
-      opacity: "0.8",
-      marginBottom: "40px",
-
-    },
-    card: {
-      background: "var(--color-card-bg)",
-      border: "1px solid var(--color-border)",
-      borderRadius: "16px",
-      padding: "30px",
-      marginBottom: "30px",
-      transition: "0.3s",
-      boxShadow: "0 4px 12px rgba(0,0,0,0.1)",
-    },
-    cardTitle: {
-      fontSize: "22px",
-      fontWeight: "700",
-      color: "var(--color-primary)",
-      marginBottom: "20px",
-    },
-    socialContainer: {
-      display: "flex",
-      justifyContent: "center",
-      gap: "20px",
-      marginBottom: "15px",
-    },
-    icon: {
-      background: "var(--color-primary)",
-      color: "var(--color-background)",
-      textDecoration: "none",
-      padding: "12px",
-      borderRadius: "50%",
-      fontSize: "20px",
-      width: "35px",
-      height: "35px",
-      display: "flex",
-      alignItems: "center",
-      justifyContent: "center",
-      marginLeft: "5px",
-      transition: "0.3s",
-    },
-    member: {
-      marginBottom: "20px",
-      textAlign: "center",
-    },
-    memberName: {
-      fontWeight: "600",
-      color: "var(--color-primary)",
-      fontSize: "18px",
-    },
-    textSmall: {
-      fontSize: "14px",
-      opacity: "0.7",
-    },
-  };
-
-  // -----------------------------
-  // Responsive Grid (Inline CSS)
-  // -----------------------------
-  const [screenWidth, setScreenWidth] = React.useState(window.innerWidth);
-
-  React.useEffect(() => {
-    const updateWidth = () => setScreenWidth(window.innerWidth);
-    window.addEventListener("resize", updateWidth);
-    return () => window.removeEventListener("resize", updateWidth);
-  }, []);
-
-  // Desktop = 4, Tablet = 2, Mobile = 1
-  let columns = 4;
-  if (screenWidth <= 600) columns = 1;
-  else if (screenWidth <= 1024) columns = 2;
-
-  const teamGridStyle = {
-    display: "grid",
-    gridTemplateColumns: `repeat(${columns}, 1fr)`,
-    gap: "25px",
-    justifyItems: "center",
-    alignItems: "center",
-    marginTop: "20px",
-  };
-
-const [showPopup, setShowPopup] = useState(false);
+  const [showPopup, setShowPopup] = useState(false);
   const { user } = useAuth();
   const [message, setMessage] = useState("");
   const [rating, setRating] = useState(5);
 
-const handleSubmit = async (e) => {
-  e.preventDefault();
+  const handleSubmit = async (e) => {
+    e.preventDefault();
 
-  // 🔐 LOGIN CHECK
-  if (!user) {
-    alert("Please login to submit review");
-    return;
-  }
+    if (!user) {
+      alert("Please login to submit review");
+      return;
+    }
 
-  if (!message) {
-    alert("Please enter review");
-    return;
-  }
+    if (!message) {
+      alert("Please enter review");
+      return;
+    }
 
-  try {
-    await submitReview({
-      message,
-      rating,
-    });
+    try {
+      await submitReview({ message, rating });
 
-    setShowPopup(true);
+      setShowPopup(true);
+      setTimeout(() => setShowPopup(false), 3000);
 
-    setTimeout(() => {
-      setShowPopup(false);
-    }, 3000);
+      setMessage("");
+      setRating(5);
 
-    // RESET
-    setMessage("");
-    setRating(5);
-
-  } catch (err) {
-    alert(err.message || "Error submitting review");
-  }
-};
+    } catch (err) {
+      alert(err.message || "Error submitting review");
+    }
+  };
 
   return (
-    <div style={styles.page}>
-      <div style={styles.container}>
-        <h1 style={styles.title}>Contact Us</h1>
+    <div className="contact-container">
+      <div className="contact-content">
 
-        <p style={styles.subtext}>
-          <b>
-            Have any suggestions, queries or feedback about our content?
-            <br />
-            Then contact us on WhatsApp or email.
-          </b>
-          <br />
-          <br/>
-          We’d love to hear from you!
-        </p>
+        {/* ================= REVIEW ================= */}
+     
+       <div className="contact-page">
 
-{/* review form */}
-      <div className="contact-container">
-  <h2 style={styles.cardTitle}>Share your experience</h2>
+  <div className="main-contact-card">
 
-  {user && (
-  <div style={{marginBottom:"15px"}}
-  >
-    Reviewing as <b>{user.name}</b>
+    <h1 className="contact-title">Contact Us</h1>
+
+    <p className="contact-subtext">
+      <b>
+        Have any suggestions, queries or feedback about our content?
+        <br />
+        Then contact us on WhatsApp or email.
+      </b>
+      <br /><br />
+      We’d love to hear from you!
+    </p>
+
+    {/* REVIEW SECTION */}
+    <div className="review-section">
+      <h2 className="card-title">Share your experience</h2>
+
+      <p style={{marginTop:'10px', marginBottom:'10px'}}>Reviewing as <b>{user?.name}</b></p>
+
+      <form className="review-form" onSubmit={handleSubmit}>
+        <textarea
+          placeholder="Your Review"
+          value={message}
+          onChange={(e) => setMessage(e.target.value)}
+        />
+
+        <StarRating value={rating} onChange={setRating} />
+
+        <button type="submit">Submit Review</button>
+      </form>
+    </div>
+
   </div>
-)}
 
-  <form className="review-form" onSubmit={handleSubmit}>
-   
-    <textarea
-      placeholder="Your Review"
-      value={message}
-      onChange={(e) => setMessage(e.target.value)}
-    />
-    {/* Star Rating */}
-    <StarRating value={rating} onChange={setRating} />
-    <button type="submit" style={{color: "var(--color-background)", backgroundColor: "var(--color-primary)"}}>Submit Review</button>
-  </form>
 </div>
-{showPopup && (
-  <div className="review-popup">
-    ✅ Thanks! Your review is sent for approval.
-  </div>
-)}
 
-
-        {/* Social Media Section */}
-        <div style={styles.card}>
-          <h2 style={styles.cardTitle}>Follow Us</h2>
-
-          <div style={styles.socialContainer}>
-            <a
-              href="https://instagram.com"
-              target="_blank"
-              rel="noreferrer"
-              style={styles.icon}
-            >
-              <FaInstagram />
-            </a>
-
-            <a
-              href="https://www.youtube.com/@RTUpedia"
-              target="_blank"
-              rel="noreferrer"
-              style={styles.icon}
-            >
-              <FaYoutube />
-            </a>
-
-            <a
-              href="https://www.linkedin.com/in/kanchan-prajapat-829336327/"
-              target="_blank"
-              rel="noreferrer"
-              style={styles.icon}
-            >
-              <FaLinkedin />
-            </a>
-
-            <a
-              href="https://github.com/Kanchan-Prajapat"
-              target="_blank"
-              rel="noreferrer"
-              style={styles.icon}
-            >
-              <FaGithub />
-            </a>
+        {showPopup && (
+          <div className="review-popup">
+            ✅ Thanks! Your review is sent for approval.
           </div>
+        )}
+
+     
+
+        {/* ================= SOCIAL ================= */}
+        <div className="follow-section">
+  <h2 className="follow-title">Follow Us</h2>
+
+  <div className="social-container">
+    <a href="https://instagram.com" target="_blank" rel="noreferrer" className="social-icon">
+      <FaInstagram />
+    </a>
+
+    <a href="https://www.youtube.com/@RTUpedia" target="_blank" rel="noreferrer" className="social-icon">
+      <FaYoutube />
+    </a>
+
+    <a href="https://www.linkedin.com/in/kanchan-prajapat-829336327/" target="_blank" rel="noreferrer" className="social-icon">
+      <FaLinkedin />
+    </a>
+
+    <a href="https://github.com/Kanchan-Prajapat" target="_blank" rel="noreferrer" className="social-icon">
+      <FaGithub />
+    </a>
+  </div>
+
+  <p className="follow-text">
+    Stay updated with RTUpedia announcements & releases.
+  </p>
+</div>
 
 
+        {/* ================= TEAM ================= */}
+        <div className="card">
+          <h2 className="card-title" >Team Contacts</h2>
 
-          <p style={styles.textSmall}>
-            Stay updated with RTUpedia announcements & releases.
-          </p>
-        </div>
-
-        {/* Team Section */}
-        <div style={styles.card}>
-          <h2 style={styles.cardTitle}>Team Contacts</h2>
-
-          <div style={teamGridStyle}>
-            {/* Logo */}
-            <div style={styles.member}>
-              <img
-                src="/favicon.ico"
-                style={{ width: "70px", height: "70px", borderRadius: "50%" }}
-                alt="RTUpedia Logo"
-              />
-            </div>
+          <div className="team-grid">
 
             {/* Kanchan */}
-            <div style={styles.member}>
-              <img
-                src="/assets/team/kanchan.png"
-                style={{ width: "70px", height: "70px", borderRadius: "50%" }}
-                alt="Kanchan Prajapat"
-              />
-              <p style={styles.memberName}>Kanchan Prajapat</p>
-              <p>+91 9257794431</p>
-              <b>
-                <p>rtupedia@gmail.com</p>
-              </b>
+            <div className="team-card">
+              <img src="/assets/team/kanchan.png" className="team-photo" alt="Kanchan" />
+              <p className="member-name">Kanchan Prajapat</p>
+
+              <p className="member-contact">
+                📞 <a href="tel:+919257794431">+91 9257794431</a>
+              </p>
+
+              <p className="member-contact">
+                ✉️ <a href="mailto:rtupedia@gmail.com">rtupedia@gmail.com</a>
+              </p>
+            </div>
+
+            {/* Mayank */}
+            <div className="team-card">
+              <img src="/assets/team/mayank.jpeg" className="team-photo" alt="Mayank" />
+              <p className="member-name">Mayank Phalodia</p>
+
+              <p className="member-contact">
+                📞 <a href="tel:+917976335222">+91 7976335222</a>
+              </p>
+
+              <p className="member-contact">
+                ✉️ <a href="mailto:mayankphalodia@gmail.com">mayankphalodia@gmail.com</a>
+              </p>
             </div>
 
             {/* Manan */}
-            <div style={styles.member}>
-              <img
-                src="/assets/team/manan.jpg"
-                style={{ width: "70px", height: "70px", borderRadius: "50%" }}
-                alt="Manan Gupta"
-              />
-              <p style={styles.memberName}>Manan Gupta</p>
-              <p>+91 9887737271</p>
+            <div className="team-card">
+              <img src="/assets/team/manan.jpg" className="team-photo" alt="Manan" />
+              <p className="member-name">Manan Gupta</p>
+
+              <p className="member-contact">
+                📞 <a href="tel:+919887737271">+91 9887737271</a>
+              </p>
+
+              <p className="member-contact">
+                ✉️ <a href="mailto:manangupta902@gmail.com">manangupta902@gmail.com</a>
+              </p>
             </div>
 
             {/* Koustubh */}
-            <div style={styles.member}>
-              <img
-                src="/assets/team/koustubh.jpg"
-                style={{ width: "70px", height: "70px", borderRadius: "50%" }}
-                alt="Koustubh Chouhan"
-              />
-              <p style={styles.memberName}>Koustubh Chouhan</p>
-              <p>+91 9829734320</p>
+            <div className="team-card">
+              <img src="/assets/team/koustubh.jpg" className="team-photo" alt="Koustubh" />
+              <p className="member-name">Koustubh Chouhan</p>
+
+              <p className="member-contact">
+                📞 <a href="tel:+919829734320">+91 9829734320</a>
+              </p>
+
+              <p className="member-contact">
+                ✉️ <a href="mailto:koustubhchouhan9@gmail.com">koustubhchouhan9@gmail.com</a>
+              </p>
             </div>
+
           </div>
         </div>
+
       </div>
     </div>
   );

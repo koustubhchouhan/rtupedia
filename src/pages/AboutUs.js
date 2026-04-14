@@ -165,6 +165,15 @@ useEffect(() => {
             </p>
           </div>
 
+           <div style={styles.teamCard}>
+            <p style={styles.teamName}>Mayank Phalodia</p>
+            <p style={styles.teamRole}><b>Co-Founder & Developer</b></p>
+            <p style={styles.text}>
+              Focuses on backend development, security, Marketing and growth strategies,
+              and keeps RTUpedia running smoothly with new tools and features.
+            </p>
+          </div>
+
           <div style={styles.teamCard}>
             <p style={styles.teamName}>Manan Gupta</p>
             <p style={styles.teamRole}><b>UI/UX Designer</b></p>
