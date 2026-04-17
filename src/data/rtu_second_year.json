@@ -44,12 +44,12 @@
           {
             "unitName": "Introduction to Technical Communication",
             "notesPDF": "/assets/notes/CSE/3/TC Unit 1.pdf",
-            "lectureLink": "https://youtube.com/playlist?list=technical-communication-unit1"
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X2G_KPRnBdEDjiF1n7uuDIV&si=t1CAV3joirkRGLce"
           },
           {
             "unitName": "Comprehension of Technical Materials/Texts and Information Design & Development",
             "notesPDF": "/assets/notes/CSE/3/TC Unit 2.pdf",
-            "lectureLink": "https://youtube.com/playlist?list=technical-communication-unit2"
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X2ELdJUMWwTMh0i65_I80FH&si=bUezUsLL9wHdynSi"
           },
           {
             "unitName": "Technical Writing, Grammar and Editing",
@@ -261,22 +261,22 @@
           {
             "unitName": "Propositional Logic: Logical operations, predicates, normal forms, quantifiers.",
             "notesPDF": "/assets/notes/CSE/4/DMS Unit 2.pdf",
-            "lectureLink": "https://youtube.com/playlist?list=discrete-mathematics-unit3"
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X04Hb0YYglOyng43xl9phYx&si=OjP1niEtbGxTukqV"
           },
           {
-            "unitName": "Posets, Hasse diagram, Lattices, Combinatorics, Recurrence Relations, Generating Functions.",
+            "unitName": "Posets, Hasse diagram, Lattices, Combinatorics",
             "notesPDF": "/assets/notes/CSE/4/DMS Unit 3.pdf",
-            "lectureLink": "https://youtube.com/playlist?list=discrete-mathematics-unit4"
+            "lectureLink": "https://youtu.be/DZEG3YgJbL0?si=Vl_WAJ4JOcMT3jR6"
           },
           {
             "unitName": "Algebraic Structures: Groups, Rings, Fields, Commutativity, Homomorphism.",
             "notesPDF": "/assets/notes/CSE/4/DMS Unit 4.pdf",
-            "lectureLink": "https://youtube.com/playlist?list=discrete-mathematics-unit5"
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X1fQF8t0ibAi7_hLU-cuS8d&si=7PMg-XRo29qNxPoo"
           },
           {
             "unitName": "Graph Theory: Paths, cycles, connectivity, Eulerian/Hamiltonian paths, graph coloring.",
             "notesPDF": "/assets/notes/CSE/4/DMS Unit 5.pdf",
-            "lectureLink": "https://youtube.com/playlist?list=discrete-mathematics-unit6"
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X2uEnQnS_Z6CeKOoVb_LhFb&si=jNy1vsHGDDcSwJ-_"
           }
         ],
         "pyqs": [
