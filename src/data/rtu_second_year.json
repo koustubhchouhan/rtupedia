@@ -296,22 +296,22 @@
           {
             "unitName": "8085 Instruction Set and Programming: Data transfer, arithmetic, logical, branch instructions.",
             "notesPDF": "/assets/notes/CSE/4/MPI Unit 2.pdf",
-            "lectureLink": "https://youtube.com/playlist?list=microprocessor-unit3"
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X1K5l3r1FmmjeSzKHdHjth4&si=Q0k3prd-zjpC51E5"
           },
           {
-            "unitName": "Interfacing Memory and I/O Devices.",
+            "unitName": "Advance Assembly Language Programming and 8259 programmable interrupt controller.",
             "notesPDF": "/assets/notes/CSE/4/MPI Unit 3.pdf",
-            "lectureLink": "https://youtube.com/playlist?list=microprocessor-unit4"
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X3WnrCaqF3kSj1pflEcs7iJ&si=dK3H9pD-oq2Yt-05"
           },
           {
-            "unitName": "8085 Microprocessor Interfacing (8255, 8259 etc.)",
+            "unitName": "8085 Microprocessor Interfacing (8255, 8254, 8279).",
             "notesPDF": "/assets/notes/CSE/4/MPI Unit 4.pdf",
-            "lectureLink": "https://youtube.com/playlist?list=microprocessor-unit5"
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X1AopcKnalA8O7J7K9j25Hk&si=E0zANUv15FKBfYHJ"
           },
           {
             "unitName": "Microprocessor Applications.",
             "notesPDF": "/assets/notes/CSE/4/MPI Unit 5.pdf",
-            "lectureLink": "https://youtube.com/playlist?list=microprocessor-unit6"
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X2_AYX7ei7fnLzDRhFxKysJ&si=UXetguxXT7GdKlm6"
           }
         ],
         "pyqs": [
@@ -326,27 +326,27 @@
           {
             "unitName": "Introduction: Database concepts, data models, DBMS architecture. Entity Relationship Model: Mapping cardinalities, keys, constraints.",
             "notesPDF": "/assets/notes/CSE/4/DBMS Unit 1.pdf",
-            "lectureLink": "https://youtube.com/playlist?list=dbms-unit1"
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X2m5y4uz1Ibhiq8P__OhEuf&si=eXG21XT13-jmxKvx"
           },
           {
             "unitName": "Relational Algebra and Calculus, SQL Queries, Trigger Programming.",
             "notesPDF": "/assets/notes/CSE/4/DBMS Unit 2.pdf",
-            "lectureLink": "https://youtube.com/playlist?list=dbms-unit3"
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X1DNqvgv_9BTWX6pSOWuA5z&si=-kQa4KjxX73yFKGK"
           },
           {
             "unitName": "Schema Refinement and Normal Forms.",
             "notesPDF": "/assets/notes/CSE/4/DBMS Unit 3.pdf",
-            "lectureLink": "https://youtube.com/playlist?list=dbms-unit4"
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X34CeuZqIxabJ1iTYt5SfQ7&si=Se6-PFiR4OngFmNS"
           },
           {
             "unitName": "Transaction Processing.",
             "notesPDF": "/assets/notes/CSE/4/DBMS Unit 4.pdf",
-            "lectureLink": "https://youtube.com/playlist?list=dbms-unit5"
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X3j3g4NuKkcko4Af1O4v6Ap&si=vbTxjvqgFc8aYQSN"
           },
           {
             "unitName": "Concurrency Control, Database Failure and Recovery.",
             "notesPDF": "/assets/notes/CSE/4/DBMS Unit 5.pdf",
-            "lectureLink": "https://youtube.com/playlist?list=dbms-unit6"
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X3OAmIAnjjkGVpvHran8vbv&si=Vx2bb2LVNpBtTAA3"
           }
         ],
         "pyqs": [
@@ -391,32 +391,32 @@
           {
             "unitName": "Basic Economic Concepts: Meaning, nature and scope of economics; basic economic problems; scarcity and choice; national income.",
             "notesPDF": "/assets/notes/CSE/4/MEFA Unit 1.pdf",
-            "lectureLink": "https://youtube.com/playlist?list=managerial-economics-unit1"
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X1JoM0y0w0pwGdsOsST_9qo&si=GZ3KMZ5FRhO_Tl2X"
           },
           {
             "unitName": "Demand and Supply Analysis: Demand forecasting, elasticity of demand, supply function, elasticity of supply.",
             "notesPDF": "/assets/notes/CSE/4/MEFA Unit 2.pdf",
-            "lectureLink": "https://youtube.com/playlist?list=managerial-economics-unit2"
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X2FIl9b1mpYFaqDxya9owyR&si=YjbhsQmwJfGDWWsu"
           },
           {
             "unitName": "Production and Cost Analysis: Production function, laws of returns to scale, least cost combination, isoquants, cost curves.",
             "notesPDF": "/assets/notes/CSE/4/MEFA Unit 3.pdf",
-            "lectureLink": "https://youtube.com/playlist?list=managerial-economics-unit3"
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X2FO9B_UVZUBdOAc6hlgu_A&si=HFD3TQUOHs-cc9oc"
           },
           {
             "unitName": "Market structure and pricing theory: Perfect competition, monopoly, monopolistic competition, oligopoly.",
             "notesPDF": "/assets/notes/CSE/4/MEFA Unit 4.pdf",
-            "lectureLink": "https://youtube.com/playlist?list=managerial-economics-unit4"
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X1bLoF-d8BhBQZ0IAtKXGpR&si=C1xkSxQoc89qnBEu"
           },
           {
             "unitName": "Financial Statement Analysis: Balance sheet, P&L statements, cash-flow analysis, fund-flow analysis, financial ratios.",
             "notesPDF": "/assets/notes/CSE/4/MEFA Unit 5.pdf",
-            "lectureLink": "https://youtube.com/playlist?list=managerial-economics-unit5"
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X0aW6870Uz_UNp8EvACFDw7&si=01MlYmSKKVrqh4Ox"
           }
         ],
-        "pyqs": [
-          { "examType": "MainExam", "year": 2023, "sem": "Odd", "pdfLink": "/assets/main/PPS paper odd 2023.pdf" },
-          { "examType": "MainExam", "year": 2025, "sem": "Odd", "pdfLink": "/assets/main/PPS paper odd 2025.pdf" }
+         "More": [
+       { "examType": "MEFA Formulas and Concepts", "pdfLink": "/assets/more/CSE/MEFA Imp Formulas Unit 1 to 3.pdf" },
+       { "examType": "MEFA All PYQs", "pdfLink": "/assets/more/CSE/Complete MEFA with PYQS.pdf" }
         ]
       },
       {
