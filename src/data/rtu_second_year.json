@@ -444,7 +444,8 @@
             "lectureLink": "https://youtube.com/playlist?list=toc-unit5"
           },
           {
-            "unitName": "Tractable Problems.pdf",
+            "unitName": "Tractable Problems And Complexity Classes.",
+            "notesPDF": "/assets/notes/CSE/4/TOC Unit 5.pdf",
             "lectureLink": "https://youtube.com/playlist?list=toc-unit6"
           }
         ],
