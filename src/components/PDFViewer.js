@@ -83,12 +83,35 @@ const PDFViewer = ({ file, onClose }) => {
             loading="Loading PDF..."
           >
             <div className="page-wrapper">
-              <Page
-                pageNumber={page}
-                scale={scale}
-                renderTextLayer={false}
-                renderAnnotationLayer={false}
-              />
+             {page > 1 && (
+      <Page
+        pageNumber={page - 1}
+        scale={scale}
+        renderTextLayer={false}
+        renderAnnotationLayer={false}
+        className="hidden-page"
+      />
+    )}
+
+    {/* Current Page (visible) */}
+    <Page
+      pageNumber={page}
+      scale={scale}
+      renderTextLayer={false}
+      renderAnnotationLayer={false}
+    />
+
+    {/* Next Page */}
+    {page < numPages && (
+      <Page
+        pageNumber={page + 1}
+        scale={scale}
+        renderTextLayer={false}
+        renderAnnotationLayer={false}
+        className="hidden-page"
+      />
+    )}
+
 
               {/* Watermark */}
               <div className="watermark">
