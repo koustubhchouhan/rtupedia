@@ -7,7 +7,6 @@ import {
   loadLabs,
   loadExtraMore
 } from "../utils/dataFetcher";
-import PDFViewer from "../components/PDFViewer";
 import "./SGPACalculator.css";
 import "../styles/global.css";
 
@@ -25,7 +24,8 @@ const BranchContent = () => {
      STATE
   ========================= */
   const [branches, setBranches] = useState([]);
-  const [pdfUrl, setPdfUrl] = useState(null);
+
+
   const [selectedBranch, setSelectedBranch] = useState("");
 
   const [semesters, setSemesters] = useState([]);
@@ -41,6 +41,10 @@ const BranchContent = () => {
 
   const [loadingPYQ, setLoadingPYQ] = useState(false);
 
+  const openPDF = (pdfPath) => {
+    const encoded = encodeURIComponent(pdfPath);
+    window.open(`/pdfview?file=${encoded}`, "_blank");
+  };
   /* =========================
      LOAD BRANCHES
   ========================= */
@@ -212,7 +216,8 @@ const BranchContent = () => {
 
                   <button
                     className="resource-link-notes"
-                    onClick={() => setPdfUrl(u.notesPDF)}
+                    onClick={() => openPDF(u.notesPDF || u.pdf)}
+
                   >
                     📑 View Notes
                   </button>
@@ -254,7 +259,7 @@ const BranchContent = () => {
             <button
               key={idx}
               className="pyq-paper-link"
-              onClick={() => setPdfUrl(paper.pdfLink)}
+              onClick={() => openPDF(paper.pdfLink)}
             >
               📄 {paper.examType}
             </button>
@@ -272,7 +277,7 @@ const BranchContent = () => {
             <button
               key={idx}
               className="pyq-paper-link"
-              onClick={() => setPdfUrl(m.pdfLink)}
+              onClick={() => openPDF(m.pdfLink)}
             >
               📄 {m.examType}
             </button>
@@ -290,7 +295,7 @@ const BranchContent = () => {
               <button
                 key={idx}
                 className="pyq-paper-link"
-                onClick={() => setPdfUrl(m.pdfLink)}
+                onClick={() =>openPDF(m.pdfLink)}
               >
                 📄 {m.examType}
               </button>
@@ -304,12 +309,7 @@ const BranchContent = () => {
       )}
 
 
-      {pdfUrl && (
-        <PDFViewer
-          file={pdfUrl}
-          onClose={() => setPdfUrl(null)}
-        />
-      )}
+
 
     </div>
   );

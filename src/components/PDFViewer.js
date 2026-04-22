@@ -4,9 +4,9 @@ import { Document, Page, pdfjs } from "react-pdf";
 import "./PDFViewer.css";
 import { useAuth } from "../context/AuthContext";
 
-// Worker
+
 pdfjs.GlobalWorkerOptions.workerSrc =
-  process.env.PUBLIC_URL + "/pdf.worker.min.js";
+  `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 
 const PDFViewer = ({ file, onClose }) => {
   const [numPages, setNumPages] = useState(null);
@@ -28,13 +28,7 @@ const PDFViewer = ({ file, onClose }) => {
     setNumPages(numPages);
   }, []);
 
-  // ⚡ Preload next page (smooth navigation)
-  useEffect(() => {
-    if (numPages && page < numPages) {
-      const preload = new Image();
-      preload.src = file;
-    }
-  }, [page, numPages, file]);
+  
 
   useEffect(() => {
   const disable = (e) => e.preventDefault();
@@ -66,6 +60,32 @@ const PDFViewer = ({ file, onClose }) => {
 }, []);
 
 useEffect(() => {
+  const handleKey = (e) => {
+    if (e.key === "ArrowRight") {
+      setPage(p => Math.min(p + 1, numPages));
+    }
+    if (e.key === "ArrowLeft") {
+      setPage(p => Math.max(p - 1, 1));
+    }
+  };
+
+
+  window.addEventListener("keydown", handleKey);
+  return () => window.removeEventListener("keydown", handleKey);
+}, [numPages]);
+
+
+useEffect(() => {
+  const handleEsc = (e) => {
+    if (e.key === "Escape") window.close();
+  };
+
+  window.addEventListener("keydown", handleEsc);
+  return () => window.removeEventListener("keydown", handleEsc);
+}, []);
+
+
+useEffect(() => {
   const blockKeys = (e) => {
     if (
       e.key === "F12" ||
@@ -83,15 +103,12 @@ useEffect(() => {
   };
 }, []);
 
+console.log("PDF FILE RECEIVED:", file);
+
 
 
   return (
     <div className="pdf-modal">
-
-      {/* Close */}
-      <button className="close-btn" onClick={onClose}>
-        ✖ Close
-      </button>
 
       {/* Zoom */}
       <div className="zoom-controls">
@@ -125,41 +142,51 @@ useEffect(() => {
             Failed to load PDF. Try again.
           </div>
         ) : (
-          <Document
-            file={file}
-            onLoadSuccess={onDocumentLoadSuccess}
-            onLoadError={() => setError(true)}
-            loading="Loading PDF..."
-          >
+         <Document
+           key={file}
+  file={{ url: file,
+  withCredentials: false 
+   }}
+     // 🔥 THIS FIXES YOUR ISSUE
+  onLoadSuccess={onDocumentLoadSuccess}
+  onLoadError={(err) => {
+    console.error("PDF LOAD ERROR:", err);
+    setError(true);
+  }}
+  loading="Loading PDF..."
+>
             <div className="page-wrapper">
-             {page > 1 && (
-      <Page
-        pageNumber={page - 1}
-        scale={scale}
-        renderTextLayer={false}
-        renderAnnotationLayer={false}
-        className="hidden-page"
-      />
-    )}
-
-    {/* Current Page (visible) */}
+   {/* PREVIOUS */}
+{page > 1 && (
+  <div style={{ display: "none" }}>
     <Page
-      pageNumber={page}
+      pageNumber={page - 1}
       scale={scale}
       renderTextLayer={false}
       renderAnnotationLayer={false}
     />
+  </div>
+)}
 
-    {/* Next Page */}
-    {page < numPages && (
-      <Page
-        pageNumber={page + 1}
-        scale={scale}
-        renderTextLayer={false}
-        renderAnnotationLayer={false}
-        className="hidden-page"
-      />
-    )}
+{/* CURRENT */}
+<Page
+  pageNumber={page}
+  scale={scale}
+  renderTextLayer={false}
+  renderAnnotationLayer={false}
+/>
+
+{/* NEXT */}
+{page < numPages && (
+  <div style={{ display: "none" }}>
+    <Page
+      pageNumber={page + 1}
+      scale={scale}
+      renderTextLayer={false}
+      renderAnnotationLayer={false}
+    />
+  </div>
+)}
 
 
               {/* Watermark */}

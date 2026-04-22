@@ -371,12 +371,12 @@
           {
             "unitName": "Technical Writing, Grammar and Editing: Technical style, technical definitions, technical descriptions, technical manuals, grammar usage and common errors.",
             "notesPDF": "/assets/notes/CSE/4/TC Unit 3.pdf",
-            "lectureLink": "https://youtube.com/playlist?list=technical-communication-unit3"
+            "lectureLink": "https://youtu.be/hVdmKYun9EM?si=kJxvjdGSwAdvxyCc"
           },
           {
             "unitName": "Advanced Technical Writing: Research papers, project reports, dissertations, proposals, technical emails.",
             "notesPDF": "/assets/notes/CSE/4/TC Unit 4.pdf",
-            "lectureLink": "https://youtube.com/playlist?list=technical-communication-unit4"
+            "lectureLink": "https://youtu.be/cO-syjsp9l4?si=yDUqDltKk-4Jy344"
           }
         ],
         "pyqs": [
@@ -426,27 +426,27 @@
           {
             "unitName": "Introduction: Basics of automata theory and formal languages. Finite Automata & Regular Expression.",
             "notesPDF": "/assets/notes/CSE/4/TOC Unit 1.pdf",
-            "lectureLink": "https://youtube.com/playlist?list=toc-unit2"
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X3ZWF3M-DsnEm7JY9wXIFC3&si=Xo61yaFSUo4-bOQs"
           },
           {
-            "unitName": "Context-Free Grammar and Pushdown Automata.",
+            "unitName": "Context-Free Grammar and Context-free Language.",
             "notesPDF": "/assets/notes/CSE/4/TOC Unit 2.pdf",
-            "lectureLink": "https://youtube.com/playlist?list=toc-unit3"
+            "lectureLink": "https://youtube.com/playlist?list=PL0Ug_kpOStbq-b4N1l46tZSl7l01rMzP8&si=8nMdw5R93d7axHkh"
           },
           {
             "unitName": "Pushdown Automata.",
             "notesPDF": "/assets/notes/CSE/4/TOC Unit 3.pdf",
-            "lectureLink": "https://youtube.com/playlist?list=toc-unit4"
+            "lectureLink": "https://youtube.com/playlist?list=PL0Ug_kpOStbouzs1xFgpH4SbxdkdRPcCy&si=OwibTccLEOF5OGG1"
           },
           {
-            "unitName": "Hierarchy of Formal Languages.",
+            "unitName": "Turing Machine and Hierarchy of Formal Languages.",
             "notesPDF": "/assets/notes/CSE/4/TOC Unit 4.pdf",
-            "lectureLink": "https://youtube.com/playlist?list=toc-unit5"
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X3Xatjq6HY-mGEfx9rqiJbu&si=1fklZLA7O9QdVc_U"
           },
           {
             "unitName": "Tractable Problems And Complexity Classes.",
             "notesPDF": "/assets/notes/CSE/4/TOC Unit 5.pdf",
-            "lectureLink": "https://youtube.com/playlist?list=toc-unit6"
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X1RDlJiR7YZLxY0uzR-HTLZ&si=8DzsnRVDUBlGu1l-"
           }
         ],
         "pyqs": [
@@ -462,27 +462,27 @@
           {
             "unitName": "Introduction: Basics of data communication, network types, protocol architecture. Data Transmission, Transmission Media, Channel Capacity.",
             "notesPDF": "/assets/notes/CSE/4/DCCN Unit 1.pdf",
-            "lectureLink": "https://youtube.com/playlist?list=dccn-unit2"
+            "lectureLink": "https://youtube.com/playlist?list=PLAmViTdGzJZPtP0jPTqqapV2AvoZlT3j2&si=XNbzbT707k7n91Yn"
           },
           {
             "unitName": "Data Link Layer: Framing, Error control, Flow control.",
             "notesPDF": "/assets/notes/CSE/4/DCCN Unit 2.pdf",
-            "lectureLink": "https://youtube.com/playlist?list=dccn-unit3"
+            "lectureLink": "https://youtube.com/playlist?list=PLAmViTdGzJZM1OtT98OMKJzf60lxhb5bN&si=p2HlkPWapud7F6iD"
           },
           {
             "unitName": "Network Layer: Routing algorithms, Congestion control, IPv4/IPv6.",
             "notesPDF": "/assets/notes/CSE/4/DCCN Unit 3.pdf",
-            "lectureLink": "https://youtube.com/playlist?list=dccn-unit4"
+            "lectureLink": "https://youtube.com/playlist?list=PLAmViTdGzJZMbpDKA-safrja8BxcpCH39&si=OfMoF-vZ90vnMJUK"
           },
           {
             "unitName": "Transport Layer: TCP, UDP, Flow control, Connection management.",
             "notesPDF": "/assets/notes/CSE/4/DCCN Unit 4.pdf",
-            "lectureLink": "https://youtube.com/playlist?list=dccn-unit5"
+            "lectureLink": "https://youtube.com/playlist?list=PLAmViTdGzJZPNbS94GD_iTUDh9qNaeWJ-&si=jvYZto1sGqqRHCSq"
           },
           {
             "unitName": "Application Layer: DNS, Email, FTP, HTTP.",
             "notesPDF": "/assets/notes/CSE/4/DCCN Unit 5.pdf",
-            "lectureLink": "https://youtube.com/playlist?list=dccn-unit6"
+            "lectureLink": "https://youtube.com/playlist?list=PLAmViTdGzJZM7NpzuV1N_Tm6aLwCdtGwK&si=JaHeUMJyyrwF03g1"
           }
         ],
         "pyqs": [
