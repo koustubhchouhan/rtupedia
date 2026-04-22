@@ -2,6 +2,12 @@
    FULL SCREEN MODAL
 ================================ */
 
+body {
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+
 .pdf-modal {
   position: fixed;
   top: 0;
@@ -149,11 +155,12 @@
 }
 
 .watermark-text {
-  font-size: 40px;
+  font-size: 60px;
   font-weight: bold;
-  color: rgba(0, 0, 0, 0.08);
+  color: rgba(0, 0, 0, 0.1);
 
   transform: rotate(-30deg);
+  user-select: none;
 }
 
 /* ===============================

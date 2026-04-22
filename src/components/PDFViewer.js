@@ -36,6 +36,55 @@ const PDFViewer = ({ file, onClose }) => {
     }
   }, [page, numPages, file]);
 
+  useEffect(() => {
+  const disable = (e) => e.preventDefault();
+
+  document.addEventListener("contextmenu", disable);
+  document.addEventListener("copy", disable);
+  document.addEventListener("cut", disable);
+
+   const preventDoubleClick = (e) => e.preventDefault();
+  document.addEventListener("dblclick", preventDoubleClick);
+
+  const handleVisibility = () => {
+    if (document.hidden) {
+      document.body.style.filter = "blur(10px)";
+    } else {
+      document.body.style.filter = "none";
+    }
+  };
+
+  document.addEventListener("visibilitychange", handleVisibility);
+
+  return () => {
+    document.removeEventListener("contextmenu", disable);
+    document.removeEventListener("copy", disable);
+    document.removeEventListener("cut", disable);
+    document.removeEventListener("dblclick", preventDoubleClick);
+    document.addEventListener("visibilitychange", handleVisibility);
+  };
+}, []);
+
+useEffect(() => {
+  const blockKeys = (e) => {
+    if (
+      e.key === "F12" ||
+      (e.ctrlKey && e.shiftKey && ["I", "J", "C"].includes(e.key)) ||
+      (e.ctrlKey && e.key === "U")
+    ) {
+      e.preventDefault();
+    }
+  };
+
+  document.addEventListener("keydown", blockKeys);
+
+  return () => {
+    document.removeEventListener("keydown", blockKeys);
+  };
+}, []);
+
+
+
   return (
     <div className="pdf-modal">
 
