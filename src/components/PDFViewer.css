@@ -19,24 +19,22 @@
 /* ===============================
    CLOSE BUTTON
 ================================ */
-
 .close-btn {
-  position: absolute;
-  top: 20px;
-  right: 20px;
+  position: fixed;
+  top: 12px;
+  right: 12px;
 
   background: #ef4444;
   color: white;
 
   border: none;
-  padding: 8px 14px;
-  border-radius: 6px;
+  padding: 8px 12px;
+  border-radius: 8px;
 
-  cursor: pointer;
+  font-size: 13px;
   font-weight: 600;
 
-  z-index: 10000;
-  transition: 0.2s;
+  z-index: 11000;
 }
 
 .close-btn:hover {
@@ -46,19 +44,17 @@
 /* ===============================
    ZOOM CONTROLS
 ================================ */
-
 .zoom-controls {
   position: fixed;
-  bottom: 20px;
-  right: 20px;
+  bottom: 90px; /* 👈 ABOVE NAV */
+  right: 12px;
 
   background: rgba(0,0,0,0.7);
-  padding: 8px 12px;
+  padding: 6px 10px;
   border-radius: 8px;
-
+  
   display: flex;
-  align-items: center;
-  gap: 10px;
+  gap: 6px;
 
   z-index: 10000;
 }
@@ -67,7 +63,9 @@
   background: #3b82f6;
   border: none;
   color: white;
+  font-weight: 900;
   padding: 6px 10px;
+  
   border-radius: 4px;
   cursor: pointer;
 }
@@ -75,6 +73,7 @@
 .zoom-controls span {
   color: white;
   font-size: 14px;
+  padding-top: 5px;
 }
 
 /* ===============================
@@ -89,6 +88,7 @@
   overflow-x: hidden;
 
   padding: 10px;
+  padding-bottom: 120px;
 
   display: flex;
   flex-direction: column;
@@ -210,4 +210,45 @@
   font-weight: 500;
 
   pointer-events: none;
+}
+
+.nav-controls {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  background: rgba(0,0,0,0.85);
+   box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+  padding: 10px 16px;
+  border-radius: 14px;
+   margin-bottom: 30px;
+
+  display: flex;
+  align-items: center;
+  gap: 14px;
+
+  z-index: 10000;
+
+  min-width: 260px;
+  justify-content: space-between;
+}
+
+.nav-controls button {
+  background: #22c55e;
+  border: none;
+  color: white;
+
+  padding: 8px 14px;
+  border-radius: 8px;
+ 
+
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.nav-controls span {
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
 }

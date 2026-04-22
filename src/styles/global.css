@@ -245,7 +245,7 @@ button:hover,
   font-size: 18px;
   font-weight: 600;
   margin-bottom: 8px;
-  color: #0c1b33;
+ color: var(--color-primary);
 }
 
 .resource-card summary{
@@ -272,6 +272,7 @@ cursor: pointer;
   border-radius:16px;
 
   font-size:12px;
+  color:gray;
 
   display:inline-flex;
   align-items:center;
@@ -282,27 +283,62 @@ cursor: pointer;
 
 }
 
+.resource-link-notes {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+   box-shadow: 0 2px 6px rgba(0,0,0,0.08);
 
-.resource-link[href*="pdf"]{
+  padding: 6px 12px;
+  border-radius: 20px;
 
-  border:1px solid #ef4444;
+  font-size: 12px;
+  font-weight: 500;
 
-  color:#ef4444;
+  background: #e5e7eb;        /* soft gray */
+  color: #1f2937;             /* dark text */
 
-  background:rgba(239,68,68,0.08);
+  border: 1px solid #d1d5db;
 
+  transition: 0.2s ease;
 }
 
 
-.resource-link[href*="youtube"],
-.resource-link[href*="video"]{
+[data-theme="dark"] .resource-link-notes {
+  background: #334155;        /* dark gray-blue */
+  color: #e2e8f0;             /* light text */
 
-  border:1px solid #3B82F6;
+  border: 1px solid #475569;
+}
 
-  color:#3B82F6;
 
-  background:rgba(59,130,246,0.08);
+.resource-link-notes:hover {
+  background: #d1d5db;
+  transform: translateY(-1px);
+}
 
+[data-theme="dark"] .resource-link-notes:hover {
+  background: #475569;
+}
+
+.resource-link[href*="pdf"] {
+  border: none;
+
+  background: #3b82f6;
+  padding: 6px 12px;
+  border-radius: 20px;
+
+  font-weight: 500;
+  font-size: 12px;
+
+  transition: 0.2s;
+}
+
+.resource-link[href*="video"],
+.resource-link[href*="youtube"] {
+  border: 1px solid var(--video-color);
+  color: var(--video-color);
+  background: var(--video-bg);
 }
 
 
@@ -310,9 +346,20 @@ cursor: pointer;
 .resource-link:hover{
 
   transform: translateY(-1px);
+    background: var(--accordion-hover);
 
   box-shadow: 0 4px 10px rgba(0,0,0,0.4);
 
+}
+
+[data-theme="dark"] .resource-link[href*="pdf"] {
+  background: #2563eb;
+  color: gray;
+}
+
+.resource-link[href*="pdf"]:hover {
+  background: #1d4ed8;
+  transform: translateY(-1px);
 }
 
 .subject-units{
@@ -323,12 +370,18 @@ cursor: pointer;
 
   border-radius:20px;
 
-  background:#1f2937;
+background: rgba(59, 130, 246, 0.12);
+  color: var(--color-secondary);
 
-  color:#94a3b8;
+  border: 1px solid rgba(59, 130, 246, 0.25);
 
-  border:1px solid rgba(255,255,255,0.08);
+}
 
+[data-theme="dark"] .subject-units {
+  background: rgba(59, 130, 246, 0.18);
+  color: #93c5fd;
+
+  border: 1px solid rgba(59, 130, 246, 0.35);
 }
 
 
@@ -349,12 +402,6 @@ cursor: pointer;
   background:rgba(255,255,255,0.12);
 }
 
-
-
-.resource-link:hover{
-  background:#e2e8f0;
-  transform:translateY(-1px);
-}
 
 .resource-card details[open]{
   animation:accordionOpen .25s ease;
@@ -525,7 +572,7 @@ cursor: pointer;
 
   font-size:12px;
 
-  color:var(--color-text);
+ color: var(--color-secondary);
 
   transition:.2s;
 
@@ -589,13 +636,13 @@ details[open] > div{
 
   border-radius:8px;
 
-  background:#f8fafc;
+  background: var(--color-card-bg);
 
   transition:.2s;
 }
 
 .unit-row:hover{
-  background:#eef2f7;
+ background: var(--accordion-hover);
 }
 
 
@@ -633,7 +680,12 @@ a {
 }
 
 /* Notes + PYQ links styling */
-.resource-link,
+.resource-link {
+   text-decoration: none;
+  font-weight: 500;
+}
+
+
 .pyq-paper-link,
 .accordion-body a {
   text-decoration: none;

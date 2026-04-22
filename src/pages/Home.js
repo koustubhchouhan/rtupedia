@@ -1,13 +1,20 @@
-// src/pages/Home.js - Now uses YearSection component
+import React, { lazy, Suspense } from "react";
 
-import React from 'react';
-import YearSelection from './YearSelection';
-
+// Lazy load heavy component
+const YearSelection = lazy(() => import("./YearSelection"));
 
 const Home = () => {
   return (
     <div className="container">
-      <YearSelection />
+      <Suspense
+        fallback={
+          <div style={{ textAlign: "center", marginTop: "50px" }}>
+            Loading subjects...
+          </div>
+        }
+      >
+        <YearSelection />
+      </Suspense>
     </div>
   );
 };

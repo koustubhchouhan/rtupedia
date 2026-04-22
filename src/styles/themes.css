@@ -26,6 +26,14 @@
   /* Select */
   --select-bg: #FFFFFF;
   --select-border: #B8B8B8;
+
+    --pdf-color: #ef4444;
+  --pdf-bg: rgba(239,68,68,0.08);
+
+  --video-color: #3b82f6;
+  --video-bg: rgba(59,130,246,0.08);
+
+
 }
 
 
@@ -62,6 +70,9 @@
   /* SELECT */
   --select-bg: #1E293B;
   --select-border: #334155;
+
+   --pdf-bg: rgba(239,68,68,0.15);
+  --video-bg: rgba(59,130,246,0.15);
 }
 
 

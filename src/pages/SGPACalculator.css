@@ -337,7 +337,6 @@
 .pyq-paper-link,
 .notes-link {
   text-decoration: none !important;
-  color: var(--color-primary);
   font-weight: 500;
 }
 

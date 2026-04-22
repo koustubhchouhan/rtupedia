@@ -1,106 +1,105 @@
-import  { useEffect, useState} from "react";
+import { useEffect, useState, useCallback, memo } from "react";
 import { useNavigate } from "react-router-dom";
 import { Document, Page, pdfjs } from "react-pdf";
 import "./PDFViewer.css";
 import { useAuth } from "../context/AuthContext";
 
-// ✅ Worker setup (correct)
+// Worker
 pdfjs.GlobalWorkerOptions.workerSrc =
   process.env.PUBLIC_URL + "/pdf.worker.min.js";
 
 const PDFViewer = ({ file, onClose }) => {
   const [numPages, setNumPages] = useState(null);
   const [scale, setScale] = useState(1);
+  const [page, setPage] = useState(1);
+  const [error, setError] = useState(false);
+
   const { user } = useAuth();
   const navigate = useNavigate();
 
-  const onDocumentLoadSuccess = ({ numPages }) => {
-    setNumPages(numPages);
-  };
-
+  // 🔒 Auth check
   useEffect(() => {
-  if (!user) {
-    alert("Please login to view PDFs");
-    navigate("/login");
-  }
-}, [user, navigate]);
+    if (!user) {
+      navigate("/login");
+    }
+  }, [user, navigate]);
+
+  const onDocumentLoadSuccess = useCallback(({ numPages }) => {
+    setNumPages(numPages);
+  }, []);
+
+  // ⚡ Preload next page (smooth navigation)
+  useEffect(() => {
+    if (numPages && page < numPages) {
+      const preload = new Image();
+      preload.src = file;
+    }
+  }, [page, numPages, file]);
 
   return (
     <div className="pdf-modal">
-      
-      {/* Close Button */}
+
+      {/* Close */}
       <button className="close-btn" onClick={onClose}>
         ✖ Close
       </button>
 
-      {/* Zoom Controls */}
+      {/* Zoom */}
       <div className="zoom-controls">
-        <button onClick={() => setScale(prev => Math.max(prev - 0.2, 0.5))}>
-          ➖
+        <button  onClick={() => setScale(s => Math.max(s - 0.2, 0.5))}>-</button>
+        <span>{Math.round(scale * 100)}%</span>
+        <button onClick={() => setScale(s => Math.min(s + 0.2, 2.5))}>+</button>
+      </div>
+
+      {/* Navigation */}
+      <div className="nav-controls">
+        <button disabled={page <= 1} onClick={() => setPage(p => p - 1)}>
+          ⬅
         </button>
 
-        <span>{Math.round(scale * 100)}%</span>
+        <span>
+          Page {page} of {numPages || "--"}
+        </span>
 
-        <button onClick={() => setScale(prev => Math.min(prev + 0.2, 2.5))}>
-          ➕
+        <button
+          disabled={page >= numPages}
+          onClick={() => setPage(p => p + 1)}
+        >
+        ➡
         </button>
       </div>
 
       {/* PDF */}
-      <div
-        className="pdf-container"
-        onContextMenu={(e) => e.preventDefault()}
-      >
-        <Document
-          file={encodeURI(file)}
-          onLoadSuccess={onDocumentLoadSuccess}
-          onLoadError={(err) => console.error("PDF ERROR:", err)}
-        >
-          {Array.from(new Array(numPages), (_, index) => (
-            <div key={index} className="page-wrapper">
-              
-              {/* Page */}
+      <div className="pdf-container">
+        {error ? (
+          <div style={{ color: "white" }}>
+            Failed to load PDF. Try again.
+          </div>
+        ) : (
+          <Document
+            file={file}
+            onLoadSuccess={onDocumentLoadSuccess}
+            onLoadError={() => setError(true)}
+            loading="Loading PDF..."
+          >
+            <div className="page-wrapper">
               <Page
-                pageNumber={index + 1}
+                pageNumber={page}
                 scale={scale}
                 renderTextLayer={false}
                 renderAnnotationLayer={false}
               />
-              {Array.from(new Array(numPages), (_, index) => (
-                <div key={index} className="page-wrapper">
-    
-                {/* Page */}
-                <Page
-                 pageNumber={index + 1}
-                 scale={scale}
-                 renderTextLayer={false}
-                 renderAnnotationLayer={false}
-                 />
-
-                 {/* ✅ Page Number */}
-                 <div className="page-number">
-                 Page {index + 1} of {numPages}
-                 </div>
-
-                 {/* Watermark */}
-                 <div className="watermark">
-                 <div className="watermark-text">RTUpedia</div>
-                 </div>
-
-                 </div>
-                 ))}
 
               {/* Watermark */}
               <div className="watermark">
                 <div className="watermark-text">RTUpedia</div>
               </div>
-
             </div>
-          ))}
-        </Document>
+          </Document>
+        )}
       </div>
     </div>
   );
 };
 
-export default PDFViewer;
+export default memo(PDFViewer);
