@@ -245,7 +245,6 @@ const branchFullName = (code) => {
     CHEM: "Chemical Engineering",
     CY: "Cyber Security",
     IT: "Information Technology",
-    IOT: "Internet of Things",
     AIDS: "AI & Data Science",
   };
   return map[code] || code;

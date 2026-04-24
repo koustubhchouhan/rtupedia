@@ -216,5 +216,661 @@
             }
         
         ]
+    },
+
+    "IT" :{
+        "3":[
+            {
+                "subjectName":"Data Structures and Algorithms Lab",
+                "subjectCode":"3CS4-21",
+                "examPapers":[
+                    {
+                        "examType":"Exp 1-6",
+                        "pdfLink":"/assets/lab/CSE/3/DSA Lab exp 1 to 6.pdf"
+                    },
+                    {
+                        "examType":"Exp 7-13",
+                        "pdfLink":"/assets/lab/CSE/3/DSA Lab exp 7 to 13.pdf"
+                    },
+                    {
+                        "examType":"Exp Sorting",
+                        "pdfLink":"/assets/lab/CSE/3/DSA Lab Sorting.pdf"
+                    },
+                    {
+                        "examType":"Exp Tree",
+                        "pdfLink":"/assets/lab/CSE/3/DSA Lab Tree program.pdf"
+                    }
+                ]
+            },
+            {
+                "subjectName":"Object Oriented Programming Lab",
+                "subjectCode":"3CS4-22",
+                "examPapers":[
+                    {
+                        "examType":"OOPs Lab exp 1-3",
+                        "pdfLink":"/assets/lab/CSE/3/OOPs Lab exp 1, 2 and 3.pdf"
+                    },
+                    {
+                        "examType":"OOPs Lab exp 4",
+                        "pdfLink":"/assets/lab/CSE/3/OOPs Lab exp 4.pdf"
+                    },
+                    {
+                        "examType":"OOPs Lab exp 5",
+                        "pdfLink":"/assets/lab/CSE/3/OOPs Lab exp 5.pdf"
+                    },
+                    {
+                        "examType":"OOPs Lab exp 8",
+                        "pdfLink":"/assets/lab/CSE/3/OOPs Lab exp 8.pdf"
+                    },
+                    {
+                        "examType":"OOPs Lab exp 9",
+                        "pdfLink":"/assets/lab/CSE/3/OOPs Lab exp 9.pdf"
+                    },
+                    {
+                        "examType":"OOPs Lab exp 10-12",
+                        "pdfLink":"/assets/lab/CSE/3/OOPs Lab exp 10-12.pdf"
+                    }
+                ]
+            },
+            {
+                "subjectName":"Digital Electronics Lab",
+                "subjectCode":"3CS4-24",
+                "examPapers":[
+                    {
+                        "examType":"DE Lab Exp 1-2",
+                        "pdfLink":"/assets/lab/CSE/3/DE Lab Exp 1-2.pdf"
+                    },
+                    {
+                        "examType":"DE Lab Exp 3-4",
+                        "pdfLink":"/assets/lab/CSE/3/DE Lab Exp 3-4.pdf"
+                    },
+                    {
+                        "examType":"DE Lab Exp 5",
+                        "pdfLink":"/assets/lab/CSE/3/DE Lab Exp 5.pdf"
+                    },
+                    {
+                        "examType":"DE Lab Exp 6-10",
+                        "pdfLink":"/assets/lab/CSE/3/DE Lab Exp 6-10.pdf"
+                    }
+                ]
+            },
+            {
+                "subjectName":"Software Engineering Lab",
+                "subjectCode":"3CS4-23",
+                "examPapers":[
+                    {
+                        "examType":"SE Lab exp 3 UML and Activity Diagram",
+                        "pdfLink":"/assets/lab/CSE/3/SE Lab exp 3.pdf"
+                    },
+                    {
+                        "examType":"SE Lab exp 4 State machine Diagram",
+                        "pdfLink":"/assets/lab/CSE/3/SE Lab exp 4.pdf"
+                    },
+                    {
+                        "examType":"SE Lab exp 5 DFD Diagram",
+                        "pdfLink":"/assets/lab/CSE/3/SE Lab exp 5.pdf"
+                    },
+                    {
+                        "examType":"SE Lab exp 6 Class Diagram",
+                        "pdfLink":"/assets/lab/CSE/3/SE Lab exp 6 Class diagram.pdf"
+                    },
+                    {
+                        "examType":"SE Lab exp 7 Component Diagram",
+                        "pdfLink":"/assets/lab/CSE/3/SE Lab exp 7 Component diagram.pdf"
+                    },
+                    {
+                        "examType":"SE Lab exp 8 ER Diagram",
+                        "pdfLink":"/assets/lab/CSE/3/SE Lab exp 8 ER diagram.pdf"
+                    },
+                    {
+                        "examType":"SE Lab exp 9-10 Deployment Diagram and Sequence Diagram",
+                        "pdfLink":"/assets/lab/CSE/3/SE Lab exp 9 and 10 Deployment and Sequence diagram.pdf"
+                    }
+                ]
+            },{
+                "subjectName":"Indistrial Training / Internship",
+                "subjectCode":"3CS4-XX",
+                "examPapers":[
+                    {
+                        "examType":"MERN Stack Report",
+                        "pdfLink":"/assets/lab/CSE/3/ITS MERN Stack Report.pdf"
+                    },
+                    {
+                        "examType":"Python Basic Report",
+                        "pdfLink":"/assets/lab/CSE/3/ITS Python Basic report.pdf"
+                    },
+                    {
+                        "examType":"Frontend Web Development Report",
+                        "pdfLink":"/assets/lab/CSE/3/ITS Frontend Web Devp report.pdf"
+                    },
+                    {
+                        "examType":"Data Analytics Report",
+                        "pdfLink":"/assets/lab/CSE/3/ITS Data Analytics report.pdf"
+                    },
+                    {
+                        "examType":"Java Programming Report",
+                        "pdfLink":"/assets/lab/CSE/3/ITS Java Programming report.pdf"
+                    },
+                    {
+                        "examType":"Cyber Security Report",
+                        "pdfLink":"/assets/lab/CSE/3/ITS cyber Security report.pdf"
+                    },
+                    {
+                        "examType":"C++ Programming Report",
+                        "pdfLink":"/assets/lab/CSE/3/ITS C++ Programming report.pdf"
+                    }
+                ]
+            }
+        ],
+
+        "4" : [
+
+            {
+                "subjectName":"Microprocessor & Interfaces Lab",
+                "subjectCode":"4CS4-21",
+                "examPapers":[
+                    {
+                        "examType":"Exp 1-2",
+                        "pdfLink":"/assets/lab/CSE/4/MPI Lab exp 1 and 2.pdf"
+                    },
+                    {
+                        "examType":"Exp 5-8",
+                        "pdfLink":"/assets/lab/CSE/4/MPI Lab exp 5 to 8.pdf"
+                    }
+                ]
+            },
+            {
+                "subjectName":"DataBase Manangement System Lab",
+                "subjectCode":"4CS4-22",
+                "examPapers":[
+                    
+                ]
+            },
+            {
+                "subjectName":"Metwork Programming Lab",
+                "subjectCode":"4CS4-23",
+                "examPapers":[
+                    {
+                        "examType":"NP Lab exp 1",
+                        "pdfLink":"/assets/lab/CSE/4/NP Lab exp 1.pdf"
+                    },
+                    {
+                        "examType":"NP Lab exp 2 to 5 ",
+                        "pdfLink":"/assets/lab/CSE/4/NP Lab exp 2 to 5.pdf"
+                    },
+                   
+                    {
+                        "examType":"NP Lab exp 6 to 10",
+                        "pdfLink":"/assets/lab/CSE/4/NP Lab exp 6 to 10.pdf"
+                    }
+                ]
+            },{
+                "subjectName":"Linux Shell Programming Lab",
+                "subjectCode":"4CS4-24",
+                "examPapers":[
+                   
+                ]
+            },
+            {
+                "subjectName":"Java Lab",
+                "subjectCode":"4CS4-25",
+                "examPapers":[
+                    {
+                        "examType":"Java lab exp 1",
+                        "pdfLink":"/assets/lab/CSE/4/Java lab exp 1.pdf"
+                    },
+                    {
+                        "examType":"Java lab exp 2 and 3",
+                        "pdfLink":"/assets/lab/CSE/4/Java lab exp 2 and 3.pdf"
+                    },
+                    {
+                        "examType":"Java lab exp 4 and 5",
+                        "pdfLink":"/assets/lab/CSE/4/Java lab exp 4 and 5.pdf"
+                    },
+                    {
+                        "examType":"Java lab exp 6",
+                        "pdfLink":"/assets/lab/CSE/4/Java lab exp 6.pdf"
+                    }
+                ]
+            }
+        
+        ]
+    },
+
+    "AIDS" :{
+        "3":[
+            {
+                "subjectName":"Data Structures and Algorithms Lab",
+                "subjectCode":"3CS4-21",
+                "examPapers":[
+                    {
+                        "examType":"Exp 1-6",
+                        "pdfLink":"/assets/lab/CSE/3/DSA Lab exp 1 to 6.pdf"
+                    },
+                    {
+                        "examType":"Exp 7-13",
+                        "pdfLink":"/assets/lab/CSE/3/DSA Lab exp 7 to 13.pdf"
+                    },
+                    {
+                        "examType":"Exp Sorting",
+                        "pdfLink":"/assets/lab/CSE/3/DSA Lab Sorting.pdf"
+                    },
+                    {
+                        "examType":"Exp Tree",
+                        "pdfLink":"/assets/lab/CSE/3/DSA Lab Tree program.pdf"
+                    }
+                ]
+            },
+            {
+                "subjectName":"Object Oriented Programming Lab",
+                "subjectCode":"3CS4-22",
+                "examPapers":[
+                    {
+                        "examType":"OOPs Lab exp 1-3",
+                        "pdfLink":"/assets/lab/CSE/3/OOPs Lab exp 1, 2 and 3.pdf"
+                    },
+                    {
+                        "examType":"OOPs Lab exp 4",
+                        "pdfLink":"/assets/lab/CSE/3/OOPs Lab exp 4.pdf"
+                    },
+                    {
+                        "examType":"OOPs Lab exp 5",
+                        "pdfLink":"/assets/lab/CSE/3/OOPs Lab exp 5.pdf"
+                    },
+                    {
+                        "examType":"OOPs Lab exp 8",
+                        "pdfLink":"/assets/lab/CSE/3/OOPs Lab exp 8.pdf"
+                    },
+                    {
+                        "examType":"OOPs Lab exp 9",
+                        "pdfLink":"/assets/lab/CSE/3/OOPs Lab exp 9.pdf"
+                    },
+                    {
+                        "examType":"OOPs Lab exp 10-12",
+                        "pdfLink":"/assets/lab/CSE/3/OOPs Lab exp 10-12.pdf"
+                    }
+                ]
+            },
+            {
+                "subjectName":"Digital Electronics Lab",
+                "subjectCode":"3CS4-24",
+                "examPapers":[
+                    {
+                        "examType":"DE Lab Exp 1-2",
+                        "pdfLink":"/assets/lab/CSE/3/DE Lab Exp 1-2.pdf"
+                    },
+                    {
+                        "examType":"DE Lab Exp 3-4",
+                        "pdfLink":"/assets/lab/CSE/3/DE Lab Exp 3-4.pdf"
+                    },
+                    {
+                        "examType":"DE Lab Exp 5",
+                        "pdfLink":"/assets/lab/CSE/3/DE Lab Exp 5.pdf"
+                    },
+                    {
+                        "examType":"DE Lab Exp 6-10",
+                        "pdfLink":"/assets/lab/CSE/3/DE Lab Exp 6-10.pdf"
+                    }
+                ]
+            },
+            {
+                "subjectName":"Software Engineering Lab",
+                "subjectCode":"3CS4-23",
+                "examPapers":[
+                    {
+                        "examType":"SE Lab exp 3 UML and Activity Diagram",
+                        "pdfLink":"/assets/lab/CSE/3/SE Lab exp 3.pdf"
+                    },
+                    {
+                        "examType":"SE Lab exp 4 State machine Diagram",
+                        "pdfLink":"/assets/lab/CSE/3/SE Lab exp 4.pdf"
+                    },
+                    {
+                        "examType":"SE Lab exp 5 DFD Diagram",
+                        "pdfLink":"/assets/lab/CSE/3/SE Lab exp 5.pdf"
+                    },
+                    {
+                        "examType":"SE Lab exp 6 Class Diagram",
+                        "pdfLink":"/assets/lab/CSE/3/SE Lab exp 6 Class diagram.pdf"
+                    },
+                    {
+                        "examType":"SE Lab exp 7 Component Diagram",
+                        "pdfLink":"/assets/lab/CSE/3/SE Lab exp 7 Component diagram.pdf"
+                    },
+                    {
+                        "examType":"SE Lab exp 8 ER Diagram",
+                        "pdfLink":"/assets/lab/CSE/3/SE Lab exp 8 ER diagram.pdf"
+                    },
+                    {
+                        "examType":"SE Lab exp 9-10 Deployment Diagram and Sequence Diagram",
+                        "pdfLink":"/assets/lab/CSE/3/SE Lab exp 9 and 10 Deployment and Sequence diagram.pdf"
+                    }
+                ]
+            },{
+                "subjectName":"Indistrial Training / Internship",
+                "subjectCode":"3CS4-XX",
+                "examPapers":[
+                    {
+                        "examType":"MERN Stack Report",
+                        "pdfLink":"/assets/lab/CSE/3/ITS MERN Stack Report.pdf"
+                    },
+                    {
+                        "examType":"Python Basic Report",
+                        "pdfLink":"/assets/lab/CSE/3/ITS Python Basic report.pdf"
+                    },
+                    {
+                        "examType":"Frontend Web Development Report",
+                        "pdfLink":"/assets/lab/CSE/3/ITS Frontend Web Devp report.pdf"
+                    },
+                    {
+                        "examType":"Data Analytics Report",
+                        "pdfLink":"/assets/lab/CSE/3/ITS Data Analytics report.pdf"
+                    },
+                    {
+                        "examType":"Java Programming Report",
+                        "pdfLink":"/assets/lab/CSE/3/ITS Java Programming report.pdf"
+                    },
+                    {
+                        "examType":"Cyber Security Report",
+                        "pdfLink":"/assets/lab/CSE/3/ITS cyber Security report.pdf"
+                    },
+                    {
+                        "examType":"C++ Programming Report",
+                        "pdfLink":"/assets/lab/CSE/3/ITS C++ Programming report.pdf"
+                    }
+                ]
+            }
+        ],
+
+        "4" : [
+
+            {
+                "subjectName":"Microprocessor & Interfaces Lab",
+                "subjectCode":"4CS4-21",
+                "examPapers":[
+                    {
+                        "examType":"Exp 1-2",
+                        "pdfLink":"/assets/lab/CSE/4/MPI Lab exp 1 and 2.pdf"
+                    },
+                    {
+                        "examType":"Exp 5-8",
+                        "pdfLink":"/assets/lab/CSE/4/MPI Lab exp 5 to 8.pdf"
+                    }
+                ]
+            },
+            {
+                "subjectName":"DataBase Manangement System Lab",
+                "subjectCode":"4CS4-22",
+                "examPapers":[
+                    
+                ]
+            },
+            {
+                "subjectName":"Metwork Programming Lab",
+                "subjectCode":"4CS4-23",
+                "examPapers":[
+                    {
+                        "examType":"NP Lab exp 1",
+                        "pdfLink":"/assets/lab/CSE/4/NP Lab exp 1.pdf"
+                    },
+                    {
+                        "examType":"NP Lab exp 2 to 5 ",
+                        "pdfLink":"/assets/lab/CSE/4/NP Lab exp 2 to 5.pdf"
+                    },
+                   
+                    {
+                        "examType":"NP Lab exp 6 to 10",
+                        "pdfLink":"/assets/lab/CSE/4/NP Lab exp 6 to 10.pdf"
+                    }
+                ]
+            },{
+                "subjectName":"Linux Shell Programming Lab",
+                "subjectCode":"4CS4-24",
+                "examPapers":[
+                   
+                ]
+            },
+            {
+                "subjectName":"Java Lab",
+                "subjectCode":"4CS4-25",
+                "examPapers":[
+                    {
+                        "examType":"Java lab exp 1",
+                        "pdfLink":"/assets/lab/CSE/4/Java lab exp 1.pdf"
+                    },
+                    {
+                        "examType":"Java lab exp 2 and 3",
+                        "pdfLink":"/assets/lab/CSE/4/Java lab exp 2 and 3.pdf"
+                    },
+                    {
+                        "examType":"Java lab exp 4 and 5",
+                        "pdfLink":"/assets/lab/CSE/4/Java lab exp 4 and 5.pdf"
+                    },
+                    {
+                        "examType":"Java lab exp 6",
+                        "pdfLink":"/assets/lab/CSE/4/Java lab exp 6.pdf"
+                    }
+                ]
+            }
+        
+        ]
+    },
+    "CY" :{
+        "3":[
+            {
+                "subjectName":"Data Structures and Algorithms Lab",
+                "subjectCode":"3CS4-21",
+                "examPapers":[
+                    {
+                        "examType":"Exp 1-6",
+                        "pdfLink":"/assets/lab/CSE/3/DSA Lab exp 1 to 6.pdf"
+                    },
+                    {
+                        "examType":"Exp 7-13",
+                        "pdfLink":"/assets/lab/CSE/3/DSA Lab exp 7 to 13.pdf"
+                    },
+                    {
+                        "examType":"Exp Sorting",
+                        "pdfLink":"/assets/lab/CSE/3/DSA Lab Sorting.pdf"
+                    },
+                    {
+                        "examType":"Exp Tree",
+                        "pdfLink":"/assets/lab/CSE/3/DSA Lab Tree program.pdf"
+                    }
+                ]
+            },
+            {
+                "subjectName":"Object Oriented Programming Lab",
+                "subjectCode":"3CS4-22",
+                "examPapers":[
+                    {
+                        "examType":"OOPs Lab exp 1-3",
+                        "pdfLink":"/assets/lab/CSE/3/OOPs Lab exp 1, 2 and 3.pdf"
+                    },
+                    {
+                        "examType":"OOPs Lab exp 4",
+                        "pdfLink":"/assets/lab/CSE/3/OOPs Lab exp 4.pdf"
+                    },
+                    {
+                        "examType":"OOPs Lab exp 5",
+                        "pdfLink":"/assets/lab/CSE/3/OOPs Lab exp 5.pdf"
+                    },
+                    {
+                        "examType":"OOPs Lab exp 8",
+                        "pdfLink":"/assets/lab/CSE/3/OOPs Lab exp 8.pdf"
+                    },
+                    {
+                        "examType":"OOPs Lab exp 9",
+                        "pdfLink":"/assets/lab/CSE/3/OOPs Lab exp 9.pdf"
+                    },
+                    {
+                        "examType":"OOPs Lab exp 10-12",
+                        "pdfLink":"/assets/lab/CSE/3/OOPs Lab exp 10-12.pdf"
+                    }
+                ]
+            },
+            {
+                "subjectName":"Digital Electronics Lab",
+                "subjectCode":"3CS4-24",
+                "examPapers":[
+                    {
+                        "examType":"DE Lab Exp 1-2",
+                        "pdfLink":"/assets/lab/CSE/3/DE Lab Exp 1-2.pdf"
+                    },
+                    {
+                        "examType":"DE Lab Exp 3-4",
+                        "pdfLink":"/assets/lab/CSE/3/DE Lab Exp 3-4.pdf"
+                    },
+                    {
+                        "examType":"DE Lab Exp 5",
+                        "pdfLink":"/assets/lab/CSE/3/DE Lab Exp 5.pdf"
+                    },
+                    {
+                        "examType":"DE Lab Exp 6-10",
+                        "pdfLink":"/assets/lab/CSE/3/DE Lab Exp 6-10.pdf"
+                    }
+                ]
+            },
+            {
+                "subjectName":"Software Engineering Lab",
+                "subjectCode":"3CS4-23",
+                "examPapers":[
+                    {
+                        "examType":"SE Lab exp 3 UML and Activity Diagram",
+                        "pdfLink":"/assets/lab/CSE/3/SE Lab exp 3.pdf"
+                    },
+                    {
+                        "examType":"SE Lab exp 4 State machine Diagram",
+                        "pdfLink":"/assets/lab/CSE/3/SE Lab exp 4.pdf"
+                    },
+                    {
+                        "examType":"SE Lab exp 5 DFD Diagram",
+                        "pdfLink":"/assets/lab/CSE/3/SE Lab exp 5.pdf"
+                    },
+                    {
+                        "examType":"SE Lab exp 6 Class Diagram",
+                        "pdfLink":"/assets/lab/CSE/3/SE Lab exp 6 Class diagram.pdf"
+                    },
+                    {
+                        "examType":"SE Lab exp 7 Component Diagram",
+                        "pdfLink":"/assets/lab/CSE/3/SE Lab exp 7 Component diagram.pdf"
+                    },
+                    {
+                        "examType":"SE Lab exp 8 ER Diagram",
+                        "pdfLink":"/assets/lab/CSE/3/SE Lab exp 8 ER diagram.pdf"
+                    },
+                    {
+                        "examType":"SE Lab exp 9-10 Deployment Diagram and Sequence Diagram",
+                        "pdfLink":"/assets/lab/CSE/3/SE Lab exp 9 and 10 Deployment and Sequence diagram.pdf"
+                    }
+                ]
+            },{
+                "subjectName":"Indistrial Training / Internship",
+                "subjectCode":"3CS4-XX",
+                "examPapers":[
+                    {
+                        "examType":"MERN Stack Report",
+                        "pdfLink":"/assets/lab/CSE/3/ITS MERN Stack Report.pdf"
+                    },
+                    {
+                        "examType":"Python Basic Report",
+                        "pdfLink":"/assets/lab/CSE/3/ITS Python Basic report.pdf"
+                    },
+                    {
+                        "examType":"Frontend Web Development Report",
+                        "pdfLink":"/assets/lab/CSE/3/ITS Frontend Web Devp report.pdf"
+                    },
+                    {
+                        "examType":"Data Analytics Report",
+                        "pdfLink":"/assets/lab/CSE/3/ITS Data Analytics report.pdf"
+                    },
+                    {
+                        "examType":"Java Programming Report",
+                        "pdfLink":"/assets/lab/CSE/3/ITS Java Programming report.pdf"
+                    },
+                    {
+                        "examType":"Cyber Security Report",
+                        "pdfLink":"/assets/lab/CSE/3/ITS cyber Security report.pdf"
+                    },
+                    {
+                        "examType":"C++ Programming Report",
+                        "pdfLink":"/assets/lab/CSE/3/ITS C++ Programming report.pdf"
+                    }
+                ]
+            }
+        ],
+
+        "4" : [
+
+            {
+                "subjectName":"Microprocessor & Interfaces Lab",
+                "subjectCode":"4CS4-21",
+                "examPapers":[
+                    {
+                        "examType":"Exp 1-2",
+                        "pdfLink":"/assets/lab/CSE/4/MPI Lab exp 1 and 2.pdf"
+                    },
+                    {
+                        "examType":"Exp 5-8",
+                        "pdfLink":"/assets/lab/CSE/4/MPI Lab exp 5 to 8.pdf"
+                    }
+                ]
+            },
+            {
+                "subjectName":"DataBase Manangement System Lab",
+                "subjectCode":"4CS4-22",
+                "examPapers":[
+                    
+                ]
+            },
+            {
+                "subjectName":"Metwork Programming Lab",
+                "subjectCode":"4CS4-23",
+                "examPapers":[
+                    {
+                        "examType":"NP Lab exp 1",
+                        "pdfLink":"/assets/lab/CSE/4/NP Lab exp 1.pdf"
+                    },
+                    {
+                        "examType":"NP Lab exp 2 to 5 ",
+                        "pdfLink":"/assets/lab/CSE/4/NP Lab exp 2 to 5.pdf"
+                    },
+                   
+                    {
+                        "examType":"NP Lab exp 6 to 10",
+                        "pdfLink":"/assets/lab/CSE/4/NP Lab exp 6 to 10.pdf"
+                    }
+                ]
+            },{
+                "subjectName":"Linux Shell Programming Lab",
+                "subjectCode":"4CS4-24",
+                "examPapers":[
+                   
+                ]
+            },
+            {
+                "subjectName":"Java Lab",
+                "subjectCode":"4CS4-25",
+                "examPapers":[
+                    {
+                        "examType":"Java lab exp 1",
+                        "pdfLink":"/assets/lab/CSE/4/Java lab exp 1.pdf"
+                    },
+                    {
+                        "examType":"Java lab exp 2 and 3",
+                        "pdfLink":"/assets/lab/CSE/4/Java lab exp 2 and 3.pdf"
+                    },
+                    {
+                        "examType":"Java lab exp 4 and 5",
+                        "pdfLink":"/assets/lab/CSE/4/Java lab exp 4 and 5.pdf"
+                    },
+                    {
+                        "examType":"Java lab exp 6",
+                        "pdfLink":"/assets/lab/CSE/4/Java lab exp 6.pdf"
+                    }
+                ]
+            }
+        
+        ]
     }
 }

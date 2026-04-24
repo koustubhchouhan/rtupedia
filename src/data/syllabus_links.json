@@ -30,8 +30,8 @@
 
  
   { "year": "1st year", "branch": "CY", "link": "/assets/syllabus/1st year syllabus.pdf", "description": "Latest Common B.Tech Syllabus for 1st year" },
-  { "year": "3rd Sem", "branch": "CY", "link": "/assets/syllabus/RTU syllabus 3rd sem CY.pdf", "description": "Latest Cyber Security Syllabus for 3rd Semester" },
-  { "year": "4th Sem", "branch": "CY", "link": "/assets/syllabus/RTU syllabus 4th sem CY.pdf", "description": "Latest Cyber Security Syllabus for 4th Semester" },
+  { "year": "3rd Sem", "branch": "CY", "link": "/assets/syllabus/RTU syllabus 3rd and 4th sem CY.pdf", "description": "Latest Cyber Security Syllabus for 3rd Semester" },
+  { "year": "4th Sem", "branch": "CY", "link": "/assets/syllabus/RTU syllabus 3rd and 4th sem CY.pdf", "description": "Latest Cyber Security Syllabus for 4th Semester" },
   { "year": "3rd year", "branch": "CY", "link": "/assets/syllabus/RTU syllabus 3rd year CY.pdf", "description": "Latest Cyber Security Syllabus for 5th & 6th Semester" },
   { "year": "4th year", "branch": "CY", "link": "/assets/syllabus/RTU syllabus 4th year CY.pdf", "description": "Latest Cyber Security Syllabus for 7th & 8th Semester" },
 
@@ -42,16 +42,16 @@
   { "year": "4th year", "branch": "CHEM", "link": "/assets/syllabus/RTU syllabus 4th year CHEM.pdf", "description": "Latest Chemical engineering Syllabus for 7th & 8th Semester" },
 
   { "year": "1st year", "branch": "AIDS", "link": "/assets/syllabus/1st year syllabus.pdf", "description": "Latest Common B.Tech Syllabus for 1st year" },
-  { "year": "3rd Sem", "branch": "AIDS", "link": "/assets/syllabus/RTU syllabus 3rd sem CSE.pdf", "description": "Latest CSE B.Tech Syllabus for 3rd Semester" },
-  { "year": "4th Sem", "branch": "AIDS", "link": "/assets/syllabus/RTU syllabus 4th sem CSE.pdf", "description": "Latest CSE B.Tech Syllabus for 4th Semester" },
-  { "year": "3rd year", "branch": "AIDS", "link": "/assets/syllabus/RTU syllabus 3rd year CSE.pdf", "description": "Latest CSE B.Tech Syllabus for 3rd year" },
-  { "year": "4th year", "branch": "AIDS", "link": "/assets/syllabus/RTU syllabus 4th year CSE.pdf", "description": "Latest CSE B.Tech Syllabus for 4th Year" },
+  { "year": "3rd Sem", "branch": "AIDS", "link": "/assets/syllabus/RTU syllabus 3rd sem CSE.pdf", "description": "Latest AIDS B.Tech Syllabus for 3rd Semester" },
+  { "year": "4th Sem", "branch": "AIDS", "link": "/assets/syllabus/RTU syllabus 4th sem CSE.pdf", "description": "Latest AIDS B.Tech Syllabus for 4th Semester" },
+  { "year": "3rd year", "branch": "AIDS", "link": "/assets/syllabus/RTU syllabus 3rd year CSE.pdf", "description": "Latest AIDS B.Tech Syllabus for 3rd year" },
+  { "year": "4th year", "branch": "AIDS", "link": "/assets/syllabus/RTU syllabus 4th year CSE.pdf", "description": "Latest AIDS B.Tech Syllabus for 4th Year" },
 
-  { "year": "1st year", "branch": "IOT", "link": "/assets/syllabus/1st year syllabus.pdf", "description": "Latest Common B.Tech Syllabus for 1st year" },
-  { "year": "3rd Sem", "branch": "IOT", "link": "/assets/syllabus/RTU syllabus 3rd sem CSE.pdf", "description": "Latest CSE B.Tech Syllabus for 3rd Semester" },
-  { "year": "4th Sem", "branch": "IOT", "link": "/assets/syllabus/RTU syllabus 4th sem CSE.pdf", "description": "Latest CSE B.Tech Syllabus for 4th Semester" },
-  { "year": "3rd year", "branch": "IOT", "link": "/assets/syllabus/RTU syllabus 3rd year CSE.pdf", "description": "Latest CSE B.Tech Syllabus for 3rd year" },
-  { "year": "4th year", "branch": "IOT", "link": "/assets/syllabus/RTU syllabus 4th year CSE.pdf", "description": "Latest CSE B.Tech Syllabus for 4th Year" }
+  { "year": "1st year", "branch": "IT", "link": "/assets/syllabus/1st year syllabus.pdf", "description": "Latest Common B.Tech Syllabus for 1st year" },
+  { "year": "3rd Sem", "branch": "IT", "link": "/assets/syllabus/RTU syllabus 3rd sem IT.pdf", "description": "Latest IT B.Tech Syllabus for 3rd Semester" },
+  { "year": "4th Sem", "branch": "IT", "link": "/assets/syllabus/RTU syllabus 4th sem IT.pdf", "description": "Latest IT B.Tech Syllabus for 4th Semester" },
+  { "year": "3rd year", "branch": "IT", "link": "/assets/syllabus/RTU syllabus 3rd year IT.pdf", "description": "Latest IT B.Tech Syllabus for 3rd year" },
+  { "year": "4th year", "branch": "IT", "link": "/assets/syllabus/RTU syllabus 4th year IT.pdf", "description": "Latest IT B.Tech Syllabus for 4th Year" }
 
 ]
 

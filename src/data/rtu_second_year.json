@@ -499,8 +499,1490 @@
   "EE": { "3": [], "4": [] },
   "ME": { "3": [], "4": [] },
   "CE": { "3": [], "4": [] },
-  "AIDS": { "3": [], "4": [] },
-  "IOT": { "3": [], "4": [] },
-  "CY": { "3": [], "4": [] },
+  "AIDS": {  "3": 
+      {
+      "subjects": [
+        {
+        "subjectName": "Advanced Engineering Mathematics",
+        "subjectCode": "3CS2-01",
+        "units": [
+          {
+            "unitName": "Random variables and Probability Distributions",
+            "notesPDF": "/assets/notes/CSE/3/AEM Unit 1.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLU6SqdYcYsfIaokdZTmptaf-PK7s-B0ju&si=C8JcGMbzED8a9Azr"
+          },
+          {
+            "unitName": "Discrete Probability Distributions",
+            "notesPDF": "/assets/notes/CSE/3/AEM Unit 2.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X1odw2Kd7NxcI8O0k0meQR2&si=79y812zJj80eVAp1"
+          },
+          {
+            "unitName": "Optimization Problems : Formulation and Properties",
+            "notesPDF": "/assets/notes/CSE/3/AEM Unit 3.pdf",
+            "lectureLink": "https://youtu.be/N7WxiWCGIKA?si=GOmaCkm9kWv0M9LM"
+          },
+          {
+            "unitName": "Non-linear Programming Problems",
+            "notesPDF": "/assets/notes/CSE/3/AEM Unit 4.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLBmBje17zG1PSbMUQB6RPCMxDbE6EZ_rl&si=-tCqwa76lFQHA1kz"
+          },
+          {
+            "unitName": "Linear Programming Problems",
+            "notesPDF": "/assets/notes/CSE/3/AEM Unit 5.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLU6SqdYcYsfLewoQPYjgg7SMBLjSV704v&si=8QRHHXHEdX_1I0-i"
+          }
+        ],
+        "More": [
+          { "examType": "AEM Formulas and Methods", "pdfLink": "/assets/more/CSE/AEM Formulas and Methods.pdf" }
+        ]
+      },
+      {
+        "subjectName": "Technical Communication",
+        "subjectCode": "3CS1-02",
+        "units": [
+          {
+            "unitName": "Introduction to Technical Communication",
+            "notesPDF": "/assets/notes/CSE/3/TC Unit 1.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X2G_KPRnBdEDjiF1n7uuDIV&si=t1CAV3joirkRGLce"
+          },
+          {
+            "unitName": "Comprehension of Technical Materials/Texts and Information Design & Development",
+            "notesPDF": "/assets/notes/CSE/3/TC Unit 2.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X2ELdJUMWwTMh0i65_I80FH&si=bUezUsLL9wHdynSi"
+          },
+          {
+            "unitName": "Technical Writing, Grammar and Editing",
+            "notesPDF": "/assets/notes/CSE/3/TC Unit 3.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=technical-communication-unit3"
+          },
+          {
+            "unitName": "Advanced Technical Writing",
+            "notesPDF": "/assets/notes/CSE/3/TC Unit 4.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=technical-communication-unit4"
+          }
+        ],
+        "More": [
+        ]
+      },
+      {
+        "subjectName": "Managerial Economics and Financial Accounting",
+        "subjectCode": "3CS1-03",
+        "units": [
+          {
+            "unitName": "Basic Economic Concepts",
+            "notesPDF": "/assets/notes/CSE/3/MEFA Unit 1.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X1JoM0y0w0pwGdsOsST_9qo&si=GZ3KMZ5FRhO_Tl2X"
+          },
+          {
+            "unitName": "Demand and Supply Analysis",
+            "notesPDF": "/assets/notes/CSE/3/MEFA Unit 2.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X2FIl9b1mpYFaqDxya9owyR&si=YjbhsQmwJfGDWWsu"
+          },
+          {
+            "unitName": "Production and Cost Analysis",
+            "notesPDF": "/assets/notes/CSE/3/MEFA Unit 3.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X2FO9B_UVZUBdOAc6hlgu_A&si=HFD3TQUOHs-cc9oc"
+          },
+          {
+            "unitName": "Market structure and pricing theory",
+            "notesPDF": "/assets/notes/CSE/3/MEFA Unit 4.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X1bLoF-d8BhBQZ0IAtKXGpR&si=C1xkSxQoc89qnBEu"
+          },
+          {
+            "unitName": "Financial Statement Analysis",
+            "notesPDF": "/assets/notes/CSE/3/MEFA Unit 5.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X0aW6870Uz_UNp8EvACFDw7&si=01MlYmSKKVrqh4Ox"
+          }
+        ],
+        "More": [
+       { "examType": "MEFA Formulas and Concepts", "pdfLink": "/assets/more/CSE/MEFA Imp Formulas Unit 1 to 3.pdf" },
+       { "examType": "MEFA All PYQs", "pdfLink": "/assets/more/CSE/Complete MEFA with PYQS.pdf" }
+        ]
+        
+      },
+      {
+        "subjectName": "Digital Electronics",
+        "subjectCode": "3CS3-04",
+        "units": [
+          {
+            "unitName": "Fundamental Concepts",
+            "notesPDF": "/assets/notes/CSE/3/DE Unit 1.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X2s355nxqkhVi7nkubHTpzK&si=m7fB8T4R-2Q__Seu"
+          },
+          {
+            "unitName": "Minimization Techniques and Logic Gates",
+            "notesPDF": "/assets/notes/CSE/3/DE Unit 2.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X3Z30GtbFjIiU3oeuzaZfna&si=FbjpzJYamk4Zs-sd"
+          },
+          {
+            "unitName": "Digital Logic Gate Characteristics and Logic families",
+            "notesPDF": "/assets/notes/CSE/3/DE Unit 3.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLgwJf8NK-2e645xqSqUBHJCgkrtkCa5AN&si=Dpy551C4SRrwOBGJ"
+          },
+          {
+            "unitName": "Combinational Circuits",
+            "notesPDF": "/assets/notes/CSE/3/DE Unit 4.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X2EW-t3OYFvQrFRhIyGmz3s&si=B7GJazWG6B9Sxw54"
+          },
+          {
+            "unitName": "Sequential Circuits",
+            "notesPDF": "/assets/notes/CSE/3/DE Unit 5.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X0xlbtBMp-1XC8hmA6QweUX&si=YbdP9Pcv1P7XL5-5"
+          }
+        ],
+           "More": [
+            {"examType" : "DE Guess Paper" , "pdfLink": "/assets/more/CSE/DE Guess paper.pdf"}
+        ]
+      },
+      {
+        "subjectName": "Data Structures and Algorithms",
+        "subjectCode": "3CS4-05",
+        "units": [
+          {
+            "unitName": "Stacks",
+            "notesPDF": "/assets/notes/CSE/3/DSA Unit 1.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X3rZ48nJ_kt8wE_ceTgGu-w&si=MS0TQl6TvltxmVVX"
+          },
+          {
+            "unitName": "Linked Lists and Queues",
+            "notesPDF": "/assets/notes/CSE/3/DSA Unit 2.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X1RpJWGKMiJLGYapxxlqZvw&si=ylG7BUJPqpUblGSh"
+          },
+          {
+            "unitName": "Searching Techniques and Sorting",
+            "notesPDF": "/assets/notes/CSE/3/DSA Unit 3.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X3RzAXVjRt0InfjMECiSOFl&si=L3ymBQo7kVbHkwqY"
+          },
+          {
+            "unitName": "Trees",
+            "notesPDF": "/assets/notes/CSE/3/DSA Unit 4.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X1tf8moGlqSdYRhU4LRpAjs&si=mifDAQjdA14kDuEp"
+          },
+          {
+            "unitName": "Graphs and Hashing",
+            "notesPDF": "/assets/notes/CSE/3/DSA Unit 5.pdf",
+            "lectureLink": "https://youtu.be/lg48ZZe7YUA?si=m7rChfFY-Gc2IjLV"
+          }
+        ],
+           "More": [
+      {"examType": "DSA All Algorithms", "pdfLink": "/assets/more/CSE/DSA All algorithms.pdf"}
+        ]
+      },
+      {
+        "subjectName": "Object Oriented Programming",
+        "subjectCode": "3CS4-06",
+        "units": [
+          {
+            "unitName": "Introduction",
+            "notesPDF": "/assets/notes/CSE/3/OOPS Unit 1.pdf",
+            "lectureLink": "https://youtu.be/mlIUKyZIUUU?si=_2LVmms-smT5s3i9"
+          },
+          {
+            "unitName": "Constructor and Destructor",
+            "notesPDF": "/assets/notes/CSE/3/OOPS Unit 2.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X0kyBUypKgm1R1DLyocB-a8&si=yXdRj3yYqhVR8Qns"
+          },
+          {
+            "unitName": "Inheritance",
+            "notesPDF": "/assets/notes/CSE/3/OOPS Unit 3.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X0uWVgaBKsn4kp8CsnVqDWf&si=-7DxSIp0j-8AWDEO"
+          },
+          {
+            "unitName": "Polymorphism: Compile-time and Run-time polymorphism.",
+            "notesPDF": "/assets/notes/CSE/3/OOPS Unit 4.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X0gSLKV3Ws0lGPqMMXNYWPw&si=NP6GNIYXof5IgPaB"
+          },
+          {
+            "unitName": "File and ExceptionHandling",
+            "notesPDF": "/assets/notes/CSE/3/OOPS Unit 5.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X1tysYiymZ1uXLNR2LCyYDo&si=ChgJLYScYGQ-gQmq"
+          }
+        ],
+           "More": [
+      {"examType": "OOPS Imp Short Questions", "pdfLink":  "/assets/more/CSE/OOPs Imp Short Questions.pdf" },
+      {"examType": "OOPS All Codes", "pdfLink":  "/assets/more/CSE/OOPs Codes.pdf" }
+        ]
+      },
+      {
+        "subjectName": "Software Engineering",
+        "subjectCode": "3CS4-07",
+        "units": [
+          {
+            "unitName": "Introduction: Software process models, software development life cycle.",
+            "notesPDF": "/assets/notes/CSE/3/SE Unit 1.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X3QxnFicvsEPzAj54BbDt1Y&si=W9qPekdmvudTm0NX"
+          },
+          {
+            "unitName": "Software Project Management: Project planning, cost estimation, scheduling.",
+            "notesPDF": "/assets/notes/CSE/3/SE Unit 2.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X3GvO0_suANZz7jUXkYPxUQ&si=I317wNDtG3xdlHtJ"
+          },
+          {
+            "unitName": "Software Requirements Engineering",
+            "notesPDF": "/assets/notes/CSE/3/SE Unit 3.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X2wbZocjO4b_Hx5PXg1912P&si=3EzB6sLEmgVn8At1"
+          },
+          {
+            "unitName": "Software Design",
+            "notesPDF": "/assets/notes/CSE/3/SE Unit 4.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X1w7rwmsRb_YJUZhUsdsGoH&si=OAklsYfSdKOic0si"
+          },
+          {
+            "unitName": "Object-Oriented Analysis and Object-Oriented Design",
+            "notesPDF": "/assets/notes/CSE/3/SE Unit 5.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X2mpg2ZoaZjyxhn-uZfxTUV&si=bwp1tNyAuWvwtikP"
+          }
+        ],
+        "More": [
+          { "examType": "Guess Paper", "pdfLink": "/assets/more/CSE/SE Guess Paper.pdf" },
+          {"examType": "SE RTU Paper Solution 2025", "pdfLink": "/assets/more/CSE/SE RTU Solution 2025.pdf"},
+             {"examType": "SE RTU Paper Solution 2024", "pdfLink": "/assets/more/CSE/SE RTU Solution 2024.pdf"},
+              {"examType": "SE RTU Paper Solution 2023", "pdfLink": "/assets/more/CSE/SE RTU Solution 2023.pdf"}
+        ]
+      }
+  ], 
+         "Extra" :[
+          { "examType": "RTU Imp Topics for 3rd SEM", "pdfLink": "/assets/more/CSE/IMP RTU TOPICS 3rd SEM.md" }
+    ]
+    },
+    "4": {
+
+    "subjects": [
+      {
+        "subjectName": "Discrete Mathematics Structure",
+        "subjectCode": "4CS2-01",
+        "units": [
+          {
+            "unitName": "Set Theory, Relation, Function: Countable/uncountable sets, cardinality, inclusion-exclusion principle, pigeonhole principle.",
+            "notesPDF": "/assets/notes/CSE/4/DMS Unit 1.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X2YmyM9VnytGmbMFjUlV-R8&si=WJc4HSDHFUdDvnYY"
+          },
+          {
+            "unitName": "Propositional Logic: Logical operations, predicates, normal forms, quantifiers.",
+            "notesPDF": "/assets/notes/CSE/4/DMS Unit 2.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X04Hb0YYglOyng43xl9phYx&si=OjP1niEtbGxTukqV"
+          },
+          {
+            "unitName": "Posets, Hasse diagram, Lattices, Combinatorics",
+            "notesPDF": "/assets/notes/CSE/4/DMS Unit 3.pdf",
+            "lectureLink": "https://youtu.be/DZEG3YgJbL0?si=Vl_WAJ4JOcMT3jR6"
+          },
+          {
+            "unitName": "Algebraic Structures: Groups, Rings, Fields, Commutativity, Homomorphism.",
+            "notesPDF": "/assets/notes/CSE/4/DMS Unit 4.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X1fQF8t0ibAi7_hLU-cuS8d&si=7PMg-XRo29qNxPoo"
+          },
+          {
+            "unitName": "Graph Theory: Paths, cycles, connectivity, Eulerian/Hamiltonian paths, graph coloring.",
+            "notesPDF": "/assets/notes/CSE/4/DMS Unit 5.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X2uEnQnS_Z6CeKOoVb_LhFb&si=jNy1vsHGDDcSwJ-_"
+          }
+        ],
+        "pyqs": [
+          { "examType": "MainExam", "year": 2023, "sem": "Odd", "pdfLink": "/assets/main/PPS paper odd 2023.pdf" },
+          { "examType": "MainExam", "year": 2025, "sem": "Odd", "pdfLink": "/assets/main/PPS paper odd 2025.pdf" }
+        ]
+      },
+      {
+        "subjectName": "Microprocessor & Interfaces",
+        "subjectCode": "4CS3-04",
+        "units": [
+          {
+            "unitName": "Introduction: Microprocessor basics, applications. Architecture of 8085 Microprocessor: Internal blocks, instruction cycle, addressing modes.",
+            "notesPDF": "/assets/notes/CSE/4/MPI Unit 1.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLxCzCOWd7aiHL7mF_dRsj4Q9x1NNaZqkh&si=ciJKMdrd0gv00BF4"
+          },
+          {
+            "unitName": "8085 Instruction Set and Programming: Data transfer, arithmetic, logical, branch instructions.",
+            "notesPDF": "/assets/notes/CSE/4/MPI Unit 2.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X1K5l3r1FmmjeSzKHdHjth4&si=Q0k3prd-zjpC51E5"
+          },
+          {
+            "unitName": "Advance Assembly Language Programming and 8259 programmable interrupt controller.",
+            "notesPDF": "/assets/notes/CSE/4/MPI Unit 3.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X3WnrCaqF3kSj1pflEcs7iJ&si=dK3H9pD-oq2Yt-05"
+          },
+          {
+            "unitName": "8085 Microprocessor Interfacing (8255, 8254, 8279).",
+            "notesPDF": "/assets/notes/CSE/4/MPI Unit 4.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X1AopcKnalA8O7J7K9j25Hk&si=E0zANUv15FKBfYHJ"
+          },
+          {
+            "unitName": "Microprocessor Applications.",
+            "notesPDF": "/assets/notes/CSE/4/MPI Unit 5.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X2_AYX7ei7fnLzDRhFxKysJ&si=UXetguxXT7GdKlm6"
+          }
+        ],
+        "pyqs": [
+          { "examType": "MainExam", "year": 2023, "sem": "Odd", "pdfLink": "/assets/main/PPS paper odd 2023.pdf" },
+          { "examType": "MainExam", "year": 2025, "sem": "Odd", "pdfLink": "/assets/main/PPS paper odd 2025.pdf" }
+        ]
+      },
+      {
+        "subjectName": "Database Management System",
+        "subjectCode": "4CS4-05",
+        "units": [
+          {
+            "unitName": "Introduction: Database concepts, data models, DBMS architecture. Entity Relationship Model: Mapping cardinalities, keys, constraints.",
+            "notesPDF": "/assets/notes/CSE/4/DBMS Unit 1.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X2m5y4uz1Ibhiq8P__OhEuf&si=eXG21XT13-jmxKvx"
+          },
+          {
+            "unitName": "Relational Algebra and Calculus, SQL Queries, Trigger Programming.",
+            "notesPDF": "/assets/notes/CSE/4/DBMS Unit 2.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X1DNqvgv_9BTWX6pSOWuA5z&si=-kQa4KjxX73yFKGK"
+          },
+          {
+            "unitName": "Schema Refinement and Normal Forms.",
+            "notesPDF": "/assets/notes/CSE/4/DBMS Unit 3.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X34CeuZqIxabJ1iTYt5SfQ7&si=Se6-PFiR4OngFmNS"
+          },
+          {
+            "unitName": "Transaction Processing.",
+            "notesPDF": "/assets/notes/CSE/4/DBMS Unit 4.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X3j3g4NuKkcko4Af1O4v6Ap&si=vbTxjvqgFc8aYQSN"
+          },
+          {
+            "unitName": "Concurrency Control, Database Failure and Recovery.",
+            "notesPDF": "/assets/notes/CSE/4/DBMS Unit 5.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X3OAmIAnjjkGVpvHran8vbv&si=Vx2bb2LVNpBtTAA3"
+          }
+        ],
+        "pyqs": [
+          { "examType": "MainExam", "year": 2023, "sem": "Odd", "pdfLink": "/assets/main/PPS paper odd 2023.pdf" },
+          { "examType": "MainExam", "year": 2025, "sem": "Odd", "pdfLink": "/assets/main/PPS paper odd 2025.pdf" }
+        ]
+      },
+       {
+        "subjectName": "Technical Communication",
+        "subjectCode": "4CS1-02",
+        "units": [
+          {
+            "unitName": "Introduction to Technical Communication: Process of Communication, Language as a tool of communication, Technical communication: meaning, importance and role.",
+            "notesPDF": "/assets/notes/CSE/4/TC Unit 1.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X2G_KPRnBdEDjiF1n7uuDIV&si=t1CAV3joirkRGLce"
+          },
+          {
+            "unitName": "Comprehension of Technical Materials/Texts and Information Design & Development: Reading techniques, summarizing, abstracting, information collection, organization and presentation.",
+            "notesPDF": "/assets/notes/CSE/4/TC Unit 2.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X2ELdJUMWwTMh0i65_I80FH&si=bUezUsLL9wHdynSi"
+          },
+          {
+            "unitName": "Technical Writing, Grammar and Editing: Technical style, technical definitions, technical descriptions, technical manuals, grammar usage and common errors.",
+            "notesPDF": "/assets/notes/CSE/4/TC Unit 3.pdf",
+            "lectureLink": "https://youtu.be/hVdmKYun9EM?si=kJxvjdGSwAdvxyCc"
+          },
+          {
+            "unitName": "Advanced Technical Writing: Research papers, project reports, dissertations, proposals, technical emails.",
+            "notesPDF": "/assets/notes/CSE/4/TC Unit 4.pdf",
+            "lectureLink": "https://youtu.be/cO-syjsp9l4?si=yDUqDltKk-4Jy344"
+          }
+        ],
+        "pyqs": [
+          { "examType": "MainExam", "year": 2023, "sem": "Odd", "pdfLink": "/assets/main/PPS paper odd 2023.pdf" },
+          { "examType": "MainExam", "year": 2025, "sem": "Odd", "pdfLink": "/assets/main/PPS paper odd 2025.pdf" }
+        ]
+      },
+      {
+        "subjectName": "Managerial Economics and Financial Accounting",
+        "subjectCode": "4CS1-03",
+        "units": [
+          {
+            "unitName": "Basic Economic Concepts: Meaning, nature and scope of economics; basic economic problems; scarcity and choice; national income.",
+            "notesPDF": "/assets/notes/CSE/4/MEFA Unit 1.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X1JoM0y0w0pwGdsOsST_9qo&si=GZ3KMZ5FRhO_Tl2X"
+          },
+          {
+            "unitName": "Demand and Supply Analysis: Demand forecasting, elasticity of demand, supply function, elasticity of supply.",
+            "notesPDF": "/assets/notes/CSE/4/MEFA Unit 2.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X2FIl9b1mpYFaqDxya9owyR&si=YjbhsQmwJfGDWWsu"
+          },
+          {
+            "unitName": "Production and Cost Analysis: Production function, laws of returns to scale, least cost combination, isoquants, cost curves.",
+            "notesPDF": "/assets/notes/CSE/4/MEFA Unit 3.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X2FO9B_UVZUBdOAc6hlgu_A&si=HFD3TQUOHs-cc9oc"
+          },
+          {
+            "unitName": "Market structure and pricing theory: Perfect competition, monopoly, monopolistic competition, oligopoly.",
+            "notesPDF": "/assets/notes/CSE/4/MEFA Unit 4.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X1bLoF-d8BhBQZ0IAtKXGpR&si=C1xkSxQoc89qnBEu"
+          },
+          {
+            "unitName": "Financial Statement Analysis: Balance sheet, P&L statements, cash-flow analysis, fund-flow analysis, financial ratios.",
+            "notesPDF": "/assets/notes/CSE/4/MEFA Unit 5.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X0aW6870Uz_UNp8EvACFDw7&si=01MlYmSKKVrqh4Ox"
+          }
+        ],
+         "More": [
+       { "examType": "MEFA Formulas and Concepts", "pdfLink": "/assets/more/CSE/MEFA Imp Formulas Unit 1 to 3.pdf" },
+       { "examType": "MEFA All PYQs", "pdfLink": "/assets/more/CSE/Complete MEFA with PYQS.pdf" }
+        ]
+      },
+      {
+        "subjectName": "Theory of Computation",
+        "subjectCode": "4CS4-06",
+        "units": [
+          {
+            "unitName": "Introduction: Basics of automata theory and formal languages. Finite Automata & Regular Expression.",
+            "notesPDF": "/assets/notes/CSE/4/TOC Unit 1.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X3ZWF3M-DsnEm7JY9wXIFC3&si=Xo61yaFSUo4-bOQs"
+          },
+          {
+            "unitName": "Context-Free Grammar and Context-free Language.",
+            "notesPDF": "/assets/notes/CSE/4/TOC Unit 2.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PL0Ug_kpOStbq-b4N1l46tZSl7l01rMzP8&si=8nMdw5R93d7axHkh"
+          },
+          {
+            "unitName": "Pushdown Automata.",
+            "notesPDF": "/assets/notes/CSE/4/TOC Unit 3.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PL0Ug_kpOStbouzs1xFgpH4SbxdkdRPcCy&si=OwibTccLEOF5OGG1"
+          },
+          {
+            "unitName": "Turing Machine and Hierarchy of Formal Languages.",
+            "notesPDF": "/assets/notes/CSE/4/TOC Unit 4.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X3Xatjq6HY-mGEfx9rqiJbu&si=1fklZLA7O9QdVc_U"
+          },
+          {
+            "unitName": "Tractable Problems And Complexity Classes.",
+            "notesPDF": "/assets/notes/CSE/4/TOC Unit 5.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X1RDlJiR7YZLxY0uzR-HTLZ&si=8DzsnRVDUBlGu1l-"
+          }
+        ],
+        "pyqs": [
+          { "examType": "MainExam", "year": 2023, "sem": "Odd", "pdfLink": "/assets/main/PPS paper odd 2023.pdf" },
+          { "examType": "MainExam", "year": 2025, "sem": "Odd", "pdfLink": "/assets/main/PPS paper odd 2025.pdf" }
+        ]
+      },
+      {
+        "subjectName": "Data Communication and Computer Networks",
+        "subjectCode": "4CS4-07",
+        "units": [
+        
+          {
+            "unitName": "Introduction: Basics of data communication, network types, protocol architecture. Data Transmission, Transmission Media, Channel Capacity.",
+            "notesPDF": "/assets/notes/CSE/4/DCCN Unit 1.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLAmViTdGzJZPtP0jPTqqapV2AvoZlT3j2&si=XNbzbT707k7n91Yn"
+          },
+          {
+            "unitName": "Data Link Layer: Framing, Error control, Flow control.",
+            "notesPDF": "/assets/notes/CSE/4/DCCN Unit 2.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLAmViTdGzJZM1OtT98OMKJzf60lxhb5bN&si=p2HlkPWapud7F6iD"
+          },
+          {
+            "unitName": "Network Layer: Routing algorithms, Congestion control, IPv4/IPv6.",
+            "notesPDF": "/assets/notes/CSE/4/DCCN Unit 3.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLAmViTdGzJZMbpDKA-safrja8BxcpCH39&si=OfMoF-vZ90vnMJUK"
+          },
+          {
+            "unitName": "Transport Layer: TCP, UDP, Flow control, Connection management.",
+            "notesPDF": "/assets/notes/CSE/4/DCCN Unit 4.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLAmViTdGzJZPNbS94GD_iTUDh9qNaeWJ-&si=jvYZto1sGqqRHCSq"
+          },
+          {
+            "unitName": "Application Layer: DNS, Email, FTP, HTTP.",
+            "notesPDF": "/assets/notes/CSE/4/DCCN Unit 5.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLAmViTdGzJZM7NpzuV1N_Tm6aLwCdtGwK&si=JaHeUMJyyrwF03g1"
+          }
+        ],
+        "pyqs": [
+          { "examType": "MainExam", "year": 2023, "sem": "Odd", "pdfLink": "/assets/main/PPS paper odd 2023.pdf" },
+          { "examType": "MainExam", "year": 2025, "sem": "Odd", "pdfLink": "/assets/main/PPS paper odd 2025.pdf" }
+        ]
+      }
+    ],
+    "Extra" :[
+          { "examType": "RTU Imp Topics for 4th SEM", "pdfLink": "/assets/more/CSE/IMP RTU TOPICS 4th SEM.md" }
+    ]
+    }},
+  "IT": {   "3": 
+      {
+      "subjects": [
+        {
+        "subjectName": "Advanced Engineering Mathematics",
+        "subjectCode": "3CS2-01",
+        "units": [
+          {
+            "unitName": "Random variables and Probability Distributions",
+            "notesPDF": "/assets/notes/CSE/3/AEM Unit 1.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLU6SqdYcYsfIaokdZTmptaf-PK7s-B0ju&si=C8JcGMbzED8a9Azr"
+          },
+          {
+            "unitName": "Discrete Probability Distributions",
+            "notesPDF": "/assets/notes/CSE/3/AEM Unit 2.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X1odw2Kd7NxcI8O0k0meQR2&si=79y812zJj80eVAp1"
+          },
+          {
+            "unitName": "Optimization Problems : Formulation and Properties",
+            "notesPDF": "/assets/notes/CSE/3/AEM Unit 3.pdf",
+            "lectureLink": "https://youtu.be/N7WxiWCGIKA?si=GOmaCkm9kWv0M9LM"
+          },
+          {
+            "unitName": "Non-linear Programming Problems",
+            "notesPDF": "/assets/notes/CSE/3/AEM Unit 4.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLBmBje17zG1PSbMUQB6RPCMxDbE6EZ_rl&si=-tCqwa76lFQHA1kz"
+          },
+          {
+            "unitName": "Linear Programming Problems",
+            "notesPDF": "/assets/notes/CSE/3/AEM Unit 5.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLU6SqdYcYsfLewoQPYjgg7SMBLjSV704v&si=8QRHHXHEdX_1I0-i"
+          }
+        ],
+        "More": [
+          { "examType": "AEM Formulas and Methods", "pdfLink": "/assets/more/CSE/AEM Formulas and Methods.pdf" }
+        ]
+      },
+      {
+        "subjectName": "Technical Communication",
+        "subjectCode": "3CS1-02",
+        "units": [
+          {
+            "unitName": "Introduction to Technical Communication",
+            "notesPDF": "/assets/notes/CSE/3/TC Unit 1.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X2G_KPRnBdEDjiF1n7uuDIV&si=t1CAV3joirkRGLce"
+          },
+          {
+            "unitName": "Comprehension of Technical Materials/Texts and Information Design & Development",
+            "notesPDF": "/assets/notes/CSE/3/TC Unit 2.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X2ELdJUMWwTMh0i65_I80FH&si=bUezUsLL9wHdynSi"
+          },
+          {
+            "unitName": "Technical Writing, Grammar and Editing",
+            "notesPDF": "/assets/notes/CSE/3/TC Unit 3.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=technical-communication-unit3"
+          },
+          {
+            "unitName": "Advanced Technical Writing",
+            "notesPDF": "/assets/notes/CSE/3/TC Unit 4.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=technical-communication-unit4"
+          }
+        ],
+        "More": [
+        ]
+      },
+      {
+        "subjectName": "Managerial Economics and Financial Accounting",
+        "subjectCode": "3CS1-03",
+        "units": [
+          {
+            "unitName": "Basic Economic Concepts",
+            "notesPDF": "/assets/notes/CSE/3/MEFA Unit 1.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X1JoM0y0w0pwGdsOsST_9qo&si=GZ3KMZ5FRhO_Tl2X"
+          },
+          {
+            "unitName": "Demand and Supply Analysis",
+            "notesPDF": "/assets/notes/CSE/3/MEFA Unit 2.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X2FIl9b1mpYFaqDxya9owyR&si=YjbhsQmwJfGDWWsu"
+          },
+          {
+            "unitName": "Production and Cost Analysis",
+            "notesPDF": "/assets/notes/CSE/3/MEFA Unit 3.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X2FO9B_UVZUBdOAc6hlgu_A&si=HFD3TQUOHs-cc9oc"
+          },
+          {
+            "unitName": "Market structure and pricing theory",
+            "notesPDF": "/assets/notes/CSE/3/MEFA Unit 4.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X1bLoF-d8BhBQZ0IAtKXGpR&si=C1xkSxQoc89qnBEu"
+          },
+          {
+            "unitName": "Financial Statement Analysis",
+            "notesPDF": "/assets/notes/CSE/3/MEFA Unit 5.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X0aW6870Uz_UNp8EvACFDw7&si=01MlYmSKKVrqh4Ox"
+          }
+        ],
+        "More": [
+       { "examType": "MEFA Formulas and Concepts", "pdfLink": "/assets/more/CSE/MEFA Imp Formulas Unit 1 to 3.pdf" },
+       { "examType": "MEFA All PYQs", "pdfLink": "/assets/more/CSE/Complete MEFA with PYQS.pdf" }
+        ]
+        
+      },
+      {
+        "subjectName": "Digital Electronics",
+        "subjectCode": "3CS3-04",
+        "units": [
+          {
+            "unitName": "Fundamental Concepts",
+            "notesPDF": "/assets/notes/CSE/3/DE Unit 1.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X2s355nxqkhVi7nkubHTpzK&si=m7fB8T4R-2Q__Seu"
+          },
+          {
+            "unitName": "Minimization Techniques and Logic Gates",
+            "notesPDF": "/assets/notes/CSE/3/DE Unit 2.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X3Z30GtbFjIiU3oeuzaZfna&si=FbjpzJYamk4Zs-sd"
+          },
+          {
+            "unitName": "Digital Logic Gate Characteristics and Logic families",
+            "notesPDF": "/assets/notes/CSE/3/DE Unit 3.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLgwJf8NK-2e645xqSqUBHJCgkrtkCa5AN&si=Dpy551C4SRrwOBGJ"
+          },
+          {
+            "unitName": "Combinational Circuits",
+            "notesPDF": "/assets/notes/CSE/3/DE Unit 4.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X2EW-t3OYFvQrFRhIyGmz3s&si=B7GJazWG6B9Sxw54"
+          },
+          {
+            "unitName": "Sequential Circuits",
+            "notesPDF": "/assets/notes/CSE/3/DE Unit 5.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X0xlbtBMp-1XC8hmA6QweUX&si=YbdP9Pcv1P7XL5-5"
+          }
+        ],
+           "More": [
+            {"examType" : "DE Guess Paper" , "pdfLink": "/assets/more/CSE/DE Guess paper.pdf"}
+        ]
+      },
+      {
+        "subjectName": "Data Structures and Algorithms",
+        "subjectCode": "3CS4-05",
+        "units": [
+          {
+            "unitName": "Stacks",
+            "notesPDF": "/assets/notes/CSE/3/DSA Unit 1.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X3rZ48nJ_kt8wE_ceTgGu-w&si=MS0TQl6TvltxmVVX"
+          },
+          {
+            "unitName": "Linked Lists and Queues",
+            "notesPDF": "/assets/notes/CSE/3/DSA Unit 2.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X1RpJWGKMiJLGYapxxlqZvw&si=ylG7BUJPqpUblGSh"
+          },
+          {
+            "unitName": "Searching Techniques and Sorting",
+            "notesPDF": "/assets/notes/CSE/3/DSA Unit 3.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X3RzAXVjRt0InfjMECiSOFl&si=L3ymBQo7kVbHkwqY"
+          },
+          {
+            "unitName": "Trees",
+            "notesPDF": "/assets/notes/CSE/3/DSA Unit 4.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X1tf8moGlqSdYRhU4LRpAjs&si=mifDAQjdA14kDuEp"
+          },
+          {
+            "unitName": "Graphs and Hashing",
+            "notesPDF": "/assets/notes/CSE/3/DSA Unit 5.pdf",
+            "lectureLink": "https://youtu.be/lg48ZZe7YUA?si=m7rChfFY-Gc2IjLV"
+          }
+        ],
+           "More": [
+      {"examType": "DSA All Algorithms", "pdfLink": "/assets/more/CSE/DSA All algorithms.pdf"}
+        ]
+      },
+      {
+        "subjectName": "Object Oriented Programming",
+        "subjectCode": "3CS4-06",
+        "units": [
+          {
+            "unitName": "Introduction",
+            "notesPDF": "/assets/notes/CSE/3/OOPS Unit 1.pdf",
+            "lectureLink": "https://youtu.be/mlIUKyZIUUU?si=_2LVmms-smT5s3i9"
+          },
+          {
+            "unitName": "Constructor and Destructor",
+            "notesPDF": "/assets/notes/CSE/3/OOPS Unit 2.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X0kyBUypKgm1R1DLyocB-a8&si=yXdRj3yYqhVR8Qns"
+          },
+          {
+            "unitName": "Inheritance",
+            "notesPDF": "/assets/notes/CSE/3/OOPS Unit 3.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X0uWVgaBKsn4kp8CsnVqDWf&si=-7DxSIp0j-8AWDEO"
+          },
+          {
+            "unitName": "Polymorphism: Compile-time and Run-time polymorphism.",
+            "notesPDF": "/assets/notes/CSE/3/OOPS Unit 4.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X0gSLKV3Ws0lGPqMMXNYWPw&si=NP6GNIYXof5IgPaB"
+          },
+          {
+            "unitName": "File and ExceptionHandling",
+            "notesPDF": "/assets/notes/CSE/3/OOPS Unit 5.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X1tysYiymZ1uXLNR2LCyYDo&si=ChgJLYScYGQ-gQmq"
+          }
+        ],
+           "More": [
+      {"examType": "OOPS Imp Short Questions", "pdfLink":  "/assets/more/CSE/OOPs Imp Short Questions.pdf" },
+      {"examType": "OOPS All Codes", "pdfLink":  "/assets/more/CSE/OOPs Codes.pdf" }
+        ]
+      },
+      {
+        "subjectName": "Software Engineering",
+        "subjectCode": "3CS4-07",
+        "units": [
+          {
+            "unitName": "Introduction: Software process models, software development life cycle.",
+            "notesPDF": "/assets/notes/CSE/3/SE Unit 1.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X3QxnFicvsEPzAj54BbDt1Y&si=W9qPekdmvudTm0NX"
+          },
+          {
+            "unitName": "Software Project Management: Project planning, cost estimation, scheduling.",
+            "notesPDF": "/assets/notes/CSE/3/SE Unit 2.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X3GvO0_suANZz7jUXkYPxUQ&si=I317wNDtG3xdlHtJ"
+          },
+          {
+            "unitName": "Software Requirements Engineering",
+            "notesPDF": "/assets/notes/CSE/3/SE Unit 3.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X2wbZocjO4b_Hx5PXg1912P&si=3EzB6sLEmgVn8At1"
+          },
+          {
+            "unitName": "Software Design",
+            "notesPDF": "/assets/notes/CSE/3/SE Unit 4.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X1w7rwmsRb_YJUZhUsdsGoH&si=OAklsYfSdKOic0si"
+          },
+          {
+            "unitName": "Object-Oriented Analysis and Object-Oriented Design",
+            "notesPDF": "/assets/notes/CSE/3/SE Unit 5.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X2mpg2ZoaZjyxhn-uZfxTUV&si=bwp1tNyAuWvwtikP"
+          }
+        ],
+        "More": [
+          { "examType": "Guess Paper", "pdfLink": "/assets/more/CSE/SE Guess Paper.pdf" },
+          {"examType": "SE RTU Paper Solution 2025", "pdfLink": "/assets/more/CSE/SE RTU Solution 2025.pdf"},
+             {"examType": "SE RTU Paper Solution 2024", "pdfLink": "/assets/more/CSE/SE RTU Solution 2024.pdf"},
+              {"examType": "SE RTU Paper Solution 2023", "pdfLink": "/assets/more/CSE/SE RTU Solution 2023.pdf"}
+        ]
+      }
+  ], 
+         "Extra" :[
+          { "examType": "RTU Imp Topics for 3rd SEM", "pdfLink": "/assets/more/CSE/IMP RTU TOPICS 3rd SEM.md" }
+    ]
+    },
+    "4": {
+
+    "subjects": [
+      {
+        "subjectName": "Discrete Mathematics Structure",
+        "subjectCode": "4CS2-01",
+        "units": [
+          {
+            "unitName": "Set Theory, Relation, Function: Countable/uncountable sets, cardinality, inclusion-exclusion principle, pigeonhole principle.",
+            "notesPDF": "/assets/notes/CSE/4/DMS Unit 1.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X2YmyM9VnytGmbMFjUlV-R8&si=WJc4HSDHFUdDvnYY"
+          },
+          {
+            "unitName": "Propositional Logic: Logical operations, predicates, normal forms, quantifiers.",
+            "notesPDF": "/assets/notes/CSE/4/DMS Unit 2.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X04Hb0YYglOyng43xl9phYx&si=OjP1niEtbGxTukqV"
+          },
+          {
+            "unitName": "Posets, Hasse diagram, Lattices, Combinatorics",
+            "notesPDF": "/assets/notes/CSE/4/DMS Unit 3.pdf",
+            "lectureLink": "https://youtu.be/DZEG3YgJbL0?si=Vl_WAJ4JOcMT3jR6"
+          },
+          {
+            "unitName": "Algebraic Structures: Groups, Rings, Fields, Commutativity, Homomorphism.",
+            "notesPDF": "/assets/notes/CSE/4/DMS Unit 4.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X1fQF8t0ibAi7_hLU-cuS8d&si=7PMg-XRo29qNxPoo"
+          },
+          {
+            "unitName": "Graph Theory: Paths, cycles, connectivity, Eulerian/Hamiltonian paths, graph coloring.",
+            "notesPDF": "/assets/notes/CSE/4/DMS Unit 5.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X2uEnQnS_Z6CeKOoVb_LhFb&si=jNy1vsHGDDcSwJ-_"
+          }
+        ],
+        "pyqs": [
+          { "examType": "MainExam", "year": 2023, "sem": "Odd", "pdfLink": "/assets/main/PPS paper odd 2023.pdf" },
+          { "examType": "MainExam", "year": 2025, "sem": "Odd", "pdfLink": "/assets/main/PPS paper odd 2025.pdf" }
+        ]
+      },
+      {
+        "subjectName": "Microprocessor & Interfaces",
+        "subjectCode": "4CS3-04",
+        "units": [
+          {
+            "unitName": "Introduction: Microprocessor basics, applications. Architecture of 8085 Microprocessor: Internal blocks, instruction cycle, addressing modes.",
+            "notesPDF": "/assets/notes/CSE/4/MPI Unit 1.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLxCzCOWd7aiHL7mF_dRsj4Q9x1NNaZqkh&si=ciJKMdrd0gv00BF4"
+          },
+          {
+            "unitName": "8085 Instruction Set and Programming: Data transfer, arithmetic, logical, branch instructions.",
+            "notesPDF": "/assets/notes/CSE/4/MPI Unit 2.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X1K5l3r1FmmjeSzKHdHjth4&si=Q0k3prd-zjpC51E5"
+          },
+          {
+            "unitName": "Advance Assembly Language Programming and 8259 programmable interrupt controller.",
+            "notesPDF": "/assets/notes/CSE/4/MPI Unit 3.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X3WnrCaqF3kSj1pflEcs7iJ&si=dK3H9pD-oq2Yt-05"
+          },
+          {
+            "unitName": "8085 Microprocessor Interfacing (8255, 8254, 8279).",
+            "notesPDF": "/assets/notes/CSE/4/MPI Unit 4.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X1AopcKnalA8O7J7K9j25Hk&si=E0zANUv15FKBfYHJ"
+          },
+          {
+            "unitName": "Microprocessor Applications.",
+            "notesPDF": "/assets/notes/CSE/4/MPI Unit 5.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X2_AYX7ei7fnLzDRhFxKysJ&si=UXetguxXT7GdKlm6"
+          }
+        ],
+        "pyqs": [
+          { "examType": "MainExam", "year": 2023, "sem": "Odd", "pdfLink": "/assets/main/PPS paper odd 2023.pdf" },
+          { "examType": "MainExam", "year": 2025, "sem": "Odd", "pdfLink": "/assets/main/PPS paper odd 2025.pdf" }
+        ]
+      },
+      {
+        "subjectName": "Database Management System",
+        "subjectCode": "4CS4-05",
+        "units": [
+          {
+            "unitName": "Introduction: Database concepts, data models, DBMS architecture. Entity Relationship Model: Mapping cardinalities, keys, constraints.",
+            "notesPDF": "/assets/notes/CSE/4/DBMS Unit 1.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X2m5y4uz1Ibhiq8P__OhEuf&si=eXG21XT13-jmxKvx"
+          },
+          {
+            "unitName": "Relational Algebra and Calculus, SQL Queries, Trigger Programming.",
+            "notesPDF": "/assets/notes/CSE/4/DBMS Unit 2.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X1DNqvgv_9BTWX6pSOWuA5z&si=-kQa4KjxX73yFKGK"
+          },
+          {
+            "unitName": "Schema Refinement and Normal Forms.",
+            "notesPDF": "/assets/notes/CSE/4/DBMS Unit 3.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X34CeuZqIxabJ1iTYt5SfQ7&si=Se6-PFiR4OngFmNS"
+          },
+          {
+            "unitName": "Transaction Processing.",
+            "notesPDF": "/assets/notes/CSE/4/DBMS Unit 4.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X3j3g4NuKkcko4Af1O4v6Ap&si=vbTxjvqgFc8aYQSN"
+          },
+          {
+            "unitName": "Concurrency Control, Database Failure and Recovery.",
+            "notesPDF": "/assets/notes/CSE/4/DBMS Unit 5.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X3OAmIAnjjkGVpvHran8vbv&si=Vx2bb2LVNpBtTAA3"
+          }
+        ],
+        "pyqs": [
+          { "examType": "MainExam", "year": 2023, "sem": "Odd", "pdfLink": "/assets/main/PPS paper odd 2023.pdf" },
+          { "examType": "MainExam", "year": 2025, "sem": "Odd", "pdfLink": "/assets/main/PPS paper odd 2025.pdf" }
+        ]
+      },
+       {
+        "subjectName": "Technical Communication",
+        "subjectCode": "4CS1-02",
+        "units": [
+          {
+            "unitName": "Introduction to Technical Communication: Process of Communication, Language as a tool of communication, Technical communication: meaning, importance and role.",
+            "notesPDF": "/assets/notes/CSE/4/TC Unit 1.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X2G_KPRnBdEDjiF1n7uuDIV&si=t1CAV3joirkRGLce"
+          },
+          {
+            "unitName": "Comprehension of Technical Materials/Texts and Information Design & Development: Reading techniques, summarizing, abstracting, information collection, organization and presentation.",
+            "notesPDF": "/assets/notes/CSE/4/TC Unit 2.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X2ELdJUMWwTMh0i65_I80FH&si=bUezUsLL9wHdynSi"
+          },
+          {
+            "unitName": "Technical Writing, Grammar and Editing: Technical style, technical definitions, technical descriptions, technical manuals, grammar usage and common errors.",
+            "notesPDF": "/assets/notes/CSE/4/TC Unit 3.pdf",
+            "lectureLink": "https://youtu.be/hVdmKYun9EM?si=kJxvjdGSwAdvxyCc"
+          },
+          {
+            "unitName": "Advanced Technical Writing: Research papers, project reports, dissertations, proposals, technical emails.",
+            "notesPDF": "/assets/notes/CSE/4/TC Unit 4.pdf",
+            "lectureLink": "https://youtu.be/cO-syjsp9l4?si=yDUqDltKk-4Jy344"
+          }
+        ],
+        "pyqs": [
+          { "examType": "MainExam", "year": 2023, "sem": "Odd", "pdfLink": "/assets/main/PPS paper odd 2023.pdf" },
+          { "examType": "MainExam", "year": 2025, "sem": "Odd", "pdfLink": "/assets/main/PPS paper odd 2025.pdf" }
+        ]
+      },
+      {
+        "subjectName": "Managerial Economics and Financial Accounting",
+        "subjectCode": "4CS1-03",
+        "units": [
+          {
+            "unitName": "Basic Economic Concepts: Meaning, nature and scope of economics; basic economic problems; scarcity and choice; national income.",
+            "notesPDF": "/assets/notes/CSE/4/MEFA Unit 1.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X1JoM0y0w0pwGdsOsST_9qo&si=GZ3KMZ5FRhO_Tl2X"
+          },
+          {
+            "unitName": "Demand and Supply Analysis: Demand forecasting, elasticity of demand, supply function, elasticity of supply.",
+            "notesPDF": "/assets/notes/CSE/4/MEFA Unit 2.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X2FIl9b1mpYFaqDxya9owyR&si=YjbhsQmwJfGDWWsu"
+          },
+          {
+            "unitName": "Production and Cost Analysis: Production function, laws of returns to scale, least cost combination, isoquants, cost curves.",
+            "notesPDF": "/assets/notes/CSE/4/MEFA Unit 3.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X2FO9B_UVZUBdOAc6hlgu_A&si=HFD3TQUOHs-cc9oc"
+          },
+          {
+            "unitName": "Market structure and pricing theory: Perfect competition, monopoly, monopolistic competition, oligopoly.",
+            "notesPDF": "/assets/notes/CSE/4/MEFA Unit 4.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X1bLoF-d8BhBQZ0IAtKXGpR&si=C1xkSxQoc89qnBEu"
+          },
+          {
+            "unitName": "Financial Statement Analysis: Balance sheet, P&L statements, cash-flow analysis, fund-flow analysis, financial ratios.",
+            "notesPDF": "/assets/notes/CSE/4/MEFA Unit 5.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X0aW6870Uz_UNp8EvACFDw7&si=01MlYmSKKVrqh4Ox"
+          }
+        ],
+         "More": [
+       { "examType": "MEFA Formulas and Concepts", "pdfLink": "/assets/more/CSE/MEFA Imp Formulas Unit 1 to 3.pdf" },
+       { "examType": "MEFA All PYQs", "pdfLink": "/assets/more/CSE/Complete MEFA with PYQS.pdf" }
+        ]
+      },
+      {
+        "subjectName": "Theory of Computation",
+        "subjectCode": "4CS4-06",
+        "units": [
+          {
+            "unitName": "Introduction: Basics of automata theory and formal languages. Finite Automata & Regular Expression.",
+            "notesPDF": "/assets/notes/CSE/4/TOC Unit 1.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X3ZWF3M-DsnEm7JY9wXIFC3&si=Xo61yaFSUo4-bOQs"
+          },
+          {
+            "unitName": "Context-Free Grammar and Context-free Language.",
+            "notesPDF": "/assets/notes/CSE/4/TOC Unit 2.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PL0Ug_kpOStbq-b4N1l46tZSl7l01rMzP8&si=8nMdw5R93d7axHkh"
+          },
+          {
+            "unitName": "Pushdown Automata.",
+            "notesPDF": "/assets/notes/CSE/4/TOC Unit 3.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PL0Ug_kpOStbouzs1xFgpH4SbxdkdRPcCy&si=OwibTccLEOF5OGG1"
+          },
+          {
+            "unitName": "Turing Machine and Hierarchy of Formal Languages.",
+            "notesPDF": "/assets/notes/CSE/4/TOC Unit 4.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X3Xatjq6HY-mGEfx9rqiJbu&si=1fklZLA7O9QdVc_U"
+          },
+          {
+            "unitName": "Tractable Problems And Complexity Classes.",
+            "notesPDF": "/assets/notes/CSE/4/TOC Unit 5.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X1RDlJiR7YZLxY0uzR-HTLZ&si=8DzsnRVDUBlGu1l-"
+          }
+        ],
+        "pyqs": [
+          { "examType": "MainExam", "year": 2023, "sem": "Odd", "pdfLink": "/assets/main/PPS paper odd 2023.pdf" },
+          { "examType": "MainExam", "year": 2025, "sem": "Odd", "pdfLink": "/assets/main/PPS paper odd 2025.pdf" }
+        ]
+      },
+      {
+        "subjectName": "Data Communication and Computer Networks",
+        "subjectCode": "4CS4-07",
+        "units": [
+        
+          {
+            "unitName": "Introduction: Basics of data communication, network types, protocol architecture. Data Transmission, Transmission Media, Channel Capacity.",
+            "notesPDF": "/assets/notes/CSE/4/DCCN Unit 1.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLAmViTdGzJZPtP0jPTqqapV2AvoZlT3j2&si=XNbzbT707k7n91Yn"
+          },
+          {
+            "unitName": "Data Link Layer: Framing, Error control, Flow control.",
+            "notesPDF": "/assets/notes/CSE/4/DCCN Unit 2.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLAmViTdGzJZM1OtT98OMKJzf60lxhb5bN&si=p2HlkPWapud7F6iD"
+          },
+          {
+            "unitName": "Network Layer: Routing algorithms, Congestion control, IPv4/IPv6.",
+            "notesPDF": "/assets/notes/CSE/4/DCCN Unit 3.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLAmViTdGzJZMbpDKA-safrja8BxcpCH39&si=OfMoF-vZ90vnMJUK"
+          },
+          {
+            "unitName": "Transport Layer: TCP, UDP, Flow control, Connection management.",
+            "notesPDF": "/assets/notes/CSE/4/DCCN Unit 4.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLAmViTdGzJZPNbS94GD_iTUDh9qNaeWJ-&si=jvYZto1sGqqRHCSq"
+          },
+          {
+            "unitName": "Application Layer: DNS, Email, FTP, HTTP.",
+            "notesPDF": "/assets/notes/CSE/4/DCCN Unit 5.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLAmViTdGzJZM7NpzuV1N_Tm6aLwCdtGwK&si=JaHeUMJyyrwF03g1"
+          }
+        ],
+        "pyqs": [
+          { "examType": "MainExam", "year": 2023, "sem": "Odd", "pdfLink": "/assets/main/PPS paper odd 2023.pdf" },
+          { "examType": "MainExam", "year": 2025, "sem": "Odd", "pdfLink": "/assets/main/PPS paper odd 2025.pdf" }
+        ]
+      }
+    ],
+    "Extra" :[
+          { "examType": "RTU Imp Topics for 4th SEM", "pdfLink": "/assets/more/CSE/IMP RTU TOPICS 4th SEM.md" }
+    ]
+    }},
+  "CY": {   "3": 
+      {
+      "subjects": [
+        {
+        "subjectName": "Advanced Engineering Mathematics",
+        "subjectCode": "3CS2-01",
+        "units": [
+          {
+            "unitName": "Random variables and Probability Distributions",
+            "notesPDF": "/assets/notes/CSE/3/AEM Unit 1.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLU6SqdYcYsfIaokdZTmptaf-PK7s-B0ju&si=C8JcGMbzED8a9Azr"
+          },
+          {
+            "unitName": "Discrete Probability Distributions",
+            "notesPDF": "/assets/notes/CSE/3/AEM Unit 2.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X1odw2Kd7NxcI8O0k0meQR2&si=79y812zJj80eVAp1"
+          },
+          {
+            "unitName": "Optimization Problems : Formulation and Properties",
+            "notesPDF": "/assets/notes/CSE/3/AEM Unit 3.pdf",
+            "lectureLink": "https://youtu.be/N7WxiWCGIKA?si=GOmaCkm9kWv0M9LM"
+          },
+          {
+            "unitName": "Non-linear Programming Problems",
+            "notesPDF": "/assets/notes/CSE/3/AEM Unit 4.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLBmBje17zG1PSbMUQB6RPCMxDbE6EZ_rl&si=-tCqwa76lFQHA1kz"
+          },
+          {
+            "unitName": "Linear Programming Problems",
+            "notesPDF": "/assets/notes/CSE/3/AEM Unit 5.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLU6SqdYcYsfLewoQPYjgg7SMBLjSV704v&si=8QRHHXHEdX_1I0-i"
+          }
+        ],
+        "More": [
+          { "examType": "AEM Formulas and Methods", "pdfLink": "/assets/more/CSE/AEM Formulas and Methods.pdf" }
+        ]
+      },
+      {
+        "subjectName": "Technical Communication",
+        "subjectCode": "3CS1-02",
+        "units": [
+          {
+            "unitName": "Introduction to Technical Communication",
+            "notesPDF": "/assets/notes/CSE/3/TC Unit 1.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X2G_KPRnBdEDjiF1n7uuDIV&si=t1CAV3joirkRGLce"
+          },
+          {
+            "unitName": "Comprehension of Technical Materials/Texts and Information Design & Development",
+            "notesPDF": "/assets/notes/CSE/3/TC Unit 2.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X2ELdJUMWwTMh0i65_I80FH&si=bUezUsLL9wHdynSi"
+          },
+          {
+            "unitName": "Technical Writing, Grammar and Editing",
+            "notesPDF": "/assets/notes/CSE/3/TC Unit 3.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=technical-communication-unit3"
+          },
+          {
+            "unitName": "Advanced Technical Writing",
+            "notesPDF": "/assets/notes/CSE/3/TC Unit 4.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=technical-communication-unit4"
+          }
+        ],
+        "More": [
+        ]
+      },
+      {
+        "subjectName": "Managerial Economics and Financial Accounting",
+        "subjectCode": "3CS1-03",
+        "units": [
+          {
+            "unitName": "Basic Economic Concepts",
+            "notesPDF": "/assets/notes/CSE/3/MEFA Unit 1.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X1JoM0y0w0pwGdsOsST_9qo&si=GZ3KMZ5FRhO_Tl2X"
+          },
+          {
+            "unitName": "Demand and Supply Analysis",
+            "notesPDF": "/assets/notes/CSE/3/MEFA Unit 2.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X2FIl9b1mpYFaqDxya9owyR&si=YjbhsQmwJfGDWWsu"
+          },
+          {
+            "unitName": "Production and Cost Analysis",
+            "notesPDF": "/assets/notes/CSE/3/MEFA Unit 3.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X2FO9B_UVZUBdOAc6hlgu_A&si=HFD3TQUOHs-cc9oc"
+          },
+          {
+            "unitName": "Market structure and pricing theory",
+            "notesPDF": "/assets/notes/CSE/3/MEFA Unit 4.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X1bLoF-d8BhBQZ0IAtKXGpR&si=C1xkSxQoc89qnBEu"
+          },
+          {
+            "unitName": "Financial Statement Analysis",
+            "notesPDF": "/assets/notes/CSE/3/MEFA Unit 5.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X0aW6870Uz_UNp8EvACFDw7&si=01MlYmSKKVrqh4Ox"
+          }
+        ],
+        "More": [
+       { "examType": "MEFA Formulas and Concepts", "pdfLink": "/assets/more/CSE/MEFA Imp Formulas Unit 1 to 3.pdf" },
+       { "examType": "MEFA All PYQs", "pdfLink": "/assets/more/CSE/Complete MEFA with PYQS.pdf" }
+        ]
+        
+      },
+      {
+        "subjectName": "Digital Electronics",
+        "subjectCode": "3CS3-04",
+        "units": [
+          {
+            "unitName": "Fundamental Concepts",
+            "notesPDF": "/assets/notes/CSE/3/DE Unit 1.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X2s355nxqkhVi7nkubHTpzK&si=m7fB8T4R-2Q__Seu"
+          },
+          {
+            "unitName": "Minimization Techniques and Logic Gates",
+            "notesPDF": "/assets/notes/CSE/3/DE Unit 2.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X3Z30GtbFjIiU3oeuzaZfna&si=FbjpzJYamk4Zs-sd"
+          },
+          {
+            "unitName": "Digital Logic Gate Characteristics and Logic families",
+            "notesPDF": "/assets/notes/CSE/3/DE Unit 3.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLgwJf8NK-2e645xqSqUBHJCgkrtkCa5AN&si=Dpy551C4SRrwOBGJ"
+          },
+          {
+            "unitName": "Combinational Circuits",
+            "notesPDF": "/assets/notes/CSE/3/DE Unit 4.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X2EW-t3OYFvQrFRhIyGmz3s&si=B7GJazWG6B9Sxw54"
+          },
+          {
+            "unitName": "Sequential Circuits",
+            "notesPDF": "/assets/notes/CSE/3/DE Unit 5.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X0xlbtBMp-1XC8hmA6QweUX&si=YbdP9Pcv1P7XL5-5"
+          }
+        ],
+           "More": [
+            {"examType" : "DE Guess Paper" , "pdfLink": "/assets/more/CSE/DE Guess paper.pdf"}
+        ]
+      },
+      {
+        "subjectName": "Data Structures and Algorithms",
+        "subjectCode": "3CS4-05",
+        "units": [
+          {
+            "unitName": "Stacks",
+            "notesPDF": "/assets/notes/CSE/3/DSA Unit 1.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X3rZ48nJ_kt8wE_ceTgGu-w&si=MS0TQl6TvltxmVVX"
+          },
+          {
+            "unitName": "Linked Lists and Queues",
+            "notesPDF": "/assets/notes/CSE/3/DSA Unit 2.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X1RpJWGKMiJLGYapxxlqZvw&si=ylG7BUJPqpUblGSh"
+          },
+          {
+            "unitName": "Searching Techniques and Sorting",
+            "notesPDF": "/assets/notes/CSE/3/DSA Unit 3.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X3RzAXVjRt0InfjMECiSOFl&si=L3ymBQo7kVbHkwqY"
+          },
+          {
+            "unitName": "Trees",
+            "notesPDF": "/assets/notes/CSE/3/DSA Unit 4.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X1tf8moGlqSdYRhU4LRpAjs&si=mifDAQjdA14kDuEp"
+          },
+          {
+            "unitName": "Graphs and Hashing",
+            "notesPDF": "/assets/notes/CSE/3/DSA Unit 5.pdf",
+            "lectureLink": "https://youtu.be/lg48ZZe7YUA?si=m7rChfFY-Gc2IjLV"
+          }
+        ],
+           "More": [
+      {"examType": "DSA All Algorithms", "pdfLink": "/assets/more/CSE/DSA All algorithms.pdf"}
+        ]
+      },
+      {
+        "subjectName": "Object Oriented Programming",
+        "subjectCode": "3CS4-06",
+        "units": [
+          {
+            "unitName": "Introduction",
+            "notesPDF": "/assets/notes/CSE/3/OOPS Unit 1.pdf",
+            "lectureLink": "https://youtu.be/mlIUKyZIUUU?si=_2LVmms-smT5s3i9"
+          },
+          {
+            "unitName": "Constructor and Destructor",
+            "notesPDF": "/assets/notes/CSE/3/OOPS Unit 2.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X0kyBUypKgm1R1DLyocB-a8&si=yXdRj3yYqhVR8Qns"
+          },
+          {
+            "unitName": "Inheritance",
+            "notesPDF": "/assets/notes/CSE/3/OOPS Unit 3.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X0uWVgaBKsn4kp8CsnVqDWf&si=-7DxSIp0j-8AWDEO"
+          },
+          {
+            "unitName": "Polymorphism: Compile-time and Run-time polymorphism.",
+            "notesPDF": "/assets/notes/CSE/3/OOPS Unit 4.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X0gSLKV3Ws0lGPqMMXNYWPw&si=NP6GNIYXof5IgPaB"
+          },
+          {
+            "unitName": "File and ExceptionHandling",
+            "notesPDF": "/assets/notes/CSE/3/OOPS Unit 5.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X1tysYiymZ1uXLNR2LCyYDo&si=ChgJLYScYGQ-gQmq"
+          }
+        ],
+           "More": [
+      {"examType": "OOPS Imp Short Questions", "pdfLink":  "/assets/more/CSE/OOPs Imp Short Questions.pdf" },
+      {"examType": "OOPS All Codes", "pdfLink":  "/assets/more/CSE/OOPs Codes.pdf" }
+        ]
+      },
+      {
+        "subjectName": "Software Engineering",
+        "subjectCode": "3CS4-07",
+        "units": [
+          {
+            "unitName": "Introduction: Software process models, software development life cycle.",
+            "notesPDF": "/assets/notes/CSE/3/SE Unit 1.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X3QxnFicvsEPzAj54BbDt1Y&si=W9qPekdmvudTm0NX"
+          },
+          {
+            "unitName": "Software Project Management: Project planning, cost estimation, scheduling.",
+            "notesPDF": "/assets/notes/CSE/3/SE Unit 2.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X3GvO0_suANZz7jUXkYPxUQ&si=I317wNDtG3xdlHtJ"
+          },
+          {
+            "unitName": "Software Requirements Engineering",
+            "notesPDF": "/assets/notes/CSE/3/SE Unit 3.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X2wbZocjO4b_Hx5PXg1912P&si=3EzB6sLEmgVn8At1"
+          },
+          {
+            "unitName": "Software Design",
+            "notesPDF": "/assets/notes/CSE/3/SE Unit 4.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X1w7rwmsRb_YJUZhUsdsGoH&si=OAklsYfSdKOic0si"
+          },
+          {
+            "unitName": "Object-Oriented Analysis and Object-Oriented Design",
+            "notesPDF": "/assets/notes/CSE/3/SE Unit 5.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X2mpg2ZoaZjyxhn-uZfxTUV&si=bwp1tNyAuWvwtikP"
+          }
+        ],
+        "More": [
+          { "examType": "Guess Paper", "pdfLink": "/assets/more/CSE/SE Guess Paper.pdf" },
+          {"examType": "SE RTU Paper Solution 2025", "pdfLink": "/assets/more/CSE/SE RTU Solution 2025.pdf"},
+             {"examType": "SE RTU Paper Solution 2024", "pdfLink": "/assets/more/CSE/SE RTU Solution 2024.pdf"},
+              {"examType": "SE RTU Paper Solution 2023", "pdfLink": "/assets/more/CSE/SE RTU Solution 2023.pdf"}
+        ]
+      }
+  ], 
+         "Extra" :[
+          { "examType": "RTU Imp Topics for 3rd SEM", "pdfLink": "/assets/more/CSE/IMP RTU TOPICS 3rd SEM.md" }
+    ]
+    },
+    "4": {
+
+    "subjects": [
+      {
+        "subjectName": "Discrete Mathematics Structure",
+        "subjectCode": "4CS2-01",
+        "units": [
+          {
+            "unitName": "Set Theory, Relation, Function: Countable/uncountable sets, cardinality, inclusion-exclusion principle, pigeonhole principle.",
+            "notesPDF": "/assets/notes/CSE/4/DMS Unit 1.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X2YmyM9VnytGmbMFjUlV-R8&si=WJc4HSDHFUdDvnYY"
+          },
+          {
+            "unitName": "Propositional Logic: Logical operations, predicates, normal forms, quantifiers.",
+            "notesPDF": "/assets/notes/CSE/4/DMS Unit 2.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X04Hb0YYglOyng43xl9phYx&si=OjP1niEtbGxTukqV"
+          },
+          {
+            "unitName": "Posets, Hasse diagram, Lattices, Combinatorics",
+            "notesPDF": "/assets/notes/CSE/4/DMS Unit 3.pdf",
+            "lectureLink": "https://youtu.be/DZEG3YgJbL0?si=Vl_WAJ4JOcMT3jR6"
+          },
+          {
+            "unitName": "Algebraic Structures: Groups, Rings, Fields, Commutativity, Homomorphism.",
+            "notesPDF": "/assets/notes/CSE/4/DMS Unit 4.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X1fQF8t0ibAi7_hLU-cuS8d&si=7PMg-XRo29qNxPoo"
+          },
+          {
+            "unitName": "Graph Theory: Paths, cycles, connectivity, Eulerian/Hamiltonian paths, graph coloring.",
+            "notesPDF": "/assets/notes/CSE/4/DMS Unit 5.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X2uEnQnS_Z6CeKOoVb_LhFb&si=jNy1vsHGDDcSwJ-_"
+          }
+        ],
+        "pyqs": [
+          { "examType": "MainExam", "year": 2023, "sem": "Odd", "pdfLink": "/assets/main/PPS paper odd 2023.pdf" },
+          { "examType": "MainExam", "year": 2025, "sem": "Odd", "pdfLink": "/assets/main/PPS paper odd 2025.pdf" }
+        ]
+      },
+      {
+        "subjectName": "Microprocessor & Interfaces",
+        "subjectCode": "4CS3-04",
+        "units": [
+          {
+            "unitName": "Introduction: Microprocessor basics, applications. Architecture of 8085 Microprocessor: Internal blocks, instruction cycle, addressing modes.",
+            "notesPDF": "/assets/notes/CSE/4/MPI Unit 1.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLxCzCOWd7aiHL7mF_dRsj4Q9x1NNaZqkh&si=ciJKMdrd0gv00BF4"
+          },
+          {
+            "unitName": "8085 Instruction Set and Programming: Data transfer, arithmetic, logical, branch instructions.",
+            "notesPDF": "/assets/notes/CSE/4/MPI Unit 2.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X1K5l3r1FmmjeSzKHdHjth4&si=Q0k3prd-zjpC51E5"
+          },
+          {
+            "unitName": "Advance Assembly Language Programming and 8259 programmable interrupt controller.",
+            "notesPDF": "/assets/notes/CSE/4/MPI Unit 3.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X3WnrCaqF3kSj1pflEcs7iJ&si=dK3H9pD-oq2Yt-05"
+          },
+          {
+            "unitName": "8085 Microprocessor Interfacing (8255, 8254, 8279).",
+            "notesPDF": "/assets/notes/CSE/4/MPI Unit 4.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X1AopcKnalA8O7J7K9j25Hk&si=E0zANUv15FKBfYHJ"
+          },
+          {
+            "unitName": "Microprocessor Applications.",
+            "notesPDF": "/assets/notes/CSE/4/MPI Unit 5.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X2_AYX7ei7fnLzDRhFxKysJ&si=UXetguxXT7GdKlm6"
+          }
+        ],
+        "pyqs": [
+          { "examType": "MainExam", "year": 2023, "sem": "Odd", "pdfLink": "/assets/main/PPS paper odd 2023.pdf" },
+          { "examType": "MainExam", "year": 2025, "sem": "Odd", "pdfLink": "/assets/main/PPS paper odd 2025.pdf" }
+        ]
+      },
+      {
+        "subjectName": "Database Management System",
+        "subjectCode": "4CS4-05",
+        "units": [
+          {
+            "unitName": "Introduction: Database concepts, data models, DBMS architecture. Entity Relationship Model: Mapping cardinalities, keys, constraints.",
+            "notesPDF": "/assets/notes/CSE/4/DBMS Unit 1.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X2m5y4uz1Ibhiq8P__OhEuf&si=eXG21XT13-jmxKvx"
+          },
+          {
+            "unitName": "Relational Algebra and Calculus, SQL Queries, Trigger Programming.",
+            "notesPDF": "/assets/notes/CSE/4/DBMS Unit 2.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X1DNqvgv_9BTWX6pSOWuA5z&si=-kQa4KjxX73yFKGK"
+          },
+          {
+            "unitName": "Schema Refinement and Normal Forms.",
+            "notesPDF": "/assets/notes/CSE/4/DBMS Unit 3.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X34CeuZqIxabJ1iTYt5SfQ7&si=Se6-PFiR4OngFmNS"
+          },
+          {
+            "unitName": "Transaction Processing.",
+            "notesPDF": "/assets/notes/CSE/4/DBMS Unit 4.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X3j3g4NuKkcko4Af1O4v6Ap&si=vbTxjvqgFc8aYQSN"
+          },
+          {
+            "unitName": "Concurrency Control, Database Failure and Recovery.",
+            "notesPDF": "/assets/notes/CSE/4/DBMS Unit 5.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X3OAmIAnjjkGVpvHran8vbv&si=Vx2bb2LVNpBtTAA3"
+          }
+        ],
+        "pyqs": [
+          { "examType": "MainExam", "year": 2023, "sem": "Odd", "pdfLink": "/assets/main/PPS paper odd 2023.pdf" },
+          { "examType": "MainExam", "year": 2025, "sem": "Odd", "pdfLink": "/assets/main/PPS paper odd 2025.pdf" }
+        ]
+      },
+       {
+        "subjectName": "Technical Communication",
+        "subjectCode": "4CS1-02",
+        "units": [
+          {
+            "unitName": "Introduction to Technical Communication: Process of Communication, Language as a tool of communication, Technical communication: meaning, importance and role.",
+            "notesPDF": "/assets/notes/CSE/4/TC Unit 1.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X2G_KPRnBdEDjiF1n7uuDIV&si=t1CAV3joirkRGLce"
+          },
+          {
+            "unitName": "Comprehension of Technical Materials/Texts and Information Design & Development: Reading techniques, summarizing, abstracting, information collection, organization and presentation.",
+            "notesPDF": "/assets/notes/CSE/4/TC Unit 2.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X2ELdJUMWwTMh0i65_I80FH&si=bUezUsLL9wHdynSi"
+          },
+          {
+            "unitName": "Technical Writing, Grammar and Editing: Technical style, technical definitions, technical descriptions, technical manuals, grammar usage and common errors.",
+            "notesPDF": "/assets/notes/CSE/4/TC Unit 3.pdf",
+            "lectureLink": "https://youtu.be/hVdmKYun9EM?si=kJxvjdGSwAdvxyCc"
+          },
+          {
+            "unitName": "Advanced Technical Writing: Research papers, project reports, dissertations, proposals, technical emails.",
+            "notesPDF": "/assets/notes/CSE/4/TC Unit 4.pdf",
+            "lectureLink": "https://youtu.be/cO-syjsp9l4?si=yDUqDltKk-4Jy344"
+          }
+        ],
+        "pyqs": [
+          { "examType": "MainExam", "year": 2023, "sem": "Odd", "pdfLink": "/assets/main/PPS paper odd 2023.pdf" },
+          { "examType": "MainExam", "year": 2025, "sem": "Odd", "pdfLink": "/assets/main/PPS paper odd 2025.pdf" }
+        ]
+      },
+      {
+        "subjectName": "Managerial Economics and Financial Accounting",
+        "subjectCode": "4CS1-03",
+        "units": [
+          {
+            "unitName": "Basic Economic Concepts: Meaning, nature and scope of economics; basic economic problems; scarcity and choice; national income.",
+            "notesPDF": "/assets/notes/CSE/4/MEFA Unit 1.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X1JoM0y0w0pwGdsOsST_9qo&si=GZ3KMZ5FRhO_Tl2X"
+          },
+          {
+            "unitName": "Demand and Supply Analysis: Demand forecasting, elasticity of demand, supply function, elasticity of supply.",
+            "notesPDF": "/assets/notes/CSE/4/MEFA Unit 2.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X2FIl9b1mpYFaqDxya9owyR&si=YjbhsQmwJfGDWWsu"
+          },
+          {
+            "unitName": "Production and Cost Analysis: Production function, laws of returns to scale, least cost combination, isoquants, cost curves.",
+            "notesPDF": "/assets/notes/CSE/4/MEFA Unit 3.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X2FO9B_UVZUBdOAc6hlgu_A&si=HFD3TQUOHs-cc9oc"
+          },
+          {
+            "unitName": "Market structure and pricing theory: Perfect competition, monopoly, monopolistic competition, oligopoly.",
+            "notesPDF": "/assets/notes/CSE/4/MEFA Unit 4.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X1bLoF-d8BhBQZ0IAtKXGpR&si=C1xkSxQoc89qnBEu"
+          },
+          {
+            "unitName": "Financial Statement Analysis: Balance sheet, P&L statements, cash-flow analysis, fund-flow analysis, financial ratios.",
+            "notesPDF": "/assets/notes/CSE/4/MEFA Unit 5.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X0aW6870Uz_UNp8EvACFDw7&si=01MlYmSKKVrqh4Ox"
+          }
+        ],
+         "More": [
+       { "examType": "MEFA Formulas and Concepts", "pdfLink": "/assets/more/CSE/MEFA Imp Formulas Unit 1 to 3.pdf" },
+       { "examType": "MEFA All PYQs", "pdfLink": "/assets/more/CSE/Complete MEFA with PYQS.pdf" }
+        ]
+      },
+      {
+        "subjectName": "Theory of Computation",
+        "subjectCode": "4CS4-06",
+        "units": [
+          {
+            "unitName": "Introduction: Basics of automata theory and formal languages. Finite Automata & Regular Expression.",
+            "notesPDF": "/assets/notes/CSE/4/TOC Unit 1.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X3ZWF3M-DsnEm7JY9wXIFC3&si=Xo61yaFSUo4-bOQs"
+          },
+          {
+            "unitName": "Context-Free Grammar and Context-free Language.",
+            "notesPDF": "/assets/notes/CSE/4/TOC Unit 2.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PL0Ug_kpOStbq-b4N1l46tZSl7l01rMzP8&si=8nMdw5R93d7axHkh"
+          },
+          {
+            "unitName": "Pushdown Automata.",
+            "notesPDF": "/assets/notes/CSE/4/TOC Unit 3.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PL0Ug_kpOStbouzs1xFgpH4SbxdkdRPcCy&si=OwibTccLEOF5OGG1"
+          },
+          {
+            "unitName": "Turing Machine and Hierarchy of Formal Languages.",
+            "notesPDF": "/assets/notes/CSE/4/TOC Unit 4.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X3Xatjq6HY-mGEfx9rqiJbu&si=1fklZLA7O9QdVc_U"
+          },
+          {
+            "unitName": "Tractable Problems And Complexity Classes.",
+            "notesPDF": "/assets/notes/CSE/4/TOC Unit 5.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X1RDlJiR7YZLxY0uzR-HTLZ&si=8DzsnRVDUBlGu1l-"
+          }
+        ],
+        "pyqs": [
+          { "examType": "MainExam", "year": 2023, "sem": "Odd", "pdfLink": "/assets/main/PPS paper odd 2023.pdf" },
+          { "examType": "MainExam", "year": 2025, "sem": "Odd", "pdfLink": "/assets/main/PPS paper odd 2025.pdf" }
+        ]
+      },
+      {
+        "subjectName": "Data Communication and Computer Networks",
+        "subjectCode": "4CS4-07",
+        "units": [
+        
+          {
+            "unitName": "Introduction: Basics of data communication, network types, protocol architecture. Data Transmission, Transmission Media, Channel Capacity.",
+            "notesPDF": "/assets/notes/CSE/4/DCCN Unit 1.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLAmViTdGzJZPtP0jPTqqapV2AvoZlT3j2&si=XNbzbT707k7n91Yn"
+          },
+          {
+            "unitName": "Data Link Layer: Framing, Error control, Flow control.",
+            "notesPDF": "/assets/notes/CSE/4/DCCN Unit 2.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLAmViTdGzJZM1OtT98OMKJzf60lxhb5bN&si=p2HlkPWapud7F6iD"
+          },
+          {
+            "unitName": "Network Layer: Routing algorithms, Congestion control, IPv4/IPv6.",
+            "notesPDF": "/assets/notes/CSE/4/DCCN Unit 3.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLAmViTdGzJZMbpDKA-safrja8BxcpCH39&si=OfMoF-vZ90vnMJUK"
+          },
+          {
+            "unitName": "Transport Layer: TCP, UDP, Flow control, Connection management.",
+            "notesPDF": "/assets/notes/CSE/4/DCCN Unit 4.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLAmViTdGzJZPNbS94GD_iTUDh9qNaeWJ-&si=jvYZto1sGqqRHCSq"
+          },
+          {
+            "unitName": "Application Layer: DNS, Email, FTP, HTTP.",
+            "notesPDF": "/assets/notes/CSE/4/DCCN Unit 5.pdf",
+            "lectureLink": "https://youtube.com/playlist?list=PLAmViTdGzJZM7NpzuV1N_Tm6aLwCdtGwK&si=JaHeUMJyyrwF03g1"
+          }
+        ],
+        "pyqs": [
+          { "examType": "MainExam", "year": 2023, "sem": "Odd", "pdfLink": "/assets/main/PPS paper odd 2023.pdf" },
+          { "examType": "MainExam", "year": 2025, "sem": "Odd", "pdfLink": "/assets/main/PPS paper odd 2025.pdf" }
+        ]
+      }
+    ],
+    "Extra" :[
+          { "examType": "RTU Imp Topics for 4th SEM", "pdfLink": "/assets/more/CSE/IMP RTU TOPICS 4th SEM.md" }
+    ]
+    } },
   "CHEM": { "3": [], "4": [] }
 }
