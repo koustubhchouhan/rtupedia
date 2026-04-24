@@ -2,124 +2,133 @@ import { useEffect, useState, useCallback, memo } from "react";
 import { useNavigate } from "react-router-dom";
 import { Document, Page, pdfjs } from "react-pdf";
 import "./PDFViewer.css";
+import { useMemo } from "react";
 import { useAuth } from "../context/AuthContext";
 
-
+// ✅ Worker (ONLY THIS — do not change)
 pdfjs.GlobalWorkerOptions.workerSrc =
-  `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
+  `https://cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 
 const PDFViewer = ({ file, onClose }) => {
   const [numPages, setNumPages] = useState(null);
   const [scale, setScale] = useState(1);
   const [page, setPage] = useState(1);
   const [error, setError] = useState(false);
+  const [loadingPage, setLoadingPage] = useState(false);
 
   const { user } = useAuth();
   const navigate = useNavigate();
+  const pdfFile = useMemo(() => ({
+  url: file
+}), [file]);
 
   // 🔒 Auth check
   useEffect(() => {
-    if (!user) {
-      navigate("/login");
-    }
+    if (!user) navigate("/login");
   }, [user, navigate]);
 
+  useEffect(() => {
+  setPage(1);
+}, [file]);
+
+  // ✅ Load success
   const onDocumentLoadSuccess = useCallback(({ numPages }) => {
     setNumPages(numPages);
+    setPage(1);
   }, []);
 
-  
-
+  // 🔐 Disable copy, right click etc
   useEffect(() => {
-  const disable = (e) => e.preventDefault();
+    const disable = (e) => e.preventDefault();
+    const preventDoubleClick = (e) => e.preventDefault();
 
-  document.addEventListener("contextmenu", disable);
-  document.addEventListener("copy", disable);
-  document.addEventListener("cut", disable);
+    document.addEventListener("contextmenu", disable);
+    document.addEventListener("copy", disable);
+    document.addEventListener("cut", disable);
+    document.addEventListener("dblclick", preventDoubleClick);
 
-   const preventDoubleClick = (e) => e.preventDefault();
-  document.addEventListener("dblclick", preventDoubleClick);
+    const handleVisibility = () => {
+      document.body.style.filter = document.hidden ? "blur(10px)" : "none";
+    };
 
-  const handleVisibility = () => {
-    if (document.hidden) {
-      document.body.style.filter = "blur(10px)";
-    } else {
-      document.body.style.filter = "none";
-    }
-  };
-
-  document.addEventListener("visibilitychange", handleVisibility);
-
-  return () => {
-    document.removeEventListener("contextmenu", disable);
-    document.removeEventListener("copy", disable);
-    document.removeEventListener("cut", disable);
-    document.removeEventListener("dblclick", preventDoubleClick);
     document.addEventListener("visibilitychange", handleVisibility);
-  };
-}, []);
 
-useEffect(() => {
-  const handleKey = (e) => {
-    if (e.key === "ArrowRight") {
-      setPage(p => Math.min(p + 1, numPages));
-    }
-    if (e.key === "ArrowLeft") {
-      setPage(p => Math.max(p - 1, 1));
-    }
-  };
+    return () => {
+      document.removeEventListener("contextmenu", disable);
+      document.removeEventListener("copy", disable);
+      document.removeEventListener("cut", disable);
+      document.removeEventListener("dblclick", preventDoubleClick);
+      document.removeEventListener("visibilitychange", handleVisibility);
+    };
+  }, []);
 
+  // ⌨️ Arrow navigation
+  useEffect(() => {
+    const handleKey = (e) => {
+      if (loadingPage) return;
 
-  window.addEventListener("keydown", handleKey);
-  return () => window.removeEventListener("keydown", handleKey);
-}, [numPages]);
+      if (e.key === "ArrowRight") {
+        setLoadingPage(true);
+        setPage((p) => Math.min(p + 1, numPages));
+      }
 
+      if (e.key === "ArrowLeft") {
+        setLoadingPage(true);
+        setPage((p) => Math.max(p - 1, 1));
+      }
+    };
 
-useEffect(() => {
-  const handleEsc = (e) => {
-    if (e.key === "Escape") window.close();
-  };
+    window.addEventListener("keydown", handleKey);
+    return () => window.removeEventListener("keydown", handleKey);
+  }, [numPages, loadingPage]);
 
-  window.addEventListener("keydown", handleEsc);
-  return () => window.removeEventListener("keydown", handleEsc);
-}, []);
+  // ❌ Block inspect
+  useEffect(() => {
+    const blockKeys = (e) => {
+      if (
+        e.key === "F12" ||
+        (e.ctrlKey && e.shiftKey && ["I", "J", "C"].includes(e.key)) ||
+        (e.ctrlKey && e.key === "U")
+      ) {
+        e.preventDefault();
+      }
+    };
 
+    document.addEventListener("keydown", blockKeys);
+    return () => document.removeEventListener("keydown", blockKeys);
+  }, []);
 
-useEffect(() => {
-  const blockKeys = (e) => {
-    if (
-      e.key === "F12" ||
-      (e.ctrlKey && e.shiftKey && ["I", "J", "C"].includes(e.key)) ||
-      (e.ctrlKey && e.key === "U")
-    ) {
-      e.preventDefault();
-    }
-  };
+  // ❌ ESC close
+  useEffect(() => {
+    const handleEsc = (e) => {
+      if (e.key === "Escape") window.close();
+    };
 
-  document.addEventListener("keydown", blockKeys);
+    window.addEventListener("keydown", handleEsc);
+    return () => window.removeEventListener("keydown", handleEsc);
+  }, []);
 
-  return () => {
-    document.removeEventListener("keydown", blockKeys);
-  };
-}, []);
-
-console.log("PDF FILE RECEIVED:", file);
-
-
+  console.log("PDF FILE:", file);
 
   return (
     <div className="pdf-modal">
 
-      {/* Zoom */}
+      {/* 🔍 Zoom */}
       <div className="zoom-controls">
-        <button  onClick={() => setScale(s => Math.max(s - 0.2, 0.5))}>-</button>
+        <button onClick={() => setScale(s => Math.max(s - 0.2, 0.5))}>-</button>
         <span>{Math.round(scale * 100)}%</span>
         <button onClick={() => setScale(s => Math.min(s + 0.2, 2.5))}>+</button>
       </div>
 
-      {/* Navigation */}
+      {/* 🔁 Navigation */}
       <div className="nav-controls">
-        <button disabled={page <= 1} onClick={() => setPage(p => p - 1)}>
+        <button
+          disabled={page <= 1 || loadingPage}
+          onClick={() => {
+            setLoadingPage(true);
+            setPage((p) => Math.max(p - 1, 1));
+          }}
+        >
           ⬅
         </button>
 
@@ -128,66 +137,42 @@ console.log("PDF FILE RECEIVED:", file);
         </span>
 
         <button
-          disabled={page >= numPages}
-          onClick={() => setPage(p => p + 1)}
+          disabled={page >= numPages || loadingPage}
+          onClick={() => {
+            setLoadingPage(true);
+            setPage((p) => Math.min(p + 1, numPages));
+          }}
         >
-        ➡
+          ➡
         </button>
       </div>
 
-      {/* PDF */}
+      {/* 📄 PDF */}
       <div className="pdf-container">
         {error ? (
           <div style={{ color: "white" }}>
             Failed to load PDF. Try again.
           </div>
         ) : (
-         <Document
-           key={file}
-  file={{ url: file,
-  withCredentials: false 
-   }}
-     // 🔥 THIS FIXES YOUR ISSUE
-  onLoadSuccess={onDocumentLoadSuccess}
-  onLoadError={(err) => {
-    console.error("PDF LOAD ERROR:", err);
-    setError(true);
-  }}
-  loading="Loading PDF..."
->
+          <Document
+          
+            file={ pdfFile}
+            onLoadSuccess={onDocumentLoadSuccess}
+            onLoadError={(err) => {
+              console.error("PDF ERROR:", err);
+              setError(true);
+            }}
+            loading="Loading PDF..."
+          >
             <div className="page-wrapper">
-   {/* PREVIOUS */}
-{page > 1 && (
-  <div style={{ display: "none" }}>
-    <Page
-      pageNumber={page - 1}
-      scale={scale}
-      renderTextLayer={false}
-      renderAnnotationLayer={false}
-    />
-  </div>
-)}
-
-{/* CURRENT */}
-<Page
-  pageNumber={page}
-  scale={scale}
-  renderTextLayer={false}
-  renderAnnotationLayer={false}
-/>
-
-{/* NEXT */}
-{page < numPages && (
-  <div style={{ display: "none" }}>
-    <Page
-      pageNumber={page + 1}
-      scale={scale}
-      renderTextLayer={false}
-      renderAnnotationLayer={false}
-    />
-  </div>
-)}
-
+              <Page
+                key={page} // ✅ CRITICAL FIX
+                pageNumber={page}
+                scale={scale}
+                renderTextLayer={false}
+                renderAnnotationLayer={false}
+                onLoadSuccess={() => setLoadingPage(false)}
+              />
 
               {/* Watermark */}
               <div className="watermark">
