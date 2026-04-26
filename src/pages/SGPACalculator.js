@@ -52,6 +52,9 @@ const SGPACalculator = () => {
     <div className="sgpa-container">
       <h1 className="sgpa-title">RTU SGPA Calculator</h1>
 
+       <p style={{margin:'10px'}}>Dowlnoad Report Card </p>
+      
+
       {/* 🔹 Branch & Semester Filters */}
       <div className="filter-box">
         <div className="filter-item">
