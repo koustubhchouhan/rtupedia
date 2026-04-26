@@ -3,7 +3,7 @@ import { Link, useNavigate } from "react-router-dom";
 import ThemeToggle from "./ThemeToggle";
 import { useAuth } from "../../context/AuthContext";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCircleInfo, faMessage, faCircleUser} from '@fortawesome/free-solid-svg-icons';
+import { faCircleInfo, faMessage, faCircleUser, faHouse} from '@fortawesome/free-solid-svg-icons';
 import "./Header.css";
 
 
@@ -28,6 +28,8 @@ const Header = () => {
 
         {/* Navigation */}
         <nav className="nav-links">
+
+           <Link to="/"> <FontAwesomeIcon icon={faHouse} className="nav-icon" /></Link>
           <Link to="/about"> <FontAwesomeIcon icon={faCircleInfo} className="nav-icon" /></Link>
           <Link to="/contact"><FontAwesomeIcon icon={faMessage} className="nav-icon" /></Link>
           <ThemeToggle />
