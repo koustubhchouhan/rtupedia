@@ -114,10 +114,39 @@ useEffect(() => {
         </div>
 
       </div>
+
+<div style={{ paddingRight: "20px", maxWidth: "1200px", margin: "auto", marginLeft:'10px', lineHeight: "1.8", textAlign: "justify" }}>
+  
+  <h2>RTU Notes, PYQs & Study Resources in One Place</h2>
+
+  <p>
+    RTUpedia is a dedicated learning platform designed for students of Rajasthan Technical University (RTU) Specially for B.Tech.
+    It provides organized access to semester-wise notes, previous year question papers (PYQs),
+    syllabus resources, and smart academic tools to help students prepare efficiently.
+  </p>
+
+  <p>
+    Whether you are in your first year or final year, RTUpedia helps you find all important study materials
+    in one place. Instead of searching across multiple websites, students can easily access structured
+    content, subject-wise notes, relavent video lectures and exam-focused resources here.
+  </p>
+<br></br>
+  <p>
+    In addition to notes and PYQs, the platform also offers useful tools like SGPA calculators and curated
+    learning resources to improve academic performance. All content is organized year-wise and branch-wise
+    to ensure a smooth and simple learning experience.
+  </p>
+<br></br>
+  <p>
+    Explore your academic year below and start preparing smarter with RTUpedia.
+  </p>
+
+</div>
+
       <div id="notes"></div>
 
-      <h2 style={{ marginTop: "10px" }}>Select Your Academic Year</h2>
-      <p>Choose your current B.Tech year to access notes, PYQs, and resources.</p>
+      <h2 style={{ marginTop: "30px", marginBottom:'20px' }}>Select Your Academic Year</h2>
+      <p>Choose your current B.Tech year to access notes, PYQs, and resources. Find notes and study materials organized year-wise for RTU B.Tech students.</p>
 
       {/* YEAR CARDS SECTION */}
 
@@ -146,7 +175,7 @@ useEffect(() => {
         <div style={{ textAlign: "center" }}>
           <h2>Official RTU Syllabus</h2>
           <p style={{ marginBottom: "20px" }}>
-            Download the official B.Tech syllabus
+           Download official RTU B.Tech. syllabus for all branches and years.
           </p>
 
           <div className="card-grid" data-aos="fade-up">
@@ -259,6 +288,10 @@ useEffect(() => {
           View all reviews →
         </Link>
       </div>
+<div style={{justifyContent:'center', alignItems:'center', margin: '20px'}}>
+         <p >RTUpedia is an independent educational platform created for RTU students.
+We do not represent Rajasthan Technical University officially.</p>
+</div>
 
     </>
   );

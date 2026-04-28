@@ -9,6 +9,7 @@ const Footer = () => {
     <footer className="footer">
 
       <div className="footer-bottom">
+   
   <p>© {new Date().getFullYear()} RTUpedia. All rights reserved.</p>
 
   <div className="footer-links">
