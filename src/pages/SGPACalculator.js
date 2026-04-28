@@ -52,7 +52,29 @@ const SGPACalculator = () => {
     <div className="sgpa-container">
       <h1 className="sgpa-title">RTU SGPA Calculator</h1>
 
-       <p style={{margin:'10px'}}>Dowlnoad Report Card </p>
+      <div className="result-links">
+  <p className="result-title">📄 Download Official Result</p>
+
+  <div className="result-buttons">
+    <a
+      href="https://rtu.sumsraj.com/Exam/Report/DownloadGradesheet.aspx"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="result-btn primary"
+    >
+      RTU Gradesheet Portal
+    </a>
+
+    <a
+      href="https://www.esuvidha.info/"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="result-btn secondary"
+    >
+      e-Suvidha Portal
+    </a>
+  </div>
+</div>
       
 
       {/* 🔹 Branch & Semester Filters */}

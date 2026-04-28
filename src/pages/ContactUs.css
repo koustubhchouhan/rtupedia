@@ -6,6 +6,7 @@
   display: flex;
   justify-content: center;
   padding: 40px 20px;
+    margin-top:20px;
 }
 
 .main-contact-card {
@@ -20,7 +21,7 @@
 
 .container {
   max-width: 600px;
-  margin: 0 auto;
+   margin-top:20px;
   padding: 20px;
 }
 
@@ -29,6 +30,7 @@
   border: 1px solid var(--color-border);
   color: var(--color-text);
   border-radius: 12px;
+ margin-top:20px;
   padding: 25px 30px;
 }
 

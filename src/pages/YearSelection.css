@@ -19,6 +19,7 @@
   margin: 20px auto;  /* Centers card */
 }
 
+
 .sgpa-card:hover {
   transform: scale(1.03);
   box-shadow: 0px 6px 15px rgba(0,0,0,0.15);
@@ -75,7 +76,7 @@
 /* WHY CHOOSE US SECTION */
 .why-container {
   padding: 50px 20px;
-  background: var(--color-background);
+  background: var(--color-background)!important;
   color: var(--color-text);
   text-align: center;
   font-family: Poppins, sans-serif;
@@ -137,6 +138,16 @@
 .why-card:hover .why-icon{
   transform:scale(1.15);
 }
+
+.sgpa-container {
+  padding: 50px 20px;
+  background: var(--color-background)!important;
+  color: var(--color-text);
+  text-align: center;
+  font-family: Poppins, sans-serif;
+  margin-bottom: -40px;
+}
+
 
 /* RESPONSIVE BREAKPOINTS */
 
@@ -507,6 +518,9 @@
   border-radius:24px;
   padding:70px 60px;
   margin-bottom:40px;
+   width: 100%;
+  max-width: 1200px;
+ 
 
   color:white;
   overflow:hidden;

@@ -388,6 +388,48 @@ select {
 }
 
 
+.result-links {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.result-title {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: var(--color-primary);
+}
+
+.result-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.result-btn {
+  padding: 8px 14px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.2s;
+}
+
+/* Light/Dark compatible */
+.result-btn.primary {
+  background: var(--color-secondary);
+  color: #000;
+}
+
+.result-btn.secondary {
+  background: var(--color-tertiary);
+  color: #fff;
+}
+
+.result-btn:hover {
+  opacity: 0.85;
+}
+
+
 
 /* ================================
    TABS FIX (Notes / PYQ)

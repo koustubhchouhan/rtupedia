@@ -1,7 +1,8 @@
 // src/pages/YearSelection.js
 
 import React, { useState, useEffect } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate , useLocation} from "react-router-dom";
+
 import { Link } from "react-router-dom";
 import Card from "../components/UI/Card";
 import Button from "../components/UI/Button";
@@ -19,12 +20,13 @@ import { MdVideoSettings } from "react-icons/md";
 import { PiMedalFill } from "react-icons/pi";
 import { getReviews } from "../utils/reviewApi";
 import ReviewCard from "../components/Review/ReviewCard";
- 
+
 
 const YearSelection = () => {
   const [yearData, setYearData] = useState([]);
   const [loading, setLoading] = useState(true);
   const navigate = useNavigate();
+  const location = useLocation();
 
   /* Load years from local JSON */
   useEffect(() => {
@@ -33,6 +35,20 @@ const YearSelection = () => {
     }
     setLoading(false);
   }, []);
+
+useEffect(() => {
+  if (location.state?.scrollTo) {
+    const scrollId = location.state.scrollTo;
+
+    setTimeout(() => {
+      const el = document.getElementById(scrollId);
+      if (el) {
+        el.scrollIntoView({ behavior: "smooth" });
+      }
+    }, 400); // little delay for DOM load
+  }
+}, [location]);
+
 
   const handleYearSelect = (yearSlug) => {
     navigate(`/year/${yearSlug}`);
@@ -44,9 +60,9 @@ const YearSelection = () => {
 
   const [reviews, setReviews] = useState([]);
 
-useEffect(() => {
-  getReviews().then(setReviews);
-}, []);
+  useEffect(() => {
+    getReviews().then(setReviews);
+  }, []);
 
 
   if (loading) return <LoadingSpinner />;
@@ -55,118 +71,130 @@ useEffect(() => {
 
   return (
     <>
-    {/* HERO SECTION */}
-{/* HERO SECTION */}
+      {/* HERO SECTION */}
+      {/* HERO SECTION */}
 
-<div className="hero-section">
+      <div className="hero-section">
 
-  <div className="hero-content">
+        <div className="hero-content">
 
-    <div className="hero-left">
+          <div className="hero-left">
 
-      <h1 className="hero-title">
-        <span className="hero-rtu">RTU</span>
-        <span className="hero-pedia">pedia</span>
-      </h1>
+            <h1 className="hero-title">
+              <span className="hero-rtu">RTU</span>
+              <span className="hero-pedia">pedia</span>
+            </h1>
 
-      <p className="hero-subtitle">
-        Your complete RTU study companion for Notes, PYQs, Syllabus and Smart Tools.
-      </p>
+            <p className="hero-subtitle">
+              Your complete RTU study companion for Notes, PYQs, Syllabus and Smart Tools.
+            </p>
 
-      <button
-        className="hero-btn"
-        onClick={() =>
-          document
-            .querySelector(".year-card-grid")
-            .scrollIntoView({ behavior: "smooth" })
-        }
-      >
-        Explore Notes
-      </button>
+            <button
+              className="hero-btn"
+              onClick={() =>
+                document
+                  .querySelector(".year-card-grid")
+                  .scrollIntoView({ behavior: "smooth" })
+              }
+            >
+              Explore Notes
+            </button>
 
-    </div>
+          </div>
 
-    {/* RIGHT SIDE ILLUSTRATION */}
+          {/* RIGHT SIDE ILLUSTRATION */}
 
-    <div className="hero-right">
-      <img
-        src="https://cdn-icons-png.flaticon.com/512/3135/3135755.png"
-        alt="study illustration"
-      />
-    </div>
+          <div className="hero-right">
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/3135/3135755.png"
+              alt="study illustration"
+            />
+          </div>
 
-  </div>
+        </div>
 
-</div>
+      </div>
+      <div id="notes"></div>
 
-      <h2 style={{marginTop:"10px"}}>Select Your Academic Year</h2>
+      <h2 style={{ marginTop: "10px" }}>Select Your Academic Year</h2>
       <p>Choose your current B.Tech year to access notes, PYQs, and resources.</p>
 
-  {/* YEAR CARDS SECTION */}
-<div className="year-card-grid" data-aos="fade-up">
-  {yearData.map((year) => (
-    <Card
-      key={year.slug}
-      title={`📚 ${year.year} Notes`}
-      onClick={() => handleYearSelect(year.slug)}
-      data-aos="fade-up"
-    >
-      <p style={{ marginTop: "10px", color: "var(--color-text)" }}>
-        Click to view branches and subjects.
-      </p>
-    </Card>
-  ))}
-</div>
+      {/* YEAR CARDS SECTION */}
 
-     <div className="section-divider" data-aos="fade-up"></div>
+      <div className="year-card-grid" data-aos="fade-up">
+        {yearData.map((year) => (
+          <Card
+            key={year.slug}
+            title={`📚 ${year.year} Notes`}
+            onClick={() => handleYearSelect(year.slug)}
+            data-aos="fade-up"
+          >
+            <p style={{ marginTop: "10px", color: "var(--color-text)" }}>
+              Click to view branches and subjects.
+            </p>
+          </Card>
+        ))}
+      </div>
 
-      {/* SYLLABUS SECTION */}
-      <div style={{ textAlign: "center" }}>
-        <h2>Official RTU Syllabus</h2>
-        <p style={{ marginBottom: "20px" }}>
-          Download the official B.Tech syllabus
-        </p>
+      <div id="syllabus">
 
-        <div className="card-grid"  data-aos="fade-up">
-          {branches.map((branch) => {
-            const branchSyllabus = syllabusLinks.filter(
-              (i) => i.branch === branch
-            );
+        <div className="section-divider" data-aos="fade-up"></div>
 
-            return (
-              <Card
-                key={branch}
-                title={branchFullName(branch)}
-                style={{ textAlign: "center", minHeight: "180px" }} 
-                data-aos="fade-up"
-              >
-                {branchSyllabus.map((linkItem) => (
-                  <Button
-                    key={`${linkItem.branch}-${linkItem.year}`}
-                    onClick={() => downloadSyllabus(linkItem.link)}
-                    style={{ margin: "5px", padding: "6px 10px" }}
-                  >
-                    {linkItem.year}
-                  </Button>
-                ))}
-              </Card>
-            );
-          })}
+
+
+        {/* SYLLABUS SECTION */}
+        <div style={{ textAlign: "center" }}>
+          <h2>Official RTU Syllabus</h2>
+          <p style={{ marginBottom: "20px" }}>
+            Download the official B.Tech syllabus
+          </p>
+
+          <div className="card-grid" data-aos="fade-up">
+            {branches.map((branch) => {
+              const branchSyllabus = syllabusLinks.filter(
+                (i) => i.branch === branch
+              );
+
+              return (
+                <Card
+                  key={branch}
+                  title={branchFullName(branch)}
+                  style={{ textAlign: "center", minHeight: "180px" }}
+                  data-aos="fade-up"
+                >
+                  {branchSyllabus.map((linkItem) => (
+                    <Button
+                      key={`${linkItem.branch}-${linkItem.year}`}
+                      onClick={() => downloadSyllabus(linkItem.link)}
+                      style={{ margin: "5px", padding: "6px 10px" }}
+                    >
+                      {linkItem.year}
+                    </Button>
+                  ))}
+                </Card>
+              );
+            })}
+          </div>
+        </div>
+
+      </div>
+
+      <div id="sgpa">
+
+        <div className="section-divider" data-aos="fade-up"></div>
+
+        {/* SGPA CALCULATOR */}
+
+        <div className="sgpa-container">
+          <div className="sgpa-card" data-aos="fade-up" onClick={() => navigate("/SGPACalculator")}>
+            <h2>SGPA Calculator</h2>
+            <p>Calculate your RTU B.tech. SGPA instantly using semester-wise credits.</p>
+            <button className="sgpa-btn">Open Calculator</button>
+          </div>
         </div>
       </div>
 
-     <div className="section-divider" data-aos="fade-up"></div>
-
-      {/* SGPA CALCULATOR */}
-      <div className="home-container" style={{marginTop:"50px"}}>
-        <div className="sgpa-card" data-aos="fade-up" onClick={() => navigate("/SGPACalculator")}>
-          <h2>SGPA Calculator</h2>
-          <p>Calculate your RTU B.tech. SGPA instantly using semester-wise credits.</p>
-          <button className="sgpa-btn">Open Calculator</button>
-        </div>
-      </div>
-
-     <div className="section-divider" data-aos="fade-up"></div>
+      <div className="section-divider" data-aos="fade-up"></div>
 
       {/* WHY CHOOSE US */}
       <div className="why-container" data-aos="fade-up">
@@ -209,28 +237,28 @@ useEffect(() => {
             </div>
             <h3 className="why-heading">Trusted & Reliable</h3>
             <p className="why-text">
-             Clean UI, accurate tools, and verified content make RTUpedia a dependable study companion.
+              Clean UI, accurate tools, and verified content make RTUpedia a dependable study companion.
             </p>
           </div>
         </div>
       </div>
 
-           <div className="section-divider" data-aos="fade-up"></div>
-    
-   {/* STUDENT REVIEWS PREVIEW */}
-<div data-aos="fade-up"  style={{ marginTop: "60px", textAlign: "center" }}>
-  <h2>What Students Say</h2>
+      <div className="section-divider" data-aos="fade-up"></div>
 
-  <div className="review-preview-grid" data-aos="fade-up">
-    {reviews.slice(0, 4).map((r) => (
-      <ReviewCard key={r._id} review={r} preview />
-    ))}
-  </div>
+      {/* STUDENT REVIEWS PREVIEW */}
+      <div data-aos="fade-up" style={{ marginTop: "60px", textAlign: "center" }}>
+        <h2>What Students Say</h2>
 
-  <Link to="/reviews" className="view-all-btn">
-    View all reviews →
-  </Link>
-</div>
+        <div className="review-preview-grid" data-aos="fade-up">
+          {reviews.slice(0, 4).map((r) => (
+            <ReviewCard key={r._id} review={r} preview />
+          ))}
+        </div>
+
+        <Link to="/reviews" className="view-all-btn">
+          View all reviews →
+        </Link>
+      </div>
 
     </>
   );

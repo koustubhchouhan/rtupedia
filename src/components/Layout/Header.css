@@ -24,17 +24,15 @@
 ================================= */
 
 .header-container{
-
   max-width:1200px;
-  margin:auto;
-
+  margin:0 auto;
   padding:0 20px;
 
   display:flex;
   align-items:center;
   justify-content:space-between;
 
-
+  width:100%;
 }
 
 .header-container h5{
@@ -67,29 +65,59 @@
 .logo-group {
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 
 .logo-group h5 {
   margin: 0;
 }
 
+.nav-link {
+  position: relative;
+  color: var(--color-background);
+  font-size: 26px;
+  cursor: pointer;
 
-/* =================================
-   NAVIGATION
-================================= */
+  display: inline-flex;   /* 🔥 FIX */
+  align-items: center;
 
-.nav-links{
+  opacity: 0.8;
+  transition: 0.3s;
+}
 
-  display:flex;
-  align-items:center;
-  gap:20px;
+.nav-link:hover {
+  opacity: 1;
+  transform: scale(1.2);
+}
 
+/* underline */
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0%;
+  height: 2px;
+  background: var(--color-secondary);
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
 }
 
 
 /* =================================
    NAV LINKS
 ================================= */
+
+.nav-links {
+  display:flex;
+  align-items:center;
+  font-size: 25px;
+  gap:20px;  
+}
+
 
 .nav-links a{
 
@@ -270,6 +298,74 @@
 
 }
 
+.menu-btn {
+  display: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: white;
+}
+
+/* MOBILE ONLY */
+@media (max-width:768px) {
+  .menu-btn {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+  }
+}
+
+/* SIDEBAR */
+.mobile-sidebar {
+  position: fixed;
+  top: 0;
+  left: -260px;
+  width: 260px;
+  height: 100%;
+
+  background: var(--color-card-bg);
+  color: var(--color-text);
+
+  padding: 20px;
+  z-index: 1001;
+  transition: 0.3s ease;
+}
+
+
+.mobile-sidebar.active {
+  left: 0;
+}
+
+.close-btn {
+  border: none;
+  background: none;
+  font-size: 20px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.sidebar-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.sidebar-item:hover {
+  background: rgba(0,0,0,0.05);
+  border-radius: 6px;
+}
+
+/* overlay */
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.3);
+  z-index: 1000;
+}
 
 /* small phones */
 
@@ -291,3 +387,62 @@
 
 }
 
+
+
+/* PROFILE IN SIDEBAR */
+.sidebar-profile-img {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.profile-side {
+  align-items: center;
+}
+
+.sidebar-profile-info {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+}
+
+.sidebar-profile-info button {
+  margin-top: 5px;
+  padding: 4px 8px;
+  border: none;
+  border-radius: 5px;
+  background: var(--color-primary);
+  color: white;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+/* toggle alignment */
+.toggle-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background: var(--accordion-bg);
+  border-radius: 10px;
+  padding: 10px 12px;
+}
+
+.theme-toggle-wrap {
+  margin-left:auto;
+  display:flex;
+  align-items:center;
+}
+
+.theme-toggle-icon {
+  font-size: 22px;
+  cursor: pointer;
+  color: var(--color-background); 
+  transition: 0.3s;
+  opacity: 0.8;
+}
+
+.theme-toggle-icon:hover {
+  transform: scale(1.2);
+}

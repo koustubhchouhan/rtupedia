@@ -11,9 +11,11 @@ const ThemeToggle = () => {
   const { theme, toggleTheme } = useTheme();
 
   return (
-    
-<FontAwesomeIcon icon={theme === "light" ? faToggleOff : faToggleOn}  className="nav-icon"
-      onClick={toggleTheme} />
+   <FontAwesomeIcon 
+  icon={theme === "light" ? faToggleOff : faToggleOn}  
+  className="theme-toggle-icon"
+  onClick={toggleTheme}
+/>
 
   );
 };
