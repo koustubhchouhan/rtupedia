@@ -243,7 +243,7 @@
       }
   ], 
          "Extra" :[
-          { "examType": "RTU Imp Topics for 3rd SEM", "pdfLink": "/assets/more/CSE/IMP RTU TOPICS 3rd SEM.md" }
+          { "examType": "RTU Imp Topics for 3rd SEM", "pdfLink": "/assets/more/CSE/IMP RTU TOPICS 3rd SEM.pdf" }
     ]
     },
     "4": {
@@ -279,9 +279,8 @@
             "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X2uEnQnS_Z6CeKOoVb_LhFb&si=jNy1vsHGDDcSwJ-_"
           }
         ],
-        "pyqs": [
-          { "examType": "MainExam", "year": 2023, "sem": "Odd", "pdfLink": "/assets/main/PPS paper odd 2023.pdf" },
-          { "examType": "MainExam", "year": 2025, "sem": "Odd", "pdfLink": "/assets/main/PPS paper odd 2025.pdf" }
+       "More": [
+          { "examType": "DMS Short Notes", "pdfLink": "/assets/more/CSE/DMS Short notes.pdf" }
         ]
       },
       {
@@ -492,7 +491,7 @@
       }
     ],
     "Extra" :[
-          { "examType": "RTU Imp Topics for 4th SEM", "pdfLink": "/assets/more/CSE/IMP RTU TOPICS 4th SEM.md" }
+          { "examType": "RTU Imp Topics for 4th SEM", "pdfLink": "/assets/more/CSE/RTU Imp topic for 4th Semester.pdf" }
     ]
     }
   },
@@ -742,7 +741,7 @@
       }
   ], 
          "Extra" :[
-          { "examType": "RTU Imp Topics for 3rd SEM", "pdfLink": "/assets/more/CSE/IMP RTU TOPICS 3rd SEM.md" }
+          { "examType": "RTU Imp Topics for 3rd SEM", "pdfLink": "/assets/more/CSE/IMP RTU TOPICS 3rd SEM.pdf" }
     ]
     },
     "4": {
@@ -778,9 +777,8 @@
             "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X2uEnQnS_Z6CeKOoVb_LhFb&si=jNy1vsHGDDcSwJ-_"
           }
         ],
-        "pyqs": [
-          { "examType": "MainExam", "year": 2023, "sem": "Odd", "pdfLink": "/assets/main/PPS paper odd 2023.pdf" },
-          { "examType": "MainExam", "year": 2025, "sem": "Odd", "pdfLink": "/assets/main/PPS paper odd 2025.pdf" }
+        "More": [
+          { "examType": "DMS Short Notes", "pdfLink": "/assets/more/CSE/DMS Short notes.pdf" }
         ]
       },
       {
@@ -991,7 +989,7 @@
       }
     ],
     "Extra" :[
-          { "examType": "RTU Imp Topics for 4th SEM", "pdfLink": "/assets/more/CSE/IMP RTU TOPICS 4th SEM.md" }
+          { "examType": "RTU Imp Topics for 4th SEM", "pdfLink": "/assets/more/CSE/IMP RTU TOPICS 4th SEM.pdf" }
     ]
     }},
   "IT": {   "3": 
@@ -1237,7 +1235,7 @@
       }
   ], 
          "Extra" :[
-          { "examType": "RTU Imp Topics for 3rd SEM", "pdfLink": "/assets/more/CSE/IMP RTU TOPICS 3rd SEM.md" }
+          { "examType": "RTU Imp Topics for 3rd SEM", "pdfLink": "/assets/more/CSE/IMP RTU TOPICS 3rd SEM.pdf" }
     ]
     },
     "4": {
@@ -1273,9 +1271,8 @@
             "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X2uEnQnS_Z6CeKOoVb_LhFb&si=jNy1vsHGDDcSwJ-_"
           }
         ],
-        "pyqs": [
-          { "examType": "MainExam", "year": 2023, "sem": "Odd", "pdfLink": "/assets/main/PPS paper odd 2023.pdf" },
-          { "examType": "MainExam", "year": 2025, "sem": "Odd", "pdfLink": "/assets/main/PPS paper odd 2025.pdf" }
+       "More": [
+          { "examType": "DMS Short Notes", "pdfLink": "/assets/more/CSE/DMS Short notes.pdf" }
         ]
       },
       {
@@ -1486,7 +1483,7 @@
       }
     ],
     "Extra" :[
-          { "examType": "RTU Imp Topics for 4th SEM", "pdfLink": "/assets/more/CSE/IMP RTU TOPICS 4th SEM.md" }
+          { "examType": "RTU Imp Topics for 4th SEM", "pdfLink": "/assets/more/CSE/IMP RTU TOPICS 4th SEM.pdf" }
     ]
     }},
   "CY": {   "3": 
@@ -1732,7 +1729,7 @@
       }
   ], 
          "Extra" :[
-          { "examType": "RTU Imp Topics for 3rd SEM", "pdfLink": "/assets/more/CSE/IMP RTU TOPICS 3rd SEM.md" }
+          { "examType": "RTU Imp Topics for 3rd SEM", "pdfLink": "/assets/more/CSE/IMP RTU TOPICS 3rd SEM.pdf" }
     ]
     },
     "4": {
@@ -1768,9 +1765,8 @@
             "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X2uEnQnS_Z6CeKOoVb_LhFb&si=yn9XLWb-SyIYK62g"
           }
         ],
-        "pyqs": [
-          { "examType": "MainExam", "year": 2023, "sem": "Odd", "pdfLink": "/assets/main/PPS paper odd 2023.pdf" },
-          { "examType": "MainExam", "year": 2025, "sem": "Odd", "pdfLink": "/assets/main/PPS paper odd 2025.pdf" }
+       "More": [
+          { "examType": "DMS Short Notes", "pdfLink": "/assets/more/CSE/DMS Short notes.pdf" }
         ]
       },
       {
@@ -1981,7 +1977,7 @@
       }
     ],
     "Extra" :[
-          { "examType": "RTU Imp Topics for 4th SEM", "pdfLink": "/assets/more/CSE/IMP RTU TOPICS 4th SEM.md" }
+          { "examType": "RTU Imp Topics for 4th SEM", "pdfLink": "/assets/more/CSE/IMP RTU TOPICS 4th SEM.pdf" }
     ]
     } },
   "CHEM": { "3": [], "4": [] }
