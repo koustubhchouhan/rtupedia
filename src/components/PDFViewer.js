@@ -12,29 +12,35 @@ pdfjs.GlobalWorkerOptions.workerSrc =
 const PDFViewer = ({ file, onClose }) => {
   const [numPages, setNumPages] = useState(null);
   const [scale, setScale] = useState(1);
-  const [page, setPage] = useState(1);
+  const [visiblePages, setVisiblePages] = useState([1,2,3]);
   const [error, setError] = useState(false);
   const [loadingPage, setLoadingPage] = useState(false);
+  const [currentPage, setCurrentPage] = useState(1);
+
 
   const { user } = useAuth();
   const navigate = useNavigate();
+
+
   const pdfFile = useMemo(() => ({
-  url: file
-}), [file]);
+    url: file
+  }), [file]);
 
   // 🔒 Auth check
   useEffect(() => {
     if (!user) navigate("/login");
   }, [user, navigate]);
 
-  useEffect(() => {
-  setPage(1);
+useEffect(() => {
+  setVisiblePages([1,2,3]);
+  setCurrentPage(1);
 }, [file]);
+
 
   // ✅ Load success
   const onDocumentLoadSuccess = useCallback(({ numPages }) => {
     setNumPages(numPages);
-    setPage(1);
+ 
   }, []);
 
   // 🔐 Disable copy, right click etc
@@ -62,20 +68,51 @@ const PDFViewer = ({ file, onClose }) => {
     };
   }, []);
 
+useEffect(() => {
+  const container = document.querySelector(".pdf-container");
+  if (!container) return;
+
+  const handleScroll = () => {
+
+    // 🔥 PAGE DETECTION
+    const pages = container.querySelectorAll(".page-wrapper");
+
+    pages.forEach((page, index) => {
+      const rect = page.getBoundingClientRect();
+      const containerTop = container.getBoundingClientRect().top;
+
+      if (rect.top >= containerTop && rect.top < containerTop + container.clientHeight / 2) {
+        setCurrentPage(index + 1);
+      }
+    });
+
+    // 🔥 LAZY LOAD
+    const scrollBottom =
+      container.scrollTop + container.clientHeight >= container.scrollHeight - 200;
+
+    if (scrollBottom && numPages) {
+      setVisiblePages((prev) => {
+        const nextPage = prev.length + 1;
+
+        if (nextPage <= numPages && !prev.includes(nextPage)) {
+          return [...prev, nextPage];
+        }
+        return prev;
+      });
+    }
+  };
+
+  container.addEventListener("scroll", handleScroll);
+  return () => container.removeEventListener("scroll", handleScroll);
+}, [numPages]);
+
+
   // ⌨️ Arrow navigation
   useEffect(() => {
     const handleKey = (e) => {
       if (loadingPage) return;
 
-      if (e.key === "ArrowRight") {
-        setLoadingPage(true);
-        setPage((p) => Math.min(p + 1, numPages));
-      }
-
-      if (e.key === "ArrowLeft") {
-        setLoadingPage(true);
-        setPage((p) => Math.max(p - 1, 1));
-      }
+   
     };
 
     window.addEventListener("keydown", handleKey);
@@ -120,66 +157,45 @@ const PDFViewer = ({ file, onClose }) => {
         <button onClick={() => setScale(s => Math.min(s + 0.2, 2.5))}>+</button>
       </div>
 
-      {/* 🔁 Navigation */}
-      <div className="nav-controls">
-        <button
-          disabled={page <= 1 || loadingPage}
-          onClick={() => {
-            setLoadingPage(true);
-            setPage((p) => Math.max(p - 1, 1));
-          }}
-        >
-          ⬅
-        </button>
-
-        <span>
-          Page {page} of {numPages || "--"}
-        </span>
-
-        <button
-          disabled={page >= numPages || loadingPage}
-          onClick={() => {
-            setLoadingPage(true);
-            setPage((p) => Math.min(p + 1, numPages));
-          }}
-        >
-          ➡
-        </button>
-      </div>
+<div className="page-indicator">
+  {currentPage} / {numPages || "--"}
+</div>
+     
+     
 
       {/* 📄 PDF */}
-      <div className="pdf-container">
+      <div className="pdf-container"
+      >
         {error ? (
           <div style={{ color: "white" }}>
             Failed to load PDF. Try again.
           </div>
         ) : (
-          <Document
-          
-            file={ pdfFile}
-            onLoadSuccess={onDocumentLoadSuccess}
-            onLoadError={(err) => {
-              console.error("PDF ERROR:", err);
-              setError(true);
-            }}
-            loading="Loading PDF..."
-          >
-            <div className="page-wrapper">
-              <Page
-                key={page} // ✅ CRITICAL FIX
-                pageNumber={page}
-                scale={scale}
-                renderTextLayer={false}
-                renderAnnotationLayer={false}
-                onLoadSuccess={() => setLoadingPage(false)}
-              />
+         <Document
+  file={pdfFile}
+  onLoadSuccess={onDocumentLoadSuccess}
+  onLoadError={(err) => {
+    console.error("PDF ERROR:", err);
+    setError(true);
+  }}
+  loading="Loading PDF..."
+>
+  {visiblePages.map((p) => (
+    <div key={p} className="page-wrapper">
+      <Page
+        pageNumber={p}
+        scale={scale}
+        renderTextLayer={false}
+        renderAnnotationLayer={false}
+      />
 
-              {/* Watermark */}
-              <div className="watermark">
-                <div className="watermark-text">RTUpedia</div>
-              </div>
-            </div>
-          </Document>
+      {/* Watermark */}
+      <div className="watermark">
+        <div className="watermark-text">RTUpedia</div>
+      </div>
+    </div>
+  ))}
+</Document>
         )}
       </div>
     </div>
