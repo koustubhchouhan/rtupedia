@@ -14,7 +14,6 @@ const PDFViewer = ({ file, onClose }) => {
   const [scale, setScale] = useState(1);
   const [visiblePages, setVisiblePages] = useState([1,2,3]);
   const [error, setError] = useState(false);
-  const [loadingPage, setLoadingPage] = useState(false);
   const [currentPage, setCurrentPage] = useState(1);
 
 
@@ -107,17 +106,6 @@ useEffect(() => {
 }, [numPages]);
 
 
-  // ⌨️ Arrow navigation
-  useEffect(() => {
-    const handleKey = (e) => {
-      if (loadingPage) return;
-
-   
-    };
-
-    window.addEventListener("keydown", handleKey);
-    return () => window.removeEventListener("keydown", handleKey);
-  }, [numPages, loadingPage]);
 
   // ❌ Block inspect
   useEffect(() => {
