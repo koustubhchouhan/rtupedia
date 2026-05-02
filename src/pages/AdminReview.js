@@ -4,66 +4,57 @@ import {
   approveReview,
   deleteReview
 } from "../utils/reviewApi";
-import { ADMIN_PASSWORD } from "../config/admin";
+import { useNavigate } from "react-router-dom";
 import { useAuth } from "../context/AuthContext";
+
+ const adminEmails = [
+    "rtupedia@gmail.com",
+    "manangupta902@gmail.com",
+    "kanchanprajapat208@gmail.com",
+    "koustubhchouhan9@gmail.com",
+    "manangupta9887@gmail.com",
+    "kanchanprajapat2926@gmail.com",
+    "mayankphalodia@gmail.com"
+  ];
 
 export default function AdminReviews() {
   const [reviews, setReviews] = useState([]);
-  const [authorized, setAuthorized] = useState(false);
-  const [input, setInput] = useState("");
-
-  const loadReviews = async () => {
-    const data = await getPendingReviews();
-    setReviews(data);
-  };
-
+  const navigate = useNavigate();
   const { user } = useAuth();
-   useEffect(() => {
-    if (authorized) loadReviews();
-  }, [authorized]);
-
-if (user?.email !== "rtupedia@gmail.com" && user?.email !== "manangupta902@gmail.com" && user?.email !== "kanchanprajapat208@gmail.com" && user?.email !== "koustubhchouhan9@gmail.com" && user?.email !== "manangupta9887@gmail.com" && user?.email !== "kanchanprajapat2926@gmail.com") {
-  return <p>Not authorized</p>;
-}
 
  
 
-  /* 🔐 PASSWORD CHECK */
-  if (!authorized) {
-    return (
-      <div className="admin-container">
-        <h2 className="admin-title">Admin Access</h2>
-
-        <input
-          type="password"
-          placeholder="Enter admin password"
-          value={input}
-          onChange={(e) => setInput(e.target.value)}
-          style={{
-            padding: "12px",
-            width: "100%",
-            maxWidth: "320px",
-            borderRadius: "8px",
-            marginBottom: "12px",
-            border: "1px solid #ccc"
-          }}
-        />
-
-        <button
-          className="admin-approve"
-          onClick={() => {
-            if (input === ADMIN_PASSWORD) {
-              setAuthorized(true);
-            } else {
-              alert("Wrong password");
-            }
-          }}
-        >
-          Unlock
-        </button>
-      </div>
-    );
+  /* 🔐 AUTH CHECK */
+ useEffect(() => {
+  if (!user) {
+    navigate("/login");
+  } else if (!adminEmails.includes(user.email)) {
+    navigate("/");
   }
+}, [user, navigate]);
+
+  /* 📥 LOAD REVIEWS */
+  const loadReviews = async () => {
+    try {
+      const data = await getPendingReviews();
+      setReviews(Array.isArray(data) ? data : []);
+    } catch (err) {
+      console.error(err);
+      setReviews([]);
+    }
+  };
+
+ useEffect(() => {
+  if (!user) return;
+
+  if (adminEmails.includes(user.email)) {
+    loadReviews();
+  }
+}, [user]);
+
+  /* ⛔ SAFETY UI */
+  if (!user) return null;
+  if (!adminEmails.includes(user.email)) return null;
 
   /* ✅ ADMIN DASHBOARD */
   return (
