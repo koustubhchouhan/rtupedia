@@ -1,0 +1,81 @@
+.admin-container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.admin-title {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: var(--color-primary);
+}
+
+/* CARD */
+.admin-card {
+  background: var(--color-card-bg);
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
+
+  padding: 16px;
+  margin-bottom: 16px;
+
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: 0.25s;
+}
+
+.admin-card:hover {
+  transform: translateY(-3px);
+}
+
+/* TEXT */
+.admin-name {
+  font-weight: 600;
+  font-size: 16px;
+  margin-bottom: 4px;
+}
+
+.admin-message {
+  font-size: 14px;
+  margin-bottom: 8px;
+  color: var(--color-text);
+}
+
+.admin-rating {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+/* BUTTONS */
+.admin-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.admin-approve {
+  background: #22c55e;
+  border: none;
+  color: white;
+
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.admin-delete {
+  background: #ef4444;
+  border: none;
+  color: white;
+
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.admin-approve:hover {
+  background: #16a34a;
+}
+
+.admin-delete:hover {
+  background: #dc2626;
+}

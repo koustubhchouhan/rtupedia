@@ -6,6 +6,7 @@ import {
 } from "../utils/reviewApi";
 import { useNavigate } from "react-router-dom";
 import { useAuth } from "../context/AuthContext";
+import "../styles/AdminReviews.css";
 
  const adminEmails = [
     "rtupedia@gmail.com",
