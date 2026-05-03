@@ -1,6 +1,13 @@
 /* ============================
    SGPA CARD (HOME PAGE)
    ============================ */
+
+.sgpa-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
 .sgpa-card {
   background: var(--color-card-bg);
   border: 1px solid var(--color-border);
@@ -157,13 +164,14 @@
   align-items: center;
   text-align: center;
   width: 100%;
-  max-width: 500px; /* prevents spreading too wide */
+  max-width: 400px; /* prevents spreading too wide */
 }
 
 .filter-item {
   display: flex;
   flex-direction: column;
   align-items: center;
+  flex: 1; /* equal width */
 }
 
 
@@ -219,9 +227,9 @@
   }
 
    .filter-box {
-    flex-direction: column;
+   flex-direction: row;
     gap: 18px;
-    max-width: 100%;
+    max-width: 90%;
   }
 
   .filter-item {

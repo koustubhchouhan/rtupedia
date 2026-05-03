@@ -75,11 +75,50 @@ const SGPACalculator = () => {
     </a>
   </div>
 </div>
+
+<div style={{ maxWidth: "900px", margin: "25px auto", lineHeight: "1.8" }}>
+
+  <h2>RTU SGPA Calculator – Calculate Your Semester Performance</h2>
+
+  <p>
+    The RTU SGPA Calculator helps Rajasthan Technical University (RTU) B.tech students
+    quickly calculate their Semester Grade Point Average (SGPA) based on subject
+    credits and grades. It provides an accurate and instant way to evaluate
+    academic performance without manual calculations.
+  </p>
+
+  <p>
+    To calculate SGPA, students need to select their branch and semester, then
+    choose grades for each subject. The calculator automatically applies RTU’s
+    official grade point system and computes the final SGPA.
+  </p>
+
+  <h3>How SGPA is Calculated</h3>
+  <p>
+    SGPA is calculated using the formula:
+    <br />
+    <strong>SGPA = (Sum of (Credits × Grade Points)) / Total Credits</strong>
+  </p>
+
+  <h3>Why Use This SGPA Calculator?</h3>
+  <ul style={{ textAlign: "left", marginLeft: "20px" }}>
+    <li>Instant and accurate SGPA calculation</li>
+    <li>Based on official RTU grading system</li>
+    <li>No manual calculations required</li>
+    <li>Helps track academic performance easily</li>
+  </ul>
+
+  <p>
+    Use the calculator below to estimate your SGPA and plan your academic goals
+    effectively.
+  </p>
+
+</div>
       
 
       {/* 🔹 Branch & Semester Filters */}
       <div className="filter-box">
-        <div className="filter-item">
+        <div className="filter-item" >
           <label>Branch</label>
           <select value={branch} onChange={(e) => setBranch(e.target.value)}>
             {branchOptions.map((b) => (
