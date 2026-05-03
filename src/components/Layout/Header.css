@@ -244,6 +244,80 @@
   color: var(--color-background);
 }
 
+
+/* PROFILE IN SIDEBAR */
+.sidebar-profile-img {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.profile-side {
+  align-items: center;
+}
+
+.sidebar-profile-info {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+}
+
+.sidebar-profile-info button {
+  margin-top: 5px;
+  padding: 4px 8px;
+  border: none;
+  border-radius: 5px;
+  background: var(--color-primary);
+  color: var(--color-background);
+  font-size: 12px;
+  cursor: pointer;
+}
+
+/* toggle alignment */
+.toggle-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background: var(--color-background);
+  border-radius: 10px;
+  padding: 10px 12px;
+}
+
+.theme-toggle-wrap {
+  margin-left:auto;
+  display:flex;
+  align-items:center;
+  border-radius: 20px;
+  border: 1px solid var(--color-border);
+}
+
+.theme-toggle-icon {
+  font-size: 22px;
+  cursor: pointer;
+  color: var(--color-background); 
+  transition: 0.3s;
+  opacity: 0.8;
+}
+
+.theme-toggle-icon:hover {
+  transform: scale(1.2);
+}
+
+/* SIDEBAR LINKS FIX */
+.sidebar-item,
+.sidebar-item span,
+.sidebar-item a {
+  color: var(--color-text) !important;
+  text-decoration: none;
+}
+
+/* Active / hover */
+.sidebar-item:hover {
+  color: var(--color-primary);
+}
+
 @keyframes fadeIn {
   from { opacity: 0; transform: translate(-50%, -10px); }
   to { opacity: 1; transform: translate(-50%, 0); }
@@ -295,6 +369,11 @@
     height: 28px;
   }
 
+  .theme-toggle-icon {
+    font-size: 18px;
+   color: var(--color-text);
+  }
+
 
 }
 
@@ -302,7 +381,7 @@
   display: none;
   font-size: 20px;
   cursor: pointer;
-  color: white;
+   color: var(--color-background);;
 }
 
 /* MOBILE ONLY */
@@ -355,7 +434,8 @@
 }
 
 .sidebar-item:hover {
-  background: rgba(0,0,0,0.05);
+  background: var(--color-background);
+  color: var(--color-primary);
   border-radius: 6px;
 }
 
@@ -380,6 +460,10 @@
   font-size:13px;
 }
 
+.theme-toggle-icon{
+   color: var(--color-text);
+}
+
  .profile-dropdown {
     top: 50px;
 
@@ -388,61 +472,3 @@
 }
 
 
-
-/* PROFILE IN SIDEBAR */
-.sidebar-profile-img {
-  width: 36px;
-  height: 36px;
-  border-radius: 50%;
-  object-fit: cover;
-}
-
-.profile-side {
-  align-items: center;
-}
-
-.sidebar-profile-info {
-  display: flex;
-  flex-direction: column;
-  font-size: 14px;
-}
-
-.sidebar-profile-info button {
-  margin-top: 5px;
-  padding: 4px 8px;
-  border: none;
-  border-radius: 5px;
-  background: var(--color-primary);
-  color: white;
-  font-size: 12px;
-  cursor: pointer;
-}
-
-/* toggle alignment */
-.toggle-item {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-
-  background: var(--accordion-bg);
-  border-radius: 10px;
-  padding: 10px 12px;
-}
-
-.theme-toggle-wrap {
-  margin-left:auto;
-  display:flex;
-  align-items:center;
-}
-
-.theme-toggle-icon {
-  font-size: 22px;
-  cursor: pointer;
-  color: var(--color-background); 
-  transition: 0.3s;
-  opacity: 0.8;
-}
-
-.theme-toggle-icon:hover {
-  transform: scale(1.2);
-}
