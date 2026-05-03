@@ -133,11 +133,14 @@ const BranchContent = () => {
   }, [tab, notes, yearSlug, selectedBranch, selectedSemester]);
 
   useEffect(() => {
+  document.title = `RTU ${yearSlug} Notes, PYQs & Study Material | RTUpedia`;
+}, [yearSlug]); 
+
+  useEffect(() => {
     const handleKeyDown = (e) => {
       if (
         (e.ctrlKey && e.key === "s") ||
         (e.ctrlKey && e.key === "p") ||
-        (e.ctrlKey && e.key === "c") ||
         (e.ctrlKey && e.key === "u") ||
         e.key === "F12"
       ) {
@@ -157,7 +160,9 @@ const BranchContent = () => {
   ========================= */
   return (
     <div style={{ padding: 25 }}>
-      <h2>{yearSlug.replace("-", " ").toUpperCase()} Resources</h2>
+      <h2> RTU {yearSlug.replace("-", " ").toUpperCase()} Notes, PYQs, Lab Manuals and Study Material</h2>
+      <h4 style={{marginBottom:"20px", fontWeight:"normal"}}>RTU {yearSlug.replace("-", " ").toUpperCase()} is crucial for building core engineering concepts given the right approach. Students should focus on understanding concepts and practicing PYQs. <br></br>
+      Below you can find subject-wise notes, video lectures, and important resources.</h4>
 
       {/* Branch + Semester */}
       <div className="select-row">
@@ -199,80 +204,208 @@ const BranchContent = () => {
       </div>
 
       {/* NOTES */}
-      {tab === "notes" && notes.map((sub, i) => (
-        <div className="resource-card subject-card" key={i} data-aos="fade-up">
-          <details>
-            <summary style={{ fontWeight: "bold" }}>
+     {tab === "notes" && (
+  <>
+    {/* ✅ SEO Content Block */}
+    <div style={{ maxWidth: "900px", marginBottom: "25px", lineHeight: "1.8" }}>
+      
+      <h2>RTU Notes, Video Lectures & Study Materials</h2>
 
 
-              {sub.subjectName} ({sub.subjectCode})
-              <span className="subject-units">{sub.units.length} Units</span>
-            </summary>
+      {/* ⚠️ Copyright Disclaimer */}
+      <p style={{ fontSize: "14px", color: "gray" }}>
+        ⚠️ Note: Due to copyright policies, students are not allowed to download the PDF notes.
+        These materials are provided only for online viewing and educational purposes.
+      </p>
 
-            {sub.units.map((u, j) => (
-              <div key={j} className="unit-row" style={{ marginTop: 10 }}>
-                <strong>{u.unitName}</strong>
-                <div style={{ display: "flex", gap: 12 }}>
+    </div>
 
-                  <button
-                    className="resource-link-notes"
-                    onClick={() => openPDF(u.notesPDF || u.pdf)}
+    {/* ✅ Your existing notes UI */}
+    {notes.map((sub, i) => (
+      <div className="resource-card subject-card" key={i} data-aos="fade-up">
+        
+        <details>
+          <summary style={{ fontWeight: "bold" }}>
+            {sub.subjectName} ({sub.subjectCode})
+            <span className="subject-units">
+              {sub.units.length} Units
+            </span>
+          </summary>
 
-                  >
-                    📑 View Notes
-                  </button>
-                  <a className="resource-link" href={u.lectureLink} target="_blank" rel="noopener noreferrer">▶ Video</a>
-                </div>
-              </div>
-            ))}
-          </details>
-        </div>
-      ))}
+          {sub.units.map((u, j) => (
+            <div key={j} className="unit-row" style={{ marginTop: 10 }}>
+              
+              <strong>{u.unitName}</strong>
 
-      {/* PYQs */}
-      {tab === "pyq" && (
-        <>
-          {loadingPYQ && <p>Loading PYQs...</p>}
-          {pyqGrouped.map((grp, i) => (
-            <div className="pyq-subject-box" key={i} data-aos="fade-up">
-              <div className="pyq-subject-title">
-                {grp.subjectName} ({grp.subjectCode})
-              </div>
-              {grp.pyqs.map((q, idx) => (
-                <a key={idx} className="pyq-paper-link" href={`${q.pdf}`} target="_blank" rel="noopener noreferrer">
-                  📄 {q.title}
+              <div style={{ display: "flex", gap: 12 }}>
+                <button
+                  className="resource-link-notes"
+                  onClick={() => openPDF(u.notesPDF || u.pdf)}
+                >
+                  📑 View Notes
+                </button>
+
+                <a
+                  className="resource-link"
+                  href={u.lectureLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  ▶ Video
                 </a>
-              ))}
+              </div>
+
             </div>
           ))}
-        </>
-      )}
+
+        </details>
+
+      </div>
+    ))}
+
+     <div style={{ maxWidth: "900px", marginBottom: "25px", lineHeight: "1.8", justifyContent: "center",  alignItems: "center"    }}>
+
+      <p>
+        RTU notes are essential for understanding core engineering subjects and preparing
+        effectively for exams. Students should focus on unit-wise concepts, important topics,
+        and practice regularly to score well in Rajasthan Technical University exams.
+      </p>
+
+      <p>
+        This section provides subject-wise notes, unit-wise materials, and video lectures
+        to help students learn concepts clearly and revise efficiently before exams.
+      </p>
+
+      <p>
+        You can explore all subjects below and access notes along with video explanations
+        for better understanding.
+      </p>
+
+    </div>
+
+  </>
+)}
+
+      {/* PYQs */}
+   {tab === "pyq" && (
+  <>
+
+    {/* Loading */}
+    {loadingPYQ && <p>Loading PYQs...</p>}
+
+    {/* ✅ Your existing data */}
+    {pyqGrouped.map((grp, i) => (
+      <div className="pyq-subject-box" key={i} data-aos="fade-up">
+        
+        <div className="pyq-subject-title">
+          {grp.subjectName} ({grp.subjectCode})
+        </div>
+
+        {grp.pyqs.map((q, idx) => (
+          <a
+            key={idx}
+            className="pyq-paper-link"
+            href={`${q.pdf}`}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            📄 {q.title}
+          </a>
+        ))}
+
+      </div>
+    ))}
+     <div style={{ maxWidth: "900px", marginBottom: "25px", lineHeight: "1.8" }}>
+      
+      <h2>RTU Previous Year Question Papers (PYQs)</h2>
+
+      <p>
+        Previous Year Question Papers (PYQs) are one of the most effective ways to prepare
+        for RTU exams. They help students understand the exam pattern, important topics,
+        and frequently asked questions.
+      </p>
+
+      <p>
+        By solving PYQs regularly, students can improve time management, identify important
+        concepts, and gain confidence before exams. Many questions in RTU exams follow
+        similar patterns, making PYQs a valuable resource.
+      </p>
+
+      <p>
+        Below, you can find subject-wise RTU PYQs for your semester. Practice them properly
+        to maximize your exam performance.
+      </p>
+
+    </div>
+  </>
+)}
 
       {/* LABS */}
-      {tab === "lab" && labGrouped.map((grp, i) => (
-        <div className="pyq-subject-box" key={i} data-aos="fade-up">
-          <div className="pyq-subject-title">
-            {grp.subjectName} ({grp.subjectCode})
-          </div>
-          {grp.examPapers?.map((paper, idx) => (
+    {tab === "lab" && (
+  <>
 
-            <button
-              key={idx}
-              className="pyq-paper-link"
-              onClick={() => openPDF(paper.pdfLink)}
-            >
-              📄 {paper.examType}
-            </button>
-          ))}
+    {/* ✅ Your existing lab data */}
+    {labGrouped.map((grp, i) => (
+      <div className="pyq-subject-box" key={i} data-aos="fade-up">
+        
+        <div className="pyq-subject-title">
+          {grp.subjectName} ({grp.subjectCode})
         </div>
-      ))}
+
+        {grp.examPapers?.map((paper, idx) => (
+          <button
+            key={idx}
+            className="pyq-paper-link"
+            onClick={() => openPDF(paper.pdfLink)}
+          >
+            📄 {paper.examType}
+          </button>
+        ))}
+
+      </div>
+    ))}
+      {/* ✅ SEO Content Block (only once) */}
+    <div style={{ maxWidth: "900px", marginBottom: "25px", lineHeight: "1.8" }}>
+      
+      <h2>RTU Lab Manuals, Files & Practical Resources</h2>
+
+      <p>
+        Lab work is an important part of RTU B.Tech curriculum, helping students understand
+        practical applications of theoretical concepts. Subjects like programming, electronics,
+        and mechanical labs require proper documentation and regular practice.
+      </p>
+
+      <p>
+        To perform well in lab exams, students should focus on writing proper lab files,
+        understanding experiments, and practicing viva questions. Referring to previous
+        lab manuals and records can help in scoring better marks.
+      </p>
+
+      <p>
+        Below, you can find subject-wise lab manuals, practical files, and important resources
+        for your semester.
+      </p>
+
+    </div>
+  </>
+)}
 
       {/* MORE (SUBJECT-WISE) */}
-      {tab === "more" && moreGrouped.map((grp, i) => (
-        <div className="pyq-subject-box" key={i} data-aos="fade-up">
+    {tab === "more" && (
+  <>
+    {/* ✅ Show only once */}
+    <h4 style={{ marginBottom: "15px" }}>
+      How to pass RTU exams in 1 week
+    </h4>
+
+    {moreGrouped.map((grp, i) => (
+      <div key={i} style={{ marginBottom: "30px" }}>
+        <div className="pyq-subject-box" data-aos="fade-up">
+          
           <div className="pyq-subject-title">
             {grp.subjectName} ({grp.subjectCode})
           </div>
+
           {grp.items.map((m, idx) => (
             <button
               key={idx}
@@ -282,8 +415,13 @@ const BranchContent = () => {
               📄 {m.examType}
             </button>
           ))}
+
         </div>
-      ))}
+      </div>
+    ))}
+   
+  </>
+)}
 
       {/* EXTRA (SEMESTER-LEVEL) */}
       {tab === "more" && (
@@ -305,6 +443,46 @@ const BranchContent = () => {
               No extra resources available for this selection.
             </div>
           )}
+           <div style={{ maxWidth: "900px", marginTop: "25px", marginBottom: "25px", lineHeight: "1.8" }}>
+  
+  <h2>RTU Exams Preparation tips in 1 Week (Smart Strategy)</h2>
+
+  <p>
+    Preparing for RTU exams in a short time can feel overwhelming, but with the right strategy,
+    students can still score well. The key is to focus on important topics, practice previous
+    year questions (PYQs), and revise concepts efficiently instead of trying to cover everything.
+  </p>
+
+  <h3>1. Focus on Important Topics</h3>
+  <p>
+    Start by identifying high-weightage topics from the syllabus. Subjects often have repeated patterns in exams.
+    Prioritize these areas first.
+  </p>
+
+  <h3>2. Practice Previous Year Questions (PYQs)</h3>
+  <p>
+    Solving PYQs is one of the fastest ways to prepare for RTU exams. Many questions are repeated
+    or follow similar patterns, so practicing them helps you understand exam trends and boosts confidence.
+  </p>
+
+  <h3>3. Use Short Notes and Formulas</h3>
+  <p>
+    Instead of reading full books, focus on short notes, formulas, and key concepts.
+    This helps in quick revision during the last days before exams.
+  </p>
+
+  <h3>4. Revise Smartly</h3>
+  <p>
+    Allocate time for revision daily. Even 1–2 hours of focused revision can improve retention
+    and help you recall concepts during the exam.
+  </p>
+
+  <p>
+    Below, you can find subject-wise important resources, notes, and materials to help you
+    prepare efficiently for your RTU exams.
+  </p>
+
+</div>
         </div>
       )}
 
