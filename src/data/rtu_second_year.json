@@ -1799,9 +1799,8 @@
             "lectureLink": "https://youtube.com/playlist?list=PLdXFNMrkr2X2_AYX7ei7fnLzDRhFxKysJ&si=UXetguxXT7GdKlm6"
           }
         ],
-        "pyqs": [
-          { "examType": "MainExam", "year": 2023, "sem": "Odd", "pdfLink": "/assets/main/PPS paper odd 2023.pdf" },
-          { "examType": "MainExam", "year": 2025, "sem": "Odd", "pdfLink": "/assets/main/PPS paper odd 2025.pdf" }
+         "More": [
+       { "examType": "MPI Quick Revision of unit 4 and 5", "pdfLink": "/assets/more/CSE/MPI Unit 4 nd 5 Quick Revision.pdf" }
         ]
       },
       {
